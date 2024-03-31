@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Course
+# Welcome to the website for BB485
 
-This is a website for BB485.
+Weekly lectures:
+[Week01 lecture](/week01)
+
