@@ -9,4 +9,4 @@ Weekly lectures:
 
 [Week01 lecture](week01)
 
-[Link to Example File](example.md)
+
