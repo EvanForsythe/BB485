@@ -7,6 +7,6 @@ title: Home
 
 Weekly lectures:
 
-[Week01 lecture](BB485/week01)
+[Week01 lecture](week01)
 
 [Link to Example File](example.md)
