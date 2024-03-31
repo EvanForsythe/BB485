@@ -7,5 +7,5 @@ title: Home
 
 Weekly lectures:
 
-[Week01 lecture](/week01)
+[Week01 lecture](BB485/week01)
 
