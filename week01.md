@@ -3,6 +3,7 @@ layout: default
 ---
 # Week 1 lecture and tutorial
 
+
 ## <ins>**Course structure**<ins>
 
 ### **Course Overview**:
@@ -27,15 +28,18 @@ Compared to introductory biology courses, you can expect this course to:
 
 **Project makeup work:** You will be allowed to revise and resubmit two of the six weekly project write-ups after grading. This means that you'll have a chance to improve your score on write-ups, which will have a large positive impact on your grade in the class.
 
-![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
-## <ins>**Bioinformatic overview**<ins>
+
+## <ins>**Bioinformatics overview**<ins>
+
+![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
 **What is bioinformatics?** Bioinformatics refers to using computers to learn about biological organisms. This often involves computational analyses of 'biological data'. Biological data can be a lot of different things (from measuring the metabolic rate of a desert mouse to the length of a frog's whiskers). In this course, biological data typically relates to DNA, RNA, or protein (sequence, expression level, folding, etc...). Bioinformatics is a set of tools/skills that allow us to glean biological insights from biological data.
 
 **What's the difference between "Bioinformatics" and "Computational Biology"?** Nothing! Some definitions may disagree, but your instructor uses the words interchangably.
 
 **What's the best way to learn bioinformatics?** <ins>By doing it!<ins> Let's dive in....
+
 
 ## <ins>**Connecting to Jupyter Hub course workspace**<ins>
 
@@ -145,6 +149,7 @@ When you select "Start My Server" you'll get a choice of different server size o
    </ol>
 </div>
 
+
 ## <ins>**Python Refresher**<ins>
 
 <!-- TODO: Add slides and examples for strings, lists, dictionaries, strings, for loops, functions -->
@@ -174,6 +179,8 @@ Python notebooks are a great tool for developing new python code. However, when 
       <li>Run the script from the command line.</li>
    </ol>
 </div>
+
+
 
 ## <ins>**The BioPython module**<ins>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
