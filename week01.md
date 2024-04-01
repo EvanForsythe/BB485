@@ -147,6 +147,8 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ## <ins>**Python Refresher**<ins>
 
+<!-- TODO: Add slides and examples for strings, lists, dictionaries, strings, for loops, functions -->
+
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 2:</strong>
    <ol>
@@ -156,6 +158,20 @@ When you select "Start My Server" you'll get a choice of different server size o
       <li>Use the open command to create a file handle for 'reading' in the text file.</li>
       <li>Loop through the lines of the fasta file and add each sequence to a python dictionary</li>
       <li>Print the names of all the sequences in the dictionary (i.e. the 'keys' of the dictionary.</li>
+   </ol>
+</div>
+
+## **Python notebooks versus python scripts**
+Python notebooks are a great tool for developing new python code. However, when we're using our python code to accomplish a bioinformatics task, we typically need to be able to run that code from the command line. The best way to run python code from the command line is to put the code inside of a python script.
+
+**Python scripts:** A python script is a text file that contains python code. The script can be named anything but should end in ".py" (e.g. my_first_script.py). You can run all of the code within a python script from the command line by running:
+```python <name of python script>```
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 3:</strong>
+   <ol>
+      <li>Create a python script that does what your python notebook (from the last task) does.</li>
+      <li>Run the script from the command line.</li>
    </ol>
 </div>
 
