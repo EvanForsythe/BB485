@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-# BB485 Week 1 lecture and tutorial
+# Week 1 lecture and tutorial
 
-## Course structure
+## **Course structure**
 
-### Overview:
+### **Overview**:
 BB485 is an advanced, upper-level course designed to give students first-hand experience performing real bioinformatics analyses akin to academic/biotech-industry research. 
 
 This class will be structured similar to a graduate-level course that you would encounter in biology-related masters or PhD program. This will take some adjustment but will ultimately be extremely valuable in preparing students for the 'real world' (or at least one sector of the 'real world')
@@ -13,25 +13,30 @@ This class will be structured similar to a graduate-level course that you would 
 Compared to introductory biology courses, you can expect this course to:
 - **Place a strong emphasis on projects.** Academic/industry research is driven by results. Similarly, this course will mainly be project-based. 
 - **Place a less emphasis on exams and quizzes.** We will not have exams in this course. Instead, student learning is focused on developing critical-thinking, problem-solving, and trouble-shooting skills in an applied context. 
-- **Final projects will constitute real publishable research.** By the end of the term, you will contribute to real research. You'll be conducting novel analyses and asking questions that your instructor doesn't already know the answer to (nobody know the answer. That's scientific inquiry!).
+- **Final projects will constitute real, publishable research.** By the end of the term, you will contribute to real research. You'll be conducting novel analyses and asking questions that your instructor doesn't already know the answer to (nobody know the answer. That's scientific inquiry!).
 
-### Grading structure:
+### **Grading structure:**
 
 ![Points structure of BB 485](/Images/Week01/points_piechart.png)
 
-Each Tuesday will begin with an interactive tutorial, which will include a small assignment. Students will most often complete tutorial assignments by the end of class.
+**Tutorial Assingments:** Each Tuesday will begin with an interactive tutorial, which will include a small assignment. Students will most often complete tutorial assignments by the end of class.
 
-We will spend Thursdays working on a much more in depth analysis of real biological datasets. These analyses will require much more time, trouble shooting, and computational power to accomplish. These analyses will constitute the weekly project write-ups. These weekly projects are the major emphasis of the course because they are your chance to apply your bioinformatics skillset to real-world bioinformatic analyses. 
+**Project Write-ups:** We will spend Thursdays working on a much more in depth analysis of real biological datasets. These analyses will require much more time, trouble shooting, and computational power to accomplish. These analyses will constitute the weekly project write-ups. These weekly projects are the major emphasis of the course because they are your chance to apply your bioinformatics skillset to real-world bioinformatic analyses. 
 
 ![Assignment timeline](/Images/Week01/assignment_timeline.png)
 
-- You will be allowed to revise and resubmit two of the six weekly project write-ups after grading. This means that you'll have a chance to improve your score on write-ups, which will have a large positive impact on your grade in the class.
-
-## What is bioinformatics?
+**Project makeup work:** You will be allowed to revise and resubmit two of the six weekly project write-ups after grading. This means that you'll have a chance to improve your score on write-ups, which will have a large positive impact on your grade in the class.
 
 ![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
-## Connecting to Jupyter Hub course workspace
+## What is bioinformatics?
+Bioinformatics refers to using computers to learn about biological organisms. This often involves computational analyses of 'biological data'. Biological data can be a lot of different things (from measuring the metabolic rate of a desert mouse to the length of a frog's whiskers). In this course, biological data typically relates to DNA, RNA, or protein (sequence, expression level, folding, etc...). Bioinformatics is a set of tools/skills that allow us to glean biological insights from biological data.
+
+**What's the difference between "Bioinformatics" and "Computational Biology"?** Nothing! Some definitions may disagree, but your instructor uses the words interchangably.
+
+**What's the best way to learn bioinformatics?** By doing it! Let's dive in....
+
+## **Connecting to Jupyter Hub course workspace**
 
 The link to the lab Jupyter Hub is on Canvas under Class Resources.
 
@@ -208,12 +213,3 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
 ## Data visualization in python
 
 ## Overview of programs/servers/software/databases/repositories we'll use this term
-
-
-Here is an exmaple of a code block in the tutorial. 
-
-```python{linenos=True}
-def hello_world():
-    print("Hello, world!")
-```
-
