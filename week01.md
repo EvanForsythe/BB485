@@ -45,16 +45,6 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
 
-<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task:</strong>
-   <ol>
-      <li>Log in to the jupyter hub (JH)</li>
-      <li>Open a command line terminal in the JH</li>
-      <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
-      <li>Find the full path to the location of a fasta file.</li>
-      <li>Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later).</li>
-   </ol>
-</div>
 
 ## <ins>**Linux command line navigation**<ins>
 
@@ -63,6 +53,7 @@ When you select "Start My Server" you'll get a choice of different server size o
 ## <ins>**Introduction to Basic Linux/Unix Commands**<ins>
 
 ## A few example commands:
+<!-- TODO: Add more, head, tail, wc -->
 
 ### 1. **`pwd`**
    - **Description:** Print the current working directory.
@@ -143,9 +134,32 @@ When you select "Start My Server" you'll get a choice of different server size o
      grep "pattern" file.txt
      ```
 
-## <ins>**Python and the BioPython module**<ins>
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 1:</strong>
+   <ol>
+      <li>Log in to the jupyter hub (JH)</li>
+      <li>Open a command line terminal in the JH</li>
+      <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
+      <li>Find the full path to the location of a fasta file.</li>
+      <li>Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later).</li>
+   </ol>
+</div>
 
-## Overview
+## <ins>**Python Refresher**<ins>
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 2:</strong>
+   <ol>
+      <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
+      <li>Get python to say "hello world"</li>
+      <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
+      <li>Use the open command to create a file handle for 'reading' in the text file.</li>
+      <li>Loop through the lines of the fasta file and add each sequence to a python dictionary</li>
+      <li>Print the names of all the sequences in the dictionary (i.e. the 'keys' of the dictionary.</li>
+   </ol>
+</div>
+
+## <ins>**The BioPython module**<ins>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
 
 ## BioPython commands:
