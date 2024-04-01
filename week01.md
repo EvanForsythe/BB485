@@ -45,6 +45,16 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
 
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <ins>Task:<ins>
+      - Log in to the jupyter hub (JH)
+      - Open a command line terminal in the JH
+      - Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).
+      - Find the full path to the location of a fasta file.
+      - Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later). 
+</div>
+
+
 ## <ins>**Linux command line navigation**<ins>
 
 ![Anatomy of a unix command](/Images/Week01/unix_command.png)
@@ -214,7 +224,4 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
 ## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
 
 
-<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-    This is a more customizable box created with HTML.
-</div>
 
