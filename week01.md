@@ -46,14 +46,15 @@ When you select "Start My Server" you'll get a choice of different server size o
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <ins>Task:<ins>
-      - Log in to the jupyter hub (JH)
-      - Open a command line terminal in the JH
-      - Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).
-      - Find the full path to the location of a fasta file.
-      - Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later). 
+   <strong>Task:</strong>
+   <ol>
+      <li>Log in to the jupyter hub (JH)</li>
+      <li>Open a command line terminal in the JH</li>
+      <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
+      <li>Find the full path to the location of a fasta file.</li>
+      <li>Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later).</li>
+   </ol>
 </div>
-
 
 ## <ins>**Linux command line navigation**<ins>
 
