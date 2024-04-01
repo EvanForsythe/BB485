@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-# Welcome to the website for BB485
+# Welcome to the website for BB485!
 
-Weekly lectures:
+## Weekly lecture totorials will be linked below
 
 [Week01 lecture](week01)
 
