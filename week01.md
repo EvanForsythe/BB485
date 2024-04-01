@@ -3,9 +3,9 @@ layout: default
 ---
 # Week 1 lecture and tutorial
 
-## **Course structure**
+## <ins>**Course structure**<ins>
 
-### **Overview**:
+### **Course Overview**:
 BB485 is an advanced, upper-level course designed to give students first-hand experience performing real bioinformatics analyses akin to academic/biotech-industry research. 
 
 This class will be structured similar to a graduate-level course that you would encounter in biology-related masters or PhD program. This will take some adjustment but will ultimately be extremely valuable in preparing students for the 'real world' (or at least one sector of the 'real world')
@@ -29,14 +29,15 @@ Compared to introductory biology courses, you can expect this course to:
 
 ![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
-## What is bioinformatics?
-Bioinformatics refers to using computers to learn about biological organisms. This often involves computational analyses of 'biological data'. Biological data can be a lot of different things (from measuring the metabolic rate of a desert mouse to the length of a frog's whiskers). In this course, biological data typically relates to DNA, RNA, or protein (sequence, expression level, folding, etc...). Bioinformatics is a set of tools/skills that allow us to glean biological insights from biological data.
+## <ins>**Bioinformatic overview**<ins>
+
+**What is bioinformatics?** Bioinformatics refers to using computers to learn about biological organisms. This often involves computational analyses of 'biological data'. Biological data can be a lot of different things (from measuring the metabolic rate of a desert mouse to the length of a frog's whiskers). In this course, biological data typically relates to DNA, RNA, or protein (sequence, expression level, folding, etc...). Bioinformatics is a set of tools/skills that allow us to glean biological insights from biological data.
 
 **What's the difference between "Bioinformatics" and "Computational Biology"?** Nothing! Some definitions may disagree, but your instructor uses the words interchangably.
 
-**What's the best way to learn bioinformatics?** By doing it! Let's dive in....
+**What's the best way to learn bioinformatics?** <ins>By doing it!<ins> Let's dive in....
 
-## **Connecting to Jupyter Hub course workspace**
+## <ins>**Connecting to Jupyter Hub course workspace**<ins>
 
 The link to the lab Jupyter Hub is on Canvas under Class Resources.
 
@@ -44,11 +45,11 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
 
-## Linux command line navigation
+## <ins>**Linux command line navigation**<ins>
 
 ![Anatomy of a unix command](/Images/Week01/unix_command.png)
 
-# Introduction to Basic Linux/Unix Commands
+## <ins>**Introduction to Basic Linux/Unix Commands**<ins>
 
 ## A few example commands:
 
@@ -131,9 +132,7 @@ When you select "Start My Server" you'll get a choice of different server size o
      grep "pattern" file.txt
      ```
 
-## Python and the BioPython module
-
-# Introduction to Biopython
+## <ins>**Python and the BioPython module**<ins>
 
 ## Overview
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
@@ -210,6 +209,12 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
      handle = Entrez.efetch(db="nucleotide", id="71066805", rettype="gb", retmode="text")
      ```
 
-## Data visualization in python
+## <ins>**Data visualization in python**<ins>
 
-## Overview of programs/servers/software/databases/repositories we'll use this term
+## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
+
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+    This is a more customizable box created with HTML.
+</div>
+
