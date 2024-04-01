@@ -24,7 +24,7 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 # Introduction to Basic Linux/Unix Commands
 
-## A few example commands
+## A few example commands:
 
 ### 1. **`pwd`**
    - **Description:** Print the current working directory.
@@ -106,6 +106,83 @@ When you select "Start My Server" you'll get a choice of different server size o
      ```
 
 ## Python and the BioPython module
+
+# Introduction to Biopython
+
+## Overview
+Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
+
+## BioPython commands:
+
+### 1. **`Seq`**
+   - **Description:** Represents a biological sequence (DNA, RNA, or protein).
+   - **Example:** 
+     ```python
+     from Bio.Seq import Seq
+     my_seq = Seq("AGTACACTGGT")
+     ```
+
+### 2. **Reverse Complement**
+   - **Description:** Obtain the reverse complement of a DNA sequence.
+   - **Example:** 
+     ```python
+     from Bio.Seq import Seq
+     my_seq = Seq("AGTACACTGGT")
+     reverse_complement = my_seq.reverse_complement()
+     ```
+
+### 3. **Translation**
+   - **Description:** Translate a DNA sequence into a protein sequence.
+   - **Example:** 
+     ```python
+     from Bio.Seq import Seq
+     my_dna = Seq("ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG")
+     protein_seq = my_dna.translate()
+     ```
+
+### 4. **`SeqRecord`**
+   - **Description:** Represents a sequence with associated metadata (e.g., ID, description).
+   - **Example:** 
+     ```python
+     from Bio.SeqRecord import SeqRecord
+     from Bio.Seq import Seq
+     record = SeqRecord(Seq("AGTACACTGGT"), id="1", description="Example sequence")
+     ```
+
+### 5. **`SeqIO`**
+   - **Description:** Input/output operations for sequence files in various formats (FASTA, GenBank, etc.).
+   - **Example:** 
+     ```python
+     from Bio import SeqIO
+     for record in SeqIO.parse("sequences.fasta", "fasta"):
+         print(record.id, len(record))
+     ```
+
+### 6. **`Align`**
+   - **Description:** Perform sequence alignment.
+   - **Example:** 
+     ```python
+     from Bio import Align
+     aligner = Align.PairwiseAligner()
+     alignments = aligner.align("ACGT", "ACG")
+     ```
+
+### 7. **`BLAST`**
+   - **Description:** Interface to the NCBI BLAST suite for sequence similarity searching.
+   - **Example:** 
+     ```python
+     from Bio.Blast import NCBIWWW
+     result_handle = NCBIWWW.qblast("blastn", "nt", "ACGT")
+     ```
+
+### 8. **`Bio.Entrez`**
+   - **Description:** Access NCBI databases including PubMed and GenBank.
+   - **Example:** 
+     ```python
+     from Bio import Entrez
+     Entrez.email = "your@email.com"
+     handle = Entrez.efetch(db="nucleotide", id="71066805", rettype="gb", retmode="text")
+     ```
 
 ## Data visualization in python
 
