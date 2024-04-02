@@ -34,18 +34,27 @@ Compared to introductory biology courses, you can expect this course to:
 
 ![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
+<br />
+<br />
+
+![computers](/Images/Week01/computers.png)
+
 **What is bioinformatics?** Bioinformatics refers to using computers to learn about biological organisms. This often involves computational analyses of 'biological data'. Biological data can be a lot of different things (from measuring the metabolic rate of a desert mouse to the length of a frog's whiskers). In this course, biological data typically relates to DNA, RNA, or protein (sequence, expression level, folding, etc...). Bioinformatics is a set of tools/skills that allow us to glean biological insights from biological data.
 
 **What's the difference between "Bioinformatics" and "Computational Biology"?** Nothing! Some definitions may disagree, but your instructor uses the words interchangably.
 
-**What's the best way to learn bioinformatics?** <ins>By doing it!<ins> Let's dive in....
+**What's the best way to learn bioinformatics?** By doing it! Let's dive in....
 
 <br />
 <br />
 
 ## <ins>**Connecting to Jupyter Hub course workspace**<ins>
 
-The link to the lab Jupyter Hub is on Canvas under Class Resources.
+We will use remote servers in this course, which we'll connect to via the internet.
+
+![servers](/Images/Week01/servers.png)
+
+The link to the lab Jupyter Hub is on Canvas under 'Class Resources'.
 
 When you select "Start My Server" you'll get a choice of different server size options. Choose "Standard" unless instructed otherwise.
 
@@ -184,6 +193,12 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
      ```
      grep "pattern" file.txt
      ```
+<br />
+<br />
+
+## Navigating a linux file system
+
+![file navigation](/Images/Week01/file_nav.png)
 
 <br />
 <br />
