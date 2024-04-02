@@ -39,8 +39,14 @@ Compared to introductory biology courses, you can expect this course to:
 
 **What is bioinformatics?** Bioinformatics refers to using computers to learn about biological organisms. This often involves computational analyses of 'biological data'. Biological data can be a lot of different things (from measuring the metabolic rate of a desert mouse to the length of a frog's whiskers). In this course, biological data typically relates to DNA, RNA, or protein (sequence, expression level, folding, etc...). Bioinformatics is a set of tools/skills that allow us to glean biological insights from biological data.
 
+<br />
+<br />
+
 ## Biological data
 ![computers](/Images/Week01/computers.png)
+
+<br />
+<br />
 
 **What's the difference between "Bioinformatics" and "Computational Biology"?** Nothing! Some definitions may disagree, but your instructor uses the words interchangably.
 
