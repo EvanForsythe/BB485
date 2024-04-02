@@ -191,10 +191,10 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ### 1. **`range`**
    - **Description:** Generate a sequence of numbers.
-   - **Usage:** `range(stop)`
-     - Generates numbers from 0 to stop-1.
-     - `range(start, stop[, step])`
-     - Generates numbers from start to stop-1 with step increments.
+   - **Usage:** 
+     - `range(<stop position number>)` Generates numbers from 0 to stop-1.
+     - `range(<start position number>, <stop position number>)`Generates numbers from start to stop-1.
+     - `range(start position number>, <stop position number>, <increment/step size>)`Generates numbers from start to stop-1 with step increments.
    - **Example:** 
      ```python
      for i in range(0, 50, 3):
@@ -406,8 +406,9 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
      ```
 
 ## <ins>**Data visualization in python**<ins>
+-TBD
 
 ## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
-
+-TBD
 
 
