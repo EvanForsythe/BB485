@@ -30,7 +30,10 @@ Compared to introductory biology courses, you can expect this course to:
 
 
 
-## <ins>**Bioinformatics overview**<ins>
+
+
+
+## <ins>**Overview of bioinformatics**<ins>
 
 ![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
@@ -41,6 +44,9 @@ Compared to introductory biology courses, you can expect this course to:
 **What's the best way to learn bioinformatics?** <ins>By doing it!<ins> Let's dive in....
 
 
+
+
+
 ## <ins>**Connecting to Jupyter Hub course workspace**<ins>
 
 The link to the lab Jupyter Hub is on Canvas under Class Resources.
@@ -48,6 +54,11 @@ The link to the lab Jupyter Hub is on Canvas under Class Resources.
 When you select "Start My Server" you'll get a choice of different server size options. Choose "Standard" unless instructed otherwise.
 
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
+
+
+
+
+
 
 
 ## <ins>**Unix/Linux command line navigation**<ins>
@@ -183,6 +194,8 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
      grep "pattern" file.txt
      ```
 
+
+
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 1:</strong>
    <ol>
@@ -194,8 +207,12 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 </div>
 
 
-## <ins>**Python Refresher**<ins>
 
+
+
+
+
+## <ins>**Python Refresher**<ins>
 
 ![Python in bioinformatics](/Images/Week01/python.png)
 
@@ -272,6 +289,8 @@ AGATGCTTATGCAGATAA"</li>
    </ol>
 </div>
 
+
+
 ## Reading in a fasta file using a file handle
 
 Below is a block of python code that can be used to read in a fasta file and create a dictionary object (object named "seq_dict")
@@ -330,6 +349,8 @@ Python notebooks are a great tool for developing new python code. However, when 
    - To change the permissions to make you file executable: ```chmod +x <name of script>```
    - Run ```ls -l``` again to see how it changed.
    - Now you can run your python script like this: ```./<name of script>```
+
+
  
 <div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
    <strong>Tutorial Assignment:</strong>
@@ -340,6 +361,9 @@ Python notebooks are a great tool for developing new python code. However, when 
       <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
    </ol>
 </div>
+
+
+
 
 
 
