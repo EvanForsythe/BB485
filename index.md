@@ -7,6 +7,6 @@ title: Home
 
 ## Weekly lecture totorials will be linked below
 
-[Week01 lecture](week01)
+[Week01: Course intro and the essential tools used in the course](week01)
 
 
