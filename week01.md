@@ -62,7 +62,7 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 - **Linux:** An operating system (similar to mac or windows). Most super computers/clusters run the linux operating system.
 - **Unix:** A coding language (similar to python or R). When running commands from the command line, you are technically running unix code.
 
-###Here is the anatomy of a typical shell command:
+### Here is the anatomy of a typical shell command:
 
 ![Anatomy of a unix command](/Images/Week01/unix_command.png)
 
