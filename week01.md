@@ -151,7 +151,7 @@ When you select "Start My Server" you'll get a choice of different server size o
      ```
      rm file.txt
      ```
-   - **IMPORTANT NOTE:** rm perminantly deletes files. Of all the linux commands, use this one carefully. 
+   - **IMPORTANT NOTE:** rm perminantly deletes files. Double-check what you're doing before you use rm. 
 
 ### 12. **`cat`**
    - **Description:** Display file content. 'cat' is short for 'concatenate' because it can also be used to combine multiple text files.
@@ -187,6 +187,58 @@ When you select "Start My Server" you'll get a choice of different server size o
 ## <ins>**Python Refresher**<ins>
 
 <!-- TODO: Add slides and examples for strings, lists, dictionaries, strings, for loops, functions -->
+## Short list of common python commands
+
+### 1. **`range`**
+   - **Description:** Generate a sequence of numbers.
+   - **Usage:** `range(stop)`
+     - Generates numbers from 0 to stop-1.
+     - `range(start, stop[, step])`
+     - Generates numbers from start to stop-1 with step increments.
+   - **Example:** 
+     ```python
+     for i in range(0, 50, 3):
+        print(i)
+     ```
+
+### 2. **`print`**
+   - **Description:** Print messages or variables to the console.
+   - **Usage:** `print(<message or variable>)`
+   - **Example:** 
+     ```python
+     print("Hello, world!")
+     ```
+
+   - **`print` with f-strings:** 
+     - **Description:** Print strings with variables embedded using f-strings.
+     - **Usage:** `print(f"<string> {<variable>} <string>")`
+     - **Example:** 
+       ```python
+       name = "Alice"
+       age = 30
+       print(f"My name is {name} and I am {age} years old.")
+       ```
+
+### 3. **`for`**
+   - **Description:** Iterate over a sequence (list, tuple, string, etc.).
+   - **Usage:** `for <variable> in <sequence>:`
+   - **Example:** 
+     ```python
+     fruits = ["apple", "banana", "cherry"]
+     for fruit in fruits:
+         print(fruit)
+     ```
+
+### 4. **`len`**
+   - **Description:** Get the length of a sequence (list, tuple, string, etc.).
+   - **Usage:** `len(<sequence>)`
+   - **Example:** 
+     ```python
+     fruits = ["apple", "banana", "cherry"]
+     print(len(fruits))
+     ```
+
+
 
 <!-- TODO: Add a simple python task -->
 ## Reading in a fasta file using a file handle
