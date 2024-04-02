@@ -86,13 +86,47 @@ When you select "Start My Server" you'll get a choice of different server size o
      mkdir Projects
      ```
 
-### 5. **`history`**
-   - **Description:** Prints previous commands you've used.
-   - **Usage:** `history`
+### 5. **`more`**
+   - **Description:** View the contents of a file one screen at a time.
+   - **Usage:** `more <file>`
    - **Example:** 
+     ```
+     more example.txt
+     ```
 
+### 6. **`head`**
+   - **Description:** Display the first few lines of a file.
+   - **Usage:** `head <options> <file>`
+   - **Options:**
+     - `-n`: Specify the number of lines to display.
+   - **Example:** 
+     ```
+     head -n 10 file.txt
+     ```
 
-### 6. **`cp`**
+### 7. **`tail`**
+   - **Description:** Display the last few lines of a file.
+   - **Usage:** `tail <options> <file>`
+   - **Options:**
+     - `-n`: Specify the number of lines to display.
+   - **Example:** 
+     ```
+     tail -n 20 file.txt
+     ```
+
+### 8. **`wc`**
+   - **Description:** Count the number of lines, words, and characters in a file.
+   - **Usage:** `wc <options> <file>`
+   - **Options:**
+     - `-l`: Count lines.
+     - `-w`: Count words.
+     - `-c`: Count characters.
+   - **Example:** 
+     ```
+     wc -l file.txt
+     ```
+
+### 9. **`cp`**
    - **Description:** Copy files and directories.
    - **Usage:** `cp <options> <source> <destination>`
    - **Example:** 
@@ -100,7 +134,7 @@ When you select "Start My Server" you'll get a choice of different server size o
      cp file1.txt file2.txt
      ```
 
-### 7. **`mv`**
+### 10. **`mv`**
    - **Description:** Move or rename files and directories.
    - **Usage:** `mv <source> <destination>`
    - **Example:** 
@@ -108,7 +142,7 @@ When you select "Start My Server" you'll get a choice of different server size o
      mv file1.txt newdir/
      ```
 
-### 8. **`rm`**
+### 11. **`rm`**
    - **Description:** Remove files and directories.
    - **Usage:** `rm <options> <file or directory to remove>`
    - **Options:**
@@ -117,8 +151,9 @@ When you select "Start My Server" you'll get a choice of different server size o
      ```
      rm file.txt
      ```
+   - **IMPORTANT NOTE:** rm perminantly deletes files. Of all the linux commands, use this one carefully. 
 
-### 9. **`cat`**
+### 12. **`cat`**
    - **Description:** Display file content. 'cat' is short for 'concatenate' because it can also be used to combine multiple text files.
    - **Usage:** `cat <file to print to screen>`
    - **Example:** 
@@ -126,7 +161,7 @@ When you select "Start My Server" you'll get a choice of different server size o
      cat example.txt
      ```
 
-### 10. **`grep`**
+### 13. **`grep`**
    - **Description:** Search text patterns within files.
    - **Usage:** `grep <options> "pattern" <file to search in>`
    - **Options:**
