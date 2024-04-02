@@ -238,9 +238,27 @@ When you select "Start My Server" you'll get a choice of different server size o
      print(len(fruits))
      ```
 
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 2:</strong>
+   <ol>
+      <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
+      <li>Store this DNA sequences as a variable: "ATGGAGGACCCTTTGTTGACTCAGAGTGAGCACATCGTCGATGACGTTACAATCCATGGC
+GATTCTTCTTCAAATGAAGAGCACATCGTCGACGTTACAACCAATGGCAATCCTTCATCA
+GCTGATGAGAAAAGACCGCATGAGGGTGTCCAATGGAGTGATATATTTACATTTACCACT
+GTTTGTATTTTGGTCGAGTTTGTTGTGGCTTTAGTCCAGATTGTTGCCGCCATTGTTGTT
+CTGACTCTGGCAAAAGATGAACAACCTCCACAAAAAATGTTTCCTACACTGATCCTCAGT
+TATACCGGTTGCTGTATTGCCACACTCCCTATTCTAGGTTTGCGTTTCTGGCATTCTTAC
+CGAAGTGTTAGCACAGAGACAAGAATCTACGAGGTGGTGGACATTTTGAAAAAGATGCTT
+GAATATTTCTTCGTGGGTTGGGTTGTGGTGCTTTTATGGCATCTTATCAACAACTCATCA
+TCTATAGATAATACTACGCAACAGTTCTGGTTATGTATGACTTTCCTTGCTATCAGCTGC
+ATTCTACATGTTCTTCGTAATCTCCCCTGTGCGGGAGTTTGTTTTCTGTATCCTATGATA
+CTATATCTTTCCCAATCGATAGACTTCGTTGGTGACATTACTGATGAGATAAATTTGACT
+ACGTCTATAATCCTATTATGCTTTGGAATCTTTGCCTGCATTATCTGTGGTTGTTGTTCC
+AGATGCTTATGCAGATAA"</li>
+      <li>Loop through the sequence and print each the 3-letter sequence of each codon.</li>
+   </ol>
+</div>
 
-
-<!-- TODO: Add a simple python task -->
 ## Reading in a fasta file using a file handle
 
 Below is a block of python code that can be used to read in a fasta file and create a dictionary object (object named "seq_dict")
@@ -265,7 +283,7 @@ for line in seq_handle:
 ```
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 2:</strong>
+   <strong>Task 3:</strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
@@ -284,7 +302,7 @@ Python notebooks are a great tool for developing new python code. However, when 
 **Developing python scripts:** To develop a python script you can start writing your python code in a text file OR you can write your python code in a Jupyter notebook and then convert the notebook to a python script from the command line with: ```jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb```
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 3:</strong>
+   <strong>Task 4:</strong>
    <ol>
       <li>Create a python script that does what your python notebook (from the last task) does.</li>
       <li>Run the script from the command line.</li>
