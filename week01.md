@@ -13,7 +13,7 @@ This class will be structured similar to a graduate-level course that you would 
 Compared to introductory biology courses, you can expect this course to:
 - **Place a strong emphasis on projects.** Academic/industry research is driven by results. Similarly, this course will mainly be project-based. 
 - **Place a less emphasis on exams and quizzes.** We will not have exams in this course. Instead, student learning is focused on developing critical-thinking, problem-solving, and trouble-shooting skills in an applied context. 
-- **Include a final projects that constitutes real, publishable research.** By the end of the term, you will contribute to real research. You'll be conducting novel analyses and asking questions that your instructor doesn't already know the answer to (nobody knows the answer! That's scientific inquiry!).
+- **Include a final project that constitutes real, publishable research.** By the end of the term, you will contribute to real research. You'll be conducting novel analyses and asking questions that your instructor doesn't already know the answer to (nobody knows the answer! That's scientific inquiry!).
 
 ### **Grading structure:**
 
