@@ -3,7 +3,6 @@ layout: default
 ---
 # Week 1 lecture and tutorial
 
-
 ## <ins>**Course structure**<ins>
 
 ### **Course Overview**:
@@ -28,10 +27,8 @@ Compared to introductory biology courses, you can expect this course to:
 
 **Project makeup work:** You will be allowed to revise and resubmit two of the six weekly project write-ups after grading. This means that you'll have a chance to improve your score on write-ups, which will have a large positive impact on your grade in the class.
 
-
-
-
-
+<br />
+<br />
 
 ## <ins>**Overview of bioinformatics**<ins>
 
