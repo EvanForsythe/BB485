@@ -20,7 +20,7 @@ Compared to introductory biology courses, you can expect this course to:
 
 ![Points structure of BB 485](/Images/Week01/points_piechart.png)
 
-**Tutorial Assingments:** Each Tuesday will begin with an interactive tutorial, which will include a small assignment. Students will most often complete tutorial assignments by the end of class.
+**Tutorial Assignments:** Each Tuesday will begin with an interactive tutorial, which will include a small assignment. Students will most often complete tutorial assignments by the end of class.
 
 **Project Write-ups:** We will spend Thursdays working on a much more in depth analysis of real biological datasets. These analyses will require much more time, trouble shooting, and computational power to accomplish. These analyses will constitute the weekly project write-ups. These weekly projects are the major emphasis of the course because they are your chance to apply your bioinformatics skillset to real-world bioinformatic analyses. 
 
@@ -171,6 +171,8 @@ Python notebooks are a great tool for developing new python code. However, when 
 
 **Python scripts:** A python script is a text file that contains python code. The script can be named anything but should end in ".py" (e.g. my_first_script.py). You can run all of the code within a python script from the command line by running:
 ```python <name of python script>```
+
+**Developing python scripts:** To develop a python script you can start writing your python code in a text file OR you can write your python code in a Jupyter notebook and then convert the notebook to a python script from the command line with: ```jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb```
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 3:</strong>
