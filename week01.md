@@ -9,7 +9,7 @@ layout: default
 ### **Course Overview**:
 BB485 is an advanced, upper-level course designed to give students first-hand experience performing real bioinformatics analyses akin to academic/biotech-industry research. 
 
-This class will be structured similar to a graduate-level course that you would encounter in biology-related masters or PhD program. This will take some adjustment but will ultimately be extremely valuable in preparing students for the 'real world' (or at least one sector of the 'real world')
+This class will be structured similar to a graduate-level course that you would encounter in biology-related masters or PhD program. This format will take some adjustment, but will ultimately be great preparation for the 'real world' (or at least one sector of the 'real world')
 
 Compared to introductory biology courses, you can expect this course to:
 - **Place a strong emphasis on projects.** Academic/industry research is driven by results. Similarly, this course will mainly be project-based. 
@@ -153,6 +153,9 @@ When you select "Start My Server" you'll get a choice of different server size o
 ## <ins>**Python Refresher**<ins>
 
 <!-- TODO: Add slides and examples for strings, lists, dictionaries, strings, for loops, functions -->
+
+<!-- TODO: Add a simple python task -->
+
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 2:</strong>
