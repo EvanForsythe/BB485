@@ -50,8 +50,18 @@ When you select "Start My Server" you'll get a choice of different server size o
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
 
 
-## <ins>**Linux command line navigation**<ins>
+## <ins>**Unix/Linux command line navigation**<ins>
 
+![Unix and linux](/Images/Week01/unix_linux.png)
+
+
+I will sometimes use the terms linux/unix interchangeably. However, they are different things. Here is my understanding of the differences:
+- **Linux:** An operating system (similar to mac or windows). Most super computers/clusters run the linux operating system.
+- **Unix:** A coding language (similar to python or R). When running commands from the command line, you are technically running unix code.
+
+
+
+###Here is the anatomy of a typical shell command:
 ![Anatomy of a unix command](/Images/Week01/unix_command.png)
 
 ## <ins>**Introduction to Basic Linux/Unix Commands**<ins>
@@ -186,7 +196,10 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ## <ins>**Python Refresher**<ins>
 
-<!-- TODO: Add slides and examples for strings, lists, dictionaries, strings, for loops, functions -->
+
+![Python in bioinformatics](/Images/Week01/python.png)
+
+
 ## Short list of common python commands
 
 ### 1. **`range`**
