@@ -184,7 +184,7 @@ for line in seq_handle:
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
       <li>Use the block of python code above to read in fasta file and create a dictionary. </li>
       <li>Print the names of all the sequences in the dictionary (i.e. the 'keys' of the dictionary.</li>
-       <li>Loop through each of the sequences and print a statement like "The sequence <sequence ID> is <length of sequence> long." for each sequence in the dictionary.</li>
+       <li>Loop through each of the sequences and print a statement like "The sequence [sequence ID] is [length of sequence] long." for each sequence in the dictionary.</li>
    </ol>
 </div>
 
