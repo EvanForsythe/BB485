@@ -3,10 +3,10 @@ layout: default
 title: Home
 ---
 
-# Welcome to the website for BB485: Applied Bioinformatics!
+# Welcome to Applied Bioinformatics!
 
-## Weekly lecture totorials will be linked below
+## Weekly lecture totorials (updated each week):
 
-[Week01: Course intro and the essential tools used in the course](week01)
+- [Week01: Course intro and the essential tools used in the course](week01)
 
 
