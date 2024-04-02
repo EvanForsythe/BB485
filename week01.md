@@ -40,9 +40,8 @@ Compared to introductory biology courses, you can expect this course to:
 
 **What's the best way to learn bioinformatics?** <ins>By doing it!<ins> Let's dive in....
 
-
-
-
+<br />
+<br />
 
 ## <ins>**Connecting to Jupyter Hub course workspace**<ins>
 
@@ -52,24 +51,19 @@ When you select "Start My Server" you'll get a choice of different server size o
 
 ![Jupyter Hub map](/Images/Week01/JH_nav.png)
 
-
-
-
-
-
+<br />
+<br />
 
 ## <ins>**Unix/Linux command line navigation**<ins>
 
 ![Unix and linux](/Images/Week01/unix_linux.png)
 
-
 I will sometimes use the terms linux/unix interchangeably. However, they are different things. Here is my understanding of the differences:
 - **Linux:** An operating system (similar to mac or windows). Most super computers/clusters run the linux operating system.
 - **Unix:** A coding language (similar to python or R). When running commands from the command line, you are technically running unix code.
 
-
-
 ###Here is the anatomy of a typical shell command:
+
 ![Anatomy of a unix command](/Images/Week01/unix_command.png)
 
 ## <ins>**Introduction to Basic Linux/Unix Commands**<ins>
@@ -191,7 +185,8 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
      grep "pattern" file.txt
      ```
 
-
+<br />
+<br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 1:</strong>
@@ -203,16 +198,12 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
    </ol>
 </div>
 
-
-
-
-
-
+<br />
+<br />
 
 ## <ins>**Python Refresher**<ins>
 
 ![Python in bioinformatics](/Images/Week01/python.png)
-
 
 ## Short list of common python commands
 
@@ -265,6 +256,9 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
      print(len(fruits))
      ```
 
+<br />
+<br />
+
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 2:</strong>
    <ol>
@@ -286,7 +280,8 @@ AGATGCTTATGCAGATAA"</li>
    </ol>
 </div>
 
-
+<br />
+<br />
 
 ## Reading in a fasta file using a file handle
 
@@ -311,6 +306,9 @@ for line in seq_handle:
         seq_dict[id_clean] += seq_line
 ```
 
+<br />
+<br />
+
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 3:</strong>
    <ol>
@@ -322,6 +320,10 @@ for line in seq_handle:
    </ol>
 </div>
 
+<br />
+<br />
+
+
 ## **Python notebooks versus python scripts**
 Python notebooks are a great tool for developing new python code. However, when we're using our python code to accomplish a bioinformatics task, we typically need to be able to run that code from the command line. The best way to run python code from the command line is to put the code inside of a python script.
 
@@ -330,6 +332,9 @@ Python notebooks are a great tool for developing new python code. However, when 
 
 **Developing python scripts:** To develop a python script you can start writing your python code in a text file OR you can write your python code in a Jupyter notebook and then convert the notebook to a python script from the command line with: ```jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb```
 
+<br />
+<br />
+
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 4:</strong>
    <ol>
@@ -337,6 +342,9 @@ Python notebooks are a great tool for developing new python code. However, when 
       <li>Run the script from the command line.</li>
    </ol>
 </div>
+
+<br />
+<br />
 
 **Making python scripts 'executable':** It is sometimes cleaner/easier to run your script without the need to put type "python" before the name of your script. You can accomplish this by making your script 'executable'.
 
@@ -347,7 +355,8 @@ Python notebooks are a great tool for developing new python code. However, when 
    - Run ```ls -l``` again to see how it changed.
    - Now you can run your python script like this: ```./<name of script>```
 
-
+<br />
+<br />
  
 <div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
    <strong>Tutorial Assignment:</strong>
@@ -359,10 +368,8 @@ Python notebooks are a great tool for developing new python code. However, when 
    </ol>
 </div>
 
-
-
-
-
+<br />
+<br />
 
 ## <ins>**The BioPython module**<ins>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
