@@ -255,7 +255,7 @@ ATTCTACATGTTCTTCGTAATCTCCCCTGTGCGGGAGTTTGTTTTCTGTATCCTATGATA
 CTATATCTTTCCCAATCGATAGACTTCGTTGGTGACATTACTGATGAGATAAATTTGACT
 ACGTCTATAATCCTATTATGCTTTGGAATCTTTGCCTGCATTATCTGTGGTTGTTGTTCC
 AGATGCTTATGCAGATAA"</li>
-      <li>Loop through the sequence and print each the 3-letter sequence of each codon.</li>
+      <li>Loop through the sequence and print the 3-letter sequence of each codon.</li>
    </ol>
 </div>
 
@@ -318,6 +318,17 @@ Python notebooks are a great tool for developing new python code. However, when 
    - Run ```ls -l``` again to see how it changed.
    - Now you can run your python script like this: ```./<name of script>```
  
+<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Tutorial Assignment:</strong>
+   In a text file, address each of the questions below. Submit your responses on Canvas.
+   <ol>
+      <li>We you able to successfully complete each of the four tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
+      <li>Please install VScode (https://code.visualstudio.com/download) on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK , we can talk about solutions/work-arounds.</li>
+      <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
+   </ol>
+</div>
+
+
 
 ## <ins>**The BioPython module**<ins>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
