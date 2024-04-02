@@ -141,10 +141,9 @@ When you select "Start My Server" you'll get a choice of different server size o
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 1:</strong>
    <ol>
-      <li>Log in to the jupyter hub (JH)</li>
-      <li>Open a command line terminal in the JH</li>
+      <li>Log in to the jupyter hub (JH) and open a command line terminal</li>
       <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
-      <li>Find the full path to the location of a fasta file.</li>
+      <li>Find the full path to the location of a DNA fasta file.</li>
       <li>Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later).</li>
    </ol>
 </div>
@@ -155,17 +154,37 @@ When you select "Start My Server" you'll get a choice of different server size o
 <!-- TODO: Add slides and examples for strings, lists, dictionaries, strings, for loops, functions -->
 
 <!-- TODO: Add a simple python task -->
+## Reading in a fasta file using a file handle
 
+Below is a block of python code that can be used to read in a fasta file and create a dictionary object (object named "seq_dict")
+
+```
+#Create a file handle
+seq_handle = open(seq_file_path, “r”)
+
+#Create an empty dictionary
+seq_dict = {}
+#Loop through the line in the file
+for line in seq_handle:
+    if line.startswith(“>”):
+        id_temp = line.strip() #Removes “\n”
+        id_clean = id_temp.replace(“>”, “”) #Removes “>” by replacing it with nothing.
+        #Add the item to the dictionary
+        seq_dict[id_clean]=“” # id_clean is the key, the value is an empty string (for now)
+    else:
+        seq_line = line.strip() #Removes “\n”
+        #append this line to the dictionary value, using the key (which is still “id_clean” from the previous line)
+        seq_dict[id_clean] += seq_line
+```
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 2:</strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
-      <li>Get python to say "hello world"</li>
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
-      <li>Use the open command to create a file handle for 'reading' in the text file.</li>
-      <li>Loop through the lines of the fasta file and add each sequence to a python dictionary</li>
+      <li>Use the block of python code above to read in fasta file and create a dictionary. </li>
       <li>Print the names of all the sequences in the dictionary (i.e. the 'keys' of the dictionary.</li>
+       <li>Loop through each of the sequences and print a statement like "The sequence <sequence ID> is <length of sequence> long." for each sequence in the dictionary.</li>
    </ol>
 </div>
 
@@ -185,7 +204,15 @@ Python notebooks are a great tool for developing new python code. However, when 
    </ol>
 </div>
 
+**Making python scripts 'executable':** It is sometimes cleaner/easier to run your script without the need to put type "python" before the name of your script. You can accomplish this by making your script 'executable'.
 
+- Add the 'shebang' line to the top of your script. This must be the first line in your script: ```#!/usr/bin/python3```.
+- Next, you'll need to change the 'permissions' on your python script file.
+   - To see the permission on your python file, use ```ls -l```
+   - To change the permissions to make you file executable: ```chmod +x <name of script>```
+   - Run ```ls -l``` again to see how it changed.
+   - Now you can run your python script like this: ```./<name of script>```
+ 
 
 ## <ins>**The BioPython module**<ins>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
