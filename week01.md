@@ -280,11 +280,21 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
      print(len(fruits))
      ```
 
+### 5. **`replace method`**
+   - **Description:** replace is a method that can be applied to string objects.
+   - **Usage:** `my_string.replace(<string to replace>, <replace with>)`
+   - **Example:** 
+     ```python
+     dna_seq = "ATG GTGCCAGA GTAAGC G"
+     dna_seq.replace(" ", "")
+     print(dna_seq)
+     ```
+
 <br />
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 2: working with a string object. </strong>
+   <strong>Task 2: Working with string objects. </strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
       <li>Store this DNA sequences as a variable: "ATGGAGGACCCTTTGTTGACTCAGAGTGAGCACATCGTCGATGACGTTACAATCCATGGC
@@ -334,7 +344,7 @@ for line in seq_handle:
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 3: reading in a fasta file and storing as a dictionary object.</strong>
+   <strong>Task 3: reading in a fasta file and storing sequences in a dictionary object.</strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
@@ -480,8 +490,7 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
 ## Importing modules
 To import a module, you typically add the following to the top of you python script/notebook: `import Bio`
 
-Sometimes is cleanest to import specific functions as well so that you can easily call them by name later.
-
+Sometimes is cleanest to import specific functions as well so that you can easily call them by name later. Like this:
 ```
 import Bio
 from Bio.Seq import Seq
@@ -489,7 +498,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 ```
 - *Full dislosure: I don't have a great system for when I use from/import versus import. TBH, I just follow the conventions that it seems like most people are using on the internet for a particular module.*
-- *On a related note, people seem to frequently give nicknames to some modules. I also tend to follow those conventions as well. Example: `import pandas as pd`*
+- *On a related note, people seem to frequently give nicknames to some modules using import/as. I also tend to follow those conventions as well. Example: `import pandas as pd`*
 
 <br />
 <br />
@@ -499,7 +508,11 @@ from Bio import SeqIO
    <ol>
       <li>Use your python notebook you started earlier this week to work with BioPython functions</li>
       <li>Import the following functions: Seq, SeqRecord, SeqIO</li>
-      <li>Do X, Y, Z</li>
+      <li>Convert your string object into a BioPython Seq object.</li>
+      <li>Convert your BioPython Seq object into a BioPython SeqRecord object.</li>
+      <li>Add a sequence ID to your BioPython SeqRecord object</li>
+      <li>Read in the fasta file from earlier and store as a dictionary. This time do it using BioPython SeqIO.parse and SeqIO.to_dict functions.</li>
+      <li>Loop through the first ten sequences in the dictionary and translate the each sequence to protein sequence.</li>
    </ol>
 </div>
 
