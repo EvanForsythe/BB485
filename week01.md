@@ -213,7 +213,7 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 1:</strong>
+   <strong>Task 1: Navigating the file system.</strong>
    <ol>
       <li>Log in to the jupyter hub (JH) and open a command line terminal</li>
       <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
@@ -284,7 +284,7 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 2:</strong>
+   <strong>Task 2: working with a string object. </strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
       <li>Store this DNA sequences as a variable: "ATGGAGGACCCTTTGTTGACTCAGAGTGAGCACATCGTCGATGACGTTACAATCCATGGC
@@ -334,7 +334,7 @@ for line in seq_handle:
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 3:</strong>
+   <strong>Task 3: reading in a fasta file and storing as a dictionary object.</strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
@@ -360,7 +360,7 @@ Python notebooks are a great tool for developing new python code. However, when 
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 4:</strong>
+   <strong>Task 4: running python code from a python script.</strong>
    <ol>
       <li>Create a python script that does what your python notebook (from the last task) does.</li>
       <li>Run the script from the command line.</li>
@@ -469,6 +469,45 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
      Entrez.email = "your@email.com"
      handle = Entrez.efetch(db="nucleotide", id="71066805", rettype="gb", retmode="text")
      ```
+
+<br />
+<br />
+
+## Python Modules
+
+**BioPython is a python module.** In python, modules are a collection of python functions. The functions that are automatically loaded every time you use python are called 'base python' function. When we need to do more specialized things in python, we can explicitly 'import' a module with specialized python functions. In addition to BioPython, some exmaples of common modules we'll use this term are, NumPy (common math/numerical functions), pandas (dataframes for working with data tables), and matplotlib (plotting figures).
+
+## Importing modules
+To import a module, you typically add the following to the top of you python script/notebook: `import Bio`
+
+Sometimes is cleanest to import specific functions as well so that you can easily call them by name later.
+
+```
+import Bio
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio import SeqIO
+```
+- *Full dislosure: I don't have a great system for when I use from/import versus import. TBH, I just follow the conventions that it seems like most people are using on the internet for a particular module.*
+- *On a related note, people seem to frequently give nicknames to some modules. I also tend to follow those conventions as well. Example: `import pandas as pd`*
+
+<br />
+<br />
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 5: working with sequences using BioPython functions</strong>
+   <ol>
+      <li>Use your python notebook you started earlier this week to work with BioPython functions</li>
+      <li>Import the following functions: Seq, SeqRecord, SeqIO</li>
+      <li>Do X, Y, Z</li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+
+
 
 ## <ins>**Data visualization in python**<ins>
 -TBD
