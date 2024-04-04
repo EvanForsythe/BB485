@@ -588,17 +588,12 @@ for key in seq_dict.keys():
    <strong>Task 6: Plot a histogram of gene lengths</strong>
    <ol>
       <li>Use the code above to create a dataframe of sequence lengths and plot a histogram of the lengths.</li>
-      <li>Do the same thing again BUT this time only include the genes in the chloroplast genome (ID starts with "ATC"</li>
+      <li>Do the same thing again BUT this time only include the genes in the chloroplast genome (ID starts with "ATC")</li>
       <li>Does it look like the distributions differ?</li>
    </ol>
 </div>
 
 <br />
 <br />
-
-
-
-## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
--TBD
 
 
