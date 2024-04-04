@@ -517,9 +517,7 @@ Creating figures/graphs/tables is an extremely important part of bioinformatics.
 
 ## Plotting data from data tables (i.e. pandas dataFrames)
 
-### Step 1: Import Necessary Libraries
-
-First, let's import pandas and matplotlib:
+#### Step 1: Import necessary modules
 
 ```python
 import pandas as pd
@@ -527,7 +525,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-### Step 2: Create a DataFrame
+#### Step 2: Create a DataFrame
 
 ```python
 # Generate 20 random age measurements between 50 and 70
@@ -537,7 +535,7 @@ data = {'Age': random_ages}
 df = pd.DataFrame(data)
 ```
 
-### Step 3: Plot the Histogram
+#### Step 3: Plot the Histogram
 
 Now, let's plot the histogram based on the "Age" column in our DataFrame:
 
@@ -554,6 +552,30 @@ In the `plt.hist` function:
 - `bins=10` defines how many bins (segments) the data should be divided into.
 - `color` and `edgecolor` properties are used to customize the appearance of the histogram.
 
+<br />
+<br />
+
+## Creating a DataFrame describing the length of sequences in our fasta file
+
+#### Step 1: Make an empty dataframe
+```
+#Make an empty dataframe
+df = pd.DataFrame()
+
+#Add columns
+df["ID"] = [] #This is an empty list for data that you want to add
+df["Length"] = [] #This is an empty list for data that you want to add
+```
+#### Step 2: Loop through our dictionary (from above) and add rows to the dataframe
+```
+#Loop through the dictionary and add info about each sequence to the dataframe
+for key in seq_dict.keys():
+    id_temp = key
+    seq_len_temp = len(seq_dict[key])
+    
+    #Use loc to add to the dataframe
+    df.loc[len(df.index)] = [id_temp, seq_len_temp]
+```
 
 ## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
 -TBD
