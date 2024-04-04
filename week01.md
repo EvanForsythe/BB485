@@ -281,7 +281,7 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
      ```
 
 ### 5. **`replace method`**
-   - **Description:** replace is a method that can be applied to string objects.
+   - **Description:** replace is a method that can be applied to string objects. Note that the syntax for 'methods' is that they come after the object they're applied to.
    - **Usage:** `my_string.replace(<string to replace>, <replace with>)`
    - **Example:** 
      ```python
@@ -463,21 +463,13 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
      alignments = aligner.align("ACGT", "ACG")
      ```
 
-### 7. **`BLAST`**
-   - **Description:** Interface to the NCBI BLAST suite for sequence similarity searching.
+### 7. **`SeqIO.to_dict`**
+   - **Description:** The SeqIO.to_dict function is used in conjunction with the SeqIO.parse function to read in a fasta file and store as a dictionary.
    - **Example:** 
      ```python
-     from Bio.Blast import NCBIWWW
-     result_handle = NCBIWWW.qblast("blastn", "nt", "ACGT")
-     ```
-
-### 8. **`Bio.Entrez`**
-   - **Description:** Access NCBI databases including PubMed and GenBank.
-   - **Example:** 
-     ```python
-     from Bio import Entrez
-     Entrez.email = "your@email.com"
-     handle = Entrez.efetch(db="nucleotide", id="71066805", rettype="gb", retmode="text")
+     from Bio import SeqIO
+     input_file = open("input.fasta", "r")
+     my_dict = SeqIO.to_dict(SeqIO.parse(input_file, "fasta"))
      ```
 
 <br />
