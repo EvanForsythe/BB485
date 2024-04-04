@@ -512,10 +512,48 @@ from Bio import SeqIO
 <br />
 
 
-
-
 ## <ins>**Data visualization in python**<ins>
--TBD
+Creating figures/graphs/tables is an extremely important part of bioinformatics. The 'biological insights' (i.e. the end goal of bioinformatic analyses) usually come from being able to visualize data in an informative way that reveals patterns/trends in the data.
+
+## Plotting data from data tables (i.e. pandas dataFrames)
+
+### Step 1: Import Necessary Libraries
+
+First, let's import pandas and matplotlib:
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+### Step 2: Create a DataFrame
+
+```python
+# Generate 20 random age measurements between 50 and 70
+random_ages = np.random.randint(20, 71, size=50)
+
+data = {'Age': random_ages}
+df = pd.DataFrame(data)
+```
+
+### Step 3: Plot the Histogram
+
+Now, let's plot the histogram based on the "Age" column in our DataFrame:
+
+```python
+plt.hist(df['Age'], bins=10, color='skyblue', edgecolor='black')
+plt.title('Age Distribution')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.show()
+```
+
+In the `plt.hist` function:
+- `df['Age']` specifies the data to plot.
+- `bins=10` defines how many bins (segments) the data should be divided into.
+- `color` and `edgecolor` properties are used to customize the appearance of the histogram.
+
 
 ## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
 -TBD
