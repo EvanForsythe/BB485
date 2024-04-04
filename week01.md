@@ -552,6 +552,10 @@ In the `plt.hist` function:
 - `bins=10` defines how many bins (segments) the data should be divided into.
 - `color` and `edgecolor` properties are used to customize the appearance of the histogram.
 
+#### Here is what mine looked like:
+
+![histogram](/Images/Week01/hist.png)
+
 <br />
 <br />
 
