@@ -570,7 +570,7 @@ df = pd.DataFrame()
 df["ID"] = [] #This is an empty list for data that you want to add
 df["Length"] = [] #This is an empty list for data that you want to add
 ```
-#### Step 2: Loop through our dictionary (from above) and add rows to the dataframe
+#### Step 2: Loop through our dictionary and add rows to the dataframe
 ```
 #Loop through the dictionary and add info about each sequence to the dataframe
 for key in seq_dict.keys():
@@ -580,6 +580,23 @@ for key in seq_dict.keys():
     #Use loc to add to the dataframe
     df.loc[len(df.index)] = [id_temp, seq_len_temp]
 ```
+
+<br />
+<br />
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 6: Plot a histogram of gene lengths</strong>
+   <ol>
+      <li>Use the code above to create a dataframe of sequence lengths and plot a histogram of the lengths.</li>
+      <li>Do the same thing again BUT this time only include the genes in the chloroplast genome (ID starts with "ATC"</li>
+      <li>Does it look like the distributions differ?</li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+
 
 ## <ins>**Overview of programs/servers/software/databases/repositories we'll use this term**<ins>
 -TBD
