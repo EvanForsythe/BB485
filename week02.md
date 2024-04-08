@@ -42,7 +42,7 @@ The above command will ask for your password. Type your password and press [ente
 
 ## Transferring data to and from the HPC using the SCP (secure copy) command
 
-### **To upload data to the HPC: **
+### **To upload data to the HPC:**
 To upload a file from your local machine to the hpc, run the following command (from the command line on your local machine):
 ```
 scp <file-to-upload> <your ONID>@novus.dri.oregonstate.edu:<path-to-where-you-want-the-file-to-land>
@@ -57,6 +57,28 @@ Here is an example of how I would upload a file from my local machine to a direc
 ```
 scp test_file.txt forsythe@novus.dri.oregonstate.edu:~/test_upload_dir/
 ```
+- Note that scp is similar to the `cp` command:
+  - `test_file.txt` is the 'source'
+  - `forsythe@novus.dri.oregonstate.edu:~/test_upload_dir/` is the 'destination'
+
+### **To download data from the HPC:**
+```
+scp <your ONID>@novus.dri.oregonstate.edu:<path-to-the-file-you-want-to-download> .
+```
+- `scp` is the command
+- `<your ONID>@novus.dri.oregonstate.edu` tells scp where to look for the remote file
+- `<your ONID>@novus.dri.oregonstate.edu` should be the same from you ssh command.
+- `:` is needed to specify a location on the remote machine
+- `<path-to-the-file-you-want-to-download>` is the full path to an existing file on the remote machine. This path should **include the name of the file**
+- `.` means 'put the file in my current working directory (on the local machine)'
+
+Here is an example of how I would download a file (~/test_download_dir/test_download_file.txt) from the remote machine to my local machine. 
+```
+scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.txt .
+```
+- Note that now:
+  - `forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.txt` is the 'source'
+  - `.` is the 'destination'
 
 <br />
 <br />
