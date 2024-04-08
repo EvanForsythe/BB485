@@ -11,20 +11,21 @@ layout: default
 - 1,712 total cores
 - 9.3TB of total memory
 - 80TB of scratch storage (disk space).
-- 
 
 
 <br />
 <br />
-## <ins>**Using SSH to log into the server**<ins
+## <ins>**Using SSH to log into the server**<ins>
 
 **SSH (Secure Shell):** 
-- SSHis a cryptographic network protocol used for secure communication between a client (your computer) and a server (the HPC in Corvallis) over an unsecured network.
+- SSH is a cryptographic network protocol used for secure communication between a client (your computer) and a server (the HPC in Corvallis) over an unsecured network.
 - In our common vernacular, we'll sometimes use SSH as a verb. For example, "SSH-ing into the HPC" means use the `ssh` command to access the Novus server. 
 
 ## Using the ssh command
 To use SSH to access the server, run the following command:
+
 ```ssh <your ONID>@novus.dri.oregonstate.edu```
+
 -`ssh` is the command
 -`<your ONID>` is your ONID (this should be the same as whatever comes before @oregonstate.edu in your email address)
 - `novus.dri.oregonstate.edu` is the IP address of the Novus server
