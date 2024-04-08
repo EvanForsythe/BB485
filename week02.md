@@ -26,8 +26,8 @@ To use SSH to access the server, run the following command:
 
 ```ssh <your ONID>@novus.dri.oregonstate.edu```
 
--`ssh` is the command
--`<your ONID>` is your ONID (this should be the same as whatever comes before @oregonstate.edu in your email address)
+- `ssh` is the command
+- `<your ONID>` is your ONID (this should be the same as whatever comes before @oregonstate.edu in your email address)
 - `novus.dri.oregonstate.edu` is the IP address of the Novus server
 
 The above command will ask for your password. Type your password and press [enter]. For security, it will not show the letters as you type in your password, which can be a little disorienting, but you'll get used to it!
