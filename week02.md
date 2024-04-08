@@ -3,11 +3,15 @@ layout: default
 ---
 # Week 1 lecture and tutorial
 
-## <ins>**Using SSH to log into the course server**<ins>
+## <ins>**Using SSH to log into the course server**<ins
+
+**SSH (Secure Shell):** is a cryptographic network protocol used for secure communication between a client (your computer) and a server (the HPC in Corvallis) over an unsecured network.
 
 ## Using the ssh command
 
 ## Using VPN for access off campus
+
+[Help page for using VPN to access campus resources (including the HPC) when off campus.](https://oregonstate.teamdynamix.com/TDClient/1935/Portal/KB/?CategoryID=6889)
 
 ## Using the scp command
 
