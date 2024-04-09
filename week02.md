@@ -14,9 +14,16 @@ layout: default
 - 9.3TB of total memory
 - 80TB of scratch storage (disk space).
 
+![server](/Images/Week02/server.png)
 
 <br />
 <br />
+
+![computing](/Images/Week02/comp.png)
+
+<br />
+<br />
+
 ## <ins>**Using SSH to log into the server**<ins>
 
 **SSH (Secure Shell):** 
