@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Week 1 lecture and tutorial
+# Week 2 lecture and tutorial
 
 ## <ins>**High-performance computing (HPC) clusters**<ins>
 
@@ -90,6 +90,36 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
   - `forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.txt` is the 'source'
   - `.` is the 'destination'
 
+
+## Compressing and decompressing files for faster upload/download speed
+
+### Creating a tar.gz File
+
+**Create the tar.gz file**: Use the `tar` command to create the tar.gz archive. The basic syntax is:
+
+   ```bash
+   tar -czvf <name-of-zipped-file-to-create>.tar.gz <name-of-file-or-dir-to-compress>
+   ```
+
+   - `-c`: Create a new archive.
+   - `-z`: Compress the archive with gzip.
+   - `-v`: Verbose mode to display the files being archived.
+   - `-f`: Specifies the filename of the archive.
+
+### Decompressing a tar.gz File
+
+**Decompress the tar.gz file**: Use the `tar` command with the `-x` option to extract the contents of the tar.gz archive.
+
+   ```bash
+   tar -xzvf </path/to/your/zipped-file.tar.gz>
+   ```
+
+   - `-x`: Extract files from the archive.
+   - `-z`: Decompress the archive with gzip.
+   - `-v`: Verbose mode to display the files being extracted.
+   - `-f`: Specifies the filename of the archive.
+
+
 <br />
 <br />
 ## <ins>**Navigating the HPC**<ins>
@@ -116,8 +146,26 @@ Here's what each character signifies:
 
 4. **Other Permissions**: Characters 8-10 (`r--`) represent permissions for all other users who are not the owner and are not part of the group. In this example, other users also have only read (`r`) permission.
 
+
+
 <br />
 <br />
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 1: compress a sequence file and download to your local machine.</strong>
+   <ol>
+      <li>SSH into the HPC</li>
+      <li>Locate the fasta file in the class shared directory.</li>
+      <li>Create a compressed (tar.gz) version of the file</li>
+      <li>Use scp to download the tar.gz version of the file to your local machine.</li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+
+
 ## <ins>**Linux text editors**<ins>
 
 It is important to be able to edit text files (e.g. python scripts) in linux. When accessing the HPC via `ssh`, we'll need to use a text edit that is not a GUI. There are many linux text editors (e.g. `vim`, `nano`, `emacs`). The choice of which one to use comes down to what's available in your system and your personal preference. Below is a brief into to `vim`, but you're welcome to use any editor you prefer.
@@ -137,19 +185,19 @@ vim filename.txt
 
 Vim operates in different modes, each serving a distinct purpose:
 
-1. **Normal Mode**: Default mode for navigation and executing commands.
+1. **Command Mode**: Default mode for navigation and executing commands.
 2. **Insert Mode**: Mode for inserting and editing text.
 3. **Visual Mode**: Mode for selecting blocks of text.
 
 To switch between modes:
 
-- **Normal Mode**: Press `Esc`.
+- **Command Mode**: Press `Esc`.
 - **Insert Mode**: Press `i` while in Normal Mode.
 - **Visual Mode**: Press `v` while in Normal Mode.
 
 ### Navigation
 
-In Normal Mode, you can navigate through the text using the following commands:
+In Command Mode, you can navigate through the text using the following commands:
 
 - **Arrow keys**: Move the cursor in the respective direction.
 - **h**: Move left.
@@ -172,15 +220,31 @@ In Insert Mode, you can type and edit text directly into the file.
 
 To save changes and exit Vim:
 
-1. Press `Esc` to ensure you are in Normal Mode.
+1. Press `Esc` to ensure you are in Command Mode.
 2. Type `:wq` and press `Enter`.
 
 To quit Vim without saving changes:
 
-1. Press `Esc` to ensure you are in Normal Mode.
+1. Press `Esc` to ensure you are in Command Mode.
 2. Type `:q!` and press `Enter`.
 
 ![computing](/Images/Week02/vim.png)
+
+<br />
+<br />
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 2: use vim to create a python script</strong>
+   <ol>
+      <li>Use vim to create a new python script</li>
+      <li>Edit the script to get it to print "Hello world!" and then "Hello, again!" 100 times.</li>
+      <li>Make the script 'executable' and then run it using './your_script.py'. </li>
+      <li>Store the output of your script to a file using 'redirect' (>). </li>
+   </ol>
+</div>
+
+<br />
+<br />
 
 
 
