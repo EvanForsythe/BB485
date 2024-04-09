@@ -5,11 +5,11 @@ layout: default
 
 ## <ins>**High-performance computing (HPC) clusters**<ins>
 
-A High-Performance Computing (HPC) cluster is a distributed computing environment composed of multiple interconnected computers, often referred to as nodes, that work together to solve complex computational problems or perform large-scale analyses or simulations.
+A High-Performance Computing (HPC) cluster is a distributed computing environment composed of multiple interconnected computers (often referred to as nodes) that work together to solve complex computational problems or perform large-scale analyses or simulations.
 
 ![server](/Images/Week02/server.png)
 
-- A very quick overview of terms used when discussing HPCs:
+- <ins> A very quick overview of terms used when discussing HPCs:<ins>
   - **Server vs Cluster vs HPC:** I will use these terms interchangably in this course. There are slight differences, but for our purposes we can treat them as the same.
   - **Node: ** A node is like one computer (albeit a rather large computer). It comtains multiple processors/CPUs/cores. An HPC typically contains multiple nodes, which are interconnected for high-speed transfer/communication between them. 
   - **Processors/CPU/core: ** this is the unit that 'does work'. A node typically contains multiple cores. If there are 96 cores available, that means you can run 96 tasks at the same time!
