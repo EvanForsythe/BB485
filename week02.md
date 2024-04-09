@@ -295,16 +295,15 @@ Virtual Studio Code (VScode) is an application you ca install on your local mach
 <br />
 <br />
 ## <ins>**Installing software with conda**<ins>
-
+TBD
 <br />
 <br />
 ## <ins>**Running large jobs with SLURM job scheduler**<ins>
-
+TBD
 <br />
 <br />
 ## <ins>**Using git and Github for collaborative code development**<ins>
-
-
+TBD
 <br />
 <br />
  
