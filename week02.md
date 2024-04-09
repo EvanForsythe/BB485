@@ -20,7 +20,7 @@ A High-Performance Computing (HPC) cluster is a distributed computing environmen
 ## The Novus cluster:
 The newest cluster at OSU in Corvallis is named Novus. It is administered by the Digital Research Infrastructure team.
 
-[Help page for Novus](https://oregonstate.teamdynamix.com/TDClient/1935/Portal/KB/?CategoryID=6889)
+[Help page for Novus](https://dri.oregonstate.edu/novus-cluster)
 
 System stats:
 - 1,712 total cores
