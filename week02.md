@@ -30,12 +30,14 @@ HPCs allow us to run analyses that are highly parallel or require large amounts 
 
 Here is one example of how a very modest amount of parallelization improves the runtime of an analysis.
 
+![ERCnet runtime](/Images/Week02/ERCnet.png)
+
 <br />
 <br />
 
 ## <ins>**Using SSH to log into the server**<ins>
 
-**SSH (Secure Shell):** 
+**SSH (Secure Shell):**
 - SSH is a cryptographic network protocol used for secure communication between a client (your computer) and a server (the HPC in Corvallis) over an unsecured network.
 - In our common vernacular, we'll sometimes use SSH as a verb. For example, "SSH-ing into the HPC" means use the `ssh` command to access the Novus server. 
 
