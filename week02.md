@@ -158,6 +158,7 @@ To quit Vim without saving changes:
 1. Press `Esc` to ensure you are in Normal Mode.
 2. Type `:q!` and press `Enter`.
 
+![computing](/Images/Week02/vim.png)
 
 <br />
 <br />
