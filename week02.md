@@ -98,6 +98,67 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
 <br />
 ## <ins>**Linux text editors**<ins>
 
+It is important to be able to edit text files (e.g. python scripts) in linux. When accessing the HPC via `ssh`, we'll need to use a text edit that is not a GUI. There are many linux text editors (e.g. `vim`, `nano`, `emacs`). The choice of which one to use comes down to what's available in your system and your personal preference. Below is a brief into to `vim`, but you're welcome to use any editor you prefer.
+
+## Vim text editor
+Vim is a powerful text editor that operates from the command line. It has a steep learning curve but offers efficient text editing once you get the hang of it. This tutorial will cover some basic commands to get you started with Vim.
+
+### Opening Vim
+
+To open a file in Vim, simply type `vim` followed by the name of the file you want to edit:
+
+```bash
+vim filename.txt
+```
+
+### Modes
+
+Vim operates in different modes, each serving a distinct purpose:
+
+1. **Normal Mode**: Default mode for navigation and executing commands.
+2. **Insert Mode**: Mode for inserting and editing text.
+3. **Visual Mode**: Mode for selecting blocks of text.
+
+To switch between modes:
+
+- **Normal Mode**: Press `Esc`.
+- **Insert Mode**: Press `i` while in Normal Mode.
+- **Visual Mode**: Press `v` while in Normal Mode.
+
+### Navigation
+
+In Normal Mode, you can navigate through the text using the following commands:
+
+- **Arrow keys**: Move the cursor in the respective direction.
+- **h**: Move left.
+- **j**: Move down.
+- **k**: Move up.
+- **l**: Move right.
+- **Ctrl+f**: Move forward one page.
+- **Ctrl+b**: Move backward one page.
+- **gg**: Move to the beginning of the file.
+- **G**: Move to the end of the file.
+- **:x**: Move to a specific line number (replace `x` with the line number).
+
+### Editing
+
+In Insert Mode, you can type and edit text directly into the file.
+
+- **i**: Enter Insert Mode before the cursor.
+
+### Saving and Quitting
+
+To save changes and exit Vim:
+
+1. Press `Esc` to ensure you are in Normal Mode.
+2. Type `:wq` and press `Enter`.
+
+To quit Vim without saving changes:
+
+1. Press `Esc` to ensure you are in Normal Mode.
+2. Type `:q!` and press `Enter`.
+
+
 <br />
 <br />
 ## <ins>**VScode access to the server**<ins>
