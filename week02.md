@@ -94,6 +94,28 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
 <br />
 ## <ins>**Navigating the HPC**<ins>
 
+File storage on the HPC is similar to any other file storage system. You can navigate the file system with standard commands like, `cd`, `ls`, and `pwd`.
+
+There are a few key differences that are specific to HPCs/clusters:
+- **Home directory (~):** your home directory is located in: `/home/<ONID>`. This is where you can store your files long-term. It's also a good place to install software. <ins>IMPORTANT: your home directory has a very small storage allotment. It is not intended as a place to put large data files.<ins>
+- **Scratch storage:** The HPC is equipped with a region of the disk that is intended for storage of large amounts of data. Each user has their own allotment of 'scratch storage', located in `/scratch/<ONID>`. We'll call this directory 'your scratch directory'. Storage space here is virtually unlimited. <ins> However, scratch storage is temporary; scratch directories are deleted every ~3 months.<ins>
+- **Shared directory for this class:**: I have created a shared directory for anyone in our group. Note that you may only have 'read permissions' for files here. If you need to edit a file, you'll have to copy the file into your home or scratch directory. 
+
+## File permissions on the HPC
+In a Linux system, permissions are represented by a 10-character string. You can see the permissions of any file/directory with `ls -l <file-or-dir-name>`. 
+
+The permission string for files in the shared directory are: `-rw-r--r--`.
+
+Here's what each character signifies:
+
+1. **File Type Indicator**: The first character indicates the type of file. In this case, since it's a hyphen (`-`), it denotes a regular file. Another possible values= for this position would be `d` for directory.
+
+2. **Owner Permissions**: Characters 2-4 (`rw-`) represent permissions for the owner of the file. In this example, the owner has read (`r`) and write (`w`) permissions, but not execute (`x`) permissions.
+
+3. **Group Permissions**: Characters 5-7 (`r--`) represent permissions for the group that the file belongs to. In this case, the group has only read (`r`) permission.
+
+4. **Other Permissions**: Characters 8-10 (`r--`) represent permissions for all other users who are not the owner and are not part of the group. In this example, other users also have only read (`r`) permission.
+
 <br />
 <br />
 ## <ins>**Linux text editors**<ins>
@@ -159,6 +181,9 @@ To quit Vim without saving changes:
 2. Type `:q!` and press `Enter`.
 
 ![computing](/Images/Week02/vim.png)
+
+
+
 
 <br />
 <br />
