@@ -252,6 +252,28 @@ To quit Vim without saving changes:
 <br />
 <br />
 ## <ins>**VScode access to the server**<ins>
+Virtual Studio Code (VScode) is an application you ca install on your local machine to provide a GUI (ish) environment for navigating the command line, editing files, etc... There is an SSH plugin that allows you to use VScode to access the HPC!
+
+## VScode tutorial:
+
+1. **Install Visual Studio Code**: If you haven't already, download and install Visual Studio Code from the [official website](https://code.visualstudio.com/).
+
+2. **Install Remote Development Extension Pack (Optional)**: To facilitate SSH connections and remote development, it's recommended to install the "Remote Development" extension pack. You can install it by going to the Extensions view in VSCode (`Ctrl+Shift+X`), searching for "Remote Development", and clicking on "Install".
+
+3. **Open a Project or Folder**: Open Visual Studio Code and either create a new project or open an existing folder where your code files are located.
+
+4. **Open Remote SSH**: Once the "Remote Development" extension pack is installed, you'll have access to the remote development features. Click on the green button in the bottom-left corner of the status bar that says "Open a Remote Window". Then select "Remote-SSH: Connect to Host..." from the dropdown menu.
+
+5. **Add SSH Host**: If you haven't configured any SSH hosts before, you'll need to add one. Click on "Add New SSH Host..." and enter the SSH connection details for your remote server. This includes the hostname (or IP address), username, and optional SSH key file.
+
+6. **Connect to Remote Server**: After adding the SSH host, it will appear in the list of available hosts. Click on the host you want to connect to. VSCode will establish an SSH connection to the remote server.
+
+7. **Authenticate (if necessary)**: If this is your first time connecting to the server, you may be prompted to authenticate the SSH connection. Depending on your server configuration, you may need to enter a password or passphrase, or you might be asked to confirm the server's fingerprint.
+
+8. **Access Remote Terminal**: Once connected, VSCode will open a new window with access to the remote server. You'll have access to a terminal within VSCode, allowing you to execute commands directly on the remote server.
+
+9. **Use Remote Server**: You can now work with files on the remote server directly within VSCode. Any changes you make to files will be reflected on the remote server.
+
 
 <br />
 <br />
