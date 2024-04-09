@@ -3,9 +3,11 @@ layout: default
 ---
 # Week 1 lecture and tutorial
 
-## <ins>**High-performance computing (HPC) clusters**<ins
+## <ins>**High-performance computing (HPC) clusters**<ins>
 
 **Servers vs Clusters vs HPCs:** I will use these terms interchangably in this course. There are slight differences, but for our purposes we can treat them as the same.
+
+![HPC](/Images/Week02/HPC_diagram.png)
 
 ## The Novus cluster:
 - 1,712 total cores
