@@ -32,7 +32,9 @@ To use SSH to access the server, run the following command:
 
 The above command will ask for your password. Type your password and press [enter]. For security, it will not show the letters as you type in your password, which can be a little disorienting, but you'll get used to it!
 
-**Important note:** You can only log into Novus when you are on campus (and connected to campus wifi). For SSH-ing into Novus when you're off campus, see the instructions for 'VPN-ing' onto the campus system.
+Once you're SSH'd in, any commands you run in your terminal will be executed on the remote machine (the HPC). The HPC runs linux, so any of your linux commands (e.g. `ls`, `cd`, etc...) should work just fine. It can be helpful to have two terminal windows open, one for running commands on your local machine, and one for running commands on your remote machine. 
+
+**Important note:** You can only log into Novus when you are on campus (and connected to campus wifi). If you need to SSH into Novus when you're off campus, you can connect via VPN (see the instructions for 'VPN-ing' onto the campus system).
 
 ## Using VPN for access off-campus
 
@@ -67,7 +69,6 @@ scp <your ONID>@novus.dri.oregonstate.edu:<path-to-the-file-you-want-to-download
 ```
 - `scp` is the command
 - `<your ONID>@novus.dri.oregonstate.edu` tells scp where to look for the remote file
-- `<your ONID>@novus.dri.oregonstate.edu` should be the same from you ssh command.
 - `:` is needed to specify a location on the remote machine
 - `<path-to-the-file-you-want-to-download>` is the full path to an existing file on the remote machine. This path should **include the name of the file**
 - `.` means 'put the file in my current working directory (on the local machine)'
@@ -82,7 +83,7 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
 
 <br />
 <br />
-## <ins>**Navigating the server and accessing shared data**<ins>
+## <ins>**Navigating the HPC**<ins>
 
 <br />
 <br />
