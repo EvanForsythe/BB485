@@ -305,6 +305,14 @@ Virtual Studio Code (VScode) is an application you ca install on your local mach
 ## <ins>**Using git and Github for collaborative code development**<ins>
 
 
+<br />
+<br />
+ 
+<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Tutorial Assignment:</strong>
+   This week we will do the Tutorial Assignment on Thursday. Stay tuned for more info here!
+</div>
 
-
+<br />
+<br />
 
