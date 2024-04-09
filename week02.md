@@ -5,21 +5,30 @@ layout: default
 
 ## <ins>**High-performance computing (HPC) clusters**<ins>
 
+![server](/Images/Week02/server.png)
+
 **Servers vs Clusters vs HPCs:** I will use these terms interchangably in this course. There are slight differences, but for our purposes we can treat them as the same.
 
 ![HPC](/Images/Week02/HPC_diagram.png)
 
 ## The Novus cluster:
+The newest cluster at OSU in Corvallis is named Novus. It is administered by the Digital Research Infrastructure team.
+
+[Help page for Novus](https://oregonstate.teamdynamix.com/TDClient/1935/Portal/KB/?CategoryID=6889)
+
+System stats:
 - 1,712 total cores
 - 9.3TB of total memory
 - 80TB of scratch storage (disk space).
 
-![server](/Images/Week02/server.png)
+<br />
+<br />
 
-<br />
-<br />
+HPCs allow us to run analyses that are highly parallel or require large amounts of memory and/or time to run.
 
 ![computing](/Images/Week02/comp.png)
+
+Here is one example of how a very modest amount of parallelization improves the runtime of an analysis.
 
 <br />
 <br />
