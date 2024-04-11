@@ -375,22 +375,21 @@ You can also track the progress of your job by checking what gets written to you
 <br />
  
 <div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Tutorial Assignment:</strong>
-   This week we will do the Tutorial Assignment on Thursday. Stay tuned for more info here!
+   <strong>Tutorial Assignment: Create a python script and it from a submitted job</strong>
+   <ol>
+     <li>Create a new python script using any text editor you'd like (recommended: VScode).</li>
+     <li>Add python code to do the following:</li>
+       <li>Read in a fasta file (in /shared/forsythe/) and store as a dictionary</li>
+       <li>Store the sequence ID and length of each sequences in a dataframe object.</li>
+       <li>Write a .csv file containing the data in the dataframe.</li>
+     <li>Make the python script executable</li>
+     <li>Run the python script as a submitted job.</li>
+   </ol>
+   
 </div>
 
 <br />
 <br />
 
-
-TBD
-<br />
-<br />
-## <ins>**Installing software with conda**<ins>
-TBD
-<br />
-<br />
-## <ins>**Using git and Github for collaborative code development**<ins>
-TBD
 
 
