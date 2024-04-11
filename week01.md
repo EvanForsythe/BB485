@@ -321,7 +321,7 @@ AGATGCTTATGCAGATAA"</li>
 
 Below is a block of python code that can be used to read in a fasta file and create a dictionary object (object named "seq_dict")
 
-```
+```bash
 #Create a file handle
 seq_handle = open(seq_file_path, “r”)
 
@@ -579,6 +579,12 @@ for key in seq_dict.keys():
     
     #Use loc to add to the dataframe
     df.loc[len(df.index)] = [id_temp, seq_len_temp]
+```
+
+#### Step 3 (optional): Write the data in the dataframe to a text file (.csv)
+```
+#Save the dataframe as a csv file
+df.to_csv("")
 ```
 
 <br />
