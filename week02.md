@@ -391,7 +391,8 @@ You can also track the progress of your job by checking what gets written to you
        <ul style="list-style-type: none; margin-left: 20px;">
          <li>The contents of your .out and .err file from the job</li>
          <li>Paste a small portion (~10 lines) of you csv file into the canvas assignment</li>
-   </ol>
+       
+  </ol>
 </div>
 
 <br />
