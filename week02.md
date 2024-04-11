@@ -72,7 +72,7 @@ Once you're SSH'd in, any commands you run in your terminal will be executed on 
 
 ### **To upload data to the HPC:**
 To upload a file from your local machine to the hpc, run the following command (from the command line on your local machine):
-```
+```bash
 scp <file-to-upload> <your ONID>@novus.dri.oregonstate.edu:<path-to-where-you-want-the-file-to-land>
 ```
 - `scp` is the command
@@ -82,7 +82,7 @@ scp <file-to-upload> <your ONID>@novus.dri.oregonstate.edu:<path-to-where-you-wa
 - `<path-to-where-you-want-the-file-to-land>` is the full path to an existing directory on the remote machine. This needs to be a directory where you have 'write-permissions'. If you don't include the path, the file will be uploaded to your home directory by default.
 
 Here is an example of how I would upload a file from my local machine to a directory called "test_upload_dir":
-```
+```bash
 scp test_file.txt forsythe@novus.dri.oregonstate.edu:~/test_upload_dir/
 ```
 - Note that scp is similar to the `cp` command:
@@ -90,7 +90,7 @@ scp test_file.txt forsythe@novus.dri.oregonstate.edu:~/test_upload_dir/
   - `forsythe@novus.dri.oregonstate.edu:~/test_upload_dir/` is the 'destination'
 
 ### **To download data from the HPC:**
-```
+```bash
 scp <your ONID>@novus.dri.oregonstate.edu:<path-to-the-file-you-want-to-download> .
 ```
 - `scp` is the command
@@ -100,7 +100,7 @@ scp <your ONID>@novus.dri.oregonstate.edu:<path-to-the-file-you-want-to-download
 - `.` means 'put the file in my current working directory (on the local machine)'
 
 Here is an example of how I would download a file (~/test_download_dir/test_download_file.txt) from the remote machine to my local machine. 
-```
+```bash
 scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.txt .
 ```
 - Note that now:
@@ -114,9 +114,9 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
 
 **Create the tar.gz file**: Use the `tar` command to create the tar.gz archive. The basic syntax is:
 
-   ```bash
-   tar -czvf <name-of-zipped-file-to-create>.tar.gz <name-of-file-or-dir-to-compress>
-   ```
+```bash
+tar -czvf <name-of-zipped-file-to-create>.tar.gz <name-of-file-or-dir-to-compress>
+```
 
    - `-c`: Create a new archive.
    - `-z`: Compress the archive with gzip.
@@ -127,9 +127,9 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
 
 **Decompress the tar.gz file**: Use the `tar` command with the `-x` option to extract the contents of the tar.gz archive.
 
-   ```bash
-   tar -xzvf </path/to/your/zipped-file.tar.gz>
-   ```
+```bash
+tar -xzvf </path/to/your/zipped-file.tar.gz>
+```
 
    - `-x`: Extract files from the archive.
    - `-z`: Decompress the archive with gzip.
