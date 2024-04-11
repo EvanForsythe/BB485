@@ -296,11 +296,65 @@ Virtual Studio Code (VScode) is an application you ca install on your local mach
 
 <br />
 <br />
-## <ins>**Installing software with conda**<ins>
+## <ins>**Running large jobs with SLURM job scheduler**<ins>
+Every HPC has finite resources and many users who may want to run analyses at the same time. The administrative system for determining which analyses run on which cores and in which order is called **job scheduling**. The Novus HPC makes use of the job scheduler called SLURM (Simple Linux Utility for Resource Management).
+
+## Submitting a slurm job overview:
+- When you run simple commands (e.g. `ls`) from the command line on the HPC, it runs as expected.
+- However, running commands that require more time/resources requires that you submit the command(s) as a 'job'
+- Submitting jobs allows you to:
+  - specify which node your commands run on
+  - specify the number of cores needed for your commands
+  - specify how to store the output/errors that result from your commands
+  - run analyses that will continue running even after you log off of the HPC
+- To submit a job:
+  - Create a 'job submission script' (ends in .sh)
+  - Submit the job by running an `sbatch` command from the command line
+  - Track the progress of the job with an `squeue` command.
+ 
+## Creating a job submission script:
+
+Below is a template you can use for creating a submission script. You must create a text file on the HPC with this info. You can name the file anything (but end with ".sh"). It works best to create this file in the directory from which you plan to run your analysis. Note: there is a copy of this same template located at: `/shared/forsythe/BB485/job_script_template.sh`.
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=<name-for-the-slurm-job>
+#SBATCH --ntasks-per-node=<number-of-cores-needed>
+#SBATCH --time=24:0:0
+#SBATCH --output=<job-name>.out
+#SBATCH --error=<job-name>.err
+#SBATCH --mail-user=<your-email-address>
+#SBATCH --mail-type=END
+
+
+#Bash commands to run within job
+echo "hello world, I'm a job!"
+```
+- All lines that begin with `#SBATCH` are special instructions for SLURM to know how to setup your job. We will talk about each of the lines as we work on a practice example (see below).
+- At the bottom on the script you can put any bash/unix/linux command you would like to run from within your job. These commands will be run on the node/cores specified in the instructions.
+
+
+Once you have edited the template with all the required information, you can submit the job using this command:
+```bash
+sbatch -p forsythe.q -A forsythe <job-script-name>.sh
+```
+- `sbatch` is the command
+- `-p forsythe.q` indicates the "forsythe.q" partition (i.e. run the job on the 'forsythe node' on the HPC)
+- `-A forsythe` indicates the forsythe account (i.e. indicate that you're part of the 'forsythe group', so you're allowed to run jobs on the forsythe.q)
+- `<job-script-name>.sh` is the name of your job script, which includes instructions and the bash commands you'd like to run.
+
+Once you have submitted your job, you can check it's status in the queue (as in the british way of saying waiting in a line) using this command:
+
+```bash
+squeue -u $USER
+```
+- `$USER` is a shortcut that indicates your user account. (to test it, run `echo $USER`)
+
+
 TBD
 <br />
 <br />
-## <ins>**Running large jobs with SLURM job scheduler**<ins>
+## <ins>**Installing software with conda**<ins>
 TBD
 <br />
 <br />
