@@ -11,8 +11,8 @@ A High-Performance Computing (HPC) cluster is a distributed computing environmen
 
 - <ins> A very quick overview of terms used when discussing HPCs:<ins>
   - **Server vs Cluster vs HPC:** I will use these terms interchangably in this course. There are slight differences, but for our purposes we can treat them as the same.
-  - **Node: ** A node is like one computer (albeit a rather large computer). It comtains multiple processors/CPUs/cores. An HPC typically contains multiple nodes, which are interconnected for high-speed transfer/communication between them. 
-  - **Processors/CPU/core: ** this is the unit that 'does work'. A node typically contains multiple cores. If there are 96 cores available, that means you can run 96 tasks at the same time!
+  - **Node:** A node is like one computer (albeit a rather large computer). It comtains multiple processors/CPUs/cores. An HPC typically contains multiple nodes, which are interconnected for high-speed transfer/communication between them. 
+  - **Processors/CPU/core:** this is the unit that 'does work'. A node typically contains multiple cores. If there are 96 cores available, that means you can run 96 tasks at the same time!
 
 
 ![HPC](/Images/Week02/HPC_diagram.png)
@@ -263,11 +263,6 @@ To quit Vim without saving changes:
 <br />
 <br />
 
-
-
-
-<br />
-<br />
 ## <ins>**VScode access to the server**<ins>
 Virtual Studio Code (VScode) is an application you ca install on your local machine to provide a GUI (ish) environment for navigating the command line, editing files, etc... There is an SSH plugin that allows you to use VScode to access the HPC!
 
@@ -331,8 +326,9 @@ Below is a template you can use for creating a submission script. You must creat
 echo "hello world, I'm a job!"
 ```
 - All lines that begin with `#SBATCH` are special instructions for SLURM to know how to setup your job. We will talk about each of the lines as we work on a practice example (see below).
-- At the bottom on the script you can put any bash/unix/linux command you would like to run from within your job. These commands will be run on the node/cores specified in the instructions.
+- At the bottom of the script you can put any bash/unix/linux command you would like to run from within your job. These commands will be run on the node/cores specified in the instructions.
 
+## Submitting your job submission script:
 
 Once you have edited the template with all the required information, you can submit the job using this command:
 ```bash
@@ -343,12 +339,48 @@ sbatch -p forsythe.q -A forsythe <job-script-name>.sh
 - `-A forsythe` indicates the forsythe account (i.e. indicate that you're part of the 'forsythe group', so you're allowed to run jobs on the forsythe.q)
 - `<job-script-name>.sh` is the name of your job script, which includes instructions and the bash commands you'd like to run.
 
+## Checking the status of your job:
+
 Once you have submitted your job, you can check it's status in the queue (as in the british way of saying waiting in a line) using this command:
 
 ```bash
 squeue -u $USER
 ```
-- `$USER` is a shortcut that indicates your user account. (to test it, run `echo $USER`)
+- `$USER` is a shortcut that indicates your user account. To test it, run `echo $USER`
+
+You can also track the progress of your job by checking what gets written to your output (.out) and error (.err) files.
+
+
+
+
+<br />
+<br />
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 3: submit a test job</strong>
+   <ol>
+     <li>Create a job submission file somewhere in your home directory</li>
+     <li>Edit the script to run with 1 core and add all needed slurm info for it to run</li>
+     <li>Add a bash command inside of your script that will print "Hello, this is the output of the first ever job ran by [your name]>"</li>
+     <li>Submit the script. </li>
+     <li>Check the output of the script. </li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+
+<br />
+<br />
+ 
+<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Tutorial Assignment:</strong>
+   This week we will do the Tutorial Assignment on Thursday. Stay tuned for more info here!
+</div>
+
+<br />
+<br />
 
 
 TBD
@@ -360,14 +392,5 @@ TBD
 <br />
 ## <ins>**Using git and Github for collaborative code development**<ins>
 TBD
-<br />
-<br />
- 
-<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Tutorial Assignment:</strong>
-   This week we will do the Tutorial Assignment on Thursday. Stay tuned for more info here!
-</div>
 
-<br />
-<br />
 
