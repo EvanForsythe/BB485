@@ -146,7 +146,7 @@ File storage on the HPC is similar to any other file storage system. You can nav
 There are a few key differences that are specific to HPCs/clusters:
 - **Home directory (~):** your home directory is located in: `/home/<ONID>`. This is where you can store your files long-term. It's also a good place to install software. <ins>IMPORTANT: your home directory has a very small storage allotment. It is not intended as a place to put large data files.<ins>
 - **Scratch storage:** The HPC is equipped with a region of the disk that is intended for storage of large amounts of data. Each user has their own allotment of 'scratch storage', located in `/scratch/<ONID>`. We'll call this directory 'your scratch directory'. Storage space here is virtually unlimited. <ins> However, scratch storage is temporary; scratch directories are deleted every ~3 months.<ins>
-- **Shared directory for this class:**: I have created a shared directory for anyone in our group. Note that you may only have 'read permissions' for files here. If you need to edit a file, you'll have to copy the file into your home or scratch directory. 
+- **Shared directory for this class:**: I have created a shared directory for anyone in our group: `/shared/forsythe/BB485/`. Note that you may only have 'read permissions' for files here. If you need to edit a file, you'll have to copy the file into your home or scratch directory. 
 
 ## File permissions on the HPC
 In a Linux system, permissions are represented by a 10-character string. You can see the permissions of any file/directory with `ls -l <file-or-dir-name>`. 
