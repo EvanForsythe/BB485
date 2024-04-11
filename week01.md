@@ -321,7 +321,7 @@ AGATGCTTATGCAGATAA"</li>
 
 Below is a block of python code that can be used to read in a fasta file and create a dictionary object (object named "seq_dict")
 
-```bash
+```python
 #Create a file handle
 seq_handle = open(seq_file_path, “r”)
 
@@ -483,7 +483,7 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
 To import a module, you typically add the following to the top of you python script/notebook: `import Bio`
 
 Sometimes is cleanest to import specific functions as well so that you can easily call them by name later. Like this:
-```
+```python
 import Bio
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -562,7 +562,7 @@ In the `plt.hist` function:
 ## Creating a DataFrame describing the length of sequences in our fasta file
 
 #### Step 1: Make an empty dataframe
-```
+```python
 #Make an empty dataframe
 df = pd.DataFrame()
 
@@ -571,7 +571,7 @@ df["ID"] = [] #This is an empty list for data that you want to add
 df["Length"] = [] #This is an empty list for data that you want to add
 ```
 #### Step 2: Loop through our dictionary and add rows to the dataframe
-```
+```python
 #Loop through the dictionary and add info about each sequence to the dataframe
 for key in seq_dict.keys():
     id_temp = key
@@ -582,9 +582,9 @@ for key in seq_dict.keys():
 ```
 
 #### Step 3 (optional): Write the data in the dataframe to a text file (.csv)
-```
+```python
 #Save the dataframe as a csv file
-df.to_csv("")
+df.to_csv("<name of file to create>.csv")
 ```
 
 <br />
