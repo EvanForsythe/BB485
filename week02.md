@@ -292,9 +292,9 @@ Virtual Studio Code (VScode) is an application you ca install on your local mach
 <br />
 <br />
 ## <ins>**Running large jobs with SLURM job scheduler**<ins>
-Every HPC has finite resources and many users who may want to run analyses at the same time. The administrative system for determining which analyses run on which cores and in which order is called **job scheduling**. The Novus HPC makes use of the job scheduler called SLURM (Simple Linux Utility for Resource Management).
+Every HPC has finite resources and many users who may want to run analyses at the same time. The administrative system for determining which analyses run on which cores and in which order is called **job scheduling**. The Novus HPC makes use of the job scheduler called **SLURM** (Simple Linux Utility for Resource Management).
 
-## Submitting a slurm job overview:
+## Overview to submitting a SLURM job:
 - When you run simple commands (e.g. `ls`) from the command line on the HPC, it runs as expected.
 - However, running commands that require more time/resources requires that you submit the command(s) as a 'job'
 - Submitting jobs allows you to:
@@ -361,7 +361,7 @@ You can also track the progress of your job by checking what gets written to you
    <ol>
      <li>Create a job submission file somewhere in your home directory</li>
      <li>Edit the script to run with 1 core and add all needed slurm info for it to run</li>
-     <li>Add a bash command inside of your script that will print "Hello, this is the output of the first ever job ran by [your name]>"</li>
+     <li>Add a bash command inside of your script that will print "Hello, this is the output of the first ever job ran by [your name]"</li>
      <li>Submit the script. </li>
      <li>Check the output of the script. </li>
    </ol>
@@ -387,6 +387,10 @@ You can also track the progress of your job by checking what gets written to you
      </li>
      <li>Make the python script executable</li>
      <li>Run the python script as a submitted job.</li>
+     <li>Submit the following on Canvas:</li>
+       <ul style="list-style-type: none; margin-left: 20px;">
+         <li>The contents of your .out and .err file from the job</li>
+         <li>Paste a small portion (~10 lines) of you csv file into the canvas assignment</li>
    </ol>
 </div>
 
