@@ -590,6 +590,7 @@ for key in seq_dict.keys():
       <li>Use the code above to create a dataframe of sequence lengths and plot a histogram of the lengths.</li>
       <li>Do the same thing again BUT this time only include the genes in the chloroplast genome (ID starts with "ATC")</li>
       <li>Does it look like the distributions differ?</li>
+   
    </ol>
 </div>
 
