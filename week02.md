@@ -271,6 +271,8 @@ To quit Vim without saving changes:
 ## <ins>**VScode access to the server**<ins>
 Virtual Studio Code (VScode) is an application you ca install on your local machine to provide a GUI (ish) environment for navigating the command line, editing files, etc... There is an SSH plugin that allows you to use VScode to access the HPC!
 
+![VScode](/Images/Week02/VScode.png)
+
 ## VScode tutorial:
 
 1. **Install Visual Studio Code**: If you haven't already, download and install Visual Studio Code from the [official website](https://code.visualstudio.com/).
