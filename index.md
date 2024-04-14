@@ -9,7 +9,7 @@ title: Home
 
 - [Week01: Course intro and the essential tools used in the course](week01)
 - [Week02: Working with high-performance computing (HPC) resources](week02)
-
+- [Week03: Multiple sequence alignment and phylogenetics](week03)
 
 
 
@@ -18,6 +18,5 @@ title: Home
 <br />
 <br />
 
-*Note: please report errors/typos/mistakes using the 'Issues' tab at `https://github.com/EvanForsythe/BB485`*
-
+*Note: please report errors/typos/mistakes using the 'Issues' tab at [https://github.com/EvanForsythe/BB485](https://github.com/EvanForsythe/BB485)*
 
