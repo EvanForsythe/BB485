@@ -9,5 +9,5 @@ layout: default
 
 ## <ins>**Phylogenetic inference**<ins>
 
-## <ins>**Setting up a computing environment*<ins>
+## <ins>**Setting up a computing environment with conda**<ins>
 
