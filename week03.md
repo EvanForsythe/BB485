@@ -3,19 +3,23 @@ layout: default
 ---
 
 # Week 3 lecture and tutorial
-1. [Homology](#Homology)
-2. [Multiple sequence alignments](#MSA)
-3. [Phylogenetic inference](#phylogenies)
-4. [Setting up a computing environment with conda](#conda)
+1. [Conceptual background on phylogenetics](#Homology)
+  A. [Homology](#Homology)
+  B. [Phylogenetic inference](#phylogenies)
+  C. [Parsimony](#parsimony)
+  D. [Multiple sequence alignments](#MSA)
+  E. [Maximum likelihood](#ML)
+2. [Setting up a computing environment with conda](#conda)
 
 ## <ins>**Homology: features shared due to common ancestry**<ins> <a name="Homology"></a>
 
+## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
+
+## <ins>**Parsimony: the simplest explaination is the best explanation**<ins> <a name="parsimony"></a>
 
 ## <ins>**Multiple sequence alignment**<ins> <a name="MSA"></a>
 
-
-## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
-
+## <ins>**Maximum likelihood**<ins> <a name="ML"></a>
 
 ## <ins>**Setting up a computing environment with conda**<ins> <a name="conda"></a>
 
