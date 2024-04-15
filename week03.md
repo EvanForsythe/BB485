@@ -15,7 +15,7 @@ layout: default
 
 ## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
 
-## <ins>**Parsimony: the simplest explaination is the best explanation**<ins> <a name="parsimony"></a>
+## <ins>**Parsimony: the simplest explanation is the best explanation**<ins> <a name="parsimony"></a>
 
 ## <ins>**Multiple sequence alignment**<ins> <a name="MSA"></a>
 
