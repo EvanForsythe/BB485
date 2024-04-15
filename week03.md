@@ -43,7 +43,7 @@ A virtual environment is a temporary computing environment that you can move in 
 
 `conda` is a system for setting up virtual environments (called 'conda environments'). Conda provides the following benefits:
 - The ability to download and install software with a single command.
-- The ability to install different software in different environments. This includes installing different <ins>versions<ins> of software, to ensure that all the software packages in a given conda environment are compatible with eachother. 
+- The ability to install different software in different environments. This includes installing different <ins> versions <ins> of software, to ensure that all the software packages in a given conda environment are compatible with eachother. 
 
 
 
