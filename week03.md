@@ -7,19 +7,72 @@ layout: default
    - **A.** [Homology](#Homology)
    - **B.** [Phylogenetic inference](#phylogenies)
    - **C.** [Parsimony](#parsimony)
+   - **C.** [Inferring difficult relationships](#difficult)
    - **D.** [Multiple sequence alignments](#MSA)
    - **E.** [Maximum likelihood](#ML)
 2. [Setting up a computing environment with conda](#conda)
 
+![phy01](/Images/Week03/phy01.png)
+
+![phy04](/Images/Week03/phy04.png)
+
+![phy05](/Images/Week03/phy05.png)
+
 ## <ins>**Homology: features shared due to common ancestry**<ins> <a name="Homology"></a>
+
+![phy02](/Images/Week03/phy02.png)
+
+![phy03](/Images/Week03/phy03.png)
+
+![phy06](/Images/Week03/phy06.png)
 
 ## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
 
+![phy07](/Images/Week03/phy07.png)
+
+![phy08](/Images/Week03/phy08.png)
+
 ## <ins>**Parsimony: the simplest explanation is the best explanation**<ins> <a name="parsimony"></a>
+
+![phy08](/Images/Week03/phy08.png)
+
+![phy09](/Images/Week03/phy09.png)
+
+![phy10](/Images/Week03/phy10.png)
+
+## <ins>**Inferring difficult relationships**<ins> <a name="difficult"></a>
+
+![phy11](/Images/Week03/phy11.png)
+
+![phy12](/Images/Week03/phy12.png)
 
 ## <ins>**Multiple sequence alignment**<ins> <a name="MSA"></a>
 
+![phy13](/Images/Week03/phy13.png)
+
+![phy14](/Images/Week03/phy14.png)
+
+![phy15](/Images/Week03/phy15.png)
+
+![phy16](/Images/Week03/phy16.png)
+
+![phy17](/Images/Week03/phy17.png)
+
 ## <ins>**Maximum likelihood**<ins> <a name="ML"></a>
+
+![phy17](/Images/Week03/phy17.png)
+
+![phy18](/Images/Week03/phy18.png)
+
+![phy19](/Images/Week03/phy19.png)
+
+![phy20](/Images/Week03/phy20.png)
+
+![phy21](/Images/Week03/phy21.png)
+
+![phy22](/Images/Week03/phy22.png)
+
+![phy23](/Images/Week03/phy23.png)
 
 ## <ins>**Setting up a computing environment with conda**<ins> <a name="conda"></a>
 
