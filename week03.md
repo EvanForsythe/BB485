@@ -36,9 +36,14 @@ which head
 ```
 - The path that gets listed will be listed in your PATH.
 
-**Issues with computing environment (i.e. software installation and PATH) are the largest source of frustration for new bioinfromaticians. The good news is that these are very easy issues to fix if you understand your PATH**
+**Issues with computing environment (i.e. software installation and PATH) are the largest source of frustration for new bioinfromaticians. The good news is that these are very easy issues to fix if you understand your PATH!**
 
+## Creating **virtual environments** with **conda**
+A virtual environment is a temporary computing environment that you can move in and out of very easily. You can setup multiple virtual environments on the same computer and move between them for different project that require different environments.
 
+`conda` is a system for setting up virtual environments (called 'conda environments'). Conda provides the following benefits:
+- The ability to download and install software with a single command.
+- The ability to install different software in different environments. This includes installing different <ins>versions<ins> of software, to ensure that all the software packages in a given conda environment are compatible with eachother. 
 
 
 
