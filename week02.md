@@ -375,29 +375,27 @@ You can also track the progress of your job by checking what gets written to you
 <br />
  
 <div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Tutorial Assignment: Create a python script and it from a submitted job</strong>
+   <strong>Tutorial Assignment: Create a python script and run it from a submitted job</strong>
    <ol>
      <li>Create a new python script using any text editor you'd like (recommended: VScode).</li>
      <li>Add python code to do the following:
        <ul style="list-style-type: none; margin-left: 20px;">
          <li>Read in a fasta file (in /shared/forsythe/) and store as a dictionary</li>
-         <li>Store the sequence ID and length of each sequences in a dataframe object.</li>
+         <li>Store the sequence ID and length of each sequence in a dataframe object.</li>
          <li>Write a .csv file containing the data in the dataframe.</li>
        </ul>
      </li>
-     <li>Make the python script executable</li>
+     <li>Make the python script executable.</li>
      <li>Run the python script as a submitted job.</li>
-     <li>Submit the following on Canvas:</li>
+     <li>Submit the following on Canvas:
        <ul style="list-style-type: none; margin-left: 20px;">
-         <li>The contents of your .out and .err file from the job</li>
-         <li>Paste a small portion (~10 lines) of you csv file into the canvas assignment</li>
-       </ol>
-       </div>
+         <li>The contents of your .out and .err files from the job.</li>
+         <li>Paste a small portion (~10 lines) of your CSV file into the Canvas assignment.</li>
+       </ul>
+     </li>
+   </ol>
+</div>
 
-
-
-<br />
-<br />
 
 
 
