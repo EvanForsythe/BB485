@@ -2,23 +2,23 @@
 layout: default
 ---
 
-# Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+# Week 3 lecture and tutorial
+1. [Homology](#Homology)
+2. [Multiple sequence alignments](#MSA)
+3. [Phylogenetic inference](#phylogenies)
+4. [Setting up a computing environment with conda](#conda)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
+## <ins>**Homology: features shared due to common ancestry**<ins> <a name="Homology"></a>
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
 
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
+## <ins>**Multiple sequence alignment**<ins> <a name="MSA"></a>
 
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
+
+## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
+
+
+## <ins>**Setting up a computing environment with conda**<ins> <a name="conda"></a>
+
 
 
 
