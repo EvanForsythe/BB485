@@ -23,7 +23,7 @@ A **computing environment** refers to the hardware and software available to run
 
 ## Checking your PATH
 
-Your PATH is an important component of your computing environment. The PATH refers to the folders that your computer 'looks' in to find programs to run. For example, you can only run a give unix program (i.e. a command) from the command line if the folder that contains that program is in your path.
+Your PATH is an important component of your computing environment. The PATH refers to the folders that your computer 'looks' in to find programs to run. For example, you can only run a given unix program (i.e. a command) from the command line if the folder that contains that program is in your PATH.
 
 You can view your current path at any time by running:
 ```bash
