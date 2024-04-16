@@ -18,7 +18,7 @@ This week we will learn how to perform phylogenetic analyses. Phylogenetic trees
 
 ![phy01](/Images/Week03/phy01.png)
 
-Phylogenetic trees can be visualized in many different ways. We will be become familiar with the paranthetical format used to store phylogentic tree infromation in text, newick format.
+Phylogenetic trees can be visualized in many different ways. Phylogentic tree infromation is stored and processed on computers in paranthetical text format **(newick format)**. Newick format is generally not very 'human readable', so we can use different software to depict the same information in the human-readable tree diagram we're used to seeing. 
 
 ![phy04](/Images/Week03/phy04.png)
 
@@ -32,7 +32,7 @@ The concept of homology is extremely important in evolutionary biology. As we'll
 
 ![phy02](/Images/Week03/phy02.png)
 
-Phylogenetics also relies on homologous structures/characters/traits that have changed during the evolution of the species being studied. 
+Phylogenetics relies specificaly on homologous structures/characters/traits that have changed during the evolution of the species being studied. A trait that hasn't changed doesn't provide any information about the relationships among species.
 
 ![phy03](/Images/Week03/phy03.png)
 
@@ -43,6 +43,7 @@ Synapomorphies are particularily important for phylogenetic analyses because the
 ![phy06](/Images/Week03/phy06.png)
 
 ## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
+The phylogenitic trees that we're used to seeing are the output of complex statistical analyses. We can never know the true relationships of species (without a time-machine), so a phylogeny is our 'best guess' based on stastical analysis of data. The process of using statistics to make a best guess is called <ins>phylogenetic inference<ins>.
 
 ![phy07](/Images/Week03/phy07.png)
 
