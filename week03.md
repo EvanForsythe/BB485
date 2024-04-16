@@ -47,15 +47,26 @@ The phylogenitic trees that we're used to seeing are the output of complex stati
 
 ![phy07](/Images/Week03/phy07.png)
 
+Note that including an outgroup in the analysis can be very helpful in thinking about which traits are ancestral vs derived.
+
+- **Outgroup:** a taxon that we can safely assume is distantly related to all other species included in a phylogenetic analysis. Including an outgroup, allows us to 'root' a phylogenetic tree.
+
 ## <ins>**Parsimony: the simplest explanation is the best explanation**<ins> <a name="parsimony"></a>
+
+Parsimony is a framework/worldview used in phylogenetics to 'choose' between alternative phylogenetic hypotheses. The idea is that the tree that requires the fewest changes/mutations to explain the data is the most parsimonious (i.e. the 'best'). 
 
 ![phy08](/Images/Week03/phy08.png)
 
+Parsimony can be used in the 'tree search' phase of phylogenetic inference. 
+
 ![phy09](/Images/Week03/phy09.png)
+
+Parsimony is a very simple and elegant framework. However, it may be an oversimplification of how evolution workds in real life. For example, parsimony is prone to produce error when homoplasy has occured.
 
 ![phy10](/Images/Week03/phy10.png)
 
 ## <ins>**Inferring difficult relationships**<ins> <a name="difficult"></a>
+Below we will discuss a famous phylogenetic relationship that has been difficult to resolve. We will learn about different statistical frameworks and how they can lead to conflicting results. 
 
 ![phy11](/Images/Week03/phy11.png)
 
