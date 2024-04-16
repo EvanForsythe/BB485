@@ -47,7 +47,7 @@ The phylogenitic trees that we're used to seeing are the output of complex stati
 
 ![phy07](/Images/Week03/phy07.png)
 
-Note that including an outgroup in the analysis can be very helpful in thinking about which traits are ancestral vs derived.
+Note that including an 'outgroup' in the analysis can be very helpful in thinking about which traits are ancestral vs derived.
 
 - **Outgroup:** a taxon that we can safely assume is distantly related to all other species included in a phylogenetic analysis. Including an outgroup, allows us to 'root' a phylogenetic tree.
 
@@ -71,7 +71,7 @@ Below we will discuss a famous phylogenetic relationship that has been difficult
 
 ![phy11](/Images/Week03/phy11.png)
 
-The phylogenetic placement of whales has been notoriously tricky. Different researchers have argued about whether whales are closely or distantly related to hippos, leading this debate to be reffered to as the 'whippo' debate. 
+The phylogenetic placement of whales has been notoriously tricky. Different researchers have argued about whether whales are closely or distantly related to hippos, leading this debate to be referred to as the 'whippo' debate. 
 
 ![phy12](/Images/Week03/phy12.png)
 
@@ -97,7 +97,9 @@ To use DNA sequences for phylogenetic analyses, it is critical that we be able t
 
 ![phy15](/Images/Week03/phy15.png)
 
-Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignent<ins>. Inferring a MSA is also a statistical inference based on a set of rules/scores (i.e. a statisticasl algorithm). 
+Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignent<ins>. 
+
+Inferring a MSA is also a statistical inference based on a set of rules/scores (i.e. a statisticasl algorithm). 
 
 ![phy16](/Images/Week03/phy16.png)
 
@@ -107,11 +109,15 @@ The concept of parsimony can be applied to DNA sequences in phylogenetic inferen
 
 ## <ins>**Maximum likelihood**<ins> <a name="ML"></a>
 
-![phy17](/Images/Week03/phy17.png)
+Maximum Likelihood (ML) is a statistical framework that a assesses a given tree in terms of how 'likely' it would be to observe the data (the DNA multiple sequnce alignment) if that particular tree were true.
 
 ![phy18](/Images/Week03/phy18.png)
 
+The maximum likelihood framework incorperates more complex models of sequence evolution than parsimony. For example, ML can include models that specifically account for homoplasy; therefore, ML is less prone to errors when homoplasy has occured in the data. 
+
 ![phy19](/Images/Week03/phy19.png)
+
+Algorithms that perform 'tree search' analyses are often called 'hill-climbing' algorithms. The reason for this terminology has to do with our theoretical idea of 'tree space' (i.e. all of the possible trees for a given group of species).
 
 ![phy20](/Images/Week03/phy20.png)
 
