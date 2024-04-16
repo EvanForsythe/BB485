@@ -30,8 +30,6 @@ layout: default
 
 ![phy07](/Images/Week03/phy07.png)
 
-![phy08](/Images/Week03/phy08.png)
-
 ## <ins>**Parsimony: the simplest explanation is the best explanation**<ins> <a name="parsimony"></a>
 
 ![phy08](/Images/Week03/phy08.png)
