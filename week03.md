@@ -82,10 +82,10 @@ Early analyses based on parsimony-based analyses of a small number of morphologi
 The vast majority of modern phylogenetic analyses use molecular sequences as the 'trait' to study in phylogenetic analyses.
 
 - Advantages of 'molecular phylogenetics':
-   - The sequence of DNA (A, T, G, C) represent distinct character states, which are less prone to differences in interpretation/subjectivity. 
-   - Each DNA base can be considered as a 'trait' This means that the DNA sequence of a single gene contains thousands of traits.
+   - The sequence of DNA (A, T, G, C) represents distinct character states, which are less prone to differences in interpretation/subjectivity. 
+   - Each DNA nucleotide can be considered as a 'trait'. This means that the DNA sequence of a single gene contains thousands of traits.
       - Phylogenetic statistics (and all statistics) gain statistical power from larger sample size.
-   - Theoretical understanding of how DNA mutates and evolves in nature can help us form realistic models and incorperate them into phylogenetic inference.
+   - Theoretical work has yielded a detailed understanding of how DNA mutates and evolves in nature, which can help us form realistic models and incorperate them into phylogenetic inference.
 
 ![phy13](/Images/Week03/phy13.png)
 
