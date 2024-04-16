@@ -197,8 +197,8 @@ conda activate <your-env-name>
 - mulitple sequence alignment software
   - `conda install mafft`
 - phylogenetics software
-  - `conda install raxml`
-  - `conda install newick_utilities`
+  - `conda install -c bioconda raxml`
+  - `conda install bioconda::newick_utils`
  
 7. Checking the status of the environment:
 - Run `echo $PATH` to see how it's changed from the beginning.
