@@ -61,26 +61,47 @@ Parsimony can be used in the 'tree search' phase of phylogenetic inference.
 
 ![phy09](/Images/Week03/phy09.png)
 
-Parsimony is a very simple and elegant framework. However, it may be an oversimplification of how evolution workds in real life. For example, parsimony is prone to produce error when homoplasy has occured.
+Parsimony is a very simple and elegant framework. However, it may be an oversimplification of how evolution works in real life. For example, parsimony is prone to produce error when homoplasy has occured.
 
 ![phy10](/Images/Week03/phy10.png)
 
 ## <ins>**Inferring difficult relationships**<ins> <a name="difficult"></a>
+
 Below we will discuss a famous phylogenetic relationship that has been difficult to resolve. We will learn about different statistical frameworks and how they can lead to conflicting results. 
 
 ![phy11](/Images/Week03/phy11.png)
 
+The phylogenetic placement of whales has been notoriously tricky. Different researchers have argued about whether whales are closely or distantly related to hippos, leading this debate to be reffered to as the 'whippo' debate. 
+
 ![phy12](/Images/Week03/phy12.png)
+
+Early analyses based on parsimony-based analyses of a small number of morphological traits suggested that whales are located outside of the clade that contains hippos. However, bringing in more 'modern' analytical approaches may question this finding (discussed below). 
 
 ## <ins>**Multiple sequence alignment**<ins> <a name="MSA"></a>
 
+The vast majority of modern phylogenetic analyses use molecular sequences as the 'trait' to study in phylogenetic analyses.
+
+- Advantages of 'molecular phylogenetics':
+   - The sequence of DNA (A, T, G, C) represent distinct character states, which are less prone to differences in interpretation/subjectivity. 
+   - Each DNA base can be considered as a 'trait' This means that the DNA sequence of a single gene contains thousands of traits.
+      - Phylogenetic statistics (and all statistics) gain statistical power from larger sample size.
+   - Theoretical understanding of how DNA mutates and evolves in nature can help us form realistic models and incorperate them into phylogenetic inference.
+
 ![phy13](/Images/Week03/phy13.png)
+
+DNA sequences can be homologous. The idea is that if a group of extant species have a given gene, the common ancestor must of had that gene as well.
 
 ![phy14](/Images/Week03/phy14.png)
 
+To use DNA sequences for phylogenetic analyses, it is critical that we be able to 'line the sequences up' such that you could draw a vertical line and the lined up nucleotides would be the homologous site in the DNA sequence.
+
 ![phy15](/Images/Week03/phy15.png)
 
+Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignent<ins>. Inferring a MSA is also a statistical inference based on a set of rules/scores (i.e. a statisticasl algorithm). 
+
 ![phy16](/Images/Week03/phy16.png)
+
+The concept of parsimony can be applied to DNA sequences in phylogenetic inference. 
 
 ![phy17](/Images/Week03/phy17.png)
 
