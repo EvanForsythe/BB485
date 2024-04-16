@@ -201,7 +201,7 @@ conda activate <your-env-name>
   - `conda install numpy`
   - `conda install Bio`
 - mulitple sequence alignment software
-  - `conda install mafft`
+  - `conda install bioconda::mafft`
 - phylogenetics software
   - `conda install -c bioconda raxml`
   - `conda install bioconda::newick_utils`
