@@ -4,25 +4,41 @@ layout: default
 
 # Week 3 lecture and tutorial
 1. [Conceptual background on phylogenetics](#Homology)
-   - **A.** [Homology](#Homology)
-   - **B.** [Phylogenetic inference](#phylogenies)
-   - **C.** [Parsimony](#parsimony)
-   - **C.** [Inferring difficult relationships](#difficult)
-   - **D.** [Multiple sequence alignments](#MSA)
-   - **E.** [Maximum likelihood](#ML)
-2. [Setting up a computing environment with conda](#conda)
+   - **A.** [Intro to phylogenetic trees](#trees)
+   - **B.** [Homology](#Homology)
+   - **C.** [Phylogenetic inference](#phylogenies)
+   - **D.** [Parsimony](#parsimony)
+   - **E.** [Inferring difficult relationships](#difficult)
+   - **F.** [Multiple sequence alignments](#MSA)
+   - **G.** [Maximum likelihood](#ML)
+3. [Setting up a computing environment with conda](#conda)
+
+## <ins>**Intro to phylogenetic trees**<ins> <a name="trees"></a>
+This week we will learn how to perform phylogenetic analyses. Phylogenetic trees are diagrams that describe our best hypothesis for the relationship between different species/groups/populations/taxa that diverged from a common ancestor. 
 
 ![phy01](/Images/Week03/phy01.png)
 
+Phylogenetic trees can be visualized in many different ways. We will be become familiar with the paranthetical format used to store phylogentic tree infromation in text, newick format.
+
 ![phy04](/Images/Week03/phy04.png)
+
+Below are some of the terms used in phylogenetics. We will employ these terms as we analyze and interpret phylogenies. 
 
 ![phy05](/Images/Week03/phy05.png)
 
 ## <ins>**Homology: features shared due to common ancestry**<ins> <a name="Homology"></a>
 
+The concept of homology is extremely important in evolutionary biology. As we'll see, phylogenetics relies on the ability to compare homologous structures/characters/traits across multiple species.
+
 ![phy02](/Images/Week03/phy02.png)
 
+Phylogenetics also relies on homologous structures/characters/traits that have changed during the evolution of the species being studied. 
+
 ![phy03](/Images/Week03/phy03.png)
+
+Synapomorphies are particularily important for phylogenetic analyses because they can help define a clade (i.e. they are 'phylogenetically informative'). 
+
+**Synapomorphy:** A derived trait that is shared by two or more species (i.e. a clade). 
 
 ![phy06](/Images/Week03/phy06.png)
 
