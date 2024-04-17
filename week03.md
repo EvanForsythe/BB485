@@ -199,7 +199,7 @@ conda activate <your-env-name>
 - python packages we'll use frequently
   - `conda install pandas`
   - `conda install numpy`
-  - `conda install Bio`
+  - `conda install conda-forge::biopython`
 - mulitple sequence alignment software
   - `conda install bioconda::mafft`
 - phylogenetics software
