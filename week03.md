@@ -246,7 +246,22 @@ Viewing the alignment in a more human-readable format is a little more tricky. T
 
 ## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**<ins> <a name="raxml"></a>
 
-RaxML is a maximum likelihood algorithm for inferring phylogenies. Maximum likelihood is a complex statistical framework
+RaxML is a maximum likelihood algorithm for inferring phylogenies. Maximum likelihood is a complex statistical framework, meaning there are more arguments. I will provide a brief description of the most relevant ones. 
+
+```bash
+raxmlHPC-PTHREADS-SSE3 -s <name-of-alignment-file> -n <some-text-for-output> -m PROTGAMMALGF -p 12345 -x 12345 -f a -# 100 -T 2
+```
+
+- `raxmlHPC-PTHREADS-SSE3` is the version of the algorithm we're running.
+- `-s` is the name of the input file. **This should be a MSA.**
+- `-n` is used to specify what we want our output files to be named. E.g. `TEST`.
+- `-m` is the model of evolution used when calculating likelihood scores. This model is what let's ML use a more 'realistic' framework (e.g. allowing for some homoplasy).
+- `p` and `-x` give raxml a 'random' number to help it decide where to begin the 'tree search'. (i.e. which tree to start with during the hill-climbing algorithm).
+- `-f` tells raxml what mode/task to run.
+- `-#` tells raxml how many bootstrap replicated to run.
+- `-T` tells raxml how many parallel threads (i.e. CPUs) to use. You can change this to a larger number and run the command from inside of a job submission.
+
+
 
 
 Use `head` and `wc -l` to check out the file that starts in `RAxML_bipartitions`. This file is in **newick** format and it contains the phylogeny that you inferred with the maximum likelihood algorithm.
@@ -306,10 +321,10 @@ output_pdf = "TEST_phylogenetic_tree.pdf"
 plt.savefig(output_pdf)
 ```
 
-- You'll need to modify the lines that specify:
-   1. The name of the input newick file
-   2. The name of the outgroup taxon used for rooting
-   3. The name of the pdf file being created
+You'll need to modify the lines that specify:
+1. The name of the input newick file
+2. The name of the outgroup taxon used for rooting
+3. The name of the pdf file being created
 
 
 
