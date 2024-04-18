@@ -217,10 +217,28 @@ conda activate <your-env-name>
 
 
 ## <ins>**Performing a phylogenetic analysis**<ins> <a name="analysis"></a>
+We are going to perform a phylogenetic analysis using the command line programs, MAFFT (multiple sequence alignment) and raxML (phylogenetic inference). These programs impliment algorithms for performing the statistical calculations we discussed earlier. Software that uses complex algorithms often exists as a program that we call from the command line (as opposed to running within python for example). The rationale for this is that it makes it easier to submit a 'run' as a unix command from within a job submission script.
 
 ## <ins>**Homolog protein sequences**<ins> <a name="seqs"></a>
 
 ## <ins>**Multiple sequence alignment with MAFFT**<ins> <a name="mafft"></a>
+
+MAFFT is very easy to run from the command line. It does not require many arguments or user-defined parameters. To run MAFFT, using the following command:
+
+```bash
+mafft <input-seq-file>.fasta
+```
+- Notice that the command above prints the alignment to your screen (i.e. the "standard out"). We typically want to save the outout as a file. You can easily do that using the "redirect" symbol (i.e. `>`).
+
+```bash
+mafft <input-seq-file>.fasta > <name-of-new-file>
+```
+
+Check your alignment file out using command like `more`, and `wc -l`.
+
+Viewing the alignment in a more human-readable format is a little more tricky. There are several GUI applications you can install on your personal computer, but it's difficult to view alignments from the command line. 
+
+[Here]([https://link-url-here.org](https://www.ncbi.nlm.nih.gov/projects/msaviewer/)) is a web-based tool I found from the National Center of Biotechnology Information (NCBI).
 
 ![aln_view_](/Images/Week03/aln_view.png)
 
