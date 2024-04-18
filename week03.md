@@ -357,7 +357,7 @@ Steps:
    - This analysis could take much longer. You'll need to use a job submission to run your raxml command. I recommend 12 threads and 12 CPUs. Please ask me if you have questions about how to do that. 
 9. Once you have a Newick file, use python to create a PDF of that file.
    - You can use to python code from the tutorial. Note that you don't need to run that python code from inside of a job.
-   - Note that we probably don't want to root with Arabidopsis thaliana. However, we don't have an a priori outgroup to use for rooting. Instead, root your tree by the branch that looks the longest when you visualize the tree. It is a decent assumption when you don't have a clear outgroup.
+   - Note that we probably don't want to root with Arabidopsis thaliana. However, we don't have an a priori outgroup to use for rooting. Instead, root your tree by the branch that looks the longest when you visualize the tree. Using the longest branch as the root is a decent assumption when you don't have a clear outgroup.
 11. Submit a PDF of the tree as your assignment. 
 
 
