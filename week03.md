@@ -249,7 +249,7 @@ Viewing the alignment in a more human-readable format is a little more tricky. T
 RaxML is a maximum likelihood algorithm for inferring phylogenies. Maximum likelihood is a complex statistical framework
 
 
-Use `head` and `wc -l` to check out the file that starts in `RAxML_bipartitions`. This file is in <ins>newick<ins> format and it contains the phylogeny that you inferred with the maximum likelihood algorithm.
+Use `head` and `wc -l` to check out the file that starts in `RAxML_bipartitions`. This file is in **newick** format and it contains the phylogeny that you inferred with the maximum likelihood algorithm.
 
 ## Viewing trees
 Newick format trees are definitely not human-readable so we'll need some outside software to be able to view and interpret the trees.
@@ -263,7 +263,7 @@ nw_display <name-of-newick-file>
 This gives a quick view but it is not suitible for a publication-quality figure (or an assignment-quality) figure. 
 
 ## Creating high-quality figures displaying phylogenies
-Similar to viewing alignments, there are several desktop apps you can install on your computer (e.g. Mega or FigTree). To avoid installing apps on your computer, you can use ([this]([https://www.ncbi.nlm.nih.gov/projects/treeview/])) web-based tool from NCBI.
+Similar to viewing alignments, there are several desktop apps you can install on your computer (e.g. Mega or FigTree). To avoid installing apps on your computer, you can use [this web-based tool from NCBI.]([https://www.ncbi.nlm.nih.gov/projects/treeview/]).
 
 - **NOTE:** make sure that when you paste the contents of your newick file, it is all on one line. If you need to, use a text editor to get rid of weird spaces/new-lines that may have resulted from copy-and-pasting.
 - **NOTE:** You'll need to root the tree with your outgroup (Arabidopsis thaliana) and change the layout to 'rectangle cladeogram'. 
