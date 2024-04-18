@@ -338,7 +338,16 @@ You can view the pdf in VScode, but first you'll need to install a pdf extension
 
 
 ## <ins>**Weekly project write-up assignment**<ins> <a name="write"></a>
+For the weekly project writeup, you will perform a phylogenetic analysis on of the same sequence but include "all domains of life". 
 
+Steps:
+1. Go to this website: `https://www.shoot.bio/`
+2. Input the Arabidopsis thaliana ATP synthase protein sequence.
+3. Search "All domains of life"
+4. Output the sequence files
+5. Make a multiple sequence alignment
+6. Infer a ML tree (you may need to submit a job because it will take longer)
+7. Submit a PDG of the tree
 
 
 
