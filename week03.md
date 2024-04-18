@@ -231,12 +231,14 @@ mafft <input-seq-file>.fasta
 - Notice that the command above prints the alignment to your screen (i.e. the "standard out"). We typically want to save the outout as a file. You can easily do that using the "redirect" symbol (i.e. `>`).
 
 ```bash
-mafft <input-seq-file>.fasta > <name-of-new-file>
+mafft [input-seq-file] > [name-of-new-file]
 ```
 
 Check your alignment file out using command like `more`, and `wc -l`.
 
-Viewing the alignment in a more human-readable format is a little more tricky. There are several GUI applications you can install on your personal computer, but it's difficult to view alignments from the command line. 
+## Viewing alignments
+
+Viewing the alignment in a more human-readable format is a little more tricky. There are several GUI applications you can install on your personal computer (e.g. Mega or Geneious), but it's difficult to view alignments from the command line. 
 
 [Here]([https://link-url-here.org](https://www.ncbi.nlm.nih.gov/projects/msaviewer/)) is a web-based tool I found from the National Center of Biotechnology Information (NCBI).
 
@@ -244,6 +246,31 @@ Viewing the alignment in a more human-readable format is a little more tricky. T
 
 ## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**<ins> <a name="raxml"></a>
 
-  
+RaxML is a maximum likelihood algorithm for inferring phylogenies. Maximum likelihood is a complex statistical framework
+
+
+Use `head` and `wc -l` to check out the file that starts in `RAxML_bipartitions`. This file is in <ins>newick<ins> format and it contains the phylogeny that you inferred with the maximum likelihood algorithm.
+
+## Viewing trees
+Newick format trees are definitely not human-readable so we'll need some outside software to be able to view and interpret the trees.
+
+For a quick view, there is a cool command-line tool for viewing the tree. We installed this tool as part of the 'newick utilities' package. To view your tree run:
+
+```bash
+nw_display <name-of-newick-file>
+```
+
+This gives a quick view but it is not suitible for a publication-quality figure (or an assignment-quality) figure. 
+
+## Creating high-quality figures displaying phylogenies
+Similar to viewing alignments, there are several desktop apps you can install on your computer (e.g. Mega or FigTree). To avoid installing apps on your computer, you can use ([this]([https://www.ncbi.nlm.nih.gov/projects/treeview/])) web-based tool from NCBI.
+
+- **NOTE:** make sure that when you paste the contents of your newick file, it is all on one line. If you need to, use a text editor to get rid of weird spaces/new-lines that may have resulted from copy-and-pasting.
+- **NOTE:** You'll need to root the tree with your outgroup (Arabidopsis thaliana) and change the layout to 'rectangle cladeogram'. 
+
+
+
+
+
 
 
