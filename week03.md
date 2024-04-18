@@ -326,6 +326,11 @@ output_pdf = "TEST_phylogenetic_tree.pdf"
 plt.savefig(output_pdf)
 ```
 
+You may need to install matplotlib module as follows:
+```bash
+conda install conda-forge::matplotlib
+```
+
 You'll need to modify the lines that specify:
 1. The name of the input newick file
 2. The name of the outgroup taxon used for rooting
