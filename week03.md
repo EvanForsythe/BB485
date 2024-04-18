@@ -16,6 +16,7 @@ layout: default
    - **A.** [Homolog protein sequences](#seqs)
    - **B.** [Multiple sequence alignment with MAFFT](#mafft)
    - **C.** [Maximum Likelihood Phylogenetic Inference with RAxML](#raxml)
+5. [Project write-up](#write)
 
 ## <ins>**Intro to phylogenetic trees**<ins> <a name="trees"></a>
 This week we will learn how to perform phylogenetic analyses. Phylogenetic trees are diagrams that describe our best hypothesis for the relationship between different species/groups/populations/taxa that diverged from a common ancestor. 
@@ -335,6 +336,8 @@ You can view the pdf in VScode, but first you'll need to install a pdf extension
 
 ![VScode](/Images/Week03/VScode.png)
 
+
+## <ins>**Weekly project write-up assignment**<ins> <a name="write"></a>
 
 
 
