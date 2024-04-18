@@ -285,6 +285,10 @@ Similar to viewing alignments, there are several desktop apps you can install on
 - **NOTE:** make sure that when you paste the contents of your newick file, it is all on one line. If you need to, use a text editor to get rid of weird spaces/new-lines that may have resulted from copy-and-pasting.
 - **NOTE:** You'll need to root the tree with your outgroup (Arabidopsis thaliana) and change the layout to 'rectangle cladeogram'. 
 
+### Rooted vs unrooted trees
+
+![rooting](/Images/Week03/root.png)
+
 ### Python-based figure generation
 We can use the Phylo module (part of Biopython) to work with phylogenies in python. This is a good option because there are fewer manual point-and-click steps needed. This allows us to reproduce out analyses easily!
 
@@ -325,6 +329,11 @@ You'll need to modify the lines that specify:
 1. The name of the input newick file
 2. The name of the outgroup taxon used for rooting
 3. The name of the pdf file being created
+
+
+You can view the pdf in VScode, but first you'll need to install a pdf extension:
+
+![VScode](/Images/Week03/VScode.png)
 
 
 
