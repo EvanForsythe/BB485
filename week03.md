@@ -263,11 +263,50 @@ nw_display <name-of-newick-file>
 This gives a quick view but it is not suitible for a publication-quality figure (or an assignment-quality) figure. 
 
 ## Creating high-quality figures displaying phylogenies
+### Web-based visualization
 Similar to viewing alignments, there are several desktop apps you can install on your computer (e.g. Mega or FigTree). To avoid installing apps on your computer, you can use [this web-based tool from NCBI.](https://www.ncbi.nlm.nih.gov/projects/treeview/).
 
 
 - **NOTE:** make sure that when you paste the contents of your newick file, it is all on one line. If you need to, use a text editor to get rid of weird spaces/new-lines that may have resulted from copy-and-pasting.
 - **NOTE:** You'll need to root the tree with your outgroup (Arabidopsis thaliana) and change the layout to 'rectangle cladeogram'. 
+
+### Python-based figure generation
+We can use the Phylo module (part of Biopython) to work with phylogenies in python. This is a good option because there are fewer manual point-and-click steps needed. This allows us to reproduce out analyses easily!
+
+Here is an example of python code that can be used to create a pdf file displaying a tree. There are many options for customizing your figures (see biopython help page for more info). 
+
+```python
+from Bio import Phylo
+import matplotlib.pyplot as plt
+
+# Read the Newick file into a tree object
+newick_file = "RAxML_bipartitions.OUT2"
+tree = Phylo.read(newick_file, 'newick')
+
+# Root the tree by the taxon "Arabidopsis_thaliana_ATP_synthase_subunit_C_family_protein"
+root_taxon = "Arabidopsis_thaliana_ATP_synthase_subunit_C_family_protein"
+tree.root_with_outgroup({'name': root_taxon})
+
+# Set up figure and axis
+fig, ax = plt.subplots(figsize=(10, 10))
+
+# Plot the tree without X and Y axis
+Phylo.draw(tree, axes=ax)
+ax.set_xticks([])
+ax.set_yticks([])
+
+# Remove the box around the outside of the tree
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)
+
+# Save the plot as a PDF
+output_pdf = "phylogenetic_tree.pdf"
+plt.savefig(output_pdf)
+```
+
+- You'll need to modify lines X, Y, and Z.
 
 
 
