@@ -275,12 +275,12 @@ We can use the Phylo module (part of Biopython) to work with phylogenies in pyth
 
 Here is an example of python code that can be used to create a pdf file displaying a tree. There are many options for customizing your figures (see biopython help page for more info). 
 
-```python
+```python number
 from Bio import Phylo
 import matplotlib.pyplot as plt
 
 # Read the Newick file into a tree object
-newick_file = "RAxML_bipartitions.OUT2"
+newick_file = "RAxML_bipartitions.TEST"
 tree = Phylo.read(newick_file, 'newick')
 
 # Root the tree by the taxon "Arabidopsis_thaliana_ATP_synthase_subunit_C_family_protein"
@@ -302,7 +302,7 @@ ax.spines['bottom'].set_visible(False)
 ax.spines['left'].set_visible(False)
 
 # Save the plot as a PDF
-output_pdf = "phylogenetic_tree.pdf"
+output_pdf = "TEST_phylogenetic_tree.pdf"
 plt.savefig(output_pdf)
 ```
 
