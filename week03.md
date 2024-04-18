@@ -12,6 +12,10 @@ layout: default
    - **F.** [Multiple sequence alignments](#MSA)
    - **G.** [Maximum likelihood](#ML)
 3. [Setting up a computing environment with conda](#conda)
+4. [Performing a phylogenetic analysis](#analysis)
+   - **A.** [Homolog protein sequences](#seqs)
+   - **B.** [Multiple sequence alignment with MAFFT](#mafft)
+   - **C.** [Maximum Likelihood Phylogenetic Inference with RAxML](#raxml)
 
 ## <ins>**Intro to phylogenetic trees**<ins> <a name="trees"></a>
 This week we will learn how to perform phylogenetic analyses. Phylogenetic trees are diagrams that describe our best hypothesis for the relationship between different species/groups/populations/taxa that diverged from a common ancestor. 
@@ -212,7 +216,13 @@ conda activate <your-env-name>
 - If you want to exit an environment, you can run `conda deactivate` at any time.
 
 
+## <ins>**Performing a phylogenetic analysis**<ins> <a name="analysis"></a>
 
+## <ins>**Homolog protein sequences**<ins> <a name="seqs"></a>
+
+## <ins>**Multiple sequence alignment with MAFFT**<ins> <a name="mafft"></a>
+
+## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**<ins> <a name="raxml"></a>
 
   
 
