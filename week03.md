@@ -263,7 +263,8 @@ nw_display <name-of-newick-file>
 This gives a quick view but it is not suitible for a publication-quality figure (or an assignment-quality) figure. 
 
 ## Creating high-quality figures displaying phylogenies
-Similar to viewing alignments, there are several desktop apps you can install on your computer (e.g. Mega or FigTree). To avoid installing apps on your computer, you can use [this web-based tool from NCBI.]([https://www.ncbi.nlm.nih.gov/projects/treeview/]).
+Similar to viewing alignments, there are several desktop apps you can install on your computer (e.g. Mega or FigTree). To avoid installing apps on your computer, you can use [this web-based tool from NCBI.](https://www.ncbi.nlm.nih.gov/projects/treeview/).
+
 
 - **NOTE:** make sure that when you paste the contents of your newick file, it is all on one line. If you need to, use a text editor to get rid of weird spaces/new-lines that may have resulted from copy-and-pasting.
 - **NOTE:** You'll need to root the tree with your outgroup (Arabidopsis thaliana) and change the layout to 'rectangle cladeogram'. 
