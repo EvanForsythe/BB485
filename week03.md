@@ -222,6 +222,8 @@ conda activate <your-env-name>
 
 ## <ins>**Multiple sequence alignment with MAFFT**<ins> <a name="mafft"></a>
 
+![aln_view_](/Images/Week03/aln_view.png)
+
 ## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**<ins> <a name="raxml"></a>
 
   
