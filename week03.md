@@ -275,7 +275,7 @@ We can use the Phylo module (part of Biopython) to work with phylogenies in pyth
 
 Here is an example of python code that can be used to create a pdf file displaying a tree. There are many options for customizing your figures (see biopython help page for more info). 
 
-```python number
+```python
 from Bio import Phylo
 import matplotlib.pyplot as plt
 
@@ -306,7 +306,10 @@ output_pdf = "TEST_phylogenetic_tree.pdf"
 plt.savefig(output_pdf)
 ```
 
-- You'll need to modify lines X, Y, and Z.
+- You'll need to modify the lines that specify:
+   1. The name of the input newick file
+   2. The name of the outgroup taxon used for rooting
+   3. The name of the pdf file being created
 
 
 
