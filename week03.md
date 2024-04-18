@@ -347,12 +347,18 @@ For the weekly project writeup, you will perform a phylogenetic analysis on of t
 
 Steps:
 1. Go to this website: `https://www.shoot.bio/`
-2. Input the Arabidopsis thaliana ATP synthase protein sequence.
-3. Search "All domains of life"
-4. Output the sequence files
-5. Make a multiple sequence alignment
-6. Infer a ML tree (you may need to submit a job because it will take longer)
-7. Submit a PDG of the tree
+2. Paste in the Arabidopsis thaliana ATP synthase protein sequence.
+   - You can find this in the original fasta file. It should include the ">Arabidopsis_thaliana..." line plus the protein sequence directly after that.
+4. Search "All domains of life"
+5. Download the sequence files ("Export Sequences" at the top).
+   - You'll need to download the file to your computer. Then you can open in any text editor and then use copy/paste to create a new fasta file on the HPC. The end goal is that you want a fasta file with all the (unaligned) sequences in your HPC so you can work with it for downstream steps.
+7. Use mafft to make a multiple sequence alignment
+8. Use the multiple sequence alignment to infer a ML tree
+   - This analysis could take much longer. You'll need to use a job submission to run your raxml command. I recommend 12 threads and 12 CPUs. Please ask me if you have questions about how to do that. 
+9. Once you have a Newick file, use python to create a PDF of that file.
+   - You can use to python code from the tutorial. Note that you don't need to run that python code from inside of a job.
+   - Note that we probably don't want to root with Arabidopsis thaliana. However, we don't have an a priori outgroup to use for rooting. Instead, root your tree by the branch that looks the longest when you visualize the tree. It is a decent assumption when you don't have a clear outgroup.
+11. Submit a PDF of the tree as your assignment. 
 
 
 
