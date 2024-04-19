@@ -359,13 +359,12 @@ Steps:
    - You can use to python code from the tutorial. Note that you don't need to run that python code from inside of a job.
    - Note that we probably don't want to root with Arabidopsis thaliana. However, we don't have an a priori outgroup to use for rooting in this case, so there's no obvious choice for an outgroup. Instead, root your tree by the branch that looks the longest when you visualize the tree. Using the longest branch as the root is a decent assumption when you don't have a clear outgroup.
 11. Submit a writeup assignment that includes the following items:
-   - A PDF of the tree
-   - A screenshot of the MSA alignment (visualized on the NCBI sequence viewer)
-   - Write a "Results section" (expected length about 2-3 sentances per question) that answers the following questions based on the tree:
-      1. Do the plant species on the tree form a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place plants as a clade.
-      2. Do the animal species on the tree from a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place animals as a clade.
-      3. Has there been gene duplication of the ATP synthase protein sequence?
-Note: you can submit your writeup in whatever format your prefer. One suggestion would be to embed the pdf/screen-shot in a word document and answer the questions in that same document. 
+- A PDF of the tree
+- A screenshot of the MSA alignment (visualized on the NCBI sequence viewer)
+- Write a "Results section" (expected length about 2-3 sentences per question) that answers the following questions based on the tree:
+   1. Do the plant species on the tree form a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place plants as a clade.
+   2. Do the animal species on the tree from a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place animals as a clade.
+   3. Has there been gene duplication of the ATP synthase protein sequence?
 
 
 
