@@ -362,9 +362,9 @@ Steps:
 - A PDF of the tree
 - A screenshot of the MSA alignment (visualized on the NCBI sequence viewer)
 - Write a "Results section" (expected length about 2-3 sentences per question) that answers the following questions based on the tree:
-   1. Do the plant species on the tree form a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place plants as a clade.
-   2. Do the animal species on the tree from a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place animals as a clade.
-   3. Has there been gene duplication of the ATP synthase protein sequence?
+   - Do the plant species on the tree form a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place plants as a clade.
+   - Do the animal species on the tree from a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place animals as a clade.
+   - Has there been gene duplication of the ATP synthase protein sequence?
 
 
 
