@@ -241,7 +241,7 @@ Check your alignment file out using command like `more`, and `wc -l`.
 
 Viewing the alignment in a more human-readable format is a little more tricky. There are several GUI applications you can install on your personal computer (e.g. Mega or Geneious), but it's difficult to view alignments from the command line. 
 
-[Here]([https://link-url-here.org](https://www.ncbi.nlm.nih.gov/projects/msaviewer/)) is a web-based tool I found from the National Center of Biotechnology Information (NCBI).
+Here is a [web-based tool from the National Center of Biotechnology Information (NCBI)]([https://link-url-here.org](https://www.ncbi.nlm.nih.gov/projects/msaviewer/).
 
 ![aln_view_](/Images/Week03/aln_view.png)
 
@@ -358,7 +358,15 @@ Steps:
 9. Once you have a Newick file, use python to create a PDF of that file.
    - You can use to python code from the tutorial. Note that you don't need to run that python code from inside of a job.
    - Note that we probably don't want to root with Arabidopsis thaliana. However, we don't have an a priori outgroup to use for rooting. Instead, root your tree by the branch that looks the longest when you visualize the tree. Using the longest branch as the root is a decent assumption when you don't have a clear outgroup.
-11. Submit a PDF of the tree as your assignment. 
+11. Submit a writeup assignment that includes the following items:
+   - A PDF of the tree
+   - A screenshot of the MSA alignment (visualized on the NCBI sequence viewer)
+   - Write a "Results section" (expected length about 2-3 sentances per question) that answers the following questions based on the tree:
+      - Do the plant species on the tree form a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place plants as a clade.
+      - Do the animal species on the tree from a monophyletic clade? If so, what is the bootstrap support for the branch leading to the clade? If not, describe the topology of the tree and how it does not place animals as a clade.
+      - Has there been gene duplication of the ATP synthase protein sequence?
+Note: you can submit your writeup in whatever format your prefer. One suggestion would be to embed the pdf/screen-shot in a word document and answer the questions in that same document. 
+
 
 
 
