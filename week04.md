@@ -54,9 +54,11 @@ There are several differnt DNA sequencing technologies available. Illumina is pr
 ![assemb03](/Images/Week04/assemb03.png)
 
 ## <ins>**Genome assembly**<ins> <a name="assembly"></a>
-Below are a series of slides describing genome assembly from the Bioinformatic.ca workshop.
+Below are a series of slides describing genome assembly from the [Bioinformatic.ca workshop](https://bioinformaticsdotca.github.io/BiCG_2019).
 
-https://bioinformaticsdotca.github.io/BiCG_2019
+
+
+
 
 ![assemb05](/Images/Week04/assemb05.png)
 ![assemb06](/Images/Week04/assemb06.png)
