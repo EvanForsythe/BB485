@@ -45,6 +45,8 @@ Sanger sequencing technology is not scalable to the scale needed to sequence a f
 
 ## <ins>**Next-generation sequencing technologies**<ins> <a name="next_gen"></a>
 
+There are several differnt DNA sequencing technologies available. Illumina is probably the most widely-used (for now) but there are strengths and weaknesses to each method (see below)
+
 [![Video 2 Thumbnail](https://img.youtube.com/vi/CZeN-IgjYCo/0.jpg)](https://www.youtube.com/watch?v=CZeN-IgjYCo)
 
 ### <ins>**Short-read vs long-read sequencing**<ins> <a name="versus"></a>
@@ -52,6 +54,9 @@ Sanger sequencing technology is not scalable to the scale needed to sequence a f
 ![assemb03](/Images/Week04/assemb03.png)
 
 ## <ins>**Genome assembly**<ins> <a name="assembly"></a>
+Below are a series of slides describing genome assembly from the Bioinformatic.ca workshop.
+
+https://bioinformaticsdotca.github.io/BiCG_2019
 
 ![assemb05](/Images/Week04/assemb05.png)
 ![assemb06](/Images/Week04/assemb06.png)
