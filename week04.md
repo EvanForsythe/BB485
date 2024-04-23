@@ -11,6 +11,7 @@ layout: default
 3. [Genome assembly](#assembly)
    - **A.** [de novo assembly](#de_novo)
    - **B.** [reference-guided assembly](#ref)
+4. [Tutorial assignment](#assign)
 
 
 ## <ins>**Overview of DNA sequencing**<ins> <a name="DNAseq"></a>
@@ -71,4 +72,16 @@ The algorithms used in genome assembly a very cool. However, since this course i
 
 ### De Bruijn graphs
 [![Video Thumbnail 3](https://img.youtube.com/vi/TNYZZKrjCSk/0.jpg)](https://www.youtube.com/watch?v=TNYZZKrjCSk)
+
+
+## <ins>**Tutorial assignment**<ins> <a name="assign"></a>
+See canvas for this week's tutorial as part of that assingment, you'll need to install, Spades, an assembly program on the HPC using conda.
+
+Below are example commands I used to setup my environment.
+```bash
+conda create -n assemble python=3.12
+conda activate assemble
+conda install bioconda::spades
+```
+
 
