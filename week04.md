@@ -21,7 +21,7 @@ DNA sequencing is a process used to determine the precise order of nucleotides w
 ![assemb11](/Images/Week04/assemb11.png)
 
 - The ability to generate sequencing data is vastly outpacing computing technology to store/process the data.
-   - 
+   - Because of this, bioinformatics is an extremely important field!!!
 
 ### <ins>**Sanger sequencing**<ins> <a name="sanger"></a>
 
