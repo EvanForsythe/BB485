@@ -10,6 +10,7 @@ title: Home
 - [Week01: Course intro and the essential tools used in the course](week01)
 - [Week02: Working with high-performance computing (HPC) resources](week02)
 - [Week03: Multiple sequence alignment and phylogenetics](week03)
+- [Week04: Genome assembly](week04)
 
 
 
