@@ -14,6 +14,8 @@ layout: default
 
 
 ## <ins>**Overview of DNA sequencing**<ins> <a name="DNAseq"></a>
+DNA sequencing is a process used to determine the precise order of nucleotides within a DNA molecule. Nucleotides are the building blocks of DNA, and they consist of four types: adenine (A), thymine (T), cytosine (C), and guanine (G). By sequencing DNA, scientists can decipher the genetic information encoded within an organism's genome, including genes, regulatory sequences, and other genomic features. This information is crucial for understanding various biological processes, such as inheritance, evolution, and disease. DNA sequencing techniques have evolved significantly over the years, becoming faster, more accurate, and more cost-effective, thus enabling a wide range of applications in fields such as medicine, agriculture, forensics, and basic research.
+
 
 ### <ins>**Sanger sequencing**<ins> <a name="sanger"></a>
 
