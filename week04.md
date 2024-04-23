@@ -25,13 +25,21 @@ DNA sequencing is a process used to determine the precise order of nucleotides w
 
 ### <ins>**Sanger sequencing**<ins> <a name="sanger"></a>
 
+When researchers want to obtain the sequence of a single gene/region, they routinely apply a method known as 'cloaning and sequencing'. 
+
 ![assemb01](/Images/Week04/assemb01.png)
 
+Sequencing a single region of the genome often employs a sequenceing technology called **Sanger sequencing.** This method of sequencing was invented in 1977. It has been refined over the years but relies on the same elegant concept as the original invention.
+
 ![assemb04](/Images/Week04/assemb04.png)
+
+Here is a video that nicely illustrates of Sanger sequencing works. 
 
 [![Video 1 Thumbnail](https://img.youtube.com/vi/l0JVVPt4vNw/0.jpg)](https://www.youtube.com/watch?v=l0JVVPt4vNw)
 
 ### <ins>**Shotgun sequencing**<ins> <a name="shotgun"></a>
+
+Sanger sequencing technology is not scalable to the scale needed to sequence a full genome. Full-genome sequencing has been made possible by 'next-generation' sequencing technologies. Next-gen sequencing relies on **shot gun sequencing**, which involves breaking long DNA molecules into smaller pieces.
 
 ![assemb02](/Images/Week04/assemb02.png)
 
