@@ -17,7 +17,7 @@ layout: default
 ## <ins>**Overview of DNA sequencing**<ins> <a name="DNAseq"></a>
 DNA sequencing is a process used to determine the precise order of nucleotides within a DNA molecule. Nucleotides are the building blocks of DNA, and they consist of four types: adenine (A), thymine (T), cytosine (C), and guanine (G). By sequencing DNA, scientists can decipher the genetic information encoded within an organism's genome, including genes, regulatory sequences, and other genomic features. This information is crucial for understanding various biological processes, such as inheritance, evolution, and disease. DNA sequencing techniques have evolved significantly over the years, becoming faster, more accurate, and more cost-effective, thus enabling a wide range of applications in fields such as medicine, agriculture, forensics, and basic research.
 
-- DNA sequencing technologies has been one of the fastest growing technological sectors in the history of technology!!
+- DNA sequencing technologies have been among the fastest growing technological sectors in the history of technology!!
 
 ![assemb11](/Images/Week04/assemb11.png)
 
@@ -26,27 +26,27 @@ DNA sequencing is a process used to determine the precise order of nucleotides w
 
 ### <ins>**Sanger sequencing**<ins> <a name="sanger"></a>
 
-When researchers want to obtain the sequence of a single gene/region, they routinely apply a method known as 'cloaning and sequencing'. 
+When researchers want to obtain the sequence of a single gene/region, they routinely apply a method known as 'cloning and sequencing'. 
 
 ![assemb01](/Images/Week04/assemb01.png)
 
-Sequencing a single region of the genome often employs a sequenceing technology called **Sanger sequencing.** This method of sequencing was invented in 1977. It has been refined over the years but relies on the same elegant concept as the original invention.
+Sequencing a single region of the genome often uses a sequenceing technology called **Sanger sequencing.** This method of sequencing was invented in 1977. It has been refined over the years but relies on the same elegant concept as the original invention.
 
 ![assemb04](/Images/Week04/assemb04.png)
 
-Here is a video that nicely illustrates of Sanger sequencing works. 
+Here is a video that nicely illustrates how Sanger sequencing works. 
 
 [![Video 1 Thumbnail](https://img.youtube.com/vi/l0JVVPt4vNw/0.jpg)](https://www.youtube.com/watch?v=l0JVVPt4vNw)
 
 ### <ins>**Shotgun sequencing**<ins> <a name="shotgun"></a>
 
-Sanger sequencing technology is not scalable to the scale needed to sequence a full genome. Full-genome sequencing has been made possible by 'next-generation' sequencing technologies. Next-gen sequencing relies on **shot gun sequencing**, which involves breaking long DNA molecules into smaller pieces.
+Sanger sequencing technology is not scalable to the scale needed to sequence a full genome. Full-genome sequencing has been made possible by 'next-generation' sequencing technologies. Next-gen sequencing relies on **shotgun sequencing**, which involves breaking long DNA molecules into smaller pieces.
 
 ![assemb02](/Images/Week04/assemb02.png)
 
 ## <ins>**Next-generation sequencing technologies**<ins> <a name="next_gen"></a>
 
-There are several differnt DNA sequencing technologies available. Illumina is probably the most widely-used (for now) but there are strengths and weaknesses to each method (see below)
+There are several different DNA sequencing technologies available. Illumina is probably the most widely-used (for now), but there are strengths and weaknesses to each method (see below)
 
 [![Video 2 Thumbnail](https://img.youtube.com/vi/CZeN-IgjYCo/0.jpg)](https://www.youtube.com/watch?v=CZeN-IgjYCo)
 
@@ -56,8 +56,6 @@ There are several differnt DNA sequencing technologies available. Illumina is pr
 
 ## <ins>**Genome assembly**<ins> <a name="assembly"></a>
 Below are a series of slides describing genome assembly from the [Bioinformatic.ca workshop](https://bioinformaticsdotca.github.io/BiCG_2019).
-
-
 
 
 
