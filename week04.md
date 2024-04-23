@@ -16,7 +16,12 @@ layout: default
 ## <ins>**Overview of DNA sequencing**<ins> <a name="DNAseq"></a>
 DNA sequencing is a process used to determine the precise order of nucleotides within a DNA molecule. Nucleotides are the building blocks of DNA, and they consist of four types: adenine (A), thymine (T), cytosine (C), and guanine (G). By sequencing DNA, scientists can decipher the genetic information encoded within an organism's genome, including genes, regulatory sequences, and other genomic features. This information is crucial for understanding various biological processes, such as inheritance, evolution, and disease. DNA sequencing techniques have evolved significantly over the years, becoming faster, more accurate, and more cost-effective, thus enabling a wide range of applications in fields such as medicine, agriculture, forensics, and basic research.
 
+- DNA sequencing technologies has been one of the fastest growing technological sectors in the history of technology!!
+
 ![assemb11](/Images/Week04/assemb11.png)
+
+- The ability to generate sequencing data is vastly outpacing computing technology to store/process the data.
+   - 
 
 ### <ins>**Sanger sequencing**<ins> <a name="sanger"></a>
 
@@ -47,6 +52,8 @@ DNA sequencing is a process used to determine the precise order of nucleotides w
 ![assemb09](/Images/Week04/assemb09.png)
 ![assemb10](/Images/Week04/assemb10.png)
 
-### <ins>**de novo assembly**<ins> <a name="de_novo"></a>
+The algorithms used in genome assembly a very cool. However, since this course is focused on <ins> applying <ins> bioinformatics, we will not do a deep dive into the algorithms. If you're curious, below is a good video that walks through how de bruijn graphs and K-mers are used in genome assembly.
 
-### <ins>**reference-guided assembly**<ins> <a name="ref"></a>
+### De Bruijn graphs
+[![Video Thumbnail 3](https://img.youtube.com/vi/TNYZZKrjCSk/0.jpg)](https://www.youtube.com/watch?v=TNYZZKrjCSk)
+
