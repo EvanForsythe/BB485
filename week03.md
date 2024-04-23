@@ -241,7 +241,8 @@ Check your alignment file out using command like `more`, and `wc -l`.
 
 Viewing the alignment in a more human-readable format is a little more tricky. There are several GUI applications you can install on your personal computer (e.g. Mega or Geneious), but it's difficult to view alignments from the command line. 
 
-Here is a [web-based tool from the National Center of Biotechnology Information](https://link-url-here.org](https://www.ncbi.nlm.nih.gov/projects/msaviewer/).
+Here is a [web-based tool from the National Center of Biotechnology Information](https://www.ncbi.nlm.nih.gov/projects/msaviewer/).
+
 
 ![aln_view_](/Images/Week03/aln_view.png)
 
