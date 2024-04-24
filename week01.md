@@ -323,20 +323,20 @@ Below is a block of python code that can be used to read in a fasta file and cre
 
 ```python
 #Create a file handle
-seq_handle = open(seq_file_path, “r”)
+seq_handle = open(seq_file_path, "r")
 
 #Create an empty dictionary
 seq_dict = {}
 #Loop through the line in the file
 for line in seq_handle:
-    if line.startswith(“>”):
-        id_temp = line.strip() #Removes “\n”
-        id_clean = id_temp.replace(“>”, “”) #Removes “>” by replacing it with nothing.
+    if line.startswith(">"):
+        id_temp = line.strip() #Removes "\n"
+        id_clean = id_temp.replace(">", "") #Removes ">" by replacing it with nothing.
         #Add the item to the dictionary
-        seq_dict[id_clean]=“” # id_clean is the key, the value is an empty string (for now)
+        seq_dict[id_clean] = "" # id_clean is the key, the value is an empty string (for now)
     else:
-        seq_line = line.strip() #Removes “\n”
-        #append this line to the dictionary value, using the key (which is still “id_clean” from the previous line)
+        seq_line = line.strip() #Removes "\n"
+        #append this line to the dictionary value, using the key (which is still "id_clean" from the previous line)
         seq_dict[id_clean] += seq_line
 ```
 
