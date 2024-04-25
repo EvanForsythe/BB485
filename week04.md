@@ -212,5 +212,8 @@ We will use a program called QUAST (Quality Assessment Tool for Genome Assemblie
 | With Careful Argument    |                   |                          |       |                     |
 
 
+- Answer the following questions:
+   - TBD
+
 [Back to Top](#top)
 
