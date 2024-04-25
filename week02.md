@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<a name="top"></a>
+
 # Week 2 lecture and tutorial
 
 ## <ins>**High-performance computing (HPC) clusters**<ins>
@@ -397,5 +400,5 @@ You can also track the progress of your job by checking what gets written to you
 </div>
 
 
-
+[Back to Top](#top)
 
