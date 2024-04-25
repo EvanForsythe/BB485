@@ -11,9 +11,15 @@ layout: default
 2. [Next-generation sequencing technologies](#next_gen)
    - **A.** [Short-read vs long-read sequencing](#versus)
 3. [Genome assembly](#assembly)
-   - **A.** [de novo assembly](#de_novo)
-   - **B.** [reference-guided assembly](#ref)
 4. [Tutorial assignment](#assign)
+5. [More details about genome assembly](#details)
+   - **A.** [De novo assembly versus reference-guided assembly](#versus)
+   - **B.** [Paired-end sequencing](#paired)
+   - **C.** [contigs and scaffolds](#scaff)
+   - **D.** [fasta format versus fastq format](#formats)
+6. [De novo genome assembly with SPAdes](#spades)
+7. [Using a reference genome to assess assembly quality](#quality)
+8. [Weekly project write-up assignment](#writeup)
 
 
 ## <ins>**Overview of DNA sequencing**<ins> <a name="DNAseq"></a>
@@ -84,6 +90,24 @@ conda activate assemble
 conda install bioconda::spades
 ```
 
+## <ins>**More details about genome assembly**<ins> <a name="details"></a>
+
+### <ins>**De novo assembly versus reference-guided assembly**<ins> <a name="versus"></a>
+
+### <ins>**Paired-end sequencing**<ins> <a name="paired"></a>
+
+### <ins>**contigs and scaffolds**<ins> <a name="scaff"></a>
+
+### <ins>**fasta format versus fastq format**<ins> <a name="formats"></a>
+
+## <ins>**De novo genome assembly with SPAdes**<ins> <a name="spades"></a>
+
+## <ins>**Using a reference genome to assess assembly quality**<ins> <a name="quality"></a>
+
+## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
+- Perform spades genome assembly with and without the `--careful` flag.
+   - This means that you'll need to run spades two seperate times (as two seperate job submissions).
+- Use QUAST 
 
 [Back to Top](#top)
 
