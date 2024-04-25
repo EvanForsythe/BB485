@@ -104,7 +104,7 @@ To use DNA sequences for phylogenetic analyses, it is critical that we be able t
 
 ![phy15](/Images/Week03/phy15.png)
 
-Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignent<ins>. 
+Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignment<ins>. 
 
 Inferring a MSA is also a statistical inference based on a set of rules/scores (i.e. a statisticasl algorithm). 
 
