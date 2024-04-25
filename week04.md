@@ -102,6 +102,13 @@ conda install bioconda::spades
 
 ## <ins>**De novo genome assembly with SPAdes**<ins> <a name="spades"></a>
 
+SPAdes is a popular genome assembler used for illumina sequencing data. [Here](https://github.com/ablab/spades) is the github page, which includes a quick start guide to using the software.
+
+1. You should have already created a conda environment for doing assembly work and installed spades with: `conda install bioconda::spades`. Check that `spades.py` is in your PATH. 
+2. Create a directory in which to work on this week's project.
+3.  Run a test run of spades directly from the command line with `spades.py --test`. This should run a test run of spades on a 'toy dataset' provided with spades. It will create an output folder called `spades_test`.
+
+
 ## <ins>**Using a reference genome to assess assembly quality**<ins> <a name="quality"></a>
 
 ## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
