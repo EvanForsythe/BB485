@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<a name="top"></a>
+
 # Week 3 lecture and tutorial
 1. [Conceptual background on phylogenetics](#Homology)
    - **A.** [Intro to phylogenetic trees](#trees)
@@ -368,7 +370,7 @@ Steps:
    - Has there been gene duplication of the ATP synthase protein sequence?
 
 
-
+[Back to Top](#top)
 
 
 
