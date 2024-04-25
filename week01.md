@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<a name="top"></a>
+
 # Week 1 lecture and tutorial
 
 ## <ins>**Course structure**<ins>
@@ -603,4 +606,4 @@ df.to_csv("<name of file to create>.csv")
 <br />
 <br />
 
-
+[Back to Top](#top)
