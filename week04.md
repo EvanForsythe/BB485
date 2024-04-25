@@ -198,7 +198,8 @@ We will use a program called QUAST (Quality Assessment Tool for Genome Assemblie
  ```bash
 /shared/forsythe/BB485/Week04/Quast/quast-5.2.0/quast.py <path/to/your/assembled_genome.fasta> -r /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Reference_genome/GCA_037039335.1_ASM3703933v1_genomic.fa -o <path/to/your/out/dir/>
 ```
-- 
+### QUAST OUTPUT:
+- All the relevant info you'll need is in: `report.txt`
 
 ## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
 - Perform spades genome assembly with and without the `--careful` flag.
