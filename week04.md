@@ -16,7 +16,8 @@ layout: default
    - **A.** [De novo assembly versus reference-guided assembly](#versus)
    - **B.** [Paired-end sequencing](#paired)
    - **C.** [contigs and scaffolds](#scaff)
-   - **D.** [fasta format versus fastq format](#formats)
+   - **D.** [Assembly quality statistics](#stats)
+   - **E.** [fasta format versus fastq format](#formats)
 6. [De novo genome assembly with SPAdes](#spades)
 7. [Using a reference genome to assess assembly quality](#quality)
 8. [Weekly project write-up assignment](#writeup)
@@ -98,6 +99,8 @@ conda install bioconda::spades
 
 ### <ins>**contigs and scaffolds**<ins> <a name="scaff"></a>
 
+### <ins>**Assembly quality statistics**<ins> <a name="stats"></a>
+
 ### <ins>**fasta format versus fastq format**<ins> <a name="formats"></a>
 
 ## <ins>**De novo genome assembly with SPAdes**<ins> <a name="spades"></a>
@@ -106,8 +109,18 @@ SPAdes is a popular genome assembler used for illumina sequencing data. [Here](h
 
 1. You should have already created a conda environment for doing assembly work and installed spades with: `conda install bioconda::spades`. Check that `spades.py` is in your PATH. 
 2. Create a directory in which to work on this week's project.
-3.  Run a test run of spades directly from the command line with `spades.py --test`. This should run a test run of spades on a 'toy dataset' provided with spades. It will create an output folder called `spades_test`.
+3. Run a test run of spades directly from the command line with `spades.py --test`. This should run a test run of spades on a 'toy dataset' provided with spades. It will create an output folder called `spades_test`.
+4. Once this is working we can create a job submission script to run a full assembly of paired-end illumina sequencing reads from Staphylococcus aureus (bacterium that cases Staph infections), which I downloaded from [this database](https://gage.cbcb.umd.edu/data/). Follow the instructions below to run spades inside of a job submission script.
 
+Spades command (to go inside of a job submission script):
+```bash
+spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_1.fastq.gz -2 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_2.fastq.gz -o OUT/ -t 16
+```
+- `spades.py` is the program (which should be somewhere in your PATH)
+- `-1` is the full path to the file containing the reads from **one of the paired ends**. Note that it is in fastq format and the file is compressed with gzip. Spades can work directly from the zipped version of the file, so there's no need to unzip it.
+- `-2` is the full path to the file containing the reads from the **other paired end**. Note that it is in fastq format and the file is compressed with gzip. Spades can work directly from the zipped version of the file, so there's no need to unzip it.
+- `-o` is used to tell spades where to put the output files. You don't need to make this folder in advance. Spades will do it automatically.
+- `-t` tells spades how many thread (aka cores, aka CPUs) to use. **Be sure to set this to the same number near the top of your job submission script**.
 
 ## <ins>**Using a reference genome to assess assembly quality**<ins> <a name="quality"></a>
 
