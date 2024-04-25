@@ -124,6 +124,13 @@ spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_r
 
 ## <ins>**Using a reference genome to assess assembly quality**<ins> <a name="quality"></a>
 
+Because of the importance of Staph infection in medicine, large efforts have been made by reserchers to assemble of 'finished' version of the genome, in which all the contigs have been scaffolded together such that number of contigs is equal to the number of chromosomes.
+
+I downloaded a finished version of the genome to use as a reference genome to assess the quality of our assembly. The file is located at:
+'''bash
+/shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Reference_genome/GCA_037039335.1_ASM3703933v1_genomic.fa
+```
+
 ## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
 - Perform spades genome assembly with and without the `--careful` flag.
    - This means that you'll need to run spades two seperate times (as two seperate job submissions).
