@@ -114,7 +114,7 @@ SPAdes is a popular genome assembler used for illumina sequencing data. [Here](h
 ## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
 - Perform spades genome assembly with and without the `--careful` flag.
    - This means that you'll need to run spades two seperate times (as two seperate job submissions).
-- Use QUAST 
+- Use QUAST to generate assembly statistics.
 
 [Back to Top](#top)
 
