@@ -97,6 +97,8 @@ conda install bioconda::spades
 
 ### <ins>**Paired-end sequencing**<ins> <a name="paired"></a>
 
+[![Video Thumbnail](https://img.youtube.com/vi/WTbnk91e2WU/0.jpg)](https://www.youtube.com/watch?v=WTbnk91e2WU)
+
 ### <ins>**contigs and scaffolds**<ins> <a name="scaff"></a>
 
 ### <ins>**Assembly quality statistics**<ins> <a name="stats"></a>
@@ -167,6 +169,9 @@ spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_r
 - `-o` is used to tell spades where to put the output files. You don't need to make this folder in advance. Spades will do it automatically.
 - `-t` tells spades how many thread (aka cores, aka CPUs) to use. **Be sure to set this to the same number near the top of your job submission script**.
 
+### SPAdes output:
+- the most important output file that is generated will be called `contigs.fasta`. You can count the number of contigs your assembly achieved with `grep ">" contigs.fasta`.
+
 ## <ins>**Using a reference genome to assess assembly quality**<ins> <a name="quality"></a>
 
 Because of the importance of Staph infection in medicine, large efforts have been made by reserchers to assemble of 'finished' version of the genome, in which all the contigs have been scaffolded together such that number of contigs is equal to the number of chromosomes.
@@ -184,7 +189,7 @@ We will use a program called QUAST (Quality Assessment Tool for Genome Assemblie
  ```bash
 /shared/forsythe/BB485/Week04/Quast/quast-5.2.0/quast.py <path/to/your/assembled_genome.fasta> -r /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Reference_genome/GCA_037039335.1_ASM3703933v1_genomic.fa -o <path/to/your/out/dir/>
 ```
-
+- 
 
 ## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
 - Perform spades genome assembly with and without the `--careful` flag.
