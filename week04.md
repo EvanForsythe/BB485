@@ -179,6 +179,11 @@ spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_r
 - `-t` tells spades how many thread (aka cores, aka CPUs) to use. **Be sure to set this to the same number near the top of your job submission script**.
 
 ### ALTERNATIVELY:
+To test your spades program:
+```bash
+/shared/forsythe/BB485/Week04/Spades/SPAdes-3.15.5-Linux/bin/spades.py --test
+```
+
 ```bash
 /shared/forsythe/BB485/Week04/Spades/SPAdes-3.15.5-Linux/bin/spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_1.fastq.gz -2 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_2.fastq.gz -o OUT/ -t 16
 ```
