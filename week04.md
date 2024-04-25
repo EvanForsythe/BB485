@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<a name="top"></a>
+
 # Week 4 lecture and tutorial
 1. [Overview of DNA sequencing](#DNAseq)
    - **A.** [Sanger sequencing](#sanger)
@@ -82,4 +84,6 @@ conda activate assemble
 conda install bioconda::spades
 ```
 
+
+[Back to Top](#top)
 
