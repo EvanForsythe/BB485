@@ -184,6 +184,7 @@ To test your spades program:
 /shared/forsythe/BB485/Week04/Spades/SPAdes-3.15.5-Linux/bin/spades.py --test
 ```
 
+For a full run, put this in your jobsubmission script:
 ```bash
 /shared/forsythe/BB485/Week04/Spades/SPAdes-3.15.5-Linux/bin/spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_1.fastq.gz -2 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_2.fastq.gz -o OUT/ -t 16
 ```
