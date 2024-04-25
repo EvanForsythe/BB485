@@ -95,13 +95,22 @@ conda install bioconda::spades
 
 ### <ins>**De novo assembly versus reference-guided assembly**<ins> <a name="versus"></a>
 
+![ref](/Images/Week04/ref.png)
+
 ### <ins>**Paired-end sequencing**<ins> <a name="paired"></a>
+
+![paired](/Images/Week04/paired.png)
+
 
 [![Video Thumbnail](https://img.youtube.com/vi/WTbnk91e2WU/0.jpg)](https://www.youtube.com/watch?v=WTbnk91e2WU)
 
 ### <ins>**contigs and scaffolds**<ins> <a name="scaff"></a>
 
+![scaff](/Images/Week04/scaffold.png)
+
 ### <ins>**Assembly quality statistics**<ins> <a name="stats"></a>
+
+![quality](/Images/Week04/stats.png)
 
 ### <ins>**fasta format versus fastq format**<ins> <a name="formats"></a>
 In addition to fasta files, you may also encounter 'fastq' files. Here is a description of the differences. 
