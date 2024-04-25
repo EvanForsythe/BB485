@@ -178,6 +178,11 @@ spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_r
 - `-o` is used to tell spades where to put the output files. You don't need to make this folder in advance. Spades will do it automatically.
 - `-t` tells spades how many thread (aka cores, aka CPUs) to use. **Be sure to set this to the same number near the top of your job submission script**.
 
+### ALTERNATIVELY:
+```bash
+/shared/forsythe/BB485/Week04/Spades/SPAdes-3.15.5-Linux/bin/spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_1.fastq.gz -2 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_reads/frag_2.fastq.gz -o OUT/ -t 16
+```
+
 ### SPAdes output:
 - the most important output file that is generated will be called `contigs.fasta`. You can count the number of contigs your assembly achieved with `grep ">" contigs.fasta`.
 
