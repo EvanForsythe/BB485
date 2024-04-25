@@ -127,9 +127,19 @@ spades.py -1 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Illumina_r
 Because of the importance of Staph infection in medicine, large efforts have been made by reserchers to assemble of 'finished' version of the genome, in which all the contigs have been scaffolded together such that number of contigs is equal to the number of chromosomes.
 
 I downloaded a finished version of the genome to use as a reference genome to assess the quality of our assembly. The file is located at:
-'''bash
+```bash
 /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Reference_genome/GCA_037039335.1_ASM3703933v1_genomic.fa
 ```
+We will use a program called QUAST (Quality Assessment Tool for Genome Assemblies) to compare our assembly to the reference genome to assess how well our assembly worked.
+
+- **Note:** I had trouble installing QUAST with conda, so instead we'll need to go a different route to use the QUAST program:
+   - We are going to run quast by providing the full path to where a copy of the program lives on the HPC: ```/shared/forsythe/BB485/Week04/Quast/quast-5.2.0/quast.py```
+
+ To run QUAST use (you don't need to run it in a job because it's fast):
+ ```bash
+/shared/forsythe/BB485/Week04/Quast/quast-5.2.0/quast.py <path/to/your/assembled_genome.fasta> -r /shared/forsythe/BB485/Week04/Staphylococcus_aureus_data/Reference_genome/GCA_037039335.1_ASM3703933v1_genomic.fa -o <path/to/your/out/dir/>
+```
+
 
 ## <ins>**Weekly project write-up assignment**<ins> <a name="writeup"></a>
 - Perform spades genome assembly with and without the `--careful` flag.
