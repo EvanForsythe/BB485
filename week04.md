@@ -68,7 +68,7 @@ Below are a series of slides describing genome assembly from the [Bioinformatic.
 ![assemb09](/Images/Week04/assemb09.png)
 ![assemb10](/Images/Week04/assemb10.png)
 
-The algorithms used in genome assembly a very cool. However, since this course is focused on <ins>applying<ins> bioinformatics, we will not do a deep dive into the algorithms. If you're curious, below is a good video that walks through how de bruijn graphs and K-mers are used in genome assembly.
+The algorithms used in genome assembly a very cool. However, since this course is focused on <ins>applying</ins> bioinformatics, we will not do a deep dive into the algorithms. If you're curious, below is a good video that walks through how de bruijn graphs and K-mers are used in genome assembly.
 
 ### De Bruijn graphs
 [![Video Thumbnail 3](https://img.youtube.com/vi/TNYZZKrjCSk/0.jpg)](https://www.youtube.com/watch?v=TNYZZKrjCSk)
