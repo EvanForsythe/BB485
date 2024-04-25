@@ -102,6 +102,51 @@ conda install bioconda::spades
 ### <ins>**Assembly quality statistics**<ins> <a name="stats"></a>
 
 ### <ins>**fasta format versus fastq format**<ins> <a name="formats"></a>
+In addition to fasta files, you may also encounter 'fastq' files. Here is a description of the differences. 
+
+### FASTA Files
+A FASTA file contains biological sequences, such as DNA, RNA, or protein sequences. Each sequence entry consists of two parts:
+
+1. **Header line**: Starts with a greater than symbol (`>`), followed by a unique identifier for the sequence and optional description.
+2. **Sequence data**: A series of letters representing the nucleotide (A, T, G, C, U) or amino acid residues (A, R, N, etc.).
+
+#### Example
+
+```
+>Sequence_1
+ATCGATCGATCG
+>Sequence_2
+GCTAGCTAGCTA
+```
+
+### FASTQ Files
+A FASTQ file also contains biological sequences, but with additional quality score information for each base in the sequence. Each sequence entry consists of four parts:
+
+1. **Header line**: Same as FASTA, starts with a greater than symbol (`>`), followed by a unique identifier and optional description.
+2. **Sequence data**: Same as FASTA, a series of letters representing nucleotide or amino acid residues.
+3. **Separator line**: Starts with a plus symbol (`+`), optionally followed by the same identifier as the header line.
+4. **Quality scores**: A series of ASCII characters representing the quality scores for each base in the sequence.
+
+#### Example
+
+```
+@Sequence_1
+ATCGATCGATCG
++Sequence_1
+HHHHHHHHHHHH
+@Sequence_2
+GCTAGCTAGCTA
++Sequence_2
+BBBBBBBBBBBB
+```
+
+### Key Differences
+
+1. **Information**: FASTA files provide sequence data and optional annotations, while FASTQ files include sequence data along with quality scores.
+2. **Format**: FASTA files are simpler and contain only sequences and headers, while FASTQ files are more complex, containing sequence data, headers, quality scores, and separator lines.
+3. **Use Cases**: FASTA files are often used for storing and exchanging sequences, while FASTQ files are preferred for downstream analysis, particularly in next-generation sequencing (NGS) applications where quality scores are crucial for error correction and variant calling.
+
+
 
 ## <ins>**De novo genome assembly with SPAdes**<ins> <a name="spades"></a>
 
