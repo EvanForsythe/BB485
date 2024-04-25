@@ -145,6 +145,13 @@ We will use a program called QUAST (Quality Assessment Tool for Genome Assemblie
 - Perform spades genome assembly with and without the `--careful` flag.
    - This means that you'll need to run spades two seperate times (as two seperate job submissions).
 - Use QUAST to generate assembly statistics.
+- Use the info contained in report.txt to fill in the following table (create it in excel, etc...):
+
+| Method               | Number of Contigs | Length of Largest Contig | N50   | Genome Fraction (%) |
+|----------------------|-------------------|--------------------------|-------|---------------------|
+| Without Careful Argument |                   |                          |       |                     |
+| With Careful Argument    |                   |                          |       |                     |
+
 
 [Back to Top](#top)
 
