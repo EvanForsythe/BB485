@@ -224,8 +224,11 @@ We will use a program called QUAST (Quality Assessment Tool for Genome Assemblie
 | With Careful Argument    |                   |                          |       |                     |
 
 
-- Answer the following questions:
-   - TBD
+- Answer the following questions and submit as a word doc (or similar) on Canvas:
+   1. Fill out the table above and insert as part of your write-up. Create a table legend for the table using this type of formatting:
+      - **Table 1: <Title for what the table is showing>:** Table one shows <X, Y, Z> calculated from <X, Y, Z>.
+   2. Write a "Methods Section" (~3-4 sentances) describing the analysis.
+   3. Write a "Results section" (~5-6 sentances) describing what the analysis tells us about use of the `--careful` option for spades assembly. Touch on the data in each of the columns of the table and how each indicates whether assembly with the `--careful` leads to a higher-quality assembly. 
 
 [Back to Top](#top)
 
