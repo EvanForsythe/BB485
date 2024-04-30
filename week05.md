@@ -197,9 +197,11 @@ print(seq_dict["Chr5"][0:100])
    - Paste your final python code and the first ~10 lines of output into the canvas assignment.
 
 - **HINTS:**
-   - Perform the following steps in order (thses should each correspond to a block of code from the tutorial):
+   - Perform the following steps in order (these should each correspond to a block of code from the tutorial, but you may need to switch the order compared to how they're shown on the tutorial):
       - Read in the tsv file and store as dataframe
       - Read in the CSV file and store as dictionary
       - Loop through the tsv file (add an if statement inside of the for loop and print the DNA sequence from inside the if statement).
+         - Here's what my print statement looked like: `print(seq_dict["Chr5"][temp_start:temp_stop])` 
+
 
 [Back to Top](#top)
