@@ -194,7 +194,7 @@ print(seq_dict["Chr5"][0:100])
    - Loop through genomic features
    - IF the feature is of type "gene"
       - print the DNA sequence from start to end
-   - Paste your final python code and the first ~10 lines of output into the canvas assignment.
+   - Paste your final python code and the first lines of output into the canvas assignment.
 
 - **HINTS:**
    - Perform the following steps in order (these should each correspond to a block of code from the tutorial, but you may need to switch the order compared to how they're shown on the tutorial):
