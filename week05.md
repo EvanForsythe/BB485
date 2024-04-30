@@ -117,7 +117,49 @@ Here is basic information contained in SAM/BAM files:
 | QUAL  | String | ASCII of Phred-scaled base QUALity+33| "!&#$^@&"   |
 
 
-## <ins>**Working with annotation data using base python**<ins> <a name="pythob"></a>
+## <ins>**Working with annotation data using base python**<ins> <a name="python"></a>
+Genome annotation data are stored in table format. Python has excellent tools forworking with table-shaped data by storing it as a pandas DataFrame. Let's practice creating a python script for reading in an annotation file and using it to extract important genomic information.
+
+```python3
+# Create a string object that is a full path to a tsv file
+file_path = <full path to the tsv file>
+
+# Read the tsv file in as a dataframe
+annot_df = pd.read_csv(file_path, delimiter= "\t")
+
+# Print the dataframe to get a look at it
+print(annot_df)
+```
+
+Remember: an annotation file can't tell us anything without the corresponding genome assembly file to which it pertains. If we want to extract sequence information, we need to read the genome assembly file into python as well.
+
+```python3
+# Read in the DNA sequence associated with the annotations
+
+#Get the full path to the DNA sequence
+seq_file_path = "/home/hub_data_share/Examples/Mod06/Genome_files/A_thaliana_chr5_short.fa"
+
+seq_file_handle = open(seq_file_path, "r")
+
+#Create an empty dictionary
+seq_dict = {}
+
+#Loop through the line in the file
+for line in seq_file_handle:
+    if line.startswith(">"):
+        id_temp = line.strip() #Removes "\n"
+        id_clean = id_temp.replace(">", "") #Removes ">" by replacing with nothing.
+        
+        #Add the item to the dictionary
+        seq_dict[id_clean]="" # id_clean is the key, the value is an empty string (for now)
+    else:
+        seq_line = line.strip() #Removes "\n"
+        
+        #append this line to the dictionary value, using the key (which is still "id_clean" from the previous line)
+        seq_dict[id_clean] += seq_line
+```
+
+
 ## <ins>**Tools for working with annotation data with BioPython**<ins> <a name="biopython"></a>
 ## <ins>**Web-based genome browsers**<ins> <a name="web"></a>
 ## <ins>**Week 5 tutorial assignment**<ins> <a name="tutorial"></a>
