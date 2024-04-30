@@ -34,6 +34,7 @@ Genomic coordinates much always store four basic pieces of information (see belo
 - **Strand:** In molecular biology, DNA is composed of two complementary strands. The strand indicates the orientation of the DNA molecule and can be either positive (+) or negative (-). In genomic coordinate data files, it denotes which strand of the DNA the feature is located on.
 
 ###0-based vs 1-baded indexing in common annotation file formats
+
 | Format            | Position system          |
 |-------------------|--------------------------|
 | GFF/GTF           | 1-based                  |
