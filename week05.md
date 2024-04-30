@@ -52,13 +52,17 @@ Genomic coordinates much always store four basic pieces of information (see belo
 GFF3 files are tab-seperated value (.tsv) table in which each row represents a different 'feature' in the genome. The columns provide different information needed to access/sort/interpret the annotation data for the genomic feature.
 
 <ins>**Column headers:**</ins>
-- **Seqid:** the name of the sequence ID (e.g. chromosome number) that the feature is associated with.
-- **Source:** the original database that the data came from (this type of information is called ‘metadata’)
-- **Type:** the type of feature that the row is referencing
-- **Start:** the position along the sequence where the feature starts
-- **End:** the position along the sequence where the feature ends
-- **Strand:** Whether the feature is shown on the strand contained in the reference sequence
-- **Attribute:** This field can store misc. information about the feature (e.g. gene names, etc..)
+| Field    | Description                                                                                           | Example |
+|----------|-------------------------------------------------------------------------------------------------------|---------|
+| Seqid    | The name of the sequence ID (e.g. chromosome number) that the feature is associated with.            | Chr5 |
+| Source   | The original database that the data came from (this type of information is called ‘metadata’)         |phytozomev12|
+| Type     | The type of feature that the row is referencing                                                       | CDS |
+| Start    | The position along the sequence where the feature starts                                             | 995 |
+| End      | The position along the sequence where the feature ends                                               | 5156|
+| Strand   | Whether the feature is shown on the strand contained in the reference sequence                        | + |
+| Attribute| This field can store misc. information about the feature (e.g. gene names, etc..)                   | ID=AT5G01010.2.Araport11.447;Name=AT5G01010.2;pacid=37423170;longest=1;Parent=AT5G01010.Araport11.447
+![image](https://github.com/EvanForsythe/BB485/assets/40008668/d6b76d43-b61f-4ec2-9471-2782bf09c247)
+ |
 
 
 ### <ins>**GTF format**<ins> <a name="gtf"></a>
