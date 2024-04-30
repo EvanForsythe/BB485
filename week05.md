@@ -184,11 +184,11 @@ print(seq_dict["Chr5"][0:100])
 
 
 ```
-
-
-## <ins>**Tools for working with annotation data with BioPython**<ins> <a name="biopython"></a>
-## <ins>**Web-based genome browsers**<ins> <a name="web"></a>
 ## <ins>**Week 5 tutorial assignment**<ins> <a name="tutorial"></a>
-
+- Modify the python code we've been working on to:
+   - Loop through genomic features
+   - IF the feature is of type "gene" and frame is "+"
+      - print the DNA sequence from start to end
+   - Paste your final python code and the first ~ lines of output into the canvas assignment.
 
 [Back to Top](#top)
