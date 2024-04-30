@@ -106,6 +106,7 @@ SAM (Sequence Alignment/Map) and BAM (Binary Alignment/Map) files are commonly u
 
 
 Here is basic information contained in SAM/BAM files:
+
 | Field | Type   | Brief description                     | Example      |
 |-------|--------|--------------------------------------|--------------|
 | QNAME | String | Query template NAME                  | "query1"     |
@@ -191,8 +192,14 @@ print(seq_dict["Chr5"][0:100])
 ## <ins>**Week 5 tutorial assignment**<ins> <a name="tutorial"></a>
 - Modify the python code we've been working on to:
    - Loop through genomic features
-   - IF the feature is of type "gene" and frame is "+"
+   - IF the feature is of type "gene"
       - print the DNA sequence from start to end
-   - Paste your final python code and the first ~ lines of output into the canvas assignment.
+   - Paste your final python code and the first ~10 lines of output into the canvas assignment.
+
+- **HINTS:**
+   - Perform the following steps in order (thses should each correspond to a block of code from the tutorial):
+      - Read in the tsv file and store as dataframe
+      - Read in the CSV file and store as dictionary
+      - Loop through the tsv file (add an if statement inside of the for loop and print the DNA sequence from inside the if statement).
 
 [Back to Top](#top)
