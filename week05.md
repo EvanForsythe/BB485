@@ -98,6 +98,10 @@ A GTF file is very similar to a GFF file, but with a few different specification
 
 ### <ins>**SAM/BAM format**<ins> <a name="sam"></a>
 
+SAM (Sequence Alignment/Map) and BAM (Binary Alignment/Map) files are commonly used in genome annotation and represent formats for storing sequence alignment data, such as reads aligned to a reference genome. These are not considered genome annotation per se becuase they describe a sequencing experiment, which is different from the information we've defined as an 'annotation'. However, information about how sequencing reads map to a genome is often used as a very important layer of functional annotation. We will discuss this type of quantitative read mapping when we discuss **<ins>Transcriptomics and RNA sequencing</ins>** in a couple weeks.
+
+
+Here is basic information contained in SAM/BAM files:
 | Field | Type   | Brief description                     | Example      |
 |-------|--------|--------------------------------------|--------------|
 | QNAME | String | Query template NAME                  | "query1"     |
