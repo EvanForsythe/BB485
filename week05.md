@@ -4,18 +4,18 @@ layout: default
 
 <a name="top"></a>
 
-# Week 4 lecture and tutorial
+# Week 5 lecture and tutorial
 1. [Overview of genome annotation](#overview)
    - **A.** [What is genome annotation?](#what)
    - **B.** [Functional elements in the genome](#elements)
    - **C.** [Does "junk DNA" exist?](#junk)
 2. [How annotation information is stored](#stored)
    - **A.** [GFF3 format](#gff3)
-   - **B.** [BED format](#bed)
-4. [Working with annotation data using base python](#python)
-5. [Tools for working with annotation data with BioPython](#biopython)
-6. [Web-based genome browsers](#web)
-7. [Week 5 tutorial assignment](#tutorial)
+   - **B.** [GTF format](#gtf)
+   - **C.** [BED format](#bed)
+   - **D.** [SAM/BAM format](#sam)
+3. [Working with annotation data in python](#python)
+4. [Week 5 tutorial assignment](#tutorial)
 
 
 ## <ins>**Overview of genome annotation**<ins> <a name="overview"></a>
@@ -159,7 +159,7 @@ Remember: an annotation file can't tell us anything without the corresponding ge
 # Read in the DNA sequence associated with the annotations
 
 #Get the full path to the DNA sequence
-seq_file_path = "/home/hub_data_share/Examples/Mod06/Genome_files/A_thaliana_chr5_short.fa"
+seq_file_path = "/shared/forsythe/BB485/Week05/A_thaliana_chr5_short.fa"
 
 seq_file_handle = open(seq_file_path, "r")
 
@@ -179,6 +179,10 @@ for line in seq_file_handle:
         
         #append this line to the dictionary value, using the key (which is still "id_clean" from the previous line)
         seq_dict[id_clean] += seq_line
+
+print(seq_dict["Chr5"][0:100])
+
+
 ```
 
 
