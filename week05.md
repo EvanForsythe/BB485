@@ -6,9 +6,6 @@ layout: default
 
 # Week 5 lecture and tutorial
 1. [Overview of genome annotation](#overview)
-   - **A.** [What is genome annotation?](#what)
-   - **B.** [Functional elements in the genome](#elements)
-   - **C.** [Does "junk DNA" exist?](#junk)
 2. [How annotation information is stored](#stored)
    - **A.** [GFF3 format](#gff3)
    - **B.** [GTF format](#gtf)
@@ -19,9 +16,11 @@ layout: default
 
 
 ## <ins>**Overview of genome annotation**<ins> <a name="overview"></a>
-### <ins>**What is genome annotation?**<ins> <a name="what"></a>
-### <ins>**Functional elements in the genome**<ins> <a name="elements"></a>
-### <ins>**Does "junk DNA" exist?**<ins> <a name="junk"></a>
+
+![annot01](/Images/Week05/annot01.png)
+![annot02](/Images/Week05/annot02.png)
+![annot03](/Images/Week05/annot03.png)
+
 ## <ins>**How annotation information is stored**<ins> <a name="stored"></a>
 Storing genomic annotation data for a given genome assembly is akin to creating a 'road map' to the location of a region of interest within the genome. Consistent with the idea of a 'map', genome annotations are stored as a set of <ins>**Genomic Coordinates**</ins>.
 
@@ -48,6 +47,11 @@ Genomic coordinates much always store four basic pieces of information (see belo
 
 
 ### <ins>**GFF3 format**<ins> <a name="gff3"></a>
+
+![annot04](/Images/Week05/annot04.png)
+![annot05](/Images/Week05/annot05.png)
+![annot06](/Images/Week05/annot06.png)
+
 
 GFF3 files are tab-seperated value (.tsv) table in which each row represents a different 'feature' in the genome. The columns provide different information needed to access/sort/interpret the annotation data for the genomic feature.
 
