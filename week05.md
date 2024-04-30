@@ -51,7 +51,6 @@ Genomic coordinates much always store four basic pieces of information (see belo
 
 GFF3 files are tab-seperated value (.tsv) table in which each row represents a different 'feature' in the genome. The columns provide different information needed to access/sort/interpret the annotation data for the genomic feature.
 
-<ins>**Column headers:**</ins>
 | Field    | Description                                                                                           | Example |
 |----------|-------------------------------------------------------------------------------------------------------|---------|
 | Seqid    | The name of the sequence ID (e.g. chromosome number) that the feature is associated with.            | Chr5 |
