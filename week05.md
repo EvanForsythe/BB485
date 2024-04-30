@@ -121,6 +121,9 @@ Here is basic information contained in SAM/BAM files:
 Genome annotation data are stored in table format. Python has excellent tools forworking with table-shaped data by storing it as a pandas DataFrame. Let's practice creating a python script for reading in an annotation file and using it to extract important genomic information.
 
 ```python3
+#Import needed modules
+import pandas as pd
+
 # Create a string object that is a full path to a tsv file
 file_path = <full path to the tsv file>
 
@@ -129,6 +132,25 @@ annot_df = pd.read_csv(file_path, delimiter= "\t")
 
 # Print the dataframe to get a look at it
 print(annot_df)
+```
+
+To practice extracting information from a dataframe, loop through the rows in the dataframe and print the start and end coordinates.
+```python3
+#Loop through the rows of the dataframe
+for i in annot_df.index:
+    
+    #Get the type of feature
+    temp_type = annot_df.iloc[i]['type']
+    
+    #Get the start position
+    temp_start = annot_df.iloc[i]['start']
+
+    #Get the stop position
+    temp_stop = annot_df.iloc[i]['end']
+
+    #Create a print statement
+    print(f"Type: {temp_type}, Start: {temp_start}, End: {temp_stop}")
+
 ```
 
 Remember: an annotation file can't tell us anything without the corresponding genome assembly file to which it pertains. If we want to extract sequence information, we need to read the genome assembly file into python as well.
