@@ -312,6 +312,10 @@ For the assignment below, combine blocks of python code to create a script that 
 - Extract coordinates and other relevant info for that annotation
 - Read the a fasta file in as a dictionary:
    - `/shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/filtered_contigs.fasta`
+- Once you have the fastas file stored as a dictionary object, you can extract the DNA sequence corresponding to your feature by using the `start_value` and  `end_value` variables. Save this DNA string as a new variable `my_dna_seq` (or something similar).
+- Write a python expression that calculates the GC content of your sequence. In plain english, the way to calculate GC content is:
+   - GC content = (number of G's + number of C's) divided by the length of the DNA.
+- HINT: debug all of this and then once it's running, run one final run of the script to generate 'your' random gene to use to fill in the second table in the assignment. 
 
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
