@@ -285,6 +285,24 @@ random_row = df.sample(n=1)
 print(random_row)
 ```
 
+You can then extract the values from the random row with:
+
+```python
+# Extracting values from specific rows
+seqid_value = random_row.at[random_row.index[0], 'seqid']
+type_value = random_row.at[random_row.index[0], 'type']
+start_value = random_row.at[random_row.index[0], 'start']
+end_value = random_row.at[random_row.index[0], 'end']
+attributes_value = random_row.at[random_row.index[0], 'attributes']
+
+print("seqid:", seqid_value)
+print("type:", type_value)
+print("start:", start_value)
+print("end:", end_value)
+print("attributes:", attributes_value)
+```
+
+
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
 
 
