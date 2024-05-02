@@ -238,8 +238,9 @@ Once installed, you can run prokka from <ins>**within a job submission script**<
 module load prokka
 
 #run prokka on assembly dataset
-prokka /shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/filtered_contigs.fasta
+prokka <full/path/to/assembly file>
 ```
+- Note that your assembly file from last week should be named `contigs.fa`. You can use either of the assemblies that you generated.
 - Note: you should only need 8 CPUs to run this job and it should finish in a couple minutes.
 
 
@@ -304,7 +305,16 @@ print("attributes:", attributes_value)
 
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
+1. Perform genome annotation with prokka on the genome assembly from last week's assignment. The file should be named `contigs.fasta`
 
+2. Fill in the following table with your annotation results:
+
+| Annot type | Count    |
+|------------|----------|
+| contigs    |          |
+| bases      |          |
+|   CDS      |          |
+|    tRNA    |          |
 
 
 [Back to Top](#top)
