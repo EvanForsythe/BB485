@@ -316,5 +316,10 @@ print("attributes:", attributes_value)
 |   CDS      |          |
 |    tRNA    |          |
 
+3. Fill in the following table about a random feature from your annotation file:
+- TBD
+4. Answer the following questions about your random feature.
+- TBD
+
 
 [Back to Top](#top)
