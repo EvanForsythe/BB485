@@ -303,6 +303,8 @@ print("end:", end_value)
 print("attributes:", attributes_value)
 ```
 
+Once you have the above information, you can use you python code from earlier this week to extract a DNA sequence corresponding to your random feature.
+
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
 1. Perform genome annotation with prokka on the genome assembly from last week's assignment. The file should be named `contigs.fasta`
