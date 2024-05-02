@@ -210,9 +210,21 @@ print(seq_dict["Chr5"][0:100])
 
 ## <ins>**Performing genome annotation of a prokaryotic genome**<ins> <a name="annot"></a>
 
+Annotating genomes is a complex process that can make use of many different types of information. We can annotate genomes 'de novo' by searching for patterns/hallmarks of the genomic features we're expecting to find. For example, we can use our knowledge of the genetic code to create a (relatively) simple bioinformatics program that scans DNA sequences to identify <ins>**Open Reading Frames (ORFs)**</ins>.
+
+![orf](/Images/Week05/orf.png)
+
+In addition to the 'de novo' approach to genome annotation, it is very powerful to use existing annotations from a previously annotated model organism (e.g. E. coli) as a starting point and search for similar features in an unannoted genome of interest. This type of annotation is referred to as <ins>**homology-based genome annotation**</ins>.
+
 ### <ins>**Using Prokka annotation software**<ins> <a name="prokka"></a>
 
+[Prokka](https://github.com/tseemann/prokka) is a software package for prokaryotic genome annotation. It performs homology-based genome annotation by comparing our unannotated genome of interest (e.g. the contigs from a genome assembly) to curated databases of annotations from other prokaryotes. 
+
+![prokka](/Images/Week05/prokka.png)
+
 ### <ins>**Visualizing annotations with Circos plots**<ins> <a name="circos"></a>
+
+![circos](/Images/Week05/circos.png)
 
 ### <ins>**Using python to extract sequences of interest**<ins> <a name="seqs"></a>
 
