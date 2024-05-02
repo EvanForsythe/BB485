@@ -244,12 +244,13 @@ prokka <full/path/to/assembly file>
 - Note: you should only need 8 CPUs to run this job and it should finish in a couple minutes.
 
 
-This will output several files in a folder that starts with: `ROKKA_`
+This will output several files in a folder that starts with: `PROKKA_`
 - The file ending in `.tbl` is a descriptive table that tells us about each annotation
 - The file ending in `.txt` gives a summary of what annotations you found in the genome
 - The file ending in `.gff` is a gff format file of the annotations
 
-
+<ins>**IMPORTANT NOTE:**</ins> If you couldn't get prokka to run, you can use the output of the prokka run I did. These files can be found at:
+`/shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/PROKKA_05022024/`
 
 ### <ins>**Visualizing annotations with Circos plots**<ins> <a name="circos"></a>
 
