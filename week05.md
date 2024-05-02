@@ -13,7 +13,11 @@ layout: default
    - **D.** [SAM/BAM format](#sam)
 3. [Working with annotation data in python](#python)
 4. [Week 5 tutorial assignment](#tutorial)
-
+5. [Performing genome annotation of a prokaryotic genome](#annot)
+   - **A.** [Using Prokka annotation software](#prokka)
+   - **B.** [Visualizing annotations with Circos plots](#circos)
+   - **C.** [Using python to extract sequences of interest](#seqs)
+6. [Week 5 write-up assignment](#writeup)
 
 ## <ins>**Overview of genome annotation**<ins> <a name="overview"></a>
 
@@ -204,4 +208,13 @@ print(seq_dict["Chr5"][0:100])
          - Here's what my print statement looked like: `print(seq_dict["Chr5"][temp_start:temp_stop])` 
 
 
+## <ins>**Performing genome annotation of a prokaryotic genome**<ins> <a name="annot"></a>
+
+### <ins>**Using Prokka annotation software**<ins> <a name="prokka"></a>
+
+### <ins>**Visualizing annotations with Circos plots**<ins> <a name="circos"></a>
+
+### <ins>**Using python to extract sequences of interest**<ins> <a name="seqs"></a>
+
+## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
 [Back to Top](#top)
