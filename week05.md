@@ -222,11 +222,35 @@ In addition to the 'de novo' approach to genome annotation, it is very powerful 
 
 ![prokka](/Images/Week05/prokka.png)
 
+To run prokka, we need to install it. We will try two different options. First, our typical method:
+```bash
+conda install bioconda::prokka
+```
+
+If this doesn't work, we'll use the module load system:
+```bash
+module load prokka
+```
+
+Once installed, prokka is very easy to run. You can run it directly from the command line using:
+```bash
+prokka /shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/filtered_contigs.fasta
+```
+
+This will output several files in a folder that starts with: `ROKKA_`
+
+
+
 ### <ins>**Visualizing annotations with Circos plots**<ins> <a name="circos"></a>
 
 ![circos](/Images/Week05/circos.png)
 
 ### <ins>**Using python to extract sequences of interest**<ins> <a name="seqs"></a>
+Create a python script that reads 
+
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
+
+
+
 [Back to Top](#top)
