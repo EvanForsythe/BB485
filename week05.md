@@ -274,9 +274,13 @@ df = pd.read_csv(gff_path, sep="\t", comment="#", header=None, names=columns)
 print(df.head())
 ```
 
+For the assignment, you'll be instructed to write about a random feature in the genome. Once you've read in your gff table as a dataframe, you can show just one row (at random) from it with:
 
+```python
+random_row = df.sample(n=1)
 
-
+print(random_row)
+```
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
 
