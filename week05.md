@@ -232,10 +232,16 @@ If this doesn't work, we'll use the module load system:
 module load prokka
 ```
 
-Once installed, prokka is very easy to run. You can run it directly from the command line using:
+Once installed, you can run prokka from <ins>**within a job submission script**</ins> by adding the following lines to your script.
 ```bash
+#load prokka module
+module load prokka
+
+#run prokka on assembly dataset
 prokka /shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/filtered_contigs.fasta
 ```
+- Note: you should only need 8 CPUs to run this job and it should finish in a couple minutes.
+
 
 This will output several files in a folder that starts with: `ROKKA_`
 
