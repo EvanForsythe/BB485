@@ -244,6 +244,9 @@ prokka /shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/filtered_con
 
 
 This will output several files in a folder that starts with: `ROKKA_`
+- The file ending in `.tbl` is a descriptive table that tells us about each annotation
+- The file ending in `.txt` gives a summary of what annotations you found in the genome
+- The file ending in `.gff` is a gff format file of the annotations
 
 
 
@@ -252,7 +255,27 @@ This will output several files in a folder that starts with: `ROKKA_`
 ![circos](/Images/Week05/circos.png)
 
 ### <ins>**Using python to extract sequences of interest**<ins> <a name="seqs"></a>
-Create a python script that reads 
+We can modify our python script from earlier in the week, to print the sequence of any genomic feature.
+
+Here is a block of python code you can use to read in a gff file:
+```python
+import pandas as pd
+
+# Define the columns of the GFF3 file
+columns = ["seqid", "source", "type", "start", "end", "score", "strand", "phase", "attributes"]
+
+# Add the string for the full path to your annotation file from prokka
+gff_path = <path/to/file>
+
+# Read the GFF3 file into a DataFrame
+df = pd.read_csv(gff_path, sep="\t", comment="#", header=None, names=columns)
+
+# Display the DataFrame
+print(df.head())
+```
+
+
+
 
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
