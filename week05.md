@@ -306,6 +306,13 @@ print("attributes:", attributes_value)
 
 Once you have the above information, you can use you python code from earlier this week to extract a DNA sequence corresponding to your random feature.
 
+For the assignment below, combine blocks of python code to create a script that does the following:
+- Read in the annotation gff file
+- Get a random annotation from the larger dataframe
+- Extract coordinates and other relevant info for that annotation
+- Read the a fasta file in as a dictionary:
+   - `/shared/forsythe/BB485/Week05/Staphylococcus_aureus_assembly/filtered_contigs.fasta`
+
 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
 1. Perform genome annotation with prokka on the genome assembly from last week's assignment. The file should be named `contigs.fasta`
