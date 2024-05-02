@@ -268,7 +268,9 @@ columns = ["seqid", "source", "type", "start", "end", "score", "strand", "phase"
 gff_path = <path/to/file>
 
 # Read the GFF3 file into a DataFrame
-df = pd.read_csv(gff_path, sep="\t", comment="#", header=None, names=columns)
+df_temp = pd.read_csv(gff_path, sep="\t", comment="#", header=None, names=columns)
+
+df = df_temp.dropna(subset=['attributes'])
 
 # Display the DataFrame
 print(df.head())
@@ -277,8 +279,9 @@ print(df.head())
 For the assignment, you'll be instructed to write about a random feature in the genome. Once you've read in your gff table as a dataframe, you can show just one row (at random) from it with:
 
 ```python
+#Get one random row
 random_row = df.sample(n=1)
-
+#Print that row
 print(random_row)
 ```
 
