@@ -189,6 +189,7 @@ for line in seq_file_handle:
         #append this line to the dictionary value, using the key (which is still "id_clean" from the previous line)
         seq_dict[id_clean] += seq_line
 
+#This is printing the first 100 nucleotides of chromosome 5. You can alter this to print from any start to any end coordinate.
 print(seq_dict["Chr5"][0:100])
 
 
@@ -321,7 +322,7 @@ For the assignment below, combine blocks of python code to create a script that 
 ## <ins>**Week 5 write-up assignment**<ins> <a name="writeup"></a>
 1. Perform genome annotation with prokka on the genome assembly from last week's assignment. The file should be named `contigs.fasta`
 
-2. Fill in the following table with your annotation results:
+2. Fill in the following table with your annotation results (you don't need python for this):
 
 | Annot type | Count    |
 |------------|----------|
@@ -330,7 +331,7 @@ For the assignment below, combine blocks of python code to create a script that 
 |   CDS      |          |
 |    tRNA    |          |
 
-3. Fill in the following table about a random feature from your annotation file:
+3. Fill in the following table about a random feature from your annotation file (use python to extract info from the larger gff and fasta files):
 
 | Info                  |   Value      |
 |-----------------------|--------------|
@@ -340,8 +341,17 @@ For the assignment below, combine blocks of python code to create a script that 
 | Gene length           |              |
 | GC content            |              |
 
+-Note that the gene description will be somewhere inside of the 'attribute' field of the dataframe. The infomation varies from gene to gene.
+
 4. Answer the following questions about your random feature.
-- TBD
+- What type of feature is your feature? (protein? rRNA? tRNA?)
+- Try googling the name/description of your feature. You're looking for any info you can find about what the gene does in the cell.
+   - Try searching in standard good
+   - Try searching in google scholar
+   - Try searching including the term 'bacteria' or 'prokaryote'
+- Write a one paragraph description of what your gene is and what it does in prokaryotic cells. The information will vary depending on which random gene you pull, but try to dig up as many interesting/informative tidbits as you can! Include sources (wikipedia is ok, but try to find one academic publication)
+
+5. Submit your responses for the weekly write-up assignment.
 
 
 [Back to Top](#top)
