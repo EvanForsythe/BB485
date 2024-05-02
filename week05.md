@@ -36,7 +36,7 @@ Genomic coordinates much always store four basic pieces of information (see belo
 - **Stop Position:** The ending position of a feature along the chromosome in a genomic coordinate system. It represents the last base pair included in the feature, and it is typically represented as a numerical value.
 - **Strand:** In molecular biology, DNA is composed of two complementary strands. The strand indicates the orientation of the DNA molecule and can be either positive (+) or negative (-). In genomic coordinate data files, it denotes which strand of the DNA the feature is located on.
 
-###0-based vs 1-baded indexing in common annotation file formats
+###0-based vs 1-based indexing in common annotation file formats
 
 | Format            | Position system          |
 |-------------------|--------------------------|
@@ -319,7 +319,15 @@ Once you have the above information, you can use you python code from earlier th
 |    tRNA    |          |
 
 3. Fill in the following table about a random feature from your annotation file:
-- TBD
+
+| Info                  |   Value      |
+|-----------------------|--------------|
+| Gene description      |              |
+| Gene location (start) |              |
+| Gene location (end)   |              |
+| Gene length           |              |
+| GC content            |              |
+
 4. Answer the following questions about your random feature.
 - TBD
 
