@@ -241,7 +241,7 @@ module load prokka
 #run prokka on assembly dataset
 prokka <full/path/to/assembly file>
 ```
-- Note that your assembly file from last week should be named `contigs.fa`. You can use either of the assemblies that you generated.
+- Note that your assembly file from last week should be named `contigs.fasta`. You can use either of the assemblies that you generated.
 - Note: you should only need 8 CPUs to run this job and it should finish in a couple minutes.
 
 
@@ -324,32 +324,32 @@ For the assignment below, combine blocks of python code to create a script that 
 
 2. Fill in the following table with your annotation results (you don't need python for this):
 
-| Annot type | Count    |
-|------------|----------|
-| contigs    |          |
-| bases      |          |
-|   CDS      |          |
-|    tRNA    |          |
+   | Annot type | Count    |
+   |------------|----------|
+   | contigs    |          |
+   | bases      |          |
+   |   CDS      |          |
+   |    tRNA    |          |
 
 3. Fill in the following table about a random feature from your annotation file (use python to extract info from the larger gff and fasta files):
 
-| Info                  |   Value      |
-|-----------------------|--------------|
-| Gene description      |              |
-| Gene location (start) |              |
-| Gene location (end)   |              |
-| Gene length           |              |
-| GC content            |              |
+   | Info                  |   Value      |
+   |-----------------------|--------------|
+   | Gene description      |              |
+   | Gene location (start) |              |
+   | Gene location (end)   |              |
+   | Gene length           |              |
+   | GC content            |              |
 
--Note that the gene description will be somewhere inside of the 'attribute' field of the dataframe. The infomation varies from gene to gene.
+   -Note that the gene description will be somewhere inside of the 'attribute' field of the dataframe. The infomation varies from gene to gene.
 
 4. Answer the following questions about your random feature.
-- What type of feature is your feature? (protein? rRNA? tRNA?)
-- Try googling the name/description of your feature. You're looking for any info you can find about what the gene does in the cell.
-   - Try searching in standard good
-   - Try searching in google scholar
-   - Try searching including the term 'bacteria' or 'prokaryote'
-- Write a one paragraph description of what your gene is and what it does in prokaryotic cells. The information will vary depending on which random gene you pull, but try to dig up as many interesting/informative tidbits as you can! Include sources (wikipedia is ok, but try to find one academic publication)
+   - What type of feature is your feature? (protein? rRNA? tRNA?)
+   - Try googling the name/description of your feature. You're looking for any info you can find about what the gene does in the cell.
+      - Try searching in standard google
+      - Try searching in google scholar
+      - Try searching including the term 'bacteria' or 'prokaryote'
+   - Write a one paragraph description of what your gene is and what it does in prokaryotic cells. The information will vary depending on which random gene you pull, but try to dig up as many interesting/informative tidbits as you can! Include sources (wikipedia is ok, but try to find one academic publication)
 
 5. Submit your responses for the weekly write-up assignment.
 
