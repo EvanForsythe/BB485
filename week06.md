@@ -19,6 +19,8 @@ layout: default
 
 ## <ins>**Comparative genomics and genome evolution**</ins> <a name="comparative"></a>
 
+![comp00](/Images/Week06/comp00.png)
+
 ### <ins>**Large chromosomal mutations**</ins> <a name="inversions"></a>
 
 ![comp04](/Images/Week06/comp04.png)
@@ -36,6 +38,8 @@ layout: default
 ## <ins>**Emergent properties revealed by whole-genome analyses**</ins> <a name="emergent"></a>
 
 ![comp07](/Images/Week06/comp07.png)
+
+![covid](/Images/Week06/covid.png)
 
 ### <ins>**Phylogenetic incongruence**</ins> <a name="incongruence"></a>
 
