@@ -15,6 +15,7 @@ layout: default
 4. [Bioinformatic pipelines](#pipelines)
 5. [Collaborative code development with git and github](#git)
 	- **A.** [Setting up your first github repo](#repo)
+	- **B.** [Cloning your remote repo to a local machine](#clone)
 6. [Tutorial assignment](#tut)
 
 
@@ -86,9 +87,17 @@ layout: default
 
 ![comp22](/Images/Week06/comp22.png)
 
+### <ins>**Cloning your remote repo to a local machine**</ins> <a name="clone"></a>
+
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
-
-
+- Clone your newly made github repo to the HPC
+- Create a new text file to develop into a python script.
+	- Should be named something like: `phylogenomic_analyses.py`
+- Outline the major steps of your phylogenomic pipeline (see the flow chart above)
+	- Do this outlining inside of your new .py script by adding a series of comments inside of the script in order.
+ 		- e.g. `#Create a list of unaligned files that we'll need to align`
+- `git add`, `git commit`, and `git push` your repo to the remote repository.
+- Submit the url of your git account on canvas as the tutorial assignment.    
 
 
 [Back to Top](#top)
