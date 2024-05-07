@@ -89,6 +89,18 @@ layout: default
 
 ### <ins>**Cloning your remote repo to a local machine**</ins> <a name="clone"></a>
 
+![comp23](/Images/Week06/comp23.png)
+
+1. Copy the URL from github
+2. In your command line on the HPC, navigate to the folder in which you want to create the repo
+3. Clone with repo with: `git clone <paste-url-here>`
+4. Use the following to check what branch you're on in the repo (this also confirms you're in a repo): `git branch -a`
+5. You can now make edits to files or create files
+6. To 'push' the edits to the remote repo do the following steps in order:
+	- Add the files with: `git add *`
+ 	- Make a commit with: `git commit -m "a quick message describing what you just did"`
+  	- Push to the remote repo with: `git push origin main`
+
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 - Clone your newly made github repo to the HPC
 - Create a new text file to develop into a python script.
