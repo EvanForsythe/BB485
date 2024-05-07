@@ -8,7 +8,7 @@ layout: default
 1. [Comparative genomics and genome evolution](#comparative)
 	- **A.** [Large chromosomal mutations](#inversions)
 	- **B.** [Whole genome duplication](#duplication)
-2. [Emergent properties in whole-genome analyses](#emergent)
+2. [Emergent properties revealed by whole-genome analyses](#emergent)
 	- **A.** [Phylogenetic incongruence](#incongruence)
 	- **B.** [Hybridization and introgression](#int)
 3. [Phylogenomic analyses](#phylogenomic)
@@ -33,7 +33,7 @@ layout: default
 
 ![comp03](/Images/Week06/comp03.png)
 
-## <ins>**Emergent properties in while-genome analyses**</ins> <a name="emergent"></a>
+## <ins>**Emergent properties revealed by whole-genome analyses**</ins> <a name="emergent"></a>
 
 ![comp07](/Images/Week06/comp07.png)
 
