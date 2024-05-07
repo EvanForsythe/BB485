@@ -74,7 +74,7 @@ Phylogenetic incongruence refers to when 'gene trees' do not match eachother. Th
 
 ## <ins>**Bioinformatic pipelines**</ins> <a name="pipelines"></a>
 
-A bioinformatic 'pipeline' is code the performs several steps, using the output from one step as the input for the next step.
+A bioinformatic 'pipeline' is code that performs several steps, using the output from one step as the input for the next step.
 
 ![comp14](/Images/Week06/comp14.png)
 
