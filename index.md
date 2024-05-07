@@ -12,6 +12,7 @@ title: Home
 - [Week03: Multiple sequence alignment and phylogenetics](week03)
 - [Week04: Genome assembly](week04)
 - [Week05: Genome annotation](week05)
+- [Week06: Comparative genomics and phylogenomic analyses](week06)
 
 
 
