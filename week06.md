@@ -78,6 +78,8 @@ A bioinformatic 'pipeline' is code the performs several steps, using the output 
 
 ![comp14](/Images/Week06/comp14.png)
 
+Pipelines can automate extremely complicated tasks, allowing us to do 'high-throughput' analyses and detect the emergent properties of genomes!
+
 ![comp15](/Images/Week06/comp15.png)
 
 ## <ins>**Collaborative code development with git and github**</ins> <a name="git"></a>
