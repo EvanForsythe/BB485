@@ -28,17 +28,23 @@ layout: default
 
 ![comp04](/Images/Week06/comp04.png)
 
+Comparing the 'synteny' between two genomes can reveal large mutations that have occured.
+
 ![comp05](/Images/Week06/comp05.png)
 
 ### <ins>**Whole genome duplication**</ins> <a name="duplication"></a>
 
 ![comp01](/Images/Week06/comp01.png)
 
+Comparing genomes can help us understand other types of dramatic mutations, such as **polyploidy (i.e. whole genome duplication)**.
+
 ![comp02](/Images/Week06/comp02.png)
 
 ![comp03](/Images/Week06/comp03.png)
 
 ## <ins>**Emergent properties revealed by whole-genome analyses**</ins> <a name="emergent"></a>
+
+A genome-wide view can reveal things that we could not detect when looking at a single region of the genome.
 
 ![comp07](/Images/Week06/comp07.png)
 
@@ -66,11 +72,15 @@ layout: default
 
 ## <ins>**Bioinformatic pipelines**</ins> <a name="pipelines"></a>
 
+A bioinformatic 'pipeline' is code the performs several steps, using the output from one step as the input for the next step.
+
 ![comp14](/Images/Week06/comp14.png)
 
 ![comp15](/Images/Week06/comp15.png)
 
 ## <ins>**Collaborative code development with git and github**</ins> <a name="git"></a>
+
+Git and GitHub are widely-used tools for managing the difficult task of 'version control' when developing code.
 
 ![comp16](/Images/Week06/comp16.png)
 
