@@ -14,6 +14,7 @@ layout: default
 3. [Phylogenomic analyses](#phylogenomic)
 4. [Bioinformatic pipelines](#pipelines)
 5. [Collaborative code development with git and github](#git)
+	- **A.** [Setting up your first github repo](#repo)
 6. [Tutorial assignment](#tut)
 
 
@@ -65,7 +66,25 @@ layout: default
 
 ![comp14](/Images/Week06/comp14.png)
 
+![comp15](/Images/Week06/comp15.png)
+
 ## <ins>**Collaborative code development with git and github**</ins> <a name="git"></a>
+
+![comp16](/Images/Week06/comp16.png)
+
+![comp17](/Images/Week06/comp17.png)
+
+![comp18](/Images/Week06/comp18.png)
+
+### <ins>**Setting up your first github repo**</ins> <a name="repo"></a>
+
+![comp19](/Images/Week06/comp19.png)
+
+![comp20](/Images/Week06/comp20.png)
+
+![comp21](/Images/Week06/comp21.png)
+
+![comp22](/Images/Week06/comp22.png)
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
