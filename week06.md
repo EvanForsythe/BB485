@@ -16,6 +16,7 @@ layout: default
 5. [Collaborative code development with git and github](#git)
 	- **A.** [Setting up your first github repo](#repo)
 	- **B.** [Cloning your remote repo to a local machine](#clone)
+	- **C.** [Configuration of your github credentials](#config)
 6. [Tutorial assignment](#tut)
 
 
@@ -97,9 +98,41 @@ layout: default
 4. Use the following to check what branch you're on in the repo (this also confirms you're in a repo): `git branch -a`
 5. You can now make edits to files or create files
 6. To 'push' the edits to the remote repo do the following steps in order:
-	- Add the files with: `git add *`
- 	- Make a commit with: `git commit -m "a quick message describing what you just did"`
-  	- Push to the remote repo with: `git push origin main`
+- Add the files with: `git add *`
+- Make a commit with: `git commit -m "a quick message describing what you just did"`
+- Push to the remote repo with: `git push origin main`
+
+### <ins>**Configuration of your github credentials**</ins> <a name="config"></a>
+
+1. **Open Terminal or Command Prompt:**
+   Depending on your operating system, open Terminal (on macOS and Linux) or Command Prompt (on Windows).
+
+2. **Enter Git configuration commands:**
+   Use the following commands to configure Git with your access token and GitHub username:
+
+   ```bash
+   git config --global credential.helper store
+   git config --global user.name "Your GitHub Username"
+   git config --global user.email "your_email@example.com"
+   ```
+
+   Replace `"Your GitHub Username"` with your GitHub username and `"your_email@example.com"` with the email associated with your GitHub account.
+
+3. **Store the Access Token:**
+   Run the following command to store your access token:
+
+   ```bash
+   git credential approve
+   ```
+
+   This will prompt you to enter your GitHub username and password. Enter your username and paste the access token you copied earlier when prompted for the password.
+
+4. **Verify Configuration:**
+   You can verify that your configuration is set up correctly by running:
+
+   ```bash
+   git config --list
+   ```
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 - Clone your newly made github repo to the HPC
