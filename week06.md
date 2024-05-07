@@ -52,6 +52,8 @@ A genome-wide view can reveal things that we could not detect when looking at a 
 
 ### <ins>**Phylogenetic incongruence**</ins> <a name="incongruence"></a>
 
+Phylogenetic incongruence refers to when 'gene trees' do not match eachother. This makes it difficult to know when tree is 'correct'. BUT, the incongruence itself can also be an important clue about important processes that occured in the past!
+
 ![comp06](/Images/Week06/comp06.png)
 
 ### <ins>**Hybridization and introgression**</ins> <a name="int"></a>
