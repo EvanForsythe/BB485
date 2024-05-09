@@ -165,7 +165,76 @@ Git and GitHub are widely-used tools for managing the difficult task of 'version
 
 
 ## <ins>**Developing a phylogenomics pipeline**</ins> <a name="pipe"></a>
+Here are the steps we'll need to accomplish:
+- Import needed modules
+```python
+# Import needed modules
+import os
+import sys
+import glob
+import subprocess
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio import Phylo
+```
 
+- Run mafft using a "system call"
+```python
+aln_cmd = 'mafft --auto --quiet '+file+' > '+new_file_path
+print(aln_cmd)
+os.system(aln_cmd)
+```
+
+
+- Read in the trees and test the topology
+```python
+    #Read in the tree and store as phylo object
+    temp_tree = Phylo.read(tree, "newick")
+
+    #Loop through the tips in the tree to find which one contains Es (the outgroup)
+    for tip in temp_tree.get_terminals():
+        if "Es_" in tip.name:
+            es_tip = tip
+            #Stope the loop once we found the correct tip
+            break
+    
+    #Root the tree by the outgroup taxon
+    temp_tree.root_with_outgroup(es_tip)
+    
+    #Get a list of all terminal (aka tips) branches
+    all_terminal_branches = temp_tree.get_terminals()
+    
+    #Loop through the branches and store the names of the tips of each
+    for t in all_terminal_branches:
+        if "Bs_" in t.name:
+            Bs_temp=t 
+        elif "Cr_" in t.name:
+            Cr_temp=t
+        elif "At_" in t.name:
+            At_temp=t
+        else:
+            out_temp=t
+        
+    #Make lists of pairs of branches, so that we can ask which is monophyletic
+    P1_and_P2=[Bs_temp, Cr_temp]
+    P1_and_P3=[Bs_temp, At_temp]
+    P2_and_P3=[Cr_temp, At_temp]
+    
+
+    #Use series of if/else statemetns to ask which pair in monophyletic
+    if bool(temp_tree.is_monophyletic(P1_and_P2)):
+        topo_str = "12top"
+    elif bool(temp_tree.is_monophyletic(P1_and_P3)):
+        topo_str = "13top"
+    elif bool(temp_tree.is_monophyletic(P2_and_P3)):
+        topo_str = "23top"
+    else:
+        topo_str = "Unknown"
+    
+```
+
+- Create a figure
+Use google to figure out how to impliment this in python
 
 ## <ins>**Weekly write-up assignment**</ins> <a name="writeup"></a>
 - Use your github repo to develop a phylogenomics pipeline that performs the tasks above
