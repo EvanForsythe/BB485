@@ -187,6 +187,7 @@ os.system(aln_cmd)
 
 
 - Read in the trees and test the topology
+
 ```python
     #Read in the tree and store as phylo object
     temp_tree = Phylo.read(tree, "newick")
@@ -230,7 +231,6 @@ os.system(aln_cmd)
         topo_str = "23top"
     else:
         topo_str = "Unknown"
-    
 ```
 
 - Create a figure
