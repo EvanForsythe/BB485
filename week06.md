@@ -18,8 +18,12 @@ layout: default
 	- **B.** [Cloning your remote repo to a local machine](#clone)
 	- **C.** [Configuration of your github credentials](#config)
 6. [Tutorial assignment](#tut)
-7. [Weekly write-up assignment](#writeup)
+7. [Developing a phylogenomics pipeline](#pipe)
+8. [Weekly write-up assignment](#writeup)
 
+
+
+Developing a phylogenomics pipeline
 
 ## <ins>**Comparative genomics and genome evolution**</ins> <a name="comparative"></a>
 
@@ -160,7 +164,9 @@ Git and GitHub are widely-used tools for managing the difficult task of 'version
 - Submit the url of your git account on canvas as the tutorial assignment.    
 
 
-Weekly write-up assignment
+## <ins>**Developing a phylogenomics pipeline**</ins> <a name="pipe"></a>
+
+
 ## <ins>**Weekly write-up assignment**</ins> <a name="writeup"></a>
 - Use your github repo to develop a phylogenomics pipeline that performs the tasks above
 - Add a final step to your pipeline that generates a pdf figure displaying the topology counts accross all of your trees. Choose whichever type of plot you think would work best (e.g. pie chart, bar chart, etc..) and google how to generate one in python.
