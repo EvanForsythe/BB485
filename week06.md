@@ -18,6 +18,7 @@ layout: default
 	- **B.** [Cloning your remote repo to a local machine](#clone)
 	- **C.** [Configuration of your github credentials](#config)
 6. [Tutorial assignment](#tut)
+7. [Weekly write-up assignment](#writeup)
 
 
 ## <ins>**Comparative genomics and genome evolution**</ins> <a name="comparative"></a>
@@ -158,5 +159,13 @@ Git and GitHub are widely-used tools for managing the difficult task of 'version
 - `git add`, `git commit`, and `git push` your repo to the remote repository.
 - Submit the url of your git account on canvas as the tutorial assignment.    
 
+
+Weekly write-up assignment
+## <ins>**Weekly write-up assignment**</ins> <a name="writeup"></a>
+- Use your github repo to develop a phylogenomics pipeline that performs the tasks above
+- Add a final step to your pipeline that generates a pdf figure displaying the topology counts accross all of your trees. Choose whichever type of plot you think would work best (e.g. pie chart, bar chart, etc..) and google how to generate one in python.
+- Add the pdf to your git repo and push to github
+- Answer the following questions and submit on Cannas:
+	- <ins> questions TBD <ins/> 
 
 [Back to Top](#top)
