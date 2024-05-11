@@ -178,60 +178,86 @@ from Bio.Seq import Seq
 from Bio import Phylo
 ```
 
-- Run mafft using a "system call"
+- Run mafft using a "system call". The following should go within a loop:
 ```python
+# Create a new file path pointing to the output directory (this is how we tell mafft what to name the output)
+new_file_path = file.replace(indir, outdir)
+
+#print(new_file_path)
+
+# Create a command string (this is what get called using the 'system call'.
 aln_cmd = 'mafft --auto --quiet '+file+' > '+new_file_path
+
+#Check the command
 print(aln_cmd)
-os.system(aln_cmd)
+
+#Run the command
+#os.system(aln_cmd) #Uncomment this once you've double-checked that it's looking good.
 ```
 
+- Run iqtree using a "system call" to perform tree inference. The following should go within a loop:
+```python
+#Create the command. -nt 2 means two threads. If running this from within a job submission, you could use more threads to make it go faster.
+tree_command = f"iqtree -s {aln} -m TEST -nt 2"
 
-- Read in the trees and test the topology
+#Check the command 
+print(tree_command)
+
+#Run the command using a 'system call'
+# os.system(tree_command) #uncomment once you've check the command
+```
+
+- Read in the trees and test the topology. The code below should go within a loop. You'll need to add code to capture the topologies of each.
 
 ```python
-    #Read in the tree and store as phylo object
-    temp_tree = Phylo.read(tree, "newick")
 
-    #Loop through the tips in the tree to find which one contains Es (the outgroup)
-    for tip in temp_tree.get_terminals():
-        if "Es_" in tip.name:
-            es_tip = tip
-            #Stope the loop once we found the correct tip
-            break
-    
-    #Root the tree by the outgroup taxon
-    temp_tree.root_with_outgroup(es_tip)
-    
-    #Get a list of all terminal (aka tips) branches
-    all_terminal_branches = temp_tree.get_terminals()
-    
-    #Loop through the branches and store the names of the tips of each
-    for t in all_terminal_branches:
-        if "Bs_" in t.name:
-            Bs_temp=t 
-        elif "Cr_" in t.name:
-            Cr_temp=t
-        elif "At_" in t.name:
-            At_temp=t
-        else:
-            out_temp=t
-        
-    #Make lists of pairs of branches, so that we can ask which is monophyletic
-    P1_and_P2=[Bs_temp, Cr_temp]
-    P1_and_P3=[Bs_temp, At_temp]
-    P2_and_P3=[Cr_temp, At_temp]
-    
+#Read in the tree and store as phylo object
+temp_tree = Phylo.read(tree, "newick")
 
-    #Use series of if/else statemetns to ask which pair in monophyletic
-    if bool(temp_tree.is_monophyletic(P1_and_P2)):
-        topo_str = "12top"
-    elif bool(temp_tree.is_monophyletic(P1_and_P3)):
-        topo_str = "13top"
-    elif bool(temp_tree.is_monophyletic(P2_and_P3)):
-        topo_str = "23top"
+#Loop through the tips in the tree to find which one contains Es (the outgroup)
+for tip in temp_tree.get_terminals():
+	if "Es_" in tip.name:
+		es_tip = tip
+		#Stope the loop once we found the correct tip
+		break
+    
+#Root the tree by the outgroup taxon
+temp_tree.root_with_outgroup(es_tip)
+    
+#Get a list of all terminal (aka tips) branches
+all_terminal_branches = temp_tree.get_terminals()
+    
+#Loop through the branches and store the names of the tips of each
+for t in all_terminal_branches:
+    if "Bs_" in t.name:
+        Bs_temp=t 
+    elif "Cr_" in t.name:
+        Cr_temp=t
+     elif "At_" in t.name:
+        At_temp=t
     else:
-        topo_str = "Unknown"
+        out_temp=t
+        
+#Make lists of pairs of branches, so that we can ask which is monophyletic
+P1_and_P2=[Bs_temp, Cr_temp]
+P1_and_P3=[Bs_temp, At_temp]
+P2_and_P3=[Cr_temp, At_temp]
+    
+
+#Use series of if/else statemetns to ask which pair in monophyletic
+if bool(temp_tree.is_monophyletic(P1_and_P2)):
+    topo_str = "12top"
+elif bool(temp_tree.is_monophyletic(P1_and_P3)):
+    topo_str = "13top"
+elif bool(temp_tree.is_monophyletic(P2_and_P3)):
+    topo_str = "23top"
+else:
+    topo_str = "Unknown"
+
+print(topo_str)
 ```
+
+- Get the topology counts. How many tree have each topology?
 
 - Create a figure
 Use google to figure out how to impliment this in python
