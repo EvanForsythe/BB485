@@ -95,6 +95,8 @@ conda install conda-forge::r-ape
 y
 conda install bioconda::r-seqinr
 y
+conda install -c conda-forge r-dplyr
+y
 ```
 
 ### 2. Create an R script
