@@ -13,7 +13,7 @@ title: Home
 - [Week04: Genome assembly](week04)
 - [Week05: Genome annotation](week05)
 - [Week06: Comparative genomics and phylogenomic analyses](week06)
-
+- [Week07: Protein domains and structures](week07)
 
 
 <br />
