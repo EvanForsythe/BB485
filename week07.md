@@ -127,7 +127,7 @@ tree<-read.tree("path-to-your-newick-tree-file")
 tree
 ```
 
-- Read in your tsv file
+- Read in your tsv file and store as R dataframe
 ```R
 #Read the tsv file into R
 domain_df<-read.table(file = "<name of the domain tsv file you created>", header = TRUE, sep = "\t")
@@ -135,6 +135,18 @@ domain_df<-read.table(file = "<name of the domain tsv file you created>", header
 #Clean up this dataframe a bit
 names(domain_df)[1]<-"Newick_label"
 ```
+
+- Add a column to your dataframe
+```R
+###Add a column that gives the length of each sequence
+#Read in seq file (in a different format)
+seqs2<-seqinr::read.fasta(file = <path-to-alignment file>, seqtype = "AA")
+
+#Create a df of sequence lengths and join it to the domain data
+domain_dat_full<-right_join(domain_df, data.frame(Newick_label=names(seqs2), Seq_ln=getLength(seqs2)), by = "Newick_label")
+```
+
+
 
 
 
