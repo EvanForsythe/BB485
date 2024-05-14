@@ -21,6 +21,8 @@ layout: default
 
 ![prot03](/Images/Week07/prot03.png)
 
+"Conserved domains" refers to the idea that domains can be conserve in homologous proteins between species. We can use phylogentics/comparative genomics to get a sense of how the domain composition has evoloved over time.
+
 ![prot04](/Images/Week07/prot04.png)
 
 ## <ins>**Conserved domain prediction and visualization with R and CD-search**</ins> <a name="pred"></a>
@@ -89,6 +91,10 @@ conda install conda-forge::r-biocmanager
 y
 conda install bioconda::bioconductor-ggtree
 y
+conda install conda-forge::r-ape
+y
+conda install bioconda::r-seqinr
+y
 ```
 
 ### 2. Create an R script
@@ -114,7 +120,21 @@ library("BiocManager")
 library("ggtree")
 ```
 
+- Read in your phylogenetic tree
+```R
+tree<-read.tree("path-to-your-newick-tree-file")
+#Print the content of the variable "tree"
+tree
+```
 
+- Read in your tsv file
+```R
+#Read the tsv file into R
+domain_df<-read.table(file = "<name of the domain tsv file you created>", header = TRUE, sep = "\t")
+
+#Clean up this dataframe a bit
+names(domain_df)[1]<-"Newick_label"
+```
 
 
 
