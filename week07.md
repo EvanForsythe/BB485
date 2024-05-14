@@ -37,7 +37,14 @@ Next, use IQtree to infer a phylogeny from your alignment. Hint: we ran iqtree w
 
 To predict domains across multiple species, we will use the web-based tool [CDsearch](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi).
 
-Input your multiple sequence alignment in
+Input your multiple sequence alignment into the input box and download the table.
+
+Edit the table file so that it looks like this:
+
+```bash
+#Query   Hit_type        PSSM-ID From    To      E-Value Bitscore        Accession       Short_name      Incomplete      Superfamily
+#A_ang_AANG005961        specific        438889  113     158     1.68696e-14     66.4916 cd22117 F-box_FBXL4      -      cl45894
+```
 
 ## Creating a tree/domain figure in R
 Next we're going to create an R script to generate our figure. To do this we'll need to:
