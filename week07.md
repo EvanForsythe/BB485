@@ -37,14 +37,18 @@ Next, use IQtree to infer a phylogeny from your alignment. Hint: we ran iqtree w
 
 To predict domains across multiple species, we will use the web-based tool [CDsearch](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi).
 
-Input your multiple sequence alignment into the input box and download the table.
+Input your multiple sequence alignment into the input box and download the table. The easiest way to 'download' the output is to create a new tsv file on the HPC and then copy and paste from the web browser into your file.
 
 Edit the table file so that it looks like this:
 
 ```bash
-#Query   Hit_type        PSSM-ID From    To      E-Value Bitscore        Accession       Short_name      Incomplete      Superfamily
-#A_ang_AANG005961        specific        438889  113     158     1.68696e-14     66.4916 cd22117 F-box_FBXL4      -      cl45894
+Query   Hit_type        PSSM-ID From    To      E-Value Bitscore        Accession       Short_name      Incomplete      Superfamily
+A_ang_AANG005961        specific        438889  113     158     1.68696e-14     66.4916 cd22117 F-box_FBXL4      -      cl45894
 ```
+- note that you need to manually do the following:
+  - change `Hit type` to `Hit_type`
+  - change `Short name` to `Short_name`
+  - Remove `Q#2 - >` etc...
 
 ## Creating a tree/domain figure in R
 Next we're going to create an R script to generate our figure. To do this we'll need to:
@@ -57,11 +61,22 @@ Next we're going to create an R script to generate our figure. To do this we'll 
 
 ### 1. Setting up a conda environment for running R
 
-Try inputing the following as one large block of code:
+To aid in creating an R environment, you can use the following job script:
 ```bash
-conda create -n my_r_env r-essentials r-base
+#!/bin/bash
+#SBATCH --job-name=install
+#SBATCH --ntasks-per-node=2
+#SBATCH --time=24:0:0
+#SBATCH --output=install.out
+#SBATCH --error=install.err
+#SBATCH --mail-user=evan.forsythe@osucascades.edu
+#SBATCH --mail-type=END
+
+
+#Bash commands to run within job
+conda create -n Renv r-essentials r-base
 y
-conda activate my_r_env
+conda activate Renv
 conda install conda-forge::r-biocmanager
 y
 conda install bioconda::bioconductor-ggtree
@@ -74,6 +89,28 @@ Use a text editor to create an R script with
 ```bash
 code Domain_evo.R
 ```
+
+Add the following blocks and test to see if they're working as you go
+
+- Set working directory:
+```R
+###Set the working directory (typically the directory where this script is stored)
+#Add the full path to your desired working directory to the quotes
+setwd("<the full path to the directory in which this scipt lives>")
+```
+
+- Load required packages:
+```R
+#Load packages by 'librarying them
+library("BiocManager")
+library(ggtree)
+```
+
+
+
+
+
+
 
 
 [Back to Top](#top)
