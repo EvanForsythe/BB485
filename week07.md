@@ -6,14 +6,22 @@ layout: default
 
 
 # Week 7 lecture and tutorial
-1. [Protein domains](#domains)
-2. [Protein secondary structure prediction](#structure)
+1. [Protein secondary structure](#structure)
+2. [Protein domains](#domains)
 3. [Conserved domain prediction and visualization with R and CD-search](pred)
+
+## <ins>**Protein secondary structure**</ins> <a name="structure"></a>
+
+![prot01](/Images/Week07/prot01.png)
+
+![prot02](/Images/Week07/prot02.png)
 
 
 ## <ins>**Protein domains**</ins> <a name="domains"></a>
 
-## <ins>**Protein secondary structure prediction**</ins> <a name="structure"></a>
+![prot03](/Images/Week07/prot03.png)
+
+![prot04](/Images/Week07/prot04.png)
 
 ## <ins>**Conserved domain prediction and visualization with R and CD-search**</ins> <a name="pred"></a>
 
