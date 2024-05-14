@@ -120,14 +120,14 @@ library("BiocManager")
 library("ggtree")
 ```
 
-- Read in your phylogenetic tree
+- Read in your phylogenetic tree:
 ```R
 tree<-read.tree("path-to-your-newick-tree-file")
 #Print the content of the variable "tree"
 tree
 ```
 
-- Read in your tsv file and store as R dataframe
+- Read in your tsv file and store as R dataframe:
 ```R
 #Read the tsv file into R
 domain_df<-read.table(file = "<name of the domain tsv file you created>", header = TRUE, sep = "\t")
@@ -136,7 +136,7 @@ domain_df<-read.table(file = "<name of the domain tsv file you created>", header
 names(domain_df)[1]<-"Newick_label"
 ```
 
-- Add a column to your dataframe
+- Add a column to your dataframe:
 ```R
 ###Add a column that gives the length of each sequence
 #Read in seq file (in a different format)
@@ -145,11 +145,49 @@ seqs2<-seqinr::read.fasta(file = <path-to-alignment file>, seqtype = "AA")
 #Create a df of sequence lengths and join it to the domain data
 domain_dat_full<-right_join(domain_df, data.frame(Newick_label=names(seqs2), Seq_ln=getLength(seqs2)), by = "Newick_label")
 ```
+- Do some reformatting of the dataframe:
+```R
+#Change the classes in the dataframe
+domain_dat_full[,1]<-paste(domain_dat_full[,1])
+domain_dat_full[,4]<-as.numeric(paste(domain_dat_full[,4]))
+domain_dat_full[,5]<-as.numeric(paste(domain_dat_full[,5]))
+domain_dat_full[,6]<-as.numeric(paste(domain_dat_full[,6]))
+domain_dat_full[,7]<-as.numeric(paste(domain_dat_full[,7]))
+domain_dat_full[,8]<-paste(domain_dat_full[,8])
+domain_dat_full[,9]<-paste(domain_dat_full[,9])
+domain_dat_full[,10]<-paste(domain_dat_full[,10])
+domain_dat_full[,11]<-paste(domain_dat_full[,11])
+domain_dat_full[,12]<-as.numeric(paste(domain_dat_full[,12]))
+#Make a new column that's the same as newick labels
+domain_dat_full[,13]<-paste(domain_dat_full[,1])
+names(domain_dat_full)[13]<-"TipLabels"
+```
 
+- Use ggtree to create the plot
+```R
+### Begin creating the tree/domain plot using ggplot
+#Make a ggtree object 
+p1<-ggtree(tree, branch.length ='none', ladderize = TRUE)
 
+#Add tip names in as a facet
+p2<-facet_plot(p1, panel='tip_labels',
+               data=domain_dat_full, geom=geom_text, 
+               mapping=aes(x=0, label= TipLabels), size=3)
 
+#add seq length line
+p3<-facet_plot(p2, panel = "domains", data = domain_dat_full, geom= geom_segment, 
+               mapping = aes(x=0, xend=Seq_ln, y=y, yend=y), size=0.5, color='black')
 
+#Add domains
+p4<-facet_plot(p3, panel = "domains", data = domain_dat_full, geom=geom_segment, 
+               aes(x=From, xend=To, y=y, yend=y, col=Short_name), size=3) +
+  theme(legend.position = "right")
 
+#Plot the final plot
+pdf("output.pdf", width=10, height=10)
+p4
+dev.off()
+```
 
 
 
