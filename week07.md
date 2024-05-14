@@ -39,5 +39,34 @@ To predict domains across multiple species, we will use the web-based tool [CDse
 
 Input your multiple sequence alignment in
 
+## Creating a tree/domain figure in R
+Next we're going to create an R script to generate our figure. To do this we'll need to:
+1. Setup a conda environment for running R
+2. Create an R script that:
+  - Loads needed packages
+  - Reads in needed files
+  - Creates a figure
+
+
+### 1. Setting up a conda environment for running R
+
+Try inputing the following as one large block of code:
+```bash
+conda create -n my_r_env r-essentials r-base
+y
+conda activate my_r_env
+conda install conda-forge::r-biocmanager
+y
+conda install bioconda::bioconductor-ggtree
+y
+```
+
+### 2. Create an R script
+
+Use a text editor to create an R script with
+```bash
+code Domain_evo.R
+```
+
 
 [Back to Top](#top)
