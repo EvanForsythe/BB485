@@ -103,7 +103,7 @@ setwd("<the full path to the directory in which this scipt lives>")
 ```R
 #Load packages by 'librarying them
 library("BiocManager")
-library(ggtree)
+library("ggtree")
 ```
 
 
