@@ -166,7 +166,7 @@ Git and GitHub are widely-used tools for managing the difficult task of 'version
 
 ## <ins>**Developing a phylogenomics pipeline**</ins> <a name="pipe"></a>
 Here are the steps we'll need to accomplish:
-- Import needed modules
+Import needed modules
 ```python
 # Import needed modules
 import os
@@ -178,7 +178,7 @@ from Bio.Seq import Seq
 from Bio import Phylo
 ```
 
-- Run mafft using a "system call". The following should go within a loop:
+Run mafft using a "system call". The following should go within a loop:
 ```python
 # Create a new file path pointing to the output directory (this is how we tell mafft what to name the output)
 new_file_path = file.replace(indir, outdir)
@@ -195,7 +195,7 @@ print(aln_cmd)
 #os.system(aln_cmd) #Uncomment this once you've double-checked that it's looking good.
 ```
 
-- Run iqtree using a "system call" to perform tree inference. The following should go within a loop:
+Run iqtree using a "system call" to perform tree inference. The following should go within a loop:
 ```python
 #Create the command. -nt 2 means two threads. If running this from within a job submission, you could use more threads to make it go faster.
 tree_command = f"iqtree -s {aln} -m TEST -nt 2"
@@ -207,7 +207,7 @@ print(tree_command)
 # os.system(tree_command) #uncomment once you've check the command
 ```
 
-- Read in the trees and test the topology. The code below should go within a loop. You'll need to add code to capture the topologies of each.
+Read in the trees and test the topology. The code below should go within a loop. You'll need to add code to capture the topologies of each.
 
 ```python
 
@@ -257,9 +257,9 @@ else:
 print(topo_str)
 ```
 
-- Get the topology counts. How many tree have each topology?
+Get the topology counts. How many tree have each topology?
 
-- Create a figure
+Create a figure:
 Use google to figure out how to impliment this in python
 
 ## <ins>**Weekly write-up assignment**</ins> <a name="writeup"></a>
