@@ -166,6 +166,7 @@ names(domain_dat_full)[13]<-"TipLabels"
 ```
 
 - Use ggtree to create the plot
+
 ```R
 ### Begin creating the tree/domain plot using ggplot
 #Make a ggtree object 
