@@ -264,9 +264,15 @@ Use google to figure out how to impliment this in python
 
 ## <ins>**Weekly write-up assignment**</ins> <a name="writeup"></a>
 - Use your github repo to develop a phylogenomics pipeline that performs the tasks above
-- Add a final step to your pipeline that generates a pdf figure displaying the topology counts accross all of your trees. Choose whichever type of plot you think would work best (e.g. pie chart, bar chart, etc..) and google how to generate one in python.
-- Add the pdf to your git repo and push to github
-- Answer the following questions and submit on Cannas:
-	- <ins> questions TBD <ins/> 
+  
+- Create a document that includes the following items/answers and submit on Canvas:
+	- Fill in the following table with your topology counts:
+   | Topology 			| Count	|
+   |----------------------------|-------|
+   | A. tha and C. rub sister	|      	|
+   | B. str and C. rub sister 	|      	|
+   | A. tha and B. str sister 	|       |
+	- Provide the url of your github repo used for this assignment.
+	- There are three possible topologies to any rooted 4-taxon tree. When performing phylogenomic analyses of many genes, the most common topology is typically considered the 'species tree'. The counts of the two remaining 'minor topologies' are used as evidence of whether introgression has occurred. If the two minor topologies are present in relatively equal quanitities, that means introgression has not occurred. If one minor topology is significantly more frequent than the other, that suggests that introgression has occured. **Q1: Do your results suggest that introgression has occurred? Q2: Do your results provide information about whether there is 'statistically significant' evidence of introgression? Why or why not?**
 
 [Back to Top](#top)
