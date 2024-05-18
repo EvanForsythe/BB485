@@ -50,8 +50,9 @@ To predict domains across multiple species, we will use the web-based tool [CDse
 - Input your **unaligned sequences** into the input box and download the table.
 - Note: you'll need to download your results to your personal computer using the download button (see picture below). You'll do work in R on your computer, so it's ok to leave this file on your local computer to use in the R step.
 
-![prot04](/Images/Week07/prot04.png)
-- Note: download the 'standard' format file
+![cdsearch](/Images/Week07/cdsearch.png)
+- Note: be sure to download the 'standard' format file
+
 
 The downloaded file will come with some uneeded metadata at the top. You can remove the unneeded lines at the top that look like this:
 ```bash
