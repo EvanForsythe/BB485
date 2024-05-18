@@ -340,7 +340,7 @@ dev.off()
 **Provide the following in your canvas submission:**
 
 - Submit your domain evolution pdf/image.
-- Describe one change that has ocurred in the evolution of your protein of interest. Write 2-3 sentances describing the evolution of this domain. See the example quetsions below to get ideas. You don't need to answer all of the questions below. You can describe any pattern that you notice. 
+- Describe one change that has ocurred in the evolution of your protein of interest. Write 2-3 sentances describing the evolution of this change. See the example questions below to get ideas. You don't need to answer all of the questions. You can describe any pattern that you notice. 
   - Is there a domain that is present/absent is a subset of species?
   - Has a domain undergone a tandem duplication, meaning there are two copies of the domain next to eachother?
   - Did this change occur in just one species or did it occur more anciently in the ancestor of several species?
