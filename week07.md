@@ -98,7 +98,7 @@ Here is an R script that you can use to create a domain evolution figure. You'll
 ```R
 ###Set the working directory (typically the directory where this script is stored)
 #Add the full path to your desired working directory to the quotes
-setwd("/Users/esforsythe/Documents/OSU/Work/Teaching/BB485/Example_data/Week07_domains/")
+setwd("<location-of-your-R-script>")
 
 
 #The BiocManager package is needed in order to install some other packages
