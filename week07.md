@@ -47,18 +47,42 @@ Next, use IQtree to infer a phylogeny from your alignment. Hint: we ran iqtree w
 
 To predict domains across multiple species, we will use the web-based tool [CDsearch](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi).
 
-Input your **unaligned sequences** into the input box and download the table. The easiest way to 'download' the output is to create a new tsv file on the HPC and then copy and paste from the web browser into your file.
+- Input your **unaligned sequences** into the input box and download the table.
+- Note: you'll need to download your results to your personal computer using the download button (see picture below). You'll do work in R on your computer, so it's ok to leave this file on your local computer to use in the R step.
 
-Edit the table file so that it looks like this:
+![prot04](/Images/Week07/prot04.png)
+- Note: download the 'standard' format file
+
+The downloaded file will come with some uneeded metadata at the top. You can remove the unneeded lines at the top that look like this:
+```bash
+#Batch CD-search tool	NIH/NLM/NCBI
+#cdsid	QM3-qcdsearch-65209C2A234ECDF-1A43972510CBD590
+#datatype	hitsConcise Results
+#status	0
+#Start time	2024-05-18T15:16:16	Run time	0:00:00:02
+#status	success
+```
+
+Edit the remaining table file so that it looks like this:
 
 ```bash
-Query   Hit_type        PSSM-ID From    To      E-Value Bitscore        Accession       Short_name      Incomplete      Superfamily
-A_ang_AANG005961        specific        438889  113     158     1.68696e-14     66.4916 cd22117 F-box_FBXL4      -      cl45894
+Query	Hit_type	PSSM-ID	From	To	E-Value	Bitscore	Accession	Short_name	Incomplete	Superfamily
+A_tha_AT3G07310.1	specific	461674	174	244	8.71002e-19	79.8209	pfam05542	DUF760	 - 	cl09377
+A_tha_AT5G48590.1	specific	461674	162	240	1.71747e-16	73.2725	pfam05542	DUF760	 - 	cl09377
+A_tha_AT5G48590.1	superfamily	471877	254	321	0.0046136	35.5229	cl09377	DUF760 superfamily	 - 	 - 
+E_sal_Thhalv10020977m	specific	461674	174	244	6.28311e-21	85.5989	pfam05542	DUF760	 - 	cl09377
+E_sal_Thhalv10004513m	specific	461674	170	240	1.80105e-14	67.8797	pfam05542	DUF760	 - 	cl09377
+O_sat_LOC_Os11g26890.1	specific	461674	171	252	3.73386e-13	64.4129	pfam05542	DUF760	 - 	cl09377
+S_lyc_Solyc09g057580.3.1	specific	461674	179	249	4.22176e-18	78.2801	pfam05542	DUF760	 - 	cl09377
+S_lyc_Solyc06g007560.2.1	specific	461674	120	187	2.8519e-12	61.3313	pfam05542	DUF760	 - 	cl09377
+S_lyc_Solyc06g007550.1.1	specific	461674	108	183	4.76798e-14	65.9537	pfam05542	DUF760	 - 	cl09377
+S_pol_Spipo9G0068100	specific	461674	275	342	2.39807e-13	65.1833	pfam05542	DUF760	 - 	cl09377
 ```
 - note that you need to manually do the following:
   - change `Hit type` to `Hit_type`
   - change `Short name` to `Short_name`
   - Remove `Q#2 - >` etc...
+  - Note: if you have rows that seem formatted 'weird' in any way, you can remove those rows. For example, 
 
 ## Creating a tree/domain figure in R
 1. Download your sequences, tree, and domain table to your laptop.
