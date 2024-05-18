@@ -337,7 +337,13 @@ dev.off()
 
 ## <ins>**Project write-up assignement**</ins> <a name="write"></a>
 
-- Submit 
+- Submit your domain evolution pdf/image.
+- Describe one change that has ocurred in the evolution of your protein of interest. Write 2-3 sentances describing the evolution of this domain. See the example quetsions below to get ideas. You don't need to answer all of the questions below. You can describe any pattern that you notice. 
+  - Is there a domain that is present/absent is a subset of species?
+  - Has a domain undergone a tandem duplication, meaning there are two copies of the domain next to eachother?
+  - Did this change occur in just one species or did it occur more anciently in the ancestor of several species?
+    - Note that the beginning of the sequence ID's indicate the speices. (e.g. A_tha = Arabidopsis thaliana).
+    - Has there been gene duplication of this gene? 
 
 
 [Back to Top](#top)
