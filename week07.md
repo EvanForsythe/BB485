@@ -83,16 +83,120 @@ S_pol_Spipo9G0068100	specific	461674	275	342	2.39807e-13	65.1833	pfam05542	DUF76
   - change `Hit type` to `Hit_type`
   - change `Short name` to `Short_name`
   - Remove `Q#2 - >` etc...
-  - Note: if you have rows that seem formatted 'weird' in any way, you can remove those rows. For example, 
+  - Note: if you have rows that seem formatted 'weird' in any way, you can remove those rows.
 
 ## Creating a tree/domain figure in R
 1. Download your sequences, tree, and domain table to your laptop.
-  - You can download files using the scp command (described in Week 2).  
+  - You can download files using the scp command (described in Week 2).
+  - If scp is causing problems, you can also create empty text files and copy and paste the contents of your HPC files into them (this way is not preferred but will work in a pinch). 
 2. Create an R script file and paste the R code from below to generate a plot. 
-  - Loads needed packages
-  - Reads in needed files
-  - Creates a figure
 
+Here is an R script that you can use to create a domain evolution figure. You'll need to change information about the names of files. I recommend using R-studio on your local computer to run the R code.
+
+## R code:
+```R
+###Set the working directory (typically the directory where this script is stored)
+#Add the full path to your desired working directory to the quotes
+setwd("/Users/esforsythe/Documents/OSU/Work/Teaching/BB485/Example_data/Week07_domains/")
+
+
+#The BiocManager package is needed in order to install some other packages
+#This is an if-statement that asks whether the package is already installed and installs if not
+if (!requireNamespace("BiocManager", quietly = TRUE)){
+  install.packages("BiocManager")
+}
+library("BiocManager")
+
+#Install and load treeio if it isn't already
+if (!requireNamespace("treeio", quietly = TRUE)){
+  BiocManager::install("treeio")
+
+}
+library(treeio)
+
+#Install and load ggtree if it isn't already
+if (!requireNamespace("ggtree", quietly = TRUE)){
+  BiocManager::install("ggtree")
+}
+library(ggtree)
+
+###Install and load several packages that are installed with the standard base install function
+#Make a list of package names that we'll need
+package_list<-c("ape", "ips", "Biostrings", "phytools", "seqinr", "dplyr", "ggplot2")
+
+#Loop to check if package is installed and loaded. If not, install/load
+#If you get a warning saying "there is no package called <XYZ>", run the loop again
+for(k in 1:length(package_list)){
+  
+  if (!require(package_list[k], character.only = TRUE)) {
+    install.packages(package_list[k], dependencies = TRUE)
+    library(package_list[k], character.only=TRUE)
+  }
+}
+
+#Read in the tree file
+tree<-read.tree("path-to-your-newick-tree-file")
+
+#Print the content of the variable "tree"
+tree
+
+#Read in the domain table and store as R dataframe 
+domain_df<-read.table(file = "<name of the domain tsv file you created>", header = TRUE, sep = "\t")
+
+#Clean up this dataframe a bit
+names(domain_df)[1]<-"Newick_label"
+
+###Add a column that gives the length of each sequence
+#Read in seq file (note: this should not be the aligned sequences)
+seqs<-seqinr::read.fasta(file = <path-to-unaligned-seqs-file>, seqtype = "AA")
+
+#Create a df of sequence lengths and join it to the domain data
+domain_dat_full<-left_join(domain_df, data.frame(Newick_label=names(seqs), Seq_ln=getLength(seqs)), by = "Newick_label")
+
+#check out the dataframe
+domain_dat_full
+
+# Do some reformatting of the dataframe
+#Change the classes in the dataframe
+domain_dat_full[,1]<-paste(domain_dat_full[,1])
+domain_dat_full[,4]<-as.numeric(paste(domain_dat_full[,4]))
+domain_dat_full[,5]<-as.numeric(paste(domain_dat_full[,5]))
+domain_dat_full[,6]<-as.numeric(paste(domain_dat_full[,6]))
+domain_dat_full[,7]<-as.numeric(paste(domain_dat_full[,7]))
+domain_dat_full[,8]<-paste(domain_dat_full[,8])
+domain_dat_full[,9]<-paste(domain_dat_full[,9])
+domain_dat_full[,10]<-paste(domain_dat_full[,10])
+domain_dat_full[,11]<-paste(domain_dat_full[,11])
+domain_dat_full[,12]<-as.numeric(paste(domain_dat_full[,12]))
+#Make a new column that's the same as newick labels
+domain_dat_full[,13]<-paste(domain_dat_full[,1])
+names(domain_dat_full)[13]<-"TipLabels"
+
+
+### Begin creating the tree/domain plot using ggplot
+#Make a ggtree object 
+p1<-ggtree(tree, branch.length ='none', ladderize = TRUE)
+
+#Add tip names in as a facet
+p2<-facet_plot(p1, panel='tip_labels',
+               data=domain_dat_full, geom=geom_text, 
+               mapping=aes(x=0, label= TipLabels), size=3)
+
+#add seq length line
+p3<-facet_plot(p2, panel = "domains", data = domain_dat_full, geom= geom_segment, 
+               mapping = aes(x=0, xend=Seq_ln, y=y, yend=y), size=0.5, color='black')
+
+#Add domains
+p4<-facet_plot(p3, panel = "domains", data = domain_dat_full, geom=geom_segment, 
+               aes(x=From, xend=To, y=y, yend=y, col=Short_name), size=3) +
+  theme(legend.position = "right")
+
+#Plot the final plot
+p4
+
+# You can now use the "Export" button to export a pdf file of your tree and domains figure.
+# Note: part of the sequence IDs may be cutoff. That's ok for this assignment.
+```
 
 <!---
 ### NOTE TO SELF: I had a hard time installing all the needed R packages on the HPC. Pivoting to having the students use R studio on their own computers.
