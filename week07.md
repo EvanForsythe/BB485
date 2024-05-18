@@ -8,7 +8,7 @@ layout: default
 # Week 7 lecture and tutorial
 1. [Protein secondary structure](#structure)
 2. [Protein domains](#domains)
-3. [Conserved domain prediction and visualization with R and CD-search](pred)
+3. [Conserved domain prediction and visualization with R and CD-search](#pred)
 
 ## <ins>**Protein secondary structure**</ins> <a name="structure"></a>
 
@@ -47,7 +47,7 @@ Next, use IQtree to infer a phylogeny from your alignment. Hint: we ran iqtree w
 
 To predict domains across multiple species, we will use the web-based tool [CDsearch](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi).
 
-Input your multiple sequence alignment into the input box and download the table. The easiest way to 'download' the output is to create a new tsv file on the HPC and then copy and paste from the web browser into your file.
+Input your **unaligned sequences** into the input box and download the table. The easiest way to 'download' the output is to create a new tsv file on the HPC and then copy and paste from the web browser into your file.
 
 Edit the table file so that it looks like this:
 
@@ -61,6 +61,17 @@ A_ang_AANG005961        specific        438889  113     158     1.68696e-14     
   - Remove `Q#2 - >` etc...
 
 ## Creating a tree/domain figure in R
+1. Download your sequences, tree, and domain table to your laptop.
+  - You can download files using the scp command (described in Week 2).  
+2. Create an R script file and paste the R code from below to generate a plot. 
+  - Loads needed packages
+  - Reads in needed files
+  - Creates a figure
+
+
+<!---
+### NOTE TO SELF: I had a hard time installing all the needed R packages on the HPC. Pivoting to having the students use R studio on their own computers.
+
 Next we're going to create an R script to generate our figure. To do this we'll need to:
 1. Setup a conda environment for running R
 2. Create an R script that:
@@ -191,7 +202,7 @@ pdf("output.pdf", width=10, height=10)
 p4
 dev.off()
 ```
-
+-->
 
 
 [Back to Top](#top)
