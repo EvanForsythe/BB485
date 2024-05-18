@@ -9,6 +9,7 @@ layout: default
 1. [Protein secondary structure](#structure)
 2. [Protein domains](#domains)
 3. [Conserved domain prediction and visualization with R and CD-search](#pred)
+4. [Project write-up assignement](#write)
 
 ## <ins>**Protein secondary structure**</ins> <a name="structure"></a>
 
@@ -157,7 +158,7 @@ domain_dat_full<-left_join(domain_df, data.frame(Newick_label=names(seqs), Seq_l
 domain_dat_full
 
 # Do some reformatting of the dataframe
-#Change the classes in the dataframe
+#Change the classes in the dataframe so that R can recognize the numbers as number and the strings as strings.
 domain_dat_full[,1]<-paste(domain_dat_full[,1])
 domain_dat_full[,4]<-as.numeric(paste(domain_dat_full[,4]))
 domain_dat_full[,5]<-as.numeric(paste(domain_dat_full[,5]))
@@ -194,8 +195,8 @@ p4<-facet_plot(p3, panel = "domains", data = domain_dat_full, geom=geom_segment,
 #Plot the final plot
 p4
 
-# You can now use the "Export" button to export a pdf file of your tree and domains figure.
-# Note: part of the sequence IDs may be cutoff. That's ok for this assignment.
+# You can now use the "Export" button to export a pdf or image file of your tree and domains figure.
+# Note: part of the sequence IDs may be cutoff. You can stretch the image window or change the dimensions of the image/pdf size to help fix this a bit, but it's ok if some of the IDs are slightly cutoff for this assignment. We could use adobe illustrator to manually do some post-processing and fix this issue if we were preparing a figure for a publication.
 ```
 
 <!---
@@ -332,6 +333,11 @@ p4
 dev.off()
 ```
 -->
+
+
+## <ins>**Project write-up assignement**</ins> <a name="write"></a>
+
+- Submit 
 
 
 [Back to Top](#top)
