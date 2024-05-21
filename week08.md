@@ -74,7 +74,7 @@ Below is a 'heat-map' showing transcriptome expression levels inferred using two
 
 ![trans09](/Images/Week08/trans09.png)
 
-RNA seq has become more popular in recent years
+Because of the drawbacks to microarrays listed above, RNA seq has become more popular in recent years.
 
 ![trans11](/Images/Week08/trans11.png)
 
