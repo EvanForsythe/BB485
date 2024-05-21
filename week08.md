@@ -54,6 +54,8 @@ Gene expression also differs between cell types and tissues in an organism.
 
 ![trans05](/Images/Week08/trans05.png)
 
+Gene expression also changes in response to environmental stimulants.
+
 ![trans06](/Images/Week08/trans06.png)
 
 ## <ins>**Tools for studying gene expression**</ins> <a name="study"></a>
