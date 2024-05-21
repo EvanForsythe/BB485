@@ -14,7 +14,7 @@ title: Home
 - [Week05: Genome annotation](week05)
 - [Week06: Comparative genomics and phylogenomic analyses](week06)
 - [Week07: Protein domains and structures](week07)
-
+- [Week08: RNA sequencing and transcriptomics](week08)
 
 <br />
 <br />
