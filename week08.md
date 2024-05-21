@@ -9,7 +9,7 @@ layout: default
 2. [Layers of the transcriptome](#layers)
 3. [Gene expression](#gene)
 4. [Tools for studying gene expression](#study)
-	- **A.** [microarrays](#micro)
+	- **A.** [Microarrays](#micro)
 	- **B.** [RNAseq](#RNAseq)
 5. [RNAseq workflow](#workflow)
 	- **A.** [Library prep](#library)
@@ -60,15 +60,21 @@ Gene expression also changes in response to environmental stimulants.
 
 ## <ins>**Tools for studying gene expression**</ins> <a name="study"></a>
 
+Advances in tools/technology used to study transcriptomes have revolutionized molecular biology/medical research.
+
+Below is a 'heat-map' showing transcriptome expression levels inferred using two different methods.
+
 ![trans10](/Images/Week08/trans10.png)
 
-### <ins>**microarrays**</ins> <a name="micro"></a>
+### <ins>**Microarrays**</ins> <a name="micro"></a>
 
 ![trans07](/Images/Week08/trans07.png)
 
 ![trans08](/Images/Week08/trans08.png)
 
 ![trans09](/Images/Week08/trans09.png)
+
+RNA seq has become more popular in recent years
 
 ![trans11](/Images/Week08/trans11.png)
 
@@ -80,7 +86,9 @@ Gene expression also changes in response to environmental stimulants.
 
 ![trans13](/Images/Week08/trans13.png)
 
-### <ins>**Library prep**</ins> <a n	ame="library"></a>
+### <ins>**Library prep**</ins> <a name="library"></a>
+
+Library prep involves synthesizing cDNA (complementary DNA)
 
 ![trans14](/Images/Week08/trans14.png)
 
