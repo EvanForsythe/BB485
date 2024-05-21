@@ -104,14 +104,23 @@ Library prep involves synthesizing cDNA (complementary DNA)
 
 ### <ins>**Differential expression**</ins> <a name="diff"></a>
 
+Differential expression analyses can point to genes that are upregulated or downregulated in cells/tissues/environments/etc
+
 ![trans16](/Images/Week08/trans16.png)
 
 ### <ins>**Gene co-expression networks**</ins> <a name="net"></a>
+
+Co-expression networks identify pairs of genes that show correlated expression across a variety of cells/tissues/environments/etc. Co-expression is a good indicator that two proteins interact with eachother.
 
 ![trans17](/Images/Week08/trans17.png)
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
+For the tutorial assignment, setup a new conda environment, which we'll use to perform RNA seq data on Thursday
 
+Install the following packages:
+- tophat2
+- cufflinks
+- DESeq2
 
 [Back to Top](#top)
