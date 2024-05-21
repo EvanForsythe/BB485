@@ -21,7 +21,12 @@ layout: default
 	- **A.** [Library prep](#library)
 	- **B.** [In silico analysis](#silico)
 
-6. [Tutorial assignment](#tut)
+
+6. [Downstream analyses of RNAseq data](#down)
+	- **A.** [Differential expression](#diff)
+	- **B.** [Gene co-expression networks](#net)
+
+7. [Tutorial assignment](#tut)
 
 
 ## <ins>**The genome and the transcriptome**</ins> <a name="transcriptome"></a>
@@ -43,6 +48,12 @@ layout: default
 ### <ins>**Library prep**</ins> <a name="library"></a>
 
 ### <ins>**In silico analysis**</ins> <a name="silico"></a>
+
+## <ins>**Downstream analyses of RNAseq data**</ins> <a name="down"></a>
+
+### <ins>**Differential expression**</ins> <a name="diff"></a>
+
+### <ins>**Gene co-expression networks**</ins> <a name="net"></a>
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
