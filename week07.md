@@ -9,7 +9,9 @@ layout: default
 1. [Protein secondary structure](#structure)
 2. [Protein domains](#domains)
 3. [Conserved domain prediction and visualization with R and CD-search](#pred)
-4. [Project write-up assignement](#write)
+    A. [Code update](#update)
+5. [Project write-up assignement](#write)
+    
 
 ## <ins>**Protein secondary structure**</ins> <a name="structure"></a>
 
@@ -199,6 +201,8 @@ p4
 # You can now use the "Export" button to export a pdf or image file of your tree and domains figure.
 # Note: part of the sequence IDs may be cutoff. You can stretch the image window or change the dimensions of the image/pdf size to help fix this a bit, but it's ok if some of the IDs are slightly cutoff for this assignment. We could use adobe illustrator to manually do some post-processing and fix this issue if we were preparing a figure for a publication.
 ```
+
+### <ins>**Code update**</ins> <a name="update"></a>
 
 UPDATE (may 22nd): Below is a block of code that seems less likely to cause installation problems. Note, ggtree is still causing issues. If you're unable to install ggtree, we may need to take a pass on the final ggtree step. If you are unable, to install ggtree, send me an email telling me the name of your input file (e.g. OG0009631.fasta). I'll plot the tree for you and send it to you and you can use that plot to answer the assignment questions.
 
