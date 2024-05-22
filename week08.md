@@ -119,6 +119,12 @@ Co-expression networks identify pairs of genes that show correlated expression a
 For the tutorial assignment, setup a new conda environment, which we'll use to perform RNA seq data on Thursday
 
 Install the following packages:
+## NEW VERSION:
+- `conda install bioconda::hisat2`
+- `conda install bioconda::stringtie`
+
+
+## OLD VERSION (dont install these afterall)
 - tophat2
 - cufflinks
 - DESeq2
