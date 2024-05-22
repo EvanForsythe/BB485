@@ -95,6 +95,7 @@ S_pol_Spipo9G0068100	specific	461674	275	342	2.39807e-13	65.1833	pfam05542	DUF76
 Here is an R script that you can use to create a domain evolution figure. You'll need to change information about the names of files. I recommend using R-studio on your local computer to run the R code.
 
 ## R code:
+NOTE: this code includes extra packages, that could cause issues when attempting to install them. See the block of code further down on this page for an alternative R script, which only includes the minimal set of packages.
 ```R
 ###Set the working directory (typically the directory where this script is stored)
 #Add the full path to your desired working directory to the quotes
@@ -198,6 +199,95 @@ p4
 # You can now use the "Export" button to export a pdf or image file of your tree and domains figure.
 # Note: part of the sequence IDs may be cutoff. You can stretch the image window or change the dimensions of the image/pdf size to help fix this a bit, but it's ok if some of the IDs are slightly cutoff for this assignment. We could use adobe illustrator to manually do some post-processing and fix this issue if we were preparing a figure for a publication.
 ```
+
+UPDATE (may 22nd): Below is a block of code that seems less likely to cause installation problems. Note, ggtree is still causing issues. If you're unable to install ggtree, we may need to take a pass on the final ggtree step. If you are unable, to install ggtree, send me an email telling me the name of your input file (e.g. OG0009631.fasta). I'll plot the tree for you and send it to you and you can use that plot to answer the assignment questions.
+
+Here is an updated block of code to give one last try.
+```R
+#Add the full path to your desired working directory to the quotes
+setwd("path-to-folder-where-this-script-lives")
+
+#Make a list of package names that we'll need
+package_list<-c("ape", "dplyr", "seqinr", "ggplot2", "ggtree")
+
+#Loop to check if package is installed and loaded. If not, install/load
+#If you get a warning saying "there is no package called <XYZ>", run the loop again
+for(k in 1:length(package_list)){
+  
+  if (!require(package_list[k], character.only = TRUE)) {
+    install.packages(package_list[k], dependencies = TRUE)
+    library(package_list[k], character.only=TRUE)
+  }
+}
+
+# Read in the tree file
+tree <- ape::read.tree("name-of-your-tree.treefile")
+
+# Read in the domain table and store it as an R dataframe
+domain_df <- read.table(file = "name-of-your-domains-table.tsv", header = TRUE, sep = "\t")
+
+# Clean up this dataframe a bit
+names(domain_df)[1] <- "Newick_label"
+
+# Read in unaligned sequences
+seqs <- seqinr::read.fasta(file = "name-of-your-seq-file", seqtype = "AA")
+
+# Create a dataframe of sequence lengths and join it with the domain data
+domain_dat_full <- left_join(domain_df, 
+                             data.frame(Newick_label = names(seqs), Seq_ln = seqinr::getLength(seqs)), 
+                             by = "Newick_label")
+
+# Check out the dataframe
+print(head(domain_dat_full))
+
+# Do some reformatting of the dataframe
+#Change the classes in the dataframe
+domain_dat_full[,1]<-paste(domain_dat_full[,1])
+domain_dat_full[,4]<-as.numeric(paste(domain_dat_full[,4]))
+domain_dat_full[,5]<-as.numeric(paste(domain_dat_full[,5]))
+domain_dat_full[,6]<-as.numeric(paste(domain_dat_full[,6]))
+domain_dat_full[,7]<-as.numeric(paste(domain_dat_full[,7]))
+domain_dat_full[,8]<-paste(domain_dat_full[,8])
+domain_dat_full[,9]<-paste(domain_dat_full[,9])
+domain_dat_full[,10]<-paste(domain_dat_full[,10])
+domain_dat_full[,11]<-paste(domain_dat_full[,11])
+domain_dat_full[,12]<-as.numeric(paste(domain_dat_full[,12]))
+#Make a new column that's the same as newick labels
+domain_dat_full[,13]<-paste(domain_dat_full[,1])
+names(domain_dat_full)[13]<-"TipLabels"
+
+
+# Check the modified dataframe
+print(head(domain_dat_full))
+
+### NOTE: If you can't succesfully install ggtree, you can skip the steps below. 
+### Instead, write you domain_dat_full dataframe as a tsv file using:
+### write.table(domain_dat_full, file = "new_file_name.tsv", sep = "\t", quote = FALSE, row.names = FALSE)
+### Note that this should be similar to your orignal file but it should inlcude an extra column, "Seq_ln"
+
+### Plotting the tree and domains using ggtree and ggplot2
+
+# Create a ggtree object
+p1 <- ggtree(tree, branch.length = 'none', ladderize = TRUE)
+
+# Add tip names as a facet
+p2 <- facet_plot(p1, panel = 'tip_labels', data = domain_dat_full, geom = geom_text, 
+                 mapping = aes(x = 0, label = TipLabels), size = 3)
+
+# Add sequence length line
+p3 <- facet_plot(p2, panel = "domains", data = domain_dat_full, geom = geom_segment, 
+                 mapping = aes(x = 0, xend = Seq_ln, y = y, yend = y), size = 0.5, color = 'black')
+
+# Add domains
+p4 <- facet_plot(p3, panel = "domains", data = domain_dat_full, geom = geom_segment, 
+                 aes(x = From, xend = To, y = y, yend = y, col = Short_name), size = 3) +
+  theme(legend.position = "right")
+
+# Plot the final plot
+print(p4)
+```
+
+
 
 <!---
 ### NOTE TO SELF: I had a hard time installing all the needed R packages on the HPC. Pivoting to having the students use R studio on their own computers.
