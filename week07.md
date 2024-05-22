@@ -9,7 +9,7 @@ layout: default
 1. [Protein secondary structure](#structure)
 2. [Protein domains](#domains)
 3. [Conserved domain prediction and visualization with R and CD-search](#pred)
-    A. [Code update](#update)
+    - **A.** [Code update](#update)
 5. [Project write-up assignement](#write)
     
 
