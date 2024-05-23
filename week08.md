@@ -20,6 +20,7 @@ layout: default
 7. [Tutorial assignment](#tut)
 8. [Performing a transcriptome analysis with hisat2 on example data](#hisat)
 9. [Analyzing a full genome dataset](#full)
+10. [Project write-up assignment](#write)
 
 
 
@@ -192,6 +193,8 @@ RPKM is comaparable accross samples, genes, and experiments because:
 - It normalizes by gene length (per kilobase of gene length)
 - It normalizes by sequencing depth of the RNA seq experiment (per million reads)
 
+![trans20](/Images/Week08/trans20.png)
+
 
 ## Some downstream steps for quantifying expression
 1. Convert from sam format to bam format
@@ -220,6 +223,10 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 - `GCA_000001405.28_GRCh38.p13_genomic.gff` is the gene annotation file
 
 
+## <ins>**
+Project write-up assignment**</ins> <a name="write"></a>
+
+- TBD (depending on progress in class)
 
 
 [Back to Top](#top)
