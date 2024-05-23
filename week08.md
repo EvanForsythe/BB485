@@ -223,8 +223,7 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 - `GCA_000001405.28_GRCh38.p13_genomic.gff` is the gene annotation file
 
 
-## <ins>**
-Project write-up assignment**</ins> <a name="write"></a>
+## <ins>**Project write-up assignment**</ins> <a name="write"></a>
 
 - TBD (depending on progress in class)
 
