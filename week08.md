@@ -18,6 +18,7 @@ layout: default
 	- **A.** [Differential expression](#diff)
 	- **B.** [Gene co-expression networks](#net)
 7. [Tutorial assignment](#tut)
+8. [Performing a transcriptome analysis with hisat2](#hisat)
 
 
 ## <ins>**The genome and the transcriptome**</ins> <a name="transcriptome"></a>
@@ -122,11 +123,24 @@ Install the following packages:
 ## NEW VERSION:
 - `conda install bioconda::hisat2`
 - `conda install bioconda::stringtie`
+- `conda install bioconda::samtools`
 
 
 ## OLD VERSION (dont install these afterall)
 - tophat2
 - cufflinks
 - DESeq2
+
+## <ins>**Performing a transcriptome analysis with hisat2**</ins> <a name="hisat"></a>
+hisat2 (hierarchical indexing for spliced alignment of transcripts) is an algorithm for aligning whole-transcriptome sequencing reads to a reference genome.
+
+## Installing hisat2
+- You should already have hisat2 installed in your most recent conda environment. Check that it is installed by running `hisat2`. You should see the abreviated user manual.
+- [here](https://daehwankimlab.github.io/hisat2/manual/) is the full-length user manual.
+
+
+
+
+
 
 [Back to Top](#top)
