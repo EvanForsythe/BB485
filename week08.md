@@ -153,6 +153,10 @@ hisat2-build /shared/forsythe/BB485/Week08/Human_example_data/reference/22_20-21
 ```bash
 hisat2 -f -x 22_20-21M_snp -U /shared/forsythe/BB485/Week08/Human_example_data/reads/reads_1.fa -S eg1.sam
 ```
+- `-f` means input files are fasta format
+- `-x` Index filename prefix (minus trailing .X.ht2)
+- `-U` Files with unpaired reads.
+- `S` File for SAM output (default: stdout)
 
 SAM (Sequence Alignment/Map) format is a text-based format for storing sequence alignments against a reference genome.
 
