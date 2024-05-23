@@ -141,6 +141,40 @@ hisat2 (hierarchical indexing for spliced alignment of transcripts) is an algori
 
 
 
+SAM (Sequence Alignment/Map) format is a text-based format for storing sequence alignments against a reference genome.
+
+
+
+## Structure of a SAM File
+
+A SAM file has two main sections:
+1. **Header Section**: Meta-information about the alignments.
+2. **Alignment Section**: Contains read alignment information.
+
+### Header Section
+- Lines start with `@`
+- Common headers:
+  - `@HD`: Header
+  - `@SQ`: Reference sequences
+  - `@RG`: Read groups
+  - `@PG`: Programs
+
+### Alignment Section
+- One line per read alignment
+- 11 mandatory fields:
+  1. `QNAME`: Query name
+  2. `FLAG`: Bitwise flag
+  3. `RNAME`: Reference name
+  4. `POS`: Position
+  5. `MAPQ`: Mapping quality
+  6. `CIGAR`: CIGAR string
+  7. `RNEXT`: Mate reference name
+  8. `PNEXT`: Mate position
+  9. `TLEN`: Template length
+  10. `SEQ`: Sequence
+  11. `QUAL`: Quality
+
+Optional fields (e.g., `NM`, `MD`, `AS`, `XS`)
 
 
 [Back to Top](#top)
