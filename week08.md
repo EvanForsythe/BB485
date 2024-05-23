@@ -142,11 +142,18 @@ hisat2 (hierarchical indexing for spliced alignment of transcripts) is an algori
 - [here](https://daehwankimlab.github.io/hisat2/manual/) is the full-length user manual.
 
 
+## Running hisat2 on example data
+1. Create an index of the reference genome
+```bash
+hisat2-build /shared/forsythe/BB485/Week08/Human_example_data/reference/22_20-21M.fa --snp /shared/forsythe/BB485/Week08/Human_example_data/reference/22_20-21M.snp 22_20-21M_snp
+```
 
+2. Perform the alignment/mapping
+```bash
+hisat2 -f -x 22_20-21M_snp -U /shared/forsythe/BB485/Week08/Human_example_data/reads/reads_1.fa -S eg1.sam
+```
 
 SAM (Sequence Alignment/Map) format is a text-based format for storing sequence alignments against a reference genome.
-
-
 
 ## Structure of a SAM File
 
@@ -177,7 +184,30 @@ A SAM file has two main sections:
   10. `SEQ`: Sequence
   11. `QUAL`: Quality
 
-Optional fields (e.g., `NM`, `MD`, `AS`, `XS`)
+## Quantifying expression
+
+In order to quantify expression levels, we will need to count reads in a unit that is comparable across samples, genes, and experiments. One method for doing this is to use Reads per Kilobase per Million  mapped reads (RPKM).
+
+RPKM is comaparable accross samples, genes, and experiments because:
+- It normalizes by gene length (per kilobase of gene length)
+- It normalizes by sequencing depth of the RNA seq experiment (per million reads)
+
+
+## Some downstream steps for quantifying expression
+1. Convert from sam format to bam format
+```bash
+samtools view -S -b eg1.sam > eg1.bam
+```
+
+2. Sort the bam file
+```bash
+samtools sort eg1.bam -o eg1_sorted.bam 
+```
+
+3. Create an indexed version of the bam file (optional, not sure if we'll need this)
+```bash
+samtools index eg1_sorted.bam 
+```
 
 ## <ins>**Analyzing a full genome dataset**</ins> <a name="full"></a>
 
