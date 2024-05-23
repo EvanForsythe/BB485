@@ -18,7 +18,10 @@ layout: default
 	- **A.** [Differential expression](#diff)
 	- **B.** [Gene co-expression networks](#net)
 7. [Tutorial assignment](#tut)
-8. [Performing a transcriptome analysis with hisat2](#hisat)
+8. [Performing a transcriptome analysis with hisat2 on example data](#hisat)
+9. [Analyzing a full genome dataset](#full)
+
+
 
 
 ## <ins>**The genome and the transcriptome**</ins> <a name="transcriptome"></a>
@@ -175,6 +178,18 @@ A SAM file has two main sections:
   11. `QUAL`: Quality
 
 Optional fields (e.g., `NM`, `MD`, `AS`, `XS`)
+
+## <ins>**Analyzing a full genome dataset**</ins> <a name="full"></a>
+
+Full datasets from a RNAseq experiment on a human sample are located at this path:
+```bash
+/shared/forsythe/BB485/Week08/hg38/
+```
+- `GCA_000001405.28_GRCh38.p13_genomic.fna` is the genome assembly in fasta format
+- `SRR28621297.fasta` is the RNA seq reads file
+- `GCA_000001405.28_GRCh38.p13_genomic.gff` is the gene annotation file
+
+
 
 
 [Back to Top](#top)
