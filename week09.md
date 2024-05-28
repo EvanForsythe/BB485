@@ -71,6 +71,7 @@ wget <URL of download link>
 ### Benchmarking table
 
 Download three genomic datasets and apply sqeakuences to each. Fill in the following information.
+- Try to include three different database sources or data types.
 
 |             Stat         | Dataset 1 | Dataset 2 | Dataset 3 |
 |--------------------------|---------|---------|---------|
