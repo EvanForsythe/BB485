@@ -39,14 +39,14 @@ Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the le
 
 ### Obtaining squeakuences
 
-We will each use git/github to 'clone' squeakuences to the HPC so that we can run it.
+We will each use git/github to 'clone' squeakuences to the HPC so that we can run it. Go to the [squeakuences github page](https://github.com/EvanForsythe/Squeakuences) and then use `git clone` to clone it to the HPC.
 
 ### Obtaining test datasets
 
-Squeakuences is designed to work with **fasta files**. Fasta files are used to store a wide variety of biological sequence information. We would like Squeakuences to work on any fasta file from any source. In order to identify unexpected problems/bugs caused by specific data types/sources, we need to test it as widely as possible. 
+Squeakuences is designed to process **fasta files**. Fasta files are used to store a wide variety of biological sequence information. We would like Squeakuences to work on any fasta file from any source. In order to identify unexpected problems/bugs caused by specific data types/sources, we need to test it as widely as possible. 
 
 - NCBI genome sequences: `https://www.ncbi.nlm.nih.gov/genome/`
-- Phytozome plant genome/proteome database: `https://phytozome-next.jgi.doe.gov/`
+- Phytozome plant genome/proteome database (account login required): `https://phytozome-next.jgi.doe.gov/`
 - NCBI raw sequencing data, Sequence Read Archive (SRA): `https://www.ncbi.nlm.nih.gov/sra/`
 
 Datasets of specific interest:
@@ -59,6 +59,12 @@ Datasets of specific interest:
 - Sargassum fusiforme seaweed genome sequencing:
     - Genome assembly: `https://figshare.com/s/517f180deb56a5b31b14`
     - Raw sequencing reads: `https://www.ncbi.nlm.nih.gov/nuccore?term=PRJNA597239`
+
+To download a dataset directly to the HPC, you can run the following command from the HPC:
+```bash
+wget <URL of download link>
+```
+- Note that this doesn't work on every database. Unfortunately, some databases require that we download to our local machine and the upload to the HPC (using the `scp` command). 
 
 ## <ins>**Tutorial assignment**</ins> <a name="tool"></a>
 
