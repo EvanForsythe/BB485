@@ -13,8 +13,9 @@ layout: default
     
 
 ## <ins>**Introduction to Squeakuences**</ins> <a name="intro"></a>
-
+Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the lead developer on Squeakuences.
 ![squeak01](/Images/Week09/squeak01.png)
+
 ![squeak01](/Images/Week09/squeak02.png)
 ![squeak01](/Images/Week09/squeak03.png)
 ![squeak01](/Images/Week09/squeak04.png)
