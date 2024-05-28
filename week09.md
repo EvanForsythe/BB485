@@ -9,7 +9,7 @@ layout: default
 1. [Introduction to Squeakuences](#intro)
 2. [Squeakuences bioinformatics tool development](#tool)
 3. [Testing and benchmarking Squeakuences](#test)
-5. [Tutorial assignment](#tut)
+4. [Project write-up assignment](#proj)
     
 
 ## <ins>**Introduction to Squeakuences**</ins> <a name="intro"></a>
@@ -70,12 +70,12 @@ wget <URL of download link>
 ```
 - Note that this doesn't work on every database. Unfortunately, some databases require that we download to our local machine and the upload to the HPC (using the `scp` command). 
 
-## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
+## <ins>**Project write-up assignment**</ins> <a name="proj"></a>
 
 ### Benchmarking table
 
 1. Download three genomic datasets and apply sqeakuences to each. Fill in the following information.
-- Try to include three different database sources or data types.
+    - Try to include three different database sources or data types.
 
 |             Stat         | Dataset 1 | Dataset 2 | Dataset 3 |
 |--------------------------|---------|---------|---------|
