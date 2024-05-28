@@ -6,16 +6,27 @@ layout: default
 
 
 # Week 9 lecture and tutorial
-1. [Protein secondary structure](#structure)
-2. [Protein domains](#domains)
-3. [Conserved domain prediction and visualization with R and CD-search](#pred)
-    - **A.** [Code update](#update)
-5. [Project write-up assignement](#write)
+1. [Introduction to Squeakuences](#intro)
+2. [Squeakuences bioinformatics tool development](#tool)
+3. [Testing and benchmarking Squeakuences](#test)
+5. [Tutorial assignment](#tut)
     
 
-## <ins>**Protein secondary structure**</ins> <a name="structure"></a>
+## <ins>**Introduction to Squeakuences**</ins> <a name="intro"></a>
 
 ![squeak01](/Images/Week09/squeak01.png)
+![squeak01](/Images/Week09/squeak02.png)
+![squeak01](/Images/Week09/squeak03.png)
+![squeak01](/Images/Week09/squeak04.png)
+![squeak01](/Images/Week09/squeak05.png)
+![squeak01](/Images/Week09/squeak06.png)
+![squeak01](/Images/Week09/squeak07.png)
+
+## <ins>**Squeakuences bioinformatics tool development**</ins> <a name="tool"></a>
+
+## <ins>**Testing and benchmarking Squeakuences**</ins> <a name="test"></a>
+
+## <ins>**Tutorial assignment**</ins> <a name="tool"></a>
 
 
 
