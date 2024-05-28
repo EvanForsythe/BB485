@@ -66,7 +66,7 @@ wget <URL of download link>
 ```
 - Note that this doesn't work on every database. Unfortunately, some databases require that we download to our local machine and the upload to the HPC (using the `scp` command). 
 
-## <ins>**Tutorial assignment**</ins> <a name="tool"></a>
+## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
 ### Benchmarking table
 
