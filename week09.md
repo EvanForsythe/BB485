@@ -35,7 +35,7 @@ Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the le
 
 **Journal submission guidelines:**
 
-- (Bioinformatics journal submission guidelines)[https://academic.oup.com/bioinformatics/pages/instructions_for_authors]
+- [Bioinformatics journal submission guidelines](https://academic.oup.com/bioinformatics/pages/instructions_for_authors)
 
 **Draft Abstract**
 
