@@ -228,18 +228,22 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 
 
 ## <ins>**Project write-up assignment**</ins> <a name="write"></a>
-1. Perform hisat read mapping by running the following two steps in a job submission (each step should take <1 hour to reun)
+1. Perform hisat read mapping by running the following two steps in a job submission (each step should take <1 hour to run)
 
 - First, create an index of your reference gene
 ```bash
 hisat2-build /shared/forsythe/BB485/Week08/hg38/GCA_000001405.28_GRCh38.p13_genomic.fna human
 ```
+	- Note that "human" tell hisat what string to put in every output file name. 
+
 
 - Next, perform the actual read mapping step
 ```
 hisat2 -f -x human -U /shared/forsythe/BB485/Week08/hg38/SRR28621297.fasta --threads 32 -S human_mapped.sam
 ```
-- Note that the number of threads you use should match the number of ntasks-per-node you indicate at the top of your job submission.
+	- Note that -x tells hisat how to find the index files from above.
+	- Note that the number of threads you use should match the number of ntasks-per-node you indicate at the top of your job submission.
+ 
 
 
 2. Fill in the summary information from your hisat2 read alignment/mapping (info will be in your .err file)
