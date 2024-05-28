@@ -228,10 +228,21 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 
 
 ## <ins>**Project write-up assignment**</ins> <a name="write"></a>
+1. Perform hisat read mapping by running the following two steps in a job submission (each step should take <1 hour to reun)
+
+- First, create an index of your reference gene
+```bash
+hisat2-build /shared/forsythe/BB485/Week08/hg38/GCA_000001405.28_GRCh38.p13_genomic.fna human
+```
+
+- Next, perform the actual read mapping step
+```
+hisat2 -f -x human -U /shared/forsythe/BB485/Week08/hg38/SRR28621297.fasta --threads 32 -S human_mapped.sam
+```
+- Note that the number of threads you use should match the number of ntasks-per-node you indicate at the top of your job submission.
 
 
-
-2. Fill the information from your hisat2 read alignment/mapping (info will be in your .err file)
+2. Fill in the summary information from your hisat2 read alignment/mapping (info will be in your .err file)
 
 | Stat 			| Count 	| Percentage of total 	|
 |-----------------------|---------------|-----------------------|
@@ -241,17 +252,17 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 | Reads aligned 2+ times| 		|			|
 
 
-3. Answer the following question about quantifying RNA results.
+3. Answer the following question about quantifying RNA results (note that you can work on this while your jobs are running)
 
 - Your read mapping output (.sam format) contains information about the where the RNAseq reads map in the reference genome. You can combine this read mapping info with the coordinates of where genes are located in the genome (i.e. genome annotation in .gff format) to essentially count the number of reads that map to a given gene.
 - Use the read mapping info below to calculate expression values (in RPKM units) for two different genes
 
-| Stat 				| Gene A 	| Gene B 	|
-|-------------------------------|---------------|---------------|
-| Length of gene (kilobases, KB)|	1.9	| 	7.7	|
-| 	Reads mapped to gene 	|  	2000	|	4000	|
-| Total reads in experiment	| 2000000 	|	3000000	|
-| RPKM				| 		|		|
+| Stat 						| Gene A 	| Gene B 	|
+|-----------------------------------------------|---------------|---------------|
+| Length of gene (kilobases, KB)		|	1.9	| 	7.7	|
+| 	Reads mapped to gene 			|  	2000	|	4000	|
+| Total reads in experiment (million reads)	| 2 		|	2.5	|
+| RPKM						| 		|		|
 
 
 - What is the RPKM for Gene A and Gene B?
