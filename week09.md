@@ -70,7 +70,7 @@ wget <URL of download link>
 
 ### Benchmarking table
 
-Download three genomic datasets and apply sqeakuences to each. Fill in the following information.
+1. Download three genomic datasets and apply sqeakuences to each. Fill in the following information.
 - Try to include three different database sources or data types.
 
 |             Stat         | Dataset 1 | Dataset 2 | Dataset 3 |
@@ -86,8 +86,6 @@ Download three genomic datasets and apply sqeakuences to each. Fill in the follo
 | Example seq ID (before)  |         |         |         |
 | Example seq ID (after)   |         |         |         |
 
-
-
-
+2. Create an 'Issue' on github suggesting a way to improve Squeakuences. If you experience any bugs, you'll definitely want to report those. If you don't see any bugs, use the Issue to suggest an improvement in the usability of Squeakuences. 
 
 [Back to Top](#top)
