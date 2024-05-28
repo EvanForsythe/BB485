@@ -33,6 +33,10 @@ Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the le
 
 ### Planning a manuscript
 
+**Journal submission guidelines:**
+
+- (Bioinformatics journal submission guidelines)[https://academic.oup.com/bioinformatics/pages/instructions_for_authors]
+
 **Draft Abstract**
 
 ## <ins>**Testing and benchmarking Squeakuences**</ins> <a name="test"></a>
