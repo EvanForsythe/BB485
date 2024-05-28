@@ -45,18 +45,18 @@ Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the le
 
 Download three genomic datasets and apply sqeakuences to each. Fill in the following information.
 
-|             Stat         | Dataset 1 | Dataset 2 | Dataset 3 | Dataset 4 |
-|--------------------------|---------|---------|---------|---------|
-| Taxon name        |         |         |         |         |
-| Data Source (URL)        |         |         |         |         |
-| File Name                |         |         |         |         |
-| Processing Time (Hours: Minutes: Seconds) |         |         |         |         |
-| Memory (MB)              |         |         |         |         |
-| Starting File Size (MB)  |         |         |         |         |
-| Ending File Size (MB)    |         |         |         |         |
-| Number of sequences cleaned |         |         |         |         |
-| Example seq ID (before)  |         |         |         |         |
-| Example seq ID (after)   |         |         |         |         |
+|             Stat         | Dataset 1 | Dataset 2 | Dataset 3 |
+|--------------------------|---------|---------|---------|
+| Taxon name        |         |         |         |
+| Data Source (URL)        |         |         |         |
+| Data type (prot/RNA/DNA)        |         |         |         |
+| Processing Time (hours) |         |         |         |
+| Memory (MB)              |         |         |         |
+| Starting File Size (MB)  |         |         |         |
+| Ending File Size (MB)    |         |         |         |
+| Number of sequences cleaned |         |         |         |
+| Example seq ID (before)  |         |         |         |
+| Example seq ID (after)   |         |         |         |
 
 
 
