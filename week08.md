@@ -229,7 +229,34 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 
 ## <ins>**Project write-up assignment**</ins> <a name="write"></a>
 
-- TBD (depending on progress in class)
 
+
+2. Fill the information from your hisat2 read alignment/mapping (info will be in your .err file)
+
+| Stat 			| Count 	| Percentage of total 	|
+|-----------------------|---------------|-----------------------|
+| Total reads		|		| 	 NA		|
+| Reads aligned 0 times |  		|			|
+| Reads aligned 1 time	| 		|			|
+| Reads aligned 2+ times| 		|			|
+
+
+3. Answer the following question about quantifying RNA results.
+
+- Your read mapping output (.sam format) contains information about the where the RNAseq reads map in the reference genome. You can combine this read mapping info with the coordinates of where genes are located in the genome (i.e. genome annotation in .gff format) to essentially count the number of reads that map to a given gene.
+- Use the read mapping info below to calculate expression values (in RPKM units) for two different genes
+
+| Stat 				| Gene A 	| Gene B 	|
+|-------------------------------|---------------|---------------|
+| Length of gene (kilobases, KB)|	1.9	| 	7.7	|
+| 	Reads mapped to gene 	|  	2000	|	4000	|
+| Total reads in experiment	| 2000000 	|	3000000	|
+| RPKM				| 		|		|
+
+
+- What is the RPKM for Gene A and Gene B?
+- Which gene is more highly expressed?
+- Why is it important to normalize for gene length?
+- Why is it important to normalize for sequencing depth in the experiment (i.e. total number of reads)?
 
 [Back to Top](#top)
