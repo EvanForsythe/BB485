@@ -13,22 +13,35 @@ layout: default
     
 
 ## <ins>**Introduction to Squeakuences**</ins> <a name="intro"></a>
-Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the lead developer on Squeakuences.
+Linnea is a recent OSU-Cascades Biology/Computer Science graduatae and is the lead developer on Squeakuences. Below is an introduction to the tool.
+
 ![squeak01](/Images/Week09/squeak01.png)
 
 ![squeak01](/Images/Week09/squeak02.png)
+
 ![squeak01](/Images/Week09/squeak03.png)
+
 ![squeak01](/Images/Week09/squeak04.png)
+
 ![squeak01](/Images/Week09/squeak05.png)
+
 ![squeak01](/Images/Week09/squeak06.png)
+
 ![squeak01](/Images/Week09/squeak07.png)
 
 ## <ins>**Squeakuences bioinformatics tool development**</ins> <a name="tool"></a>
 
+### Planning a manuscript
+
+**Draft Abstract**
+
 ## <ins>**Testing and benchmarking Squeakuences**</ins> <a name="test"></a>
+
+### Test dataset download sources
 
 ## <ins>**Tutorial assignment**</ins> <a name="tool"></a>
 
+### Benchmarking table
 
 
 
