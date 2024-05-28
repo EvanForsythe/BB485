@@ -56,7 +56,7 @@ Datasets of specific interest:
 - Devaleraea mollis seaweed sequencing:
     - Genome assembly: `https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_032361265.1/`
     - Raw sequencing reads: `https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR25035936&display=metadata`
-- Seaweed genome sequencing:
+- Sargassum fusiforme seaweed genome sequencing:
     - Genome assembly: `https://figshare.com/s/517f180deb56a5b31b14`
     - Raw sequencing reads: `https://www.ncbi.nlm.nih.gov/nuccore?term=PRJNA597239`
 
