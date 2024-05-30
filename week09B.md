@@ -16,6 +16,11 @@ layout: default
 
 Devaleraea mollis (pacific dulse) is a red algae that grows along the Oregon coast.
 
+Types of bioactives (secondary metabolites):
+- Allelopathy effectors
+- Pigments (for photosythesis)
+- Anti-microbial peptides (AMPs)
+
 ![algae](/Images/Week09/algae.png)
 
 ## <ins>**Intro to anti-microbial peptides by Dr. Cotten**</ins> <a name="amp"></a>
@@ -29,7 +34,7 @@ Devaleraea mollis (pacific dulse) is a red algae that grows along the Oregon coa
 - Length of peptides?
 - Chemical properties of peptides?
 - Structural properties of peptides?
-- Located within larger proteins vs stand-alone ORFs?
+- **Located within larger proteins vs stand-alone ORFs?**
     - What is an 'encrypted' peptide (sensu Torres et al)?     
 
 ### Programs for predicting AMPs from sequence
