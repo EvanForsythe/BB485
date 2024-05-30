@@ -25,7 +25,31 @@ Devaleraea mollis (pacific dulse) is a red algae that grows along the Oregon coa
 
 ## <ins>**Predicting AMPs in genome sequences**</ins> <a name="pred"></a>
 
+### Sequence characteristics of AMPs
+- Length of peptides?
+- Chemical properties of peptides?
+- Structural properties of peptides?
+- Located within larger proteins vs stand-alone ORFs?
+    - What is an 'encrypted' peptide (sensu Torres et al)?     
 
+### Programs for predicting AMPs from sequence
+#### Web-based
+- [iAMPpred](http://cabgrid.res.in:8080/amppred/index.html)
+
+- [AxPEP](https://app.cbbio.online/ampep/home)
+    - Can input either proteome sequences or genome (DNA) sequences
+
+#### Command line
+- [amPEPpy](https://github.com/tlawrence3/amPEPpy)
+    - Written in python
+    - Has multi-threading capablities
+
+#### Additional tools
+- [ORFFinder](https://pypi.org/project/orffinder/)
+    - A python tool for screening DNA sequences for ORFs
+
+- [marcel](https://github.com/BigDataBiology/macrel)
+    - pipeline for prediction from metagenomes
 
 ### References:
 - `https://www.sciencedirect.com/science/article/abs/pii/S2211926423004150?via%3Dihub`
