@@ -16,6 +16,8 @@ layout: default
 
 Devaleraea mollis (pacific dulse) is a red algae that grows along the Oregon coast.
 
+![algae](/Images/Week09/algae.png)
+
 Types of bioactives (secondary metabolites):
 - Allelopathy effectors
 - Pigments (for photosythesis)
@@ -24,8 +26,6 @@ Types of bioactives (secondary metabolites):
 Questions:
 - How do growth conditions impact the 'bioactive profile'?
     - Which bioactives are most important to monitor?
-
-![algae](/Images/Week09/algae.png)
 
 ## <ins>**Intro to anti-microbial peptides by Dr. Cotten**</ins> <a name="amp"></a>
 
