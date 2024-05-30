@@ -21,6 +21,10 @@ Types of bioactives (secondary metabolites):
 - Pigments (for photosythesis)
 - Anti-microbial peptides (AMPs)
 
+Questions:
+- How do growth conditions impact the 'bioactive profile'?
+    - Which bioactives are most important to monitor?
+
 ![algae](/Images/Week09/algae.png)
 
 ## <ins>**Intro to anti-microbial peptides by Dr. Cotten**</ins> <a name="amp"></a>
