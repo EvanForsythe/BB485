@@ -73,6 +73,8 @@ Questions:
 
 - If you choose an algal AMP-based project, the goal of the project should be to predict the genome-wide set of AMPs using genome/proteome/transcriptome data from an algal species (Devaleraea mollis if possible, but any algal species is of value). 
 
+Answer the following questions and submit on Canvas:
+
 1. What is the overarching goal of your project?
 
 2. Create a bulleted list of the steps you'll take to accomplish your goals.
