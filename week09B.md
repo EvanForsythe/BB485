@@ -19,6 +19,8 @@ layout: default
 
 ## <ins>**Intro to anti-microbial peptides by Dr. Cotten**</ins> <a name="amp"></a>
 
+![amps](/Images/Week09/amps.png)
+
 
 ## <ins>**Predicting AMPs in genome sequences**</ins> <a name="pred"></a>
 
