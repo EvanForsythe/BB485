@@ -67,10 +67,11 @@ Questions:
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
-- This week's tutorial assignment is to choose your final individual project and begin outlining the specific aims of your project. The project should be related to either Squeakuences (discussed last lecture) or antimicrobial peptide prediction (discussed this lecture). 
+- This week's tutorial assignment is to choose your final individual project and begin outlining the specific aims of your project. The project should be related to either Squeakuences (discussed last lecture) or antimicrobial peptide prediction (discussed this lecture). The purpose of the assignment is to begin describing your vision for a project. We will work together next week to refine the scope of the project.
 
-- For this assignment, begin describing your vision for a project. We will work together next week to refine the scope of the project.
+- If you choose a squeakuences-based project, your project should combine the squeakuences run data from your classmates (the table from the Tuesday assignment) and use those data to generate figures that address a question about squeakuences performance.
 
+- If you choose an algal AMP-based project, the goal of the project should be to predict the genome-wide set of AMPs using genome/proteome/transcriptome data from an algal species (Devaleraea mollis if possible, but any algal species is of value). 
 
 1. What is the overarching goal of your project?
 
