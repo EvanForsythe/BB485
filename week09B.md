@@ -14,8 +14,9 @@ layout: default
 
 ## <ins>**Intro to algae by Dr. Fox**</ins> <a name="algae"></a>
 
-![algae](/Images/Week09/algae.png)
+Devaleraea mollis (pacific dulse) is a red algae that grows along the Oregon coast.
 
+![algae](/Images/Week09/algae.png)
 
 ## <ins>**Intro to anti-microbial peptides by Dr. Cotten**</ins> <a name="amp"></a>
 
@@ -29,6 +30,7 @@ layout: default
 ### References:
 - `https://www.sciencedirect.com/science/article/abs/pii/S2211926423004150?via%3Dihub`
 - `https://www.nature.com/articles/s41551-021-00801-1`
+- `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8181880/`
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
