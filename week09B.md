@@ -67,11 +67,11 @@ Questions:
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
-- This week's tutorial assignment is to choose your final individual project and begin outlining the specific aims of your project. The project should be related to either Squeakuences (discussed last lecture) or antimicrobial peptide prediction (discussed this lecture). The purpose of the assignment is to begin describing your vision for a project. We will work together next week to refine the scope of the project.
+- This week's tutorial assignment is to choose your final individual project and begin outlining the specific aims of your project. The project should be related to either Squeakuences (discussed last lecture) or antimicrobial peptide prediction (discussed this lecture). The purpose of the assignment is to begin describing your vision for a project. We will work together next week to refine the scope of the project. At this phase, things may feel unstructured becuase we're doing the difficult intellectual work of combining different ideas to come up with a tangible research project. This assignment is all about brainstorming a project. Next week we will discuss the ideas and hone in on a clear game plan and then implement it! 
 
-- If you choose a squeakuences-based project, your project should combine the squeakuences run data from your classmates (the table from the Tuesday assignment) and use those data to generate figures that address a question about squeakuences performance.
+- If you choose a squeakuences-based project, your project should combine the squeakuences run data from your classmates (the table from the Tuesday assignment) and use those data to generate figure(s) that address a question about squeakuences performance. What is a specific aspect of squeakuences performance that we can understand by visualizing the run data from the whole class?
 
-- If you choose an algal AMP-based project, the goal of the project should be to predict the genome-wide set of AMPs using genome/proteome/transcriptome data from an algal species (Devaleraea mollis if possible, but any algal species is of value). 
+- If you choose an algal AMP-based project, the goal of the project should be to predict the genome-wide set of AMPs using genome/proteome/transcriptome data from an algal species (Devaleraea mollis if possible, but any algal species is of value). What datsets would be needed to do this? What software will you need? How can we visualize or summarize the results to understand the genome-wide AMP repertoire in algae?
 
 Answer the following questions and submit on Canvas:
 
