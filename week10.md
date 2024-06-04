@@ -49,6 +49,6 @@ Below are examples of some of the sections you'll need from a [recent publicatio
 - Abstract:
 ![abstract](/Images/Week10/abstract.png)
 - Figure:
-![figure](/Images/Week10/figure.png)
+![figures](/Images/Week10/figures.png)
 
 [Back to Top](#top)
