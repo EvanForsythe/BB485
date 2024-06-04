@@ -45,10 +45,15 @@ Each student must produce the following deliverables:
 Below are examples of some of the sections you'll need from a [recent publication](https://academic.oup.com/plcell/article/33/4/980/6122720?login=true)
 
 - Title:
+
 ![title](/Images/Week10/title.png)
+
 - Abstract:
+
 ![abstract](/Images/Week10/abstract.png)
+
 - Figure:
+
 ![figures](/Images/Week10/figures.png)
 
 [Back to Top](#top)
