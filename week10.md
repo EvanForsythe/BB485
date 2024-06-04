@@ -30,8 +30,8 @@ Each student must produce the following deliverables:
 - **A project write-up that includes the following:**
   - **Project title** (approximately 5-10 words)
   - **Project abstract** (approximately 200-300 words)
-  - **Introduction section** (2-3 sentances describing very basic background information and motivation for your project)
-  - **Methods section** (3-4 sentences describing the methods and workflow of your analysis)
+  - **Introduction section** (2-3 sentances describing very basic background information and motivation for your project. Cite at least one journal article here)
+  - **Methods section** (3-4 sentences describing the methods and workflow of your analysis. Cite at least one journal article here.)
   - **Figure legend(s) for your figure(s)** (1-3 sentences)
   - **Results section** (2-3 sentences about what you found. Be sure to reference the figure(s) in this section)
   - **Discussion/Future Directions section** (2-3 sentences interpreting the significance of what you find and any caveats that we should consider when interpreting your results. What are natural next-steps and unswered quetsions?)
