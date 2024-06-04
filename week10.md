@@ -7,6 +7,7 @@ layout: default
 # Week 10 lecture and tutorial
 1. [Schedule for week 10](#sched)
 2. [Final project description](#final)
+3. [Examples](#examples)
 
 
 ## <ins>**Schedule for week 10**</ins> <a name="sched"></a>
@@ -23,7 +24,7 @@ Welcome to week 10! We will use our class sessions this week as 'co-work' time f
 
 ![Points structure of BB 485](/Images/Week01/points_piechart.png)
 
-Final projects are due <ins>**Wednesday, June 12th at midnight**<ins/>.
+Final projects are due **Wednesday, June 12th at midnight**.
 
 Each student must produce the following deliverables:
 - **A new github repository for the project** (at least three 'pushes' to track your progress)
@@ -37,5 +38,17 @@ Each student must produce the following deliverables:
   - **Figure legend(s) for your figure(s)** (1-3 sentences)
   - **Results section** (2-3 sentences about what you found. Be sure to reference the figure(s) in this section)
   - **Discussion/Future Directions section** (2-3 sentences interpreting the significance of what you find and any caveats that we should consider when interpreting your results. What are natural next-steps and unswered quetsions?)
+
+
+## <ins>**Examples**</ins> <a name="examples"></a>
+
+Below are examples of some of the sections you'll need from a [recent publication](https://academic.oup.com/plcell/article/33/4/980/6122720?login=true)
+
+- Title:
+![title](/Images/Week10/title.png)
+- Abstract:
+![abstract](/Images/Week10/abstract.png)
+- Figure:
+![figure](/Images/Week10/figure.png)
 
 [Back to Top](#top)
