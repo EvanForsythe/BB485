@@ -17,6 +17,7 @@ title: Home
 - [Week08: RNA sequencing and transcriptomics](week08)
 - [Week09A: Beta testing Squeakuences program](week09A)
 - [Week09B: Predicting anti-microbial peptides in seaweed](week09B)
+- [Week10: Final bioinformatics project](week10)
 
 <br />
 <br />
