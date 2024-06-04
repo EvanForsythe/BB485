@@ -23,6 +23,8 @@ Welcome to week 10! We will use our class sessions this week as 'co-work' time f
 
 ![Points structure of BB 485](/Images/Week01/points_piechart.png)
 
+Final projects are due <ins>**Wednesday, June 12th at midnight**<ins/>.
+
 Each student must produce the following deliverables:
 - **A new github repository for the project** (at least three 'pushes' to track your progress)
 - **A python script that performs at least some steps of your analysis**
