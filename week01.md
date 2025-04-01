@@ -5,8 +5,10 @@ layout: default
 <a name="top"></a>
 
 # Week 1 lecture and tutorial
+1. [Course structure](#structure)
+2. [Overview of bioinformatics](#bioinformatics)
 
-## <ins>**Course structure**<ins>
+## <ins>**Course structure**<ins> <a name="structure"></a>
 
 ### **Course Overview**:
 BB485 is an advanced, upper-level course designed to give students first-hand experience performing real bioinformatics analyses akin to academic/biotech industry research. 
@@ -33,7 +35,7 @@ Compared to introductory biology courses, you can expect this course to:
 <br />
 <br />
 
-## <ins>**Overview of bioinformatics**<ins>
+## <ins>**Overview of bioinformatics**<ins> <a name="bioinformatics"></a>
 
 ![what is bioinformatics](/Images/Week01/bioinformatics.png)
 
