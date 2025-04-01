@@ -7,6 +7,11 @@ layout: default
 # Week 1 lecture and tutorial
 1. [Course structure](#structure)
 2. [Overview of bioinformatics](#bioinformatics)
+3. [Connecting to the course server](#server)
+4. [Unix/Linux command line navigation](#command_line)
+5. [Python refresher](#python_refresher)
+6. [Lecture 1 Tutorial Assignment](#tut_assign)
+
 
 ## <ins>**Course structure**<ins> <a name="structure"></a>
 
@@ -19,6 +24,9 @@ Compared to introductory biology courses, you can expect this course to:
 - **Place a strong emphasis on projects.** Academic/industry research is driven by results. Similarly, this course will mainly be project-based. 
 - **Place a less of an emphasis on exams and quizzes.** We will not have exams in this course. Instead, student learning is focused on developing critical-thinking, problem-solving, and trouble-shooting skills in an applied context. 
 - **Include a final project that constitutes real, publishable research.** By the end of the term, you will contribute to real research. You'll be conducting novel analyses and asking questions that your instructor doesn't already know the answer to (nobody knows the answer! That's scientific inquiry!).
+
+
+Gaining confidence trouble-shooting is an important part of doing bioinformatics in real-world applications. **There will be group trouble-shooting in this course. Embrace it!**
 
 ### **Grading structure:**
 
@@ -60,24 +68,28 @@ Compared to introductory biology courses, you can expect this course to:
 <br />
 <br />
 
-## <ins>**Connecting to Jupyter Hub course workspace**<ins>
+## <ins>**Connecting to the course server**<ins> <a name="server"></a>
 
 We will use remote servers in this course, which we will connect to via the internet.
 
 ![servers](/Images/Week01/servers.png)
 
-## How to access the class Jupyter Hub:
+## How to access the Novus HPC:
 
-The link to the lab Jupyter Hub is on Canvas under 'Class Resources'.
+Navigate to [the novus help page](https://arcs.oregonstate.edu/novus-cluster) to log in.
 
-When you select "Start My Server" you'll get a choice of different server size options. Choose "Standard" unless instructed otherwise.
+This week we will use the browser-based method, OnDemand, to access the HPC
 
-![Jupyter Hub map](/Images/Week01/JH_nav.png)
+![Starting up OnDemand](/Images/Week01/on_demand.png)
+
+OnDemand has GUI and command line terminal options for navigating the file system
+
+![OnDemand homepage](/Images/Week01/on_demand2.png)
 
 <br />
 <br />
 
-## <ins>**Unix/Linux command line navigation**<ins>
+## <ins>**Unix/Linux command line navigation**<ins> <a name="command_line"></a>
 
 ![Unix and linux](/Images/Week01/unix_linux.png)
 
@@ -92,7 +104,6 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 ## <ins>**Introduction to Basic Linux/Unix Commands**<ins>
 
 ## A few example commands:
-<!-- TODO: Add more, head, tail, wc -->
 
 ### 1. **`pwd`**
    - **Description:** Print the current working directory.
@@ -220,7 +231,7 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 1: Navigating the file system.</strong>
    <ol>
-      <li>Log in to the jupyter hub (JH) and open a command line terminal</li>
+      <li>Log in to the Novus HPC with OnDemand and open a command line terminal</li>
       <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
       <li>Find the full path to the location of a DNA fasta file.</li>
       <li>Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later).</li>
@@ -230,7 +241,9 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 <br />
 <br />
 
-## <ins>**Python Refresher**<ins>
+## <ins>**Python Refresher**<ins> <a name="python_refresher"></a>
+
+python_refresher
 
 ![Python in bioinformatics](/Images/Week01/python.png)
 
@@ -396,6 +409,8 @@ Python notebooks are a great tool for developing new python code. However, when 
 
 <br />
 <br />
+
+## <ins>**Lecture 1 Tutorial Assignment**<ins> <a name="tut_assign"></a>
  
 <div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
    <strong>Tutorial Assignment:</strong>
