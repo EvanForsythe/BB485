@@ -226,6 +226,16 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 
 ![file navigation](/Images/Week01/file_nav.png)
 
+
+We have a course "shared directory". This is a special location of the file system where members of the class have access to the same files. 
+
+Here are hints for finding this folder.
+	-You will need to navigate to the "root" directory
+	-Inside of the root directory, there is another directory named "shared/"
+	-Inside of the shared directory there is a directory called "forsythe/"
+	-Inside of this directory is the course shared directory, named "BB485/"
+
+
 <br />
 <br />
 
@@ -235,7 +245,7 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
       <li>Log in to the Novus HPC with OnDemand and open a command line terminal</li>
       <li>Use the cd command to navigate the file system to find the example data for today's lecture (it will be in a shared folder that we all have access to).</li>
       <li>Find the full path to the location of a DNA fasta file.</li>
-      <li>Create a text file in your home directory to use for today's notes. Paste the full path to the fasta file into your notes file (we'll need the path later).</li>
+      <li>We will need to know the full-path to this file next time, so jot it down in your notes.</li>
    </ol>
 </div>
 
@@ -348,11 +358,10 @@ Jupyter notebooks (from BB345) and GUI text editors are a great tool for develop
 
 
 
-
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 3: Working with string objects. </strong>
    <ol>
-      <li>Create a  new python script. Name the notebook and save in your home directory.</li>
+      <li>Create a  new python script. Name the script and save in your home directory.</li>
       <li>Store this DNA sequences as a variable: "ATGGAGGACCCTTTGTTGACTCAGAGTGAGCACATCGTCGATGACGTTACAATCCATGGC
 GATTCTTCTTCAAATGAAGAGCACATCGTCGACGTTACAACCAATGGCAATCCTTCATCA
 GCTGATGAGAAAAGACCGCATGAGGGTGTCCAATGGAGTGATATATTTACATTTACCACT
@@ -367,6 +376,22 @@ CTATATCTTTCCCAATCGATAGACTTCGTTGGTGACATTACTGATGAGATAAATTTGACT
 ACGTCTATAATCCTATTATGCTTTGGAATCTTTGCCTGCATTATCTGTGGTTGTTGTTCC
 AGATGCTTATGCAGATAA"</li>
       <li>Loop through the sequence and print the 3-letter sequence of each codon.</li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+
+## <ins>**Lecture 1 Tutorial Assignment**<ins> <a name="tut_assign"></a>
+ 
+<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Tutorial Assignment:</strong>
+   In a text file, address each of the questions below. Submit your responses on Canvas.
+   <ol>
+      <li>We you able to successfully complete each of the four tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
+      <li>Please install VScode (https://code.visualstudio.com/download) on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK , we can talk about solutions/work-arounds.</li>
+      <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
    </ol>
 </div>
 
@@ -413,22 +438,6 @@ for line in seq_handle:
 <br />
 <br />
 
-
-
-## <ins>**Lecture 1 Tutorial Assignment**<ins> <a name="tut_assign"></a>
- 
-<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Tutorial Assignment:</strong>
-   In a text file, address each of the questions below. Submit your responses on Canvas.
-   <ol>
-      <li>We you able to successfully complete each of the four tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
-      <li>Please install VScode (https://code.visualstudio.com/download) on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK , we can talk about solutions/work-arounds.</li>
-      <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
-   </ol>
-</div>
-
-<br />
-<br />
 
 ## <ins>**The BioPython module**<ins>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
