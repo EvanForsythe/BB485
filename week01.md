@@ -10,7 +10,8 @@ layout: default
 3. [Connecting to the course server](#server)
 4. [Unix/Linux command line navigation](#command_line)
 5. [Python refresher](#python_refresher)
-6. [Lecture 1 Tutorial Assignment](#tut_assign)
+6. [Developing python code using python scripts](#python_scripts)
+7. [Lecture 1 Tutorial Assignment](#tut_assign)
 
 
 ## <ins>**Course structure**<ins> <a name="structure"></a>
@@ -243,8 +244,6 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 
 ## <ins>**Python Refresher**<ins> <a name="python_refresher"></a>
 
-python_refresher
-
 ![Python in bioinformatics](/Images/Week01/python.png)
 
 ## Short list of common python commands
@@ -311,10 +310,49 @@ python_refresher
 <br />
 <br />
 
+## **Developing python code using python scripts** <a name="python_scripts"></a>
+Jupyter notebooks (from BB345) and GUI text editors are a great tool for developing new python code. However, when we're using our python code to accomplish a bioinformatics task, we typically need to be able to run that code from the command line. The best way to run python code from the command line is to put the code inside of a python script.
+
+**Python scripts:** A python script is a text file that contains python code. The script can be named anything but should end in ".py" (e.g. my_first_script.py). You can run all of the code within a python script from the command line by running:
+```python3 <name of python script>```
+
+**Developing python scripts:** To develop a python script you will need to use a text editor. For today's lecture, let's use OnDemand's GUI text editor (see instructions below)
+
+![file navigation](/Images/Week01/gui_edit.png)
+
+<br />
+<br />
+
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 2: Working with string objects. </strong>
+   <strong>Task 2: running python code from a python script.</strong>
    <ol>
-      <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
+      <li>Create a "hello world" python script.</li>
+      <li>Run the script from the command line.</li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+**Making python scripts 'executable':** It is sometimes cleaner/easier to run your script without the need to put type "python" before the name of your script. You can accomplish this by making your script 'executable'.
+
+- Add the 'shebang' line to the top of your script. This must be the first line in your script: ```#!/usr/bin/python3```.
+- Next, you'll need to change the 'permissions' on your python script file.
+   - To see the permission on your python file, use ```ls -l```
+   - To change the permissions to make you file executable: ```chmod +x <name of script>```
+   - Run ```ls -l``` again to see how it changed.
+   - Now you can run your python script like this: ```./<name of script>```
+
+<br />
+<br />
+
+
+
+
+<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Task 3: Working with string objects. </strong>
+   <ol>
+      <li>Create a  new python script. Name the notebook and save in your home directory.</li>
       <li>Store this DNA sequences as a variable: "ATGGAGGACCCTTTGTTGACTCAGAGTGAGCACATCGTCGATGACGTTACAATCCATGGC
 GATTCTTCTTCAAATGAAGAGCACATCGTCGACGTTACAACCAATGGCAATCCTTCATCA
 GCTGATGAGAAAAGACCGCATGAGGGTGTCCAATGGAGTGATATATTTACATTTACCACT
@@ -362,7 +400,7 @@ for line in seq_handle:
 <br />
 
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 3: reading in a fasta file and storing sequences in a dictionary object.</strong>
+   <strong>Task 4: reading in a fasta file and storing sequences in a dictionary object.</strong>
    <ol>
       <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
@@ -376,39 +414,6 @@ for line in seq_handle:
 <br />
 
 
-## **Python notebooks versus python scripts**
-Python notebooks are a great tool for developing new python code. However, when we're using our python code to accomplish a bioinformatics task, we typically need to be able to run that code from the command line. The best way to run python code from the command line is to put the code inside of a python script.
-
-**Python scripts:** A python script is a text file that contains python code. The script can be named anything but should end in ".py" (e.g. my_first_script.py). You can run all of the code within a python script from the command line by running:
-```python <name of python script>```
-
-**Developing python scripts:** To develop a python script you can start writing your python code in a text file OR you can write your python code in a Jupyter notebook and then convert the notebook to a python script from the command line with: ```jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb```
-
-<br />
-<br />
-
-<div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Task 4: running python code from a python script.</strong>
-   <ol>
-      <li>Create a python script that does what your python notebook (from the last task) does.</li>
-      <li>Run the script from the command line.</li>
-   </ol>
-</div>
-
-<br />
-<br />
-
-**Making python scripts 'executable':** It is sometimes cleaner/easier to run your script without the need to put type "python" before the name of your script. You can accomplish this by making your script 'executable'.
-
-- Add the 'shebang' line to the top of your script. This must be the first line in your script: ```#!/usr/bin/python3```.
-- Next, you'll need to change the 'permissions' on your python script file.
-   - To see the permission on your python file, use ```ls -l```
-   - To change the permissions to make you file executable: ```chmod +x <name of script>```
-   - Run ```ls -l``` again to see how it changed.
-   - Now you can run your python script like this: ```./<name of script>```
-
-<br />
-<br />
 
 ## <ins>**Lecture 1 Tutorial Assignment**<ins> <a name="tut_assign"></a>
  
