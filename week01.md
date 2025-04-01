@@ -389,7 +389,7 @@ AGATGCTTATGCAGATAA"</li>
    <strong>Tutorial Assignment:</strong>
    In a text file, address each of the questions below. Submit your responses on Canvas.
    <ol>
-      <li>We you able to successfully complete each of the four tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
+      <li>We you able to successfully complete each of the tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
       <li>Please install VScode (https://code.visualstudio.com/download) on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK , we can talk about solutions/work-arounds.</li>
       <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
    </ol>
