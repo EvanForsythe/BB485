@@ -532,11 +532,11 @@ source activate
 
 - Note: to check existing conda environments you've created previously, you can run: `conda info --envs`.
 
-Finally, we need to locate a pre-compiled 
-```bash
-WORKING
-```
+Finally, we need to locate a pre-compiled environment file (.yml file) in the course shared directory. Copy this file to your home directory and then use the following command to create an environment with that file.
 
+```bash
+conda env create --name BB485_env --file=BB485_env.yml
+```
 
 ## Python Modules
 
