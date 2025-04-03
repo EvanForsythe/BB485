@@ -538,6 +538,24 @@ Finally, we need to locate a pre-compiled environment file (.yml file) in the co
 conda env create --name BB485_env --file=BB485_env.yml
 ```
 
+**NOTE:** conda environments/yml files have been behaving inconsistently, so here are the instructions for manually creating and installing the needed software:
+
+```bash
+conda install conda-forge::biopython
+```
+- test this by adding `import Bio` to your python script and running the script to see if it causes an error
+
+```bash
+conda install anaconda::pandas
+```
+- test this by adding `import pandas as pd` to your python script and running the script to see if it causes an error
+
+```bash
+conda install conda-forge::matplotlib
+```
+- test this by adding `import matplotlib.pyplot as plt` to your python script and running the script to see if it causes an error
+- Note: even if the .yml file worked for you, you'll need to install this one on your environment.
+
 ## Python Modules
 
 **BioPython is a python module.** In python, modules are a collection of python functions. The functions that are automatically loaded every time you use python are called 'base python' function. When we need to do more specialized things in python, we can explicitly 'import' a module with specialized python functions. In addition to BioPython, some exmaples of common modules we'll use this term are, NumPy (common math/numerical functions), pandas (dataframes for working with data tables), and matplotlib (plotting figures).
