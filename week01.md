@@ -516,7 +516,27 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
 
 ## <ins>**Quick intro to conda environments**<ins> <a name="conda"></a>
 
-WORKING HERE
+Conda virtual environments are like "workspaces" you can create to install specific software that you need for a given task. We will talk more next week about what the term 'environment' means in computing. For now, let's create a conda environment that has biopython installed. 
+
+First, we need to load the conda module:
+```bash
+module load python/anaconda/3.11
+```
+
+Next, we need to activate the 'base' conda environment
+```bash
+source activate
+```
+
+- You'll know the above commands worked if you see (base) next to your command line prompt. This indicates that you're 'in' a conda environment. 
+
+- Note: to check existing conda environments you've created previously, you can run: `conda info --envs`.
+
+Finally, we need to locate a pre-compiled 
+```bash
+WORKING
+```
+
 
 ## Python Modules
 
@@ -541,7 +561,7 @@ from Bio import SeqIO
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 5: working with sequences using BioPython functions</strong>
    <ol>
-      <li>Use your python notebook you started earlier this week to work with BioPython functions</li>
+      <li>Use your python script you started earlier to work with BioPython functions</li>
       <li>Import the following functions: Seq, SeqRecord, SeqIO</li>
       <li>Convert your string object into a BioPython Seq object.</li>
       <li>Convert your BioPython Seq object into a BioPython SeqRecord object.</li>
@@ -583,11 +603,26 @@ df = pd.DataFrame(data)
 Now, let's plot the histogram based on the "Age" column in our DataFrame:
 
 ```python
+#Create the histogram
 plt.hist(df['Age'], bins=10, color='skyblue', edgecolor='black')
+
+#Add a title
 plt.title('Age Distribution')
+
+#Add an x-axis label
 plt.xlabel('Age')
+
+#Add a y-axis label
 plt.ylabel('Frequency')
-plt.show()
+
+#Make sure everything fits well in the image
+plt.tight_layout()  # Ensures everything fits nicely
+
+#Save the plot as a pdf file
+plt.savefig('age_distribution.pdf')
+
+# 'Close' the plot to free up memory and ensure weird things don't happen with future plots
+plt.close()
 ```
 
 In the `plt.hist` function:
