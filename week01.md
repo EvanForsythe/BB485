@@ -10,9 +10,11 @@ layout: default
 3. [Connecting to the course server](#server)
 4. [Unix/Linux command line navigation](#command_line)
 5. [Python refresher](#python_refresher)
-6. [Developing python code using python scripts](#python_scripts)
-7. [Lecture 1 Tutorial Assignment](#tut_assign)
-
+6. [Lecture 1 Tutorial Assignment](#tut_assign)
+7. [Developing python code using python scripts](#python_scripts)
+8. [The BioPython module](#biopython)
+	- [Quick intro to conda environments](#conda)
+9. [Data visualization](#viz)
 
 ## <ins>**Course structure**<ins> <a name="structure"></a>
 
@@ -229,11 +231,11 @@ I will sometimes use the terms linux/unix interchangeably. However, they are dif
 
 We have a course "shared directory". This is a special location of the file system where members of the class have access to the same files. 
 
-Here are hints for finding this folder.
-	-You will need to navigate to the "root" directory
-	-Inside of the root directory, there is another directory named "shared/"
-	-Inside of the shared directory there is a directory called "forsythe/"
-	-Inside of this directory is the course shared directory, named "BB485/"
+Here are hints for finding this folder:
+1. You will need to navigate to the "root" directory
+2. Inside of the root directory, there is another directory named "shared/"
+3. Inside of the shared directory there is a directory called "forsythe/"
+4. Inside of this directory is the course shared directory, named "BB485/"
 
 
 <br />
@@ -320,6 +322,22 @@ Here are hints for finding this folder.
 <br />
 <br />
 
+## <ins>**Lecture 1 Tutorial Assignment**<ins> <a name="tut_assign"></a>
+ 
+<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Tutorial Assignment:</strong>
+   In a text file, address each of the questions below. Submit your responses on Canvas.
+   <ol>
+      <li>We you able to successfully complete each of the tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
+      <li>Please install VScode (https://code.visualstudio.com/download) on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK , we can talk about solutions/work-arounds.</li>
+      <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
+   </ol>
+</div>
+
+<br />
+<br />
+
+
 ## **Developing python code using python scripts** <a name="python_scripts"></a>
 Jupyter notebooks (from BB345) and GUI text editors are a great tool for developing new python code. However, when we're using our python code to accomplish a bioinformatics task, we typically need to be able to run that code from the command line. The best way to run python code from the command line is to put the code inside of a python script.
 
@@ -383,20 +401,6 @@ AGATGCTTATGCAGATAA"</li>
 <br />
 
 
-## <ins>**Lecture 1 Tutorial Assignment**<ins> <a name="tut_assign"></a>
- 
-<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
-   <strong>Tutorial Assignment:</strong>
-   In a text file, address each of the questions below. Submit your responses on Canvas.
-   <ol>
-      <li>We you able to successfully complete each of the tasks above? If not, what issues did you encounter? Work with me to find solutions to any issues by the end of the week.</li>
-      <li>Please install VScode (https://code.visualstudio.com/download) on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK , we can talk about solutions/work-arounds.</li>
-      <li>Please install Slack (google 'slack download') on your laptop. We will need to use it next week. Were you able to install it? If not, that's OK, we can talk about solutions/work-arounds.</li>
-   </ol>
-</div>
-
-<br />
-<br />
 
 ## Reading in a fasta file using a file handle
 
@@ -439,7 +443,7 @@ for line in seq_handle:
 <br />
 
 
-## <ins>**The BioPython module**<ins>
+## <ins>**The BioPython module**<ins> <a name="biopython"></a>
 Biopython is a Python library designed to enable bioinformatics tasks such as sequence analysis, molecular biology, and bioinformatics data manipulation. It provides a wide range of functionalities to work with biological data efficiently. Below are some common commands and examples to get you started with Biopython.
 
 ## BioPython commands:
@@ -509,6 +513,11 @@ Biopython is a Python library designed to enable bioinformatics tasks such as se
 <br />
 <br />
 
+
+## <ins>**Quick intro to conda environments**<ins> <a name="conda"></a>
+
+WORKING HERE
+
 ## Python Modules
 
 **BioPython is a python module.** In python, modules are a collection of python functions. The functions that are automatically loaded every time you use python are called 'base python' function. When we need to do more specialized things in python, we can explicitly 'import' a module with specialized python functions. In addition to BioPython, some exmaples of common modules we'll use this term are, NumPy (common math/numerical functions), pandas (dataframes for working with data tables), and matplotlib (plotting figures).
@@ -546,7 +555,7 @@ from Bio import SeqIO
 <br />
 
 
-## <ins>**Data visualization in python**<ins>
+## <ins>**Data visualization in python**<ins> <a name="viz"></a>
 Creating figures/graphs/tables is an extremely important part of bioinformatics. The 'biological insights' (i.e. the end goal of bioinformatic analyses) usually come from being able to visualize data in an informative way that reveals patterns/trends in the data.
 
 ## Plotting data from data tables (i.e. pandas dataFrames)
