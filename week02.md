@@ -5,14 +5,25 @@ layout: default
 <a name="top"></a>
 
 # Week 2 lecture and tutorial
+1. [High-performance computing (HPC) clusters](#HPC)
+2. [The Novus HPC cluster](#novus)
+3. [Using SSH to access the HPC](#ssh)
+4. [Transferring data to and from the HPC using the SCP (secure copy) command](#scp)
+5. [Compressing and decompressing files for faster upload/download speed](#tar)
+6. [Navigating the HPC](#nav)
+7. [Linux text editors](#text)
+8. [VScode access to the server](#VScode)
+9. [Running large jobs with SLURM job scheduler](#jobs)
+10. [Tutorial assignment](#tut)
 
-## <ins>**High-performance computing (HPC) clusters**<ins>
+
+## <ins>**High-performance computing (HPC) clusters**</ins> <a name="HPC"></a>
 
 A High-Performance Computing (HPC) cluster is a distributed computing environment composed of multiple interconnected computers (often referred to as nodes) that work together to solve complex computational problems or perform large-scale analyses or simulations.
 
 ![server](/Images/Week02/server.png)
 
-- <ins> A very quick overview of terms used when discussing HPCs:<ins>
+A very quick overview of terms used when discussing HPCs:
   - **Server vs Cluster vs HPC:** I will use these terms interchangably in this course. There are slight differences, but for our purposes we can treat them as the same.
   - **Node:** A node is like one computer (albeit a rather large computer). It comtains multiple processors/CPUs/cores. An HPC typically contains multiple nodes, which are interconnected for high-speed transfer/communication between them. 
   - **Processors/CPU/core:** this is the unit that 'does work'. A node typically contains multiple cores. If there are 96 cores available, that means you can run 96 tasks at the same time!
@@ -20,10 +31,11 @@ A High-Performance Computing (HPC) cluster is a distributed computing environmen
 
 ![HPC](/Images/Week02/HPC_diagram.png)
 
-## The Novus cluster:
-The newest cluster at OSU in Corvallis is named Novus. It is administered by the Digital Research Infrastructure team.
+## <ins>**The Novus HPC cluster**</ins> <a name="novus"></a>
 
-[Help page for Novus](https://dri.oregonstate.edu/novus-cluster)
+The cluster at OSU in Corvallis is named Novus. It is administered by the Advanced Research Computing Services (ARCS) team.
+
+[Help page for Novus](https://arcs.oregonstate.edu/novus-cluster)
 
 System stats:
 - 1,712 total cores
@@ -44,7 +56,7 @@ Here is one example of how a very modest amount of parallelization improves the 
 <br />
 <br />
 
-## <ins>**Using SSH to log into the server**<ins>
+## <ins>**Using SSH to access the HPC**</ins> <a name="ssh"></a>
 
 **SSH (Secure Shell):**
 - SSH is a cryptographic network protocol used for secure communication between a client (your computer) and a server (the HPC in Corvallis) over an unsecured network.
@@ -53,15 +65,15 @@ Here is one example of how a very modest amount of parallelization improves the 
 ## Using the ssh command
 To use SSH to access the server, run the following command:
 
-```ssh <your ONID>@novus.dri.oregonstate.edu```
+```ssh <your-ONID>@novus.dri.oregonstate.edu```
 
 - `ssh` is the command
-- `<your ONID>` is your ONID (this should be the same as whatever comes before @oregonstate.edu in your email address)
+- `<your-ONID>` is your ONID (this should be the same as whatever comes before @oregonstate.edu in your email address)
 - `novus.dri.oregonstate.edu` is the IP address of the Novus server
 
 The above command will ask for your password. Type your password and press [enter]. For security, it will not show the letters as you type in your password, which can be a little disorienting, but you'll get used to it!
 
-Once you're SSH'd in, any commands you run in your terminal will be executed on the remote machine (the HPC). The HPC runs linux, so any of your linux commands (e.g. `ls`, `cd`, etc...) should work just fine. It can be helpful to have two terminal windows open, one for running commands on your local machine, and one for running commands on your remote machine. 
+Once you are SSH'd in, any commands you run in your terminal will be executed on the remote machine (the HPC). The HPC runs linux, so any of your linux commands (e.g. `ls`, `cd`, etc...) should work just fine. It can be helpful to have two terminal windows open, one for running commands on your local machine, and one for running commands on your remote machine. 
 
 **Important note:** You can only log into Novus when you are on campus (and connected to campus wifi). If you need to SSH into Novus when you're off campus, you can connect via VPN (see the instructions for 'VPN-ing' onto the campus system).
 
@@ -73,14 +85,16 @@ Once you're SSH'd in, any commands you run in your terminal will be executed on 
 
 ## Transferring data to and from the HPC using the SCP (secure copy) command
 
+## <ins>**Transferring data to and from the HPC using the SCP (secure copy) command**</ins> <a name="scp"></a>
+
 ### **To upload data to the HPC:**
 To upload a file from your local machine to the hpc, run the following command (from the command line on your local machine):
 ```bash
-scp <file-to-upload> <your ONID>@novus.dri.oregonstate.edu:<path-to-where-you-want-the-file-to-land>
+scp <file-to-upload> <your-ONID>@novus.dri.oregonstate.edu:<path-to-where-you-want-the-file-to-land>
 ```
 - `scp` is the command
 - `<file-to-upload>` is the file to upload. To run it this way, you need to cd to the directory where this file lives.
-- `<your ONID>@novus.dri.oregonstate.edu` should be the same from you ssh command.
+- `<your_ONID>@novus.dri.oregonstate.edu` should be the same from you ssh command.
 - `:` is needed to specify a location on the remote machine.
 - `<path-to-where-you-want-the-file-to-land>` is the full path to an existing directory on the remote machine. This needs to be a directory where you have 'write-permissions'. If you don't include the path, the file will be uploaded to your home directory by default.
 
@@ -94,10 +108,10 @@ scp test_file.txt forsythe@novus.dri.oregonstate.edu:~/test_upload_dir/
 
 ### **To download data from the HPC:**
 ```bash
-scp <your ONID>@novus.dri.oregonstate.edu:<path-to-the-file-you-want-to-download> .
+scp <your-ONID>@novus.dri.oregonstate.edu:<path-to-the-file-you-want-to-download> .
 ```
 - `scp` is the command
-- `<your ONID>@novus.dri.oregonstate.edu` tells scp where to look for the remote file
+- `<your-ONID>@novus.dri.oregonstate.edu` tells scp where to look for the remote file
 - `:` is needed to specify a location on the remote machine
 - `<path-to-the-file-you-want-to-download>` is the full path to an existing file on the remote machine. This path should **include the name of the file**
 - `.` means 'put the file in my current working directory (on the local machine)'
@@ -110,8 +124,7 @@ scp forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.tx
   - `forsythe@novus.dri.oregonstate.edu:~/test_download_dir/test_download_file.txt` is the 'source'
   - `.` is the 'destination'
 
-
-## Compressing and decompressing files for faster upload/download speed
+## <ins>**Compressing and decompressing files for faster upload/download speed**</ins> <a name="tar"></a>
 
 ### Creating a tar.gz File
 
@@ -142,13 +155,15 @@ tar -xzvf </path/to/your/zipped-file.tar.gz>
 
 <br />
 <br />
-## <ins>**Navigating the HPC**<ins>
+
+
+## <ins>**Navigating the HPC**</ins> <a name="nav"></a>
 
 File storage on the HPC is similar to any other file storage system. You can navigate the file system with standard commands like, `cd`, `ls`, and `pwd`.
 
 There are a few key differences that are specific to HPCs/clusters:
-- **Home directory (~):** your home directory is located in: `/home/<ONID>`. This is where you can store your files long-term. It's also a good place to install software. <ins>IMPORTANT: your home directory has a very small storage allotment. It is not intended as a place to put large data files.<ins>
-- **Scratch storage:** The HPC is equipped with a region of the disk that is intended for storage of large amounts of data. Each user has their own allotment of 'scratch storage', located in `/scratch/<ONID>`. We'll call this directory 'your scratch directory'. Storage space here is virtually unlimited. <ins> However, scratch storage is temporary; scratch directories are deleted every ~3 months.<ins>
+- **Home directory (~):** your home directory is located in: `/home/<ONID>`. This is where you can store your files long-term. It's also a good place to install software. <ins> IMPORTANT: your home directory has a very small storage allotment. It is not intended as a place to put large data files.</ins>
+- **Scratch storage:** The HPC is equipped with a region of the disk that is intended for storage of large amounts of data. Each user has their own allotment of 'scratch storage', located in `/scratch/<ONID>`. We'll call this directory 'your scratch directory'. Storage space here is virtually unlimited. <ins> However, scratch storage is temporary; scratch directories are deleted every ~3 months.</ins>
 - **Shared directory for this class:**: I have created a shared directory for anyone in our group: `/shared/forsythe/BB485/`. Note that you may only have 'read permissions' for files here. If you need to edit a file, you'll have to copy the file into your home or scratch directory. 
 
 ## File permissions on the HPC
@@ -185,8 +200,8 @@ Here's what each character signifies:
 <br />
 
 
+## <ins>**Linux text editors**</ins> <a name="text"></a>
 
-## <ins>**Linux text editors**<ins>
 
 It is important to be able to edit text files (e.g. python scripts) in linux. When accessing the HPC via `ssh`, we'll need to use a text edit that is not a GUI. There are many linux text editors (e.g. `vim`, `nano`, `emacs`). The choice of which one to use comes down to what's available in your system and your personal preference. Below is a brief into to `vim`, but you're welcome to use any editor you prefer.
 
@@ -266,8 +281,10 @@ To quit Vim without saving changes:
 <br />
 <br />
 
-## <ins>**VScode access to the server**<ins>
-Virtual Studio Code (VScode) is an application you ca install on your local machine to provide a GUI (ish) environment for navigating the command line, editing files, etc... There is an SSH plugin that allows you to use VScode to access the HPC!
+
+## <ins>**VScode access to the server**</ins> <a name="VScode"></a>
+
+Virtual Studio Code (VScode) is an application you can install on your local machine to provide a GUI (ish) environment for navigating the command line, editing files, etc... There is an SSH plugin that allows you to use VScode to access the HPC!
 
 ![VScode](/Images/Week02/VScode.png)
 
@@ -294,7 +311,9 @@ Virtual Studio Code (VScode) is an application you ca install on your local mach
 
 <br />
 <br />
-## <ins>**Running large jobs with SLURM job scheduler**<ins>
+
+## <ins>**Running large jobs with SLURM job scheduler**</ins> <a name="jobs"></a>
+
 Every HPC has finite resources and many users who may want to run analyses at the same time. The administrative system for determining which analyses run on which cores and in which order is called **job scheduling**. The Novus HPC makes use of the job scheduler called **SLURM** (Simple Linux Utility for Resource Management).
 
 ## Overview to submitting a SLURM job:
@@ -354,8 +373,6 @@ squeue -u $USER
 You can also track the progress of your job by checking what gets written to your output (.out) and error (.err) files.
 
 
-
-
 <br />
 <br />
 
@@ -373,6 +390,8 @@ You can also track the progress of your job by checking what gets written to you
 <br />
 <br />
 
+
+## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
 <br />
 <br />
