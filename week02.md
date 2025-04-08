@@ -273,7 +273,6 @@ To quit Vim without saving changes:
    <ol>
       <li>Use vim to create a new python script</li>
       <li>Edit the script to get it to print "Hello world!" and then "Hello, again!" 100 times.</li>
-      <li>Make the script 'executable' and then run it using './your_script.py'. </li>
       <li>Store the output of your script to a file using 'redirect' (>). </li>
    </ol>
 </div>
