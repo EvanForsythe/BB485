@@ -20,7 +20,7 @@ layout: default
    - **C.** [Maximum Likelihood Phylogenetic Inference with RAxML](#raxml)
 5. [Project write-up](#write)
 
-## <ins>**Intro to phylogenetic trees**<ins> <a name="trees"></a>
+## <ins>**Intro to phylogenetic trees**</ins> <a name="trees"></a>
 This week we will learn how to perform phylogenetic analyses. Phylogenetic trees are diagrams that describe our best hypothesis for the relationship between different species/groups/populations/taxa that diverged from a common ancestor. 
 
 ![phy01](/Images/Week03/phy01.png)
@@ -50,7 +50,7 @@ Synapomorphies are particularily important for phylogenetic analyses because the
 ![phy06](/Images/Week03/phy06.png)
 
 ## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
-The phylogenitic trees that we're used to seeing are the output of complex statistical analyses. We can never know the true relationships of species (without a time-machine), so a phylogeny is our 'best guess' based on stastical analysis of data. The process of using statistics to make a best guess is called <ins>phylogenetic inference<ins>.
+The phylogenitic trees that we're used to seeing are the output of complex statistical analyses. We can never know the true relationships of species (without a time-machine), so a phylogeny is our 'best guess' based on stastical analysis of data. The process of using statistics to make a best guess is called. <ins>phylogenetic inference</ins>.
 
 ![phy07](/Images/Week03/phy07.png)
 
@@ -58,7 +58,7 @@ Note that including an 'outgroup' in the analysis can be very helpful in thinkin
 
 - **Outgroup:** a taxon that we can safely assume is distantly related to all other species included in a phylogenetic analysis. Including an outgroup, allows us to 'root' a phylogenetic tree.
 
-## <ins>**Parsimony: the simplest explanation is the best explanation**<ins> <a name="parsimony"></a>
+## <ins>**Parsimony: the simplest explanation is the best explanation**</ins> <a name="parsimony"></a>
 
 Parsimony is a framework/worldview used in phylogenetics to 'choose' between alternative phylogenetic hypotheses. The idea is that the tree that requires the fewest changes/mutations to explain the data is the most parsimonious (i.e. the 'best'). 
 
@@ -345,7 +345,7 @@ You can view the pdf in VScode, but first you'll need to install a pdf extension
 ![VScode](/Images/Week03/VScode.png)
 
 
-## <ins>**Weekly project write-up assignment**<ins> <a name="write"></a>
+## <ins>**Weekly project write-up assignment**</ins> <a name="write"></a>
 For the weekly project writeup, you will perform a phylogenetic analysis on of the same sequence but include "all domains of life". 
 
 Steps:
