@@ -33,7 +33,7 @@ Below are some of the terms used in phylogenetics. We will employ these terms as
 
 ![phy05](/Images/Week03/phy05.png)
 
-## <ins>**Homology: features shared due to common ancestry**<ins> <a name="Homology"></a>
+## <ins>**Homology: features shared due to common ancestry**</ins> <a name="Homology"></a>
 
 The concept of homology is extremely important in evolutionary biology. As we'll see, phylogenetics relies on the ability to compare homologous structures/characters/traits across multiple species.
 
@@ -49,7 +49,7 @@ Synapomorphies are particularily important for phylogenetic analyses because the
 
 ![phy06](/Images/Week03/phy06.png)
 
-## <ins>**Phylogenetic inference**<ins> <a name="phylogenies"></a>
+## <ins>**Phylogenetic inference**</ins> <a name="phylogenies"></a>
 The phylogenitic trees that we're used to seeing are the output of complex statistical analyses. We can never know the true relationships of species (without a time-machine), so a phylogeny is our 'best guess' based on stastical analysis of data. The process of using statistics to make a best guess is called. <ins>phylogenetic inference</ins>.
 
 ![phy07](/Images/Week03/phy07.png)
@@ -72,7 +72,7 @@ Parsimony is a very simple and elegant framework. However, it may be an oversimp
 
 ![phy10](/Images/Week03/phy10.png)
 
-## <ins>**Inferring difficult relationships**<ins> <a name="difficult"></a>
+## <ins>**Inferring difficult relationships**</ins> <a name="difficult"></a>
 
 Below we will discuss a famous phylogenetic relationship that has been difficult to resolve. We will learn about different statistical frameworks and how they can lead to conflicting results. 
 
@@ -84,7 +84,7 @@ The phylogenetic placement of whales has been notoriously tricky. Different rese
 
 Early analyses based on parsimony-based analyses of a small number of morphological traits suggested that whales are located outside of the clade that contains hippos. However, bringing in more 'modern' analytical approaches may question this finding (discussed below). 
 
-## <ins>**Multiple sequence alignment**<ins> <a name="MSA"></a>
+## <ins>**Multiple sequence alignment**</ins> <a name="MSA"></a>
 
 The vast majority of modern phylogenetic analyses use molecular sequences as the 'trait' to study in phylogenetic analyses.
 
@@ -104,7 +104,7 @@ To use DNA sequences for phylogenetic analyses, it is critical that we be able t
 
 ![phy15](/Images/Week03/phy15.png)
 
-Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignment<ins>. 
+Lining up DNA (or protein) sequences across several species is called <ins>multiple sequence alignment</ins>. 
 
 Inferring a MSA is also a statistical inference based on a set of rules/scores (i.e. a statisticasl algorithm). 
 
@@ -114,7 +114,7 @@ The concept of parsimony can be applied to DNA sequences in phylogenetic inferen
 
 ![phy17](/Images/Week03/phy17.png)
 
-## <ins>**Maximum likelihood**<ins> <a name="ML"></a>
+## <ins>**Maximum likelihood**</ins> <a name="ML"></a>
 
 Maximum Likelihood (ML) is a statistical framework that a assesses a given tree in terms of how 'likely' it would be to observe the data (the DNA multiple sequnce alignment) if that particular tree were true.
 
@@ -134,7 +134,7 @@ Algorithms that perform 'tree search' analyses are often called 'hill-climbing' 
 
 ![phy23](/Images/Week03/phy23.png)
 
-## <ins>**Setting up a computing environment with conda**<ins> <a name="conda"></a>
+## <ins>**Setting up a computing environment with conda**</ins> <a name="conda"></a>
 
 A **computing environment** refers to the hardware and software available to run analyses. We don't have much control over the hardware, but we can manage the software in our environment by installing software.
 
@@ -162,7 +162,7 @@ A virtual environment is a temporary computing environment that you can move in 
 
 `conda` is a system for setting up virtual environments (called 'conda environments'). Conda provides the following benefits:
 - The ability to download and install software with a single command.
-- The ability to install different software in different environments. This includes installing different <ins> versions <ins> of software, to ensure that all the software packages in a given conda environment are compatible with eachother.
+- The ability to install different software in different environments. This includes installing different <ins> versions </ins> of software, to ensure that all the software packages in a given conda environment are compatible with eachother.
 
 ## Step-by-step tutorial for setting up a conda envirnonment
 1. First, print your PATH so that you have a before/after comparison point.
@@ -202,16 +202,16 @@ conda activate <your-env-name>
   - you can get a list of your previously created environments with: `conda info --envs`
   - Note that environment names don't auto-fill when you tab.
 
-6. Install software (answer "y" when it asks a question):
+6. Install software (The "-y" flag in each command should automatically answer "yes" to any questions):
 - python packages we'll use frequently
-  - `conda install pandas`
-  - `conda install numpy`
-  - `conda install conda-forge::biopython`
+  - `conda install -y pandas`
+  - `conda install -y numpy`
+  - `conda install -y conda-forge::biopython`
 - mulitple sequence alignment software
-  - `conda install bioconda::mafft`
+  - `conda install -y bioconda::mafft`
 - phylogenetics software
-  - `conda install -c bioconda raxml`
-  - `conda install bioconda::newick_utils`
+  - `conda install -y -c bioconda raxml`
+  - `conda install -y bioconda::newick_utils`
  
 7. Checking the status of the environment:
 - Run `echo $PATH` to see how it's changed from the beginning.
@@ -219,12 +219,12 @@ conda activate <your-env-name>
 - If you want to exit an environment, you can run `conda deactivate` at any time.
 
 
-## <ins>**Performing a phylogenetic analysis**<ins> <a name="analysis"></a>
+## <ins>**Performing a phylogenetic analysis**</ins> <a name="analysis"></a>
 We are going to perform a phylogenetic analysis using the command line programs, MAFFT (multiple sequence alignment) and raxML (phylogenetic inference). These programs impliment algorithms for performing the statistical calculations we discussed earlier. Software that uses complex algorithms often exists as a program that we call from the command line (as opposed to running within python for example). The rationale for this is that it makes it easier to submit a 'run' as a unix command from within a job submission script.
 
-## <ins>**Homolog protein sequences**<ins> <a name="seqs"></a>
+## <ins>**Homolog protein sequences**</ins> <a name="seqs"></a>
 
-## <ins>**Multiple sequence alignment with MAFFT**<ins> <a name="mafft"></a>
+## <ins>**Multiple sequence alignment with MAFFT**</ins> <a name="mafft"></a>
 
 MAFFT is very easy to run from the command line. It does not require many arguments or user-defined parameters. To run MAFFT, using the following command:
 
@@ -248,7 +248,7 @@ Here is a [web-based tool from the National Center of Biotechnology Information]
 
 ![aln_view_](/Images/Week03/aln_view.png)
 
-## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**<ins> <a name="raxml"></a>
+## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**</ins> <a name="raxml"></a>
 
 RaxML is a maximum likelihood algorithm for inferring phylogenies. Maximum likelihood is a complex statistical framework, meaning there are more arguments. I will provide a brief description of the most relevant ones. 
 
