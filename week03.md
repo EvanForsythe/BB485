@@ -14,11 +14,12 @@ layout: default
    - **F.** [Multiple sequence alignments](#MSA)
    - **G.** [Maximum likelihood](#ML)
 3. [Setting up a computing environment with conda](#conda)
-4. [Performing a phylogenetic analysis](#analysis)
+4. [Preparing data for a phylogenetic analysis](#analysis)
    - **A.** [Homolog protein sequences](#seqs)
    - **B.** [Multiple sequence alignment with MAFFT](#mafft)
-   - **C.** [Maximum Likelihood Phylogenetic Inference with RAxML](#raxml)
-5. [Project write-up](#write)
+5. [Lecture 3 Tutorial Assignment](#tut_assign)
+6. [Maximum Likelihood Phylogenetic Inference with RAxML](#raxml)
+7. [Project write-up](#write)
 
 ## <ins>**Intro to phylogenetic trees**</ins> <a name="trees"></a>
 This week we will learn how to perform phylogenetic analyses. Phylogenetic trees are diagrams that describe our best hypothesis for the relationship between different species/groups/populations/taxa that diverged from a common ancestor. 
@@ -224,9 +225,19 @@ We are going to perform a phylogenetic analysis using the command line programs,
 
 ## <ins>**Homolog protein sequences**</ins> <a name="seqs"></a>
 
+Phylogenetic analyses require that we obtain a protein homolog from each species we'd like to study. If there is exactly one homolog in each species, we call them "orthologs". However, if there has been gene duplication and multiple copies are present in some species, we call them "paralogs". "Homologs" is a catch all that includes any related protein. 
+
+![atp_synth](/Images/Week03/atp_synth.png)
+
+For this example, I  used BLAST to identify the protein sequence for a subunit of the ATP synthase enzyme complex. This complex is essential to life, so we expect it to be present in all organisms.
+
+You can find a copy of the file at: `/shared/forsythe/BB485/Week03/ATP_synthase_subunitC.fasta`
+
+Copy this file to your scratch directory and use `code` to open to file to look at it.
+
 ## <ins>**Multiple sequence alignment with MAFFT**</ins> <a name="mafft"></a>
 
-MAFFT is very easy to run from the command line. It does not require many arguments or user-defined parameters. To run MAFFT, using the following command:
+MAFFT is very easy to run from the command line. It does not require many arguments or user-defined parameters. To run MAFFT, use the following command:
 
 ```bash
 mafft <input-seq-file>.fasta
@@ -245,8 +256,26 @@ Viewing the alignment in a more human-readable format is a little more tricky. T
 
 Here is a [web-based tool from the National Center of Biotechnology Information](https://www.ncbi.nlm.nih.gov/projects/msaviewer/).
 
+![aln_view](/Images/Week03/aln_view.png)
 
-![aln_view_](/Images/Week03/aln_view.png)
+
+## <ins>**Lecture 3 Tutorial Assignment**<ins> <a name="tut_assign"></a>
+ 
+<div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
+   <strong>Tutorial Assignment:</strong>
+   For the ATP sythase protein sequence file
+   <ol>
+      <li>Perform multiple sequence alignment and save the output as a new fasta file</li>
+      <li>How many characters (including gaps) is each sequence after alignment. Note: they should all me the same length after alignment.</li>
+      <li>Which species seems to have the most gaps in it's alignment?</li>
+   </ol>
+   Submit the answers to the questions above on Canvas
+</div>
+
+<br />
+<br />
+
+
 
 ## <ins>**Maximum Likelihood Phylogenetic Inference with RAxML**</ins> <a name="raxml"></a>
 
@@ -260,7 +289,7 @@ raxmlHPC-PTHREADS-SSE3 -s <name-of-alignment-file> -n <some-text-for-output> -m 
 - `-s` is the name of the input file. **This should be a MSA.**
 - `-n` is used to specify what we want our output files to be named. E.g. `TEST`.
 - `-m` is the model of evolution used when calculating likelihood scores. This model is what let's ML use a more 'realistic' framework (e.g. allowing for some homoplasy).
-- `p` and `-x` give raxml a 'random' number to help it decide where to begin the 'tree search'. (i.e. which tree to start with during the hill-climbing algorithm).
+- `-p` and `-x` give raxml a 'random' number to help it decide where to begin the 'tree search'. (i.e. which tree to start with during the hill-climbing algorithm).
 - `-f` tells raxml what mode/task to run.
 - `-#` tells raxml how many bootstrap replicated to run.
 - `-T` tells raxml how many parallel threads (i.e. CPUs) to use. You can change this to a larger number and run the command from inside of a job submission.
@@ -331,7 +360,7 @@ plt.savefig(output_pdf)
 
 You may need to install matplotlib module as follows:
 ```bash
-conda install conda-forge::matplotlib
+conda install -y conda-forge::matplotlib
 ```
 
 You'll need to modify the lines that specify:
