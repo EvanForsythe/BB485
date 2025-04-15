@@ -263,6 +263,7 @@ Here is a [web-based tool from the National Center of Biotechnology Information]
  
 <div style="border: 5px solid black; padding: 10px; margin: 10px 0;">
    <strong>Tutorial Assignment:</strong>
+   <br />
    For the ATP sythase protein sequence file
    <ol>
       <li>Perform multiple sequence alignment and save the output as a new fasta file</li>
