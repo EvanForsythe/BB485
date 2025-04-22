@@ -80,7 +80,7 @@ Hee is a table comparing and contrasting two examples of leading "short read" an
 | **Time to Results**              | Hours to days (library prep + run)           | Real-time sequencing as data is generated        |
 | **Instrument Size**              | Bench-top to large machines                  | Portable (MinION) to bench-top (PromethION)      |
 | **Cost per Base**                | Very low (economies of scale)                | Higher than Illumina per base, but dropping      |
-| **Startup Cost**                 | Expensive equipment ($$$$)                   | Lower cost instruments (MinION ~$1,000)          |
+| **Startup Cost**                 | Expensive equipment		                  | Lower cost instruments (MinION ~$1,000)          |
 | **Sample Prep Complexity**       | Complex; often requires PCR amplification    | Simpler; PCR-free options available              |
 | **Best Use Cases**               | Whole-genome resequencing, RNA-seq, variant detection | De novo assembly, structural variant detection, fieldwork |
 | **Limitations**                 | Can't resolve large repeats or long structural variants well | Lower raw accuracy, sensitive to sample impurities |
@@ -108,12 +108,23 @@ The algorithms used in genome assembly a very cool. However, since this course i
 ## <ins>**Tutorial assignment**<ins> <a name="assign"></a>
 See canvas for this week's tutorial as part of that assingment, you'll need to install, Spades, an assembly program on the HPC using conda.
 
-Below are example commands I used to setup my environment.
+
+Option 1 (preferred)
+-Install spades on your existing conda environment for this class with the following command.
+```bash
+conda install bioconda::spades
+```
+
+Option 2 (if option 1 doesn't work)
+-Create a new environment. I tested the following and it worked for me.
+
 ```bash
 conda create -n assemble python=3.12
 conda activate assemble
 conda install bioconda::spades
 ```
+
+Option 3: I downloaded a version of the spades python script and provide the full path to that script below. Technically, you can run the script by just providing the full path to it like you would for your own scripts (see the examples below for how to run this script)
 
 ## <ins>**More details about genome assembly**<ins> <a name="details"></a>
 
