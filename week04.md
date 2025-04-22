@@ -110,13 +110,14 @@ See canvas for this week's tutorial as part of that assingment, you'll need to i
 
 
 Option 1 (preferred)
--Install spades on your existing conda environment for this class with the following command.
+	- Install spades on your existing conda environment for this class with the following command.
+
 ```bash
 conda install bioconda::spades
 ```
 
 Option 2 (if option 1 doesn't work)
--Create a new environment. I tested the following and it worked for me.
+	- Create a new environment. I tested the following and it worked for me.
 
 ```bash
 conda create -n assemble python=3.12
