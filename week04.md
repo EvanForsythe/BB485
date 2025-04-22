@@ -31,7 +31,7 @@ DNA sequencing is a process used to determine the precise order of nucleotides w
 ![assemb11](/Images/Week04/assemb11.png)
 
 - The ability to generate sequencing data is vastly outpacing computing technology to store/process the data.
-   - Because of this, bioinformatics is an extremely important field!!!
+   - **Because of this, bioinformatics is an extremely important field!!!**
 
 ### <ins>**Sanger sequencing**<ins> <a name="sanger"></a>
 
@@ -57,15 +57,39 @@ Sanger sequencing technology is not scalable to the scale needed to sequence a f
 
 There are several different DNA sequencing technologies available. Illumina is probably the most widely-used (for now), but there are strengths and weaknesses to each method (see below)
 
+**Illumina sequencing:**
+
 [![Video 2 Thumbnail](https://img.youtube.com/vi/CZeN-IgjYCo/0.jpg)](https://www.youtube.com/watch?v=CZeN-IgjYCo)
+
+**Oxford Nanopore sequencing:**
+
+[![DNA Sequencing Tutorial - Oxford Nanopore](https://img.youtube.com/vi/E9-Rm5AoZGw/0.jpg)](https://www.youtube.com/watch?v=E9-Rm5AoZGw)
 
 ### <ins>**Short-read vs long-read sequencing**<ins> <a name="versus"></a>
 
 ![assemb03](/Images/Week04/assemb03.png)
 
+Hee is a table comparing and contrasting two examples of leading "short read" and "long-read" technologies
+
+| Feature                          | Illumina Sequencing                          | Oxford Nanopore Sequencing                        |
+|----------------------------------|----------------------------------------------|--------------------------------------------------|
+| **Sequencing Method**            | Sequencing by synthesis                      | Sequencing by nanopore (detects current changes) |
+| **Read Length**                  | Short reads (typically 100–300 bp)           | Long reads (up to 2+ Mb possible)                |
+| **Accuracy (Raw Reads)**         | Very high (>99.9%)                           | Moderate (~90–95%), improving with basecalling   |
+| **Throughput**                   | Very high (billions of reads per run)        | Variable; depends on flow cell and run duration  |
+| **Time to Results**              | Hours to days (library prep + run)           | Real-time sequencing as data is generated        |
+| **Instrument Size**              | Bench-top to large machines                  | Portable (MinION) to bench-top (PromethION)      |
+| **Cost per Base**                | Very low (economies of scale)                | Higher than Illumina per base, but dropping      |
+| **Startup Cost**                 | Expensive equipment ($$$$)                   | Lower cost instruments (MinION ~$1,000)          |
+| **Sample Prep Complexity**       | Complex; often requires PCR amplification    | Simpler; PCR-free options available              |
+| **Best Use Cases**               | Whole-genome resequencing, RNA-seq, variant detection | De novo assembly, structural variant detection, fieldwork |
+| **Limitations**                 | Can't resolve large repeats or long structural variants well | Lower raw accuracy, sensitive to sample impurities |
+| **Data Output Format**           | Short FASTQ reads, paired-end optional       | Long FASTQ reads, direct basecalling             |
+
+
+
 ## <ins>**Genome assembly**<ins> <a name="assembly"></a>
 Below are a series of slides describing genome assembly from the [Bioinformatic.ca workshop](https://bioinformaticsdotca.github.io/BiCG_2019).
-
 
 
 ![assemb05](/Images/Week04/assemb05.png)
