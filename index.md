@@ -11,9 +11,9 @@ title: Home
 - [Week02: Working with high-performance computing (HPC) resources](week02)
 - [Week03: Multiple sequence alignment and phylogenetics](week03)
 - [Week04: Genome assembly](week04)
+- [Week05: Genome annotation](week05)
 
 {% comment %}
-- [Week05: Genome annotation](week05)
 - [Week06: Comparative genomics and phylogenomic analyses](week06)
 - [Week07: Protein domains and structures](week07)
 - [Week08: RNA sequencing and transcriptomics](week08)
