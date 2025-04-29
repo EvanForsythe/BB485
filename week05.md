@@ -28,7 +28,7 @@ layout: default
 ## <ins>**How annotation information is stored**<ins> <a name="stored"></a>
 Storing genomic annotation data for a given genome assembly is akin to creating a 'road map' to the location of a region of interest within the genome. Consistent with the idea of a 'map', genome annotations are stored as a set of <ins>**Genomic Coordinates**</ins>.
 
-Genomic coordinates much always store four basic pieces of information (see below). This is the core information needed to reliably locate a specific region of the genome. In addition to this basic coordinate information, there is often (always) further information that describes things like: what the feature is, where it came from, how it was predicted, and more.
+Genomic coordinates, at the most basic level, will always store four basic pieces of information (see below). This is the core information needed to reliably locate a specific region of the genome. In addition to this basic coordinate information, there is often further information that describes things like: what the feature is, where it came from, how it was predicted, and more.
 
 <ins>**The four basic variables of genomic coordinates:**</ins>
 - **Chromosome:** This represents the specific chromosome (e.g., chr3, chrY) where a feature is located. <ins>Note:</ins> this often refers to a contig, rather than a chromosome, depending on whether the assembly is of 'chromosome-level' vs 'contig-level' assembly quality. 
@@ -36,7 +36,7 @@ Genomic coordinates much always store four basic pieces of information (see belo
 - **Stop Position:** The ending position of a feature along the chromosome in a genomic coordinate system. It represents the last base pair included in the feature, and it is typically represented as a numerical value.
 - **Strand:** In molecular biology, DNA is composed of two complementary strands. The strand indicates the orientation of the DNA molecule and can be either positive (+) or negative (-). In genomic coordinate data files, it denotes which strand of the DNA the feature is located on.
 
-###0-based vs 1-based indexing in common annotation file formats
+### 0-based vs 1-based indexing in common annotation file formats
 
 | Format            | Position system          |
 |-------------------|--------------------------|
@@ -89,6 +89,9 @@ A GTF file is very similar to a GFF file, but with a few different specification
 
 
 ### <ins>**BED format**<ins> <a name="bed"></a>
+
+BED files are often used to store annotation data used in genome browsers, like the [UCSC Genome Browser](https://genome.ucsc.edu/)
+
 
 <ins>**Column headers:**</ins>
 - **chrom:** The name of the chromosome (e.g. chr3, chrY) or scaffold.
