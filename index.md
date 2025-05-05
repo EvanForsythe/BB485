@@ -12,9 +12,8 @@ title: Home
 - [Week03: Multiple sequence alignment and phylogenetics](week03)
 - [Week04: Genome assembly](week04)
 - [Week05: Genome annotation](week05)
-
-{% comment %}
 - [Week06: Comparative genomics and phylogenomic analyses](week06)
+{% comment %}
 - [Week07: Protein domains and structures](week07)
 - [Week08: RNA sequencing and transcriptomics](week08)
 - [Week09A: Beta testing Squeakuences program](week09A)
