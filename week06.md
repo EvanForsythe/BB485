@@ -244,7 +244,7 @@ P1_and_P3=[Bs_temp, At_temp]
 P2_and_P3=[Cr_temp, At_temp]
     
 
-#Use series of if/else statemetns to ask which pair in monophyletic
+#Use series of if/else statements to ask which pair in monophyletic
 if bool(temp_tree.is_monophyletic(P1_and_P2)):
     topo_str = "12top"
 elif bool(temp_tree.is_monophyletic(P1_and_P3)):
@@ -260,7 +260,7 @@ print(topo_str)
 Get the topology counts. How many tree have each topology?
 
 Create a figure:
-Use google to figure out how to impliment this in python
+Use google to figure out how to impliment this in python. A pie chart or stacked bar chart would be a good options for showing the ratios of the different topologies. 
 
 ## <ins>**Weekly write-up assignment**</ins> <a name="writeup"></a>
 - Use your github repo to develop a phylogenomics pipeline that performs the tasks above
