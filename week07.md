@@ -8,8 +8,11 @@ layout: default
 # Week 7 lecture and tutorial
 1. [Protein secondary structure](#structure)
 2. [Protein domains](#domains)
-3. [Conserved domain prediction and visualization with R and CD-search](#pred)
-    - **A.** [Code update](#update)
+3. [Computational prediction of protein structure](#comp)
+	- **A.** [Machine learning and pattern recognition in biology](#ml)
+	- **B.** [Alphafold prediction of protein structure](#alphafold)
+3. [Tutorial assignment](#tut)
+4. [Conserved domain prediction and visualization with R and CD-search](#pred)
 5. [Project write-up assignement](#write)
     
 
@@ -19,14 +22,95 @@ layout: default
 
 ![prot02](/Images/Week07/prot02.png)
 
-
 ## <ins>**Protein domains**</ins> <a name="domains"></a>
 
 ![prot03](/Images/Week07/prot03.png)
 
-"Conserved domains" refers to the idea that domains can be conserve in homologous proteins between species. We can use phylogentics/comparative genomics to get a sense of how the domain composition has evoloved over time.
+"Conserved domains" refers to the idea that domains can be conserve in homologous proteins between species. We can use phylogentics/comparative genomics to get a sense of how the domain composition has evoloved over time. We will work on an analysis of conserved domain on Thursday.
 
 ![prot04](/Images/Week07/prot04.png)
+
+
+## <ins>**Computational prediction of protein structure**</ins> <a name="comp"></a>
+
+
+
+
+## <ins>**Machine learning and pattern recognition in biology**</ins> <a name="ml"></a>
+
+# Introduction to Artificial Intelligence in Biology
+
+Artificial Intelligence (AI) refers to the ability of machines to perform tasks that typically require human intelligence. This includes learning from data, recognizing patterns, making decisions, and adapting over time. One of the most powerful branches of AI is **machine learning**, where algorithms improve automatically through experience and data exposure.
+
+
+## Applications of AI in Biology
+
+Some major applications of AI in biological research include:
+
+- **Genomics and Transcriptomics**: AI algorithms help identify gene variants, predict gene expression levels, and interpret the regulatory impact of mutations.
+- **Drug Discovery**: Machine learning models can predict how molecules interact with proteins, speeding up the drug development process.
+- **Medical Imaging**: AI can detect diseases from medical images such as MRIs, CT scans, and histology slides with high accuracy.
+- **Epidemiology**: AI helps model the spread of diseases and predict future outbreaks using vast epidemiological data.
+- **Ecology and Evolution**: AI techniques are used to infer phylogenetic relationships, model species distributions, and simulate evolutionary scenarios.
+
+## How Machine Learning Recognizes Patterns
+
+A central strength of machine learning is its ability to detect patterns in large, complex datasets—patterns that may be too subtle or multidimensional for humans to spot.
+
+### Example: Gene Expression Classification
+
+Imagine you have thousands of gene expression profiles from healthy and cancerous tissues. Each profile includes the expression levels of 20,000 genes.
+
+A machine learning model (e.g. **neural network**) can be trained on a subset of this data labeled as "healthy" or "cancer." The algorithm learns patterns in how gene expression levels differ between the two classes.
+
+Once trained, the model can:
+- Predict whether a new, unlabeled expression profile comes from a healthy or cancerous sample.
+- Identify which genes are most important for distinguishing between the two states.
+
+
+## Introduction to pattern recognition in bioinformatics research: **Principal Component Analysis (PCA)** and **K-means clustering**.
+
+#### Principal Component Analysis (PCA)
+
+**PCA** is a statistical method used to reduce the dimensionality of large datasets while preserving as much variance as possible. In gene expression analysis:
+
+- Each sample may have expression data for thousands of genes.
+- PCA transforms the data into a smaller number of **principal components**—new axes that capture the most variance.
+- This allows researchers to **visualize high-dimensional data** and sometimes observe natural groupings or outliers.
+
+PCA is useful for **exploration and visualization**, but does not perform classification or prediction.
+
+![pca](/Images/Week07/pca.png)
+
+#### K-means Clustering
+
+**K-means clustering** is an algorithm that partitions data into **K distinct groups** based on similarity.
+
+- It starts by randomly assigning K "centroids" and then iteratively assigns each data point to the nearest centroid.
+- The centroids are updated to reflect the mean of all points in each cluster, and the process repeats until convergence.
+- In gene expression studies, K-means can be used to group samples or genes that show similar patterns of expression.
+
+Like PCA, K-means is **unsupervised**—it does not use known labels (like “cancer” or “healthy”)—but it **actively groups data** based on internal structure.
+
+#### Comparison to Machine Learning
+
+| Feature                   | PCA (Statistical Method)                  | K-means Clustering                         | Machine Learning (e.g., SVM, Neural Network)      |
+|---------------------------|--------------------------------------------|---------------------------------------------|----------------------------------------------------|
+| Type                      | Unsupervised                              | Unsupervised                                | Often supervised (requires labeled data)           |
+| Goal                      | Dimensionality reduction, visualization   | Grouping samples by similarity              | Prediction, classification, or regression          |
+| Uses Labels               | No                                         | No                                          | Yes (for supervised learning)                      |
+| Output                    | Principal components                      | Cluster assignments                         | Classification labels or probability scores        |
+| Interpretability          | High (components can be examined)         | Medium (cluster centers and members)        | Variable (some models are "black boxes")           |
+| Flexibility/Accuracy      | Good for simple patterns                  | Good for obvious groupings                  | Better for complex or nonlinear relationships      |
+
+
+![sup_vs_unsup](/Images/Week07/sup_vs_unsup.png)
+
+## <ins>**Alphafold prediction of protein structure**</ins> <a name="alphafold"></a>
+
+## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
+
+Complete the [online tutorial from alphafold](https://www.ebi.ac.uk/training/online/courses/alphafold/) to learn about the alphafold program
 
 ## <ins>**Conserved domain prediction and visualization with R and CD-search**</ins> <a name="pred"></a>
 
@@ -97,116 +181,6 @@ S_pol_Spipo9G0068100	specific	461674	275	342	2.39807e-13	65.1833	pfam05542	DUF76
 Here is an R script that you can use to create a domain evolution figure. You'll need to change information about the names of files. I recommend using R-studio on your local computer to run the R code.
 
 ## R code:
-NOTE: this code includes extra packages, that could cause issues when attempting to install them. See the block of code further down on this page for an alternative R script, which only includes the minimal set of packages.
-```R
-###Set the working directory (typically the directory where this script is stored)
-#Add the full path to your desired working directory to the quotes
-setwd("<location-of-your-R-script>")
-
-
-#The BiocManager package is needed in order to install some other packages
-#This is an if-statement that asks whether the package is already installed and installs if not
-if (!requireNamespace("BiocManager", quietly = TRUE)){
-  install.packages("BiocManager")
-}
-library("BiocManager")
-
-#Install and load treeio if it isn't already
-if (!requireNamespace("treeio", quietly = TRUE)){
-  BiocManager::install("treeio")
-
-}
-library(treeio)
-
-#Install and load ggtree if it isn't already
-if (!requireNamespace("ggtree", quietly = TRUE)){
-  BiocManager::install("ggtree")
-}
-library(ggtree)
-
-###Install and load several packages that are installed with the standard base install function
-#Make a list of package names that we'll need
-package_list<-c("ape", "ips", "Biostrings", "phytools", "seqinr", "dplyr", "ggplot2")
-
-#Loop to check if package is installed and loaded. If not, install/load
-#If you get a warning saying "there is no package called <XYZ>", run the loop again
-for(k in 1:length(package_list)){
-  
-  if (!require(package_list[k], character.only = TRUE)) {
-    install.packages(package_list[k], dependencies = TRUE)
-    library(package_list[k], character.only=TRUE)
-  }
-}
-
-#Read in the tree file
-tree<-read.tree("path-to-your-newick-tree-file")
-
-#Print the content of the variable "tree"
-tree
-
-#Read in the domain table and store as R dataframe 
-domain_df<-read.table(file = "<name of the domain tsv file you created>", header = TRUE, sep = "\t")
-
-#Clean up this dataframe a bit
-names(domain_df)[1]<-"Newick_label"
-
-###Add a column that gives the length of each sequence
-#Read in seq file (note: this should not be the aligned sequences)
-seqs<-seqinr::read.fasta(file = <path-to-unaligned-seqs-file>, seqtype = "AA")
-
-#Create a df of sequence lengths and join it to the domain data
-domain_dat_full<-left_join(domain_df, data.frame(Newick_label=names(seqs), Seq_ln=getLength(seqs)), by = "Newick_label")
-
-#check out the dataframe
-domain_dat_full
-
-# Do some reformatting of the dataframe
-#Change the classes in the dataframe so that R can recognize the numbers as number and the strings as strings.
-domain_dat_full[,1]<-paste(domain_dat_full[,1])
-domain_dat_full[,4]<-as.numeric(paste(domain_dat_full[,4]))
-domain_dat_full[,5]<-as.numeric(paste(domain_dat_full[,5]))
-domain_dat_full[,6]<-as.numeric(paste(domain_dat_full[,6]))
-domain_dat_full[,7]<-as.numeric(paste(domain_dat_full[,7]))
-domain_dat_full[,8]<-paste(domain_dat_full[,8])
-domain_dat_full[,9]<-paste(domain_dat_full[,9])
-domain_dat_full[,10]<-paste(domain_dat_full[,10])
-domain_dat_full[,11]<-paste(domain_dat_full[,11])
-domain_dat_full[,12]<-as.numeric(paste(domain_dat_full[,12]))
-#Make a new column that's the same as newick labels
-domain_dat_full[,13]<-paste(domain_dat_full[,1])
-names(domain_dat_full)[13]<-"TipLabels"
-
-
-### Begin creating the tree/domain plot using ggplot
-#Make a ggtree object 
-p1<-ggtree(tree, branch.length ='none', ladderize = TRUE)
-
-#Add tip names in as a facet
-p2<-facet_plot(p1, panel='tip_labels',
-               data=domain_dat_full, geom=geom_text, 
-               mapping=aes(x=0, label= TipLabels), size=3)
-
-#add seq length line
-p3<-facet_plot(p2, panel = "domains", data = domain_dat_full, geom= geom_segment, 
-               mapping = aes(x=0, xend=Seq_ln, y=y, yend=y), size=0.5, color='black')
-
-#Add domains
-p4<-facet_plot(p3, panel = "domains", data = domain_dat_full, geom=geom_segment, 
-               aes(x=From, xend=To, y=y, yend=y, col=Short_name), size=3) +
-  theme(legend.position = "right")
-
-#Plot the final plot
-p4
-
-# You can now use the "Export" button to export a pdf or image file of your tree and domains figure.
-# Note: part of the sequence IDs may be cutoff. You can stretch the image window or change the dimensions of the image/pdf size to help fix this a bit, but it's ok if some of the IDs are slightly cutoff for this assignment. We could use adobe illustrator to manually do some post-processing and fix this issue if we were preparing a figure for a publication.
-```
-
-### <ins>**Code update**</ins> <a name="update"></a>
-
-UPDATE (may 22nd): Below is a block of code that seems less likely to cause installation problems. Note, ggtree is still causing issues. If you're unable to install ggtree, we may need to take a pass on the final ggtree step. If you are unable, to install ggtree, send me an email telling me the name of your input file (e.g. OG0009631.fasta). I'll plot the tree for you and send it to you and you can use that plot to answer the assignment questions.
-
-Here is an updated block of code to give one last try.
 ```R
 #Add the full path to your desired working directory to the quotes
 setwd("path-to-folder-where-this-script-lives")
