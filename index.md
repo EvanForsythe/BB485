@@ -13,8 +13,10 @@ title: Home
 - [Week04: Genome assembly](week04)
 - [Week05: Genome annotation](week05)
 - [Week06: Comparative genomics and phylogenomic analyses](week06)
-{% comment %}
 - [Week07: Protein domains and structures](week07)
+
+{% comment %}
+
 - [Week08: RNA sequencing and transcriptomics](week08)
 - [Week09A: Beta testing Squeakuences program](week09A)
 - [Week09B: Predicting anti-microbial peptides in seaweed](week09B)
