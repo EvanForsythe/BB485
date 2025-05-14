@@ -108,9 +108,25 @@ Like PCA, K-means is **unsupervised**—it does not use known labels (like “ca
 
 ## <ins>**Alphafold prediction of protein structure**</ins> <a name="alphafold"></a>
 
+<br>
+
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
-Complete the [online tutorial from alphafold](https://www.ebi.ac.uk/training/online/courses/alphafold/) to learn about the alphafold program
+1. Complete the [online tutorial from alphafold](https://www.ebi.ac.uk/training/online/courses/alphafold/) to learn about the alphafold program.
+
+2. Install the following R packages on your conda environment with the following commands:
+
+'''bash
+conda install conda-forge::r-ape
+conda install conda-forge::r-dplyr
+conda install bioconda::r-seqinr
+conda install conda-forge::r-ggplot2
+conda install bioconda::bioconductor-ggtree
+'''
+
+I would recommend using a job submission to install these. I'm not certain they'll work, but give them a try and we'll trouble shoot in class if it doesn't work.
+
+<br>
 
 ## <ins>**Conserved domain prediction and visualization with R and CD-search**</ins> <a name="pred"></a>
 
