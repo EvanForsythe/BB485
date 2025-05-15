@@ -140,7 +140,7 @@ We will generate these files using commands we've used before (mafft and IQ-tree
 ### 1. A multiple sequences alignment of the protein sequences
 Unaligned sequences for the species are located at: `/shared/forsythe/BB485/Week07/input_files/`. Choose one file (at random) for your analysis. Check with your classmates to make sure you haven't choosen the same one.
 
-Run mafft from the command line to create a multiple sequence alignment. Hint: you may need to switch into your phylogenetics conda environment.
+Run mafft from the command line to create a multiple sequence alignment. 
 
 ### 2. A phylogenetic tree inferred from the protein alignment
 
@@ -198,87 +198,78 @@ Here is an R script that you can use to create a domain evolution figure. You'll
 
 ## R code:
 ```R
-#Add the full path to your desired working directory to the quotes
-setwd("path-to-folder-where-this-script-lives")
+# Set your working directory
+setwd("full-path-to-where-this-script-lives")
 
-#Make a list of package names that we'll need
-package_list<-c("ape", "dplyr", "seqinr", "ggplot2", "ggtree")
+# List of required packages
+package_list <- c("ape", "dplyr", "ggplot2", "ggtree")
 
-#Loop to check if package is installed and loaded. If not, install/load
-#If you get a warning saying "there is no package called <XYZ>", run the loop again
-for(k in 1:length(package_list)){
-  
-  if (!require(package_list[k], character.only = TRUE)) {
-    install.packages(package_list[k], dependencies = TRUE)
-    library(package_list[k], character.only=TRUE)
+# Install and load required packages
+for (pkg in package_list) {
+  if (!require(pkg, character.only = TRUE)) {
+    install.packages(pkg, dependencies = TRUE)
+    library(pkg, character.only = TRUE)
   }
 }
 
 # Read in the tree file
-tree <- ape::read.tree("name-of-your-tree.treefile")
+tree <- ape::read.tree("full-path-to-treefile-newick-file")
 
-# Read in the domain table and store it as an R dataframe
-domain_df <- read.table(file = "name-of-your-domains-table.tsv", header = TRUE, sep = "\t")
-
-# Clean up this dataframe a bit
+# Read in the domain table and store it as a dataframe
+domain_df <- read.table(file = "full-path-to-domains-tsv-file", header = TRUE, sep = "\t")
 names(domain_df)[1] <- "Newick_label"
 
-# Read in unaligned sequences
-seqs <- seqinr::read.fasta(file = "name-of-your-seq-file", seqtype = "AA")
+# Read in unaligned sequences using ape instead of seqinr
+seqs <- ape::read.FASTA("full-path-to-unalgined-seqfile", type = "AA")
 
-# Create a dataframe of sequence lengths and join it with the domain data
-domain_dat_full <- left_join(domain_df, 
-                             data.frame(Newick_label = names(seqs), Seq_ln = seqinr::getLength(seqs)), 
-                             by = "Newick_label")
+# Create a dataframe of sequence lengths using base R
+seq_lengths_df <- data.frame(Newick_label = names(seqs),
+                              Seq_ln = sapply(seqs, length))
 
-# Check out the dataframe
+# Join the sequence length data to the domain dataframe
+domain_dat_full <- dplyr::left_join(domain_df, seq_lengths_df, by = "Newick_label")
+
+# Reformatting / class conversion
+domain_dat_full[, 1]  <- paste(domain_dat_full[, 1])
+domain_dat_full[, 4]  <- as.numeric(paste(domain_dat_full[, 4]))
+domain_dat_full[, 5]  <- as.numeric(paste(domain_dat_full[, 5]))
+domain_dat_full[, 6]  <- as.numeric(paste(domain_dat_full[, 6]))
+domain_dat_full[, 7]  <- as.numeric(paste(domain_dat_full[, 7]))
+domain_dat_full[, 8]  <- paste(domain_dat_full[, 8])
+domain_dat_full[, 9]  <- paste(domain_dat_full[, 9])
+domain_dat_full[,10]  <- paste(domain_dat_full[,10])
+domain_dat_full[,11]  <- paste(domain_dat_full[,11])
+domain_dat_full[,12]  <- as.numeric(paste(domain_dat_full[,12]))
+domain_dat_full[,13]  <- paste(domain_dat_full[,1])
+names(domain_dat_full)[13] <- "TipLabels"
+
+# Check the dataframe
 print(head(domain_dat_full))
 
-# Do some reformatting of the dataframe
-#Change the classes in the dataframe
-domain_dat_full[,1]<-paste(domain_dat_full[,1])
-domain_dat_full[,4]<-as.numeric(paste(domain_dat_full[,4]))
-domain_dat_full[,5]<-as.numeric(paste(domain_dat_full[,5]))
-domain_dat_full[,6]<-as.numeric(paste(domain_dat_full[,6]))
-domain_dat_full[,7]<-as.numeric(paste(domain_dat_full[,7]))
-domain_dat_full[,8]<-paste(domain_dat_full[,8])
-domain_dat_full[,9]<-paste(domain_dat_full[,9])
-domain_dat_full[,10]<-paste(domain_dat_full[,10])
-domain_dat_full[,11]<-paste(domain_dat_full[,11])
-domain_dat_full[,12]<-as.numeric(paste(domain_dat_full[,12]))
-#Make a new column that's the same as newick labels
-domain_dat_full[,13]<-paste(domain_dat_full[,1])
-names(domain_dat_full)[13]<-"TipLabels"
+### OPTIONAL: If ggtree is not available, you can save this dataframe and plot elsewhere
+# write.table(domain_dat_full, file = "domain_dat_with_lengths.tsv", sep = "\t", quote = FALSE, row.names = FALSE)
 
+### Plotting tree and domains using ggtree and ggplot2
 
-# Check the modified dataframe
-print(head(domain_dat_full))
-
-### NOTE: If you can't succesfully install ggtree, you can skip the steps below. 
-### Instead, write you domain_dat_full dataframe as a tsv file using:
-### write.table(domain_dat_full, file = "new_file_name.tsv", sep = "\t", quote = FALSE, row.names = FALSE)
-### Note that this should be similar to your orignal file but it should inlcude an extra column, "Seq_ln"
-
-### Plotting the tree and domains using ggtree and ggplot2
-
-# Create a ggtree object
+# Build ggtree object
 p1 <- ggtree(tree, branch.length = 'none', ladderize = TRUE)
 
-# Add tip names as a facet
-p2 <- facet_plot(p1, panel = 'tip_labels', data = domain_dat_full, geom = geom_text, 
+# Add tip labels
+p2 <- facet_plot(p1, panel = 'tip_labels', data = domain_dat_full, geom = geom_text,
                  mapping = aes(x = 0, label = TipLabels), size = 3)
 
 # Add sequence length line
-p3 <- facet_plot(p2, panel = "domains", data = domain_dat_full, geom = geom_segment, 
+p3 <- facet_plot(p2, panel = "domains", data = domain_dat_full, geom = geom_segment,
                  mapping = aes(x = 0, xend = Seq_ln, y = y, yend = y), size = 0.5, color = 'black')
 
-# Add domains
-p4 <- facet_plot(p3, panel = "domains", data = domain_dat_full, geom = geom_segment, 
+# Add domains as colored bars
+P4 <- facet_plot(p3, panel = "domains", data = domain_dat_full, geom = geom_segment,
                  aes(x = From, xend = To, y = y, yend = y, col = Short_name), size = 3) +
   theme(legend.position = "right")
 
-# Plot the final plot
-print(p4)
+# Save to PDF
+ggsave("P4_plot.pdf", plot = P4, width = 8, height = 6)
+
 ```
 
 
