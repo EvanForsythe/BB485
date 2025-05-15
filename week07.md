@@ -26,15 +26,8 @@ layout: default
 
 ![prot03](/Images/Week07/prot03.png)
 
-"Conserved domains" refers to the idea that domains can be conserve in homologous proteins between species. We can use phylogentics/comparative genomics to get a sense of how the domain composition has evoloved over time. We will work on an analysis of conserved domain on Thursday.
-
-![prot04](/Images/Week07/prot04.png)
-
 
 ## <ins>**Computational prediction of protein structure**</ins> <a name="comp"></a>
-
-
-
 
 ## <ins>**Machine learning and pattern recognition in biology**</ins> <a name="ml"></a>
 
@@ -108,7 +101,10 @@ Like PCA, K-means is **unsupervised**—it does not use known labels (like “ca
 
 ## <ins>**Alphafold prediction of protein structure**</ins> <a name="alphafold"></a>
 
-<br>
+Alphafold2 is a supervised machine learning program that predicts protein structure from primary amino acid sequence. It is trained (i.e. supervised) using known protein structures to identify patterns connecting AA sequences and folded structure.
+
+![alpha](/Images/Week07/alpha.png)
+
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
@@ -116,19 +112,23 @@ Like PCA, K-means is **unsupervised**—it does not use known labels (like “ca
 
 2. Install the following R packages on your conda environment with the following commands:
 
-'''bash
-conda install conda-forge::r-ape
-conda install conda-forge::r-dplyr
-conda install bioconda::r-seqinr
-conda install conda-forge::r-ggplot2
-conda install bioconda::bioconductor-ggtree
-'''
+```bash
+conda install conda-forge::r-ape -y
+conda install conda-forge::r-dplyr -y
+conda install bioconda::r-seqinr -y
+conda install conda-forge::r-ggplot2 -y
+conda install bioconda::bioconductor-ggtree -y
+```
 
 I would recommend using a job submission to install these. I'm not certain they'll work, but give them a try and we'll trouble shoot in class if it doesn't work.
 
 <br>
 
 ## <ins>**Conserved domain prediction and visualization with R and CD-search**</ins> <a name="pred"></a>
+
+"Conserved domains" refers to the idea that domains can be conserve in homologous proteins between species. We can use phylogentics/comparative genomics to get a sense of how the domain composition has evoloved over time. We will work on an analysis of conserved domain on Thursday.
+
+![prot04](/Images/Week07/prot04.png)
 
 To create the figure above, we will need to generate three things:
 1. A multiple sequences alignment of the protein sequences
