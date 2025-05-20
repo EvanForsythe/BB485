@@ -24,7 +24,6 @@ layout: default
 
 
 
-
 ## <ins>**The genome and the transcriptome**</ins> <a name="transcriptome"></a>
 - Gen**ome** = all the genes in a cell/tissue/organism
 - Transcrip**ome** = all the transcripts (RNAs) in a cell/tissue/organism
@@ -124,16 +123,11 @@ Co-expression networks identify pairs of genes that show correlated expression a
 For the tutorial assignment, setup a new conda environment, which we'll use to perform RNA seq data on Thursday
 
 Install the following packages:
-## NEW VERSION:
-- `conda install bioconda::hisat2`
-- `conda install bioconda::stringtie`
-- `conda install bioconda::samtools`
+- `conda install bioconda::hisat2 -y`
+- `conda install bioconda::stringtie -y`
+- `conda install bioconda::samtools -y`
 
-
-## OLD VERSION (dont install these afterall)
-- tophat2
-- cufflinks
-- DESeq2
+Respond on canvas once the programs are installed
 
 ## <ins>**Performing a transcriptome analysis with hisat2**</ins> <a name="hisat"></a>
 hisat2 (hierarchical indexing for spliced alignment of transcripts) is an algorithm for aligning whole-transcriptome sequencing reads to a reference genome.
@@ -191,9 +185,9 @@ A SAM file has two main sections:
 
 ## Quantifying expression
 
-In order to quantify expression levels, we will need to count reads in a unit that is comparable across samples, genes, and experiments. One method for doing this is to use Reads per Kilobase per Million  mapped reads (RPKM).
+In order to quantify expression levels, we will need to count reads in a unit that is comparable across samples, genes, and experiments. One method for doing this is to use Reads per Kilobase per Million mapped reads (RPKM).
 
-RPKM is comaparable accross samples, genes, and experiments because:
+RPKM is comparable accross samples, genes, and experiments because:
 - It normalizes by gene length (per kilobase of gene length)
 - It normalizes by sequencing depth of the RNA seq experiment (per million reads)
 
@@ -234,7 +228,7 @@ Full datasets from a RNAseq experiment on a human sample are located at this pat
 ```bash
 hisat2-build /shared/forsythe/BB485/Week08/hg38/GCA_000001405.28_GRCh38.p13_genomic.fna human
 ```
-	- Note that "human" tell hisat what string to put in every output file name. 
+	- Note that "human" tells hisat what string to put in every output file name. 
 
 
 - Next, perform the actual read mapping step
