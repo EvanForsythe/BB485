@@ -40,7 +40,7 @@ The full transcriptome includes all types of RNAs present in a cell. However, in
 
 The transcriptome essentially gives us a readout of gene expression for all the genes in a genome in a given cell/tissue/organism. 
 
-- The transcriptome differs across developmental stages. A different set of gene is expressed in the embryo than in an adult.
+- The transcriptome differs across developmental stages. A different set of genes is expressed in the embryo than in an adult.
 	- Identifying which genes are expressed when gives us a headstart on identifying genes involved in development.
 
 ![trans03](/Images/Week08/trans03.png)
