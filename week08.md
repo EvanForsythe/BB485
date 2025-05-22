@@ -127,6 +127,9 @@ Install the following packages:
 - `conda install bioconda::stringtie -y`
 - `conda install bioconda::samtools -y`
 
+*Note: if installing samtools with conda isn't working, we can use the 'module load' version of samtools that the HPC admin installed for users:
+- `module load samtools/1.21`
+
 Respond on canvas once the programs are installed
 
 ## <ins>**Performing a transcriptome analysis with hisat2**</ins> <a name="hisat"></a>
