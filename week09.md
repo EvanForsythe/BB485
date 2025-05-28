@@ -26,9 +26,10 @@ Do the following before class on Thursday:
 
 ## <ins>**Weekly project write-up assignment**</ins> <a name="write"></a>
 
-For your project write-up this week, please do the following and submit your writeup on Canvas:
-1. Run ERCgo on the provided interaction dataset and answer the following question:
-	- 1A: Is there are general correlation between the confidence value for interactions and the GO overlap score that ERCgo calculates? What pieces of qualitative/quantitative evidence help you assess this?
+For your project write-up this week, please do the tasks below and answer the associated questions. Submit your writeup on Canvas.
+
+1. Run ERCgo on the provided interaction dataset and answer the following questions:
+	- 1A: Do we see a general correlation between the confidence value for interactions and the GO overlap score that ERCgo calculates? What pieces of qualitative/quantitative evidence help you assess this?
 	- 1B: Where do the Clp interactions fall in your plot? How does this compare to the ERC-based network that Linnea showed?
 	- 1C: Do the 'observed' interactions that exist in our network tend to have a higher degree of GO-overlap than 'non-hits'? What evidence are you using to assess this? 
 2. ERCgo should provide a tsv file that includes all of the GO-overlap scores for the network. Open this file in excel (or google sheets) and sort it so the highest GO overlap scores are at the top.
@@ -42,7 +43,7 @@ For your project write-up this week, please do the following and submit your wri
 |           |                          |           |                          |                 |                                   |
 |           |                          |           |                          |                 |                                   |
 
-3. You are the first 'beta testers' of ERCgo. To help us improve ERCgo and get practice using github utilities, I would like each student to create an "Issue" on the ERCgo github page. As you run ERCgo, keep an eye out for bugs or even just wonky features/output. Create a github Issue that describes it and suggests an improvement. If you do not see any bugs, then instead create an issue that described a cool new feature that you would like to see in ERCgo.
+3. You are the first 'beta testers' of ERCgo. To help us improve ERCgo and get practice using github features, I would like each student to create an "Issue" on the ERCgo github page. As you run ERCgo, keep an eye out for bugs or even just wonky implimentation/features/output. Create a github Issue that describes it and suggests an improvement. Alternatively, if you do not see any bugs, then create an issue that described a cool new feature that you would like to see in ERCgo.
 	- 3A: Respond "Done!" to let me know you created an issue. I will look on the ERCgo git repo to check out your issue. 
 	
 	
