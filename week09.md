@@ -33,7 +33,7 @@ For your project write-up this week, please do the tasks below and answer the as
 	- 1B: Where do the Clp interactions fall in your plot? How does this compare to the ERC-based network that Linnea showed?
 	- 1C: Do the 'observed' interactions that exist in our network tend to have a higher degree of GO-overlap than 'non-hits'? What evidence are you using to assess this? 
 2. ERCgo should provide a tsv file that includes all of the GO-overlap scores for the network. Open this file in excel (or google sheets) and sort it so the highest GO overlap scores are at the top.
-	- 2A: For the top five interactions, look up information on gene A and gene B involved in each interaction. Look up functional information by searching the ATXGXXXXXX ID at The [Arabidopsis Information Resource website](https://www.arabidopsis.org/)
+	- 2A: For the top five interactions, look up information on gene A and gene B involved in each interaction. Look up functional information by searching the ATXGXXXXXX ID at [The Arabidopsis Information Resource website](https://www.arabidopsis.org/)
 
 | Gene A ID | Gene A TAIR Description | Gene B ID | Gene B TAIR Description | GO overlap score | Does the overlap score make sense? |
 |-----------|--------------------------|-----------|--------------------------|-----------------|-----------------------------------|
