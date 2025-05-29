@@ -15,7 +15,9 @@ This week's lecture will be led by Linnea Lane, a Research Technician in the For
 
 ## <ins>**ERCgo background**</ins> <a name="ERCgo"></a>
 
-See Linnea's materials
+![ercgo1](/Images/Week09/Slide1.png)
+
+
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
 
 Do the following before class on Thursday:
