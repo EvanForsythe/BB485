@@ -16,6 +16,29 @@ This week's lecture will be led by Linnea Lane, a Research Technician in the For
 ## <ins>**ERCgo background**</ins> <a name="ERCgo"></a>
 
 ![ercgo1](/Images/Week09/Slide1.png)
+![ercgo2](/Images/Week09/Slide2.png)
+![ercgo3](/Images/Week09/Slide3.png)
+![ercgo4](/Images/Week09/Slide4.png)
+![ercgo5](/Images/Week09/Slide5.png)
+![ercgo6](/Images/Week09/Slide6.png)
+![ercgo7](/Images/Week09/Slide7.png)
+![ercgo8](/Images/Week09/Slide8.png)
+![ercgo9](/Images/Week09/Slide9.png)
+![ercgo10](/Images/Week09/Slide10.png)
+![ercgo11](/Images/Week09/Slide11.png)
+![ercgo12](/Images/Week09/Slide12.png)
+![ercgo13](/Images/Week09/Slide13.png)
+![ercgo14](/Images/Week09/Slide14.png)
+![ercgo15](/Images/Week09/Slide15.png)
+![ercgo16](/Images/Week09/Slide16.png)
+![ercgo17](/Images/Week09/Slide17.png)
+![ercgo18](/Images/Week09/Slide18.png)
+![ercgo19](/Images/Week09/Slide19.png)
+![ercgo20](/Images/Week09/Slide20.png)
+![ercgo21](/Images/Week09/Slide21.png)
+![ercgo22](/Images/Week09/Slide22.png)
+![ercgo23](/Images/Week09/Slide23.png)
+
 
 
 ## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
