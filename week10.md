@@ -7,7 +7,8 @@ layout: default
 # Week 10 lecture and tutorial
 1. [Schedule for week 10](#sched)
 2. [Final project description](#final)
-3. [Examples](#examples)
+3. [Tutorial assignment](#tut)
+4. [Examples](#examples)
 
 
 ## <ins>**Schedule for week 10**</ins> <a name="sched"></a>
@@ -19,7 +20,18 @@ Welcome to week 10! We will use our class sessions this week as 'co-work' time f
   - Project round-table discussion (5 minutes/student; 25 mins total)
 
 - Thursday:
-  - 1-on-1 meetings with Evan (15 minutes/student)  
+  - 1-on-1 meetings with Evan (15 minutes/student)
+
+
+## <ins>**Tutorial assignment**</ins> <a name="tut"></a>
+
+Answer the following questions:
+- Why are you interested in the topic of your final project?
+- What week of lecture is most closely related to your topic (if applicable)?
+- What is the over-arching goal of your project?
+- What are minor steps along the way that you'll need to accomplish?
+- What figure(s) will you produce?
+- What type of input data will you need?
 
 ## <ins>**Final project description**</ins> <a name="final"></a>
 
