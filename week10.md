@@ -14,9 +14,10 @@ layout: default
 Welcome to week 10! We will use our class sessions this week as 'co-work' time for us to work on final projects. We'll dive in by doing the following:
 
 - Tuesday:
+  - Co-work time
   - Final project description and goals (10 minutes)
   - Project round-table discussion (5 minutes/student; 25 mins total)
-  - Co-work time
+
 - Thursday:
   - 1-on-1 meetings with Evan (15 minutes/student)  
 
