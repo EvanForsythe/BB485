@@ -37,7 +37,7 @@ Answer the following questions:
 
 ![Points structure of BB 485](/Images/Week01/points_piechart.png)
 
-Final projects are due **Wednesday, June 12th at midnight**.
+Final projects are due **Wednesday, June 11th at midnight**.
 
 Each student must produce the following deliverables:
 - **A new github repository for the project** (at least three 'pushes' to track your progress)
