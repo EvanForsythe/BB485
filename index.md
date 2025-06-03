@@ -16,6 +16,7 @@ title: Home
 - [Week07: Protein domains and structures](week07)
 - [Week08: RNA sequencing and transcriptomics](week08)
 - [Week09: Guest lecture: testing the ERCgo program](week09)
+- [Week10: Final bioinformatics project](week10)
 
 {% comment %}
 - [Week09A: Beta testing Squeakuences program](week09A)
