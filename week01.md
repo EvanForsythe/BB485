@@ -538,7 +538,7 @@ Finally, we need to locate a pre-compiled environment file (.yml file) in the co
 conda env create --name BB485_env --file=BB485_env.yml
 ```
 
-**NOTE:** conda environments/yml files have been behaving inconsistently, so here are the instructions for manually creating and installing the needed software:
+**NOTE:** In case the conda environments/yml files behave inconsistently, here are the instructions for manually creating and installing the needed software:
 
 ```bash
 conda install conda-forge::biopython
