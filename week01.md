@@ -379,7 +379,7 @@ Jupyter notebooks (from BB345) and GUI text editors are a great tool for develop
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 3: Working with string objects. </strong>
    <ol>
-      <li>Create a  new python script. Name the script and save in your home directory.</li>
+      <li>Create a new python script. Name the script and save in your home directory.</li>
       <li>Store this DNA sequences as a variable: "ATGGAGGACCCTTTGTTGACTCAGAGTGAGCACATCGTCGATGACGTTACAATCCATGGC
 GATTCTTCTTCAAATGAAGAGCACATCGTCGACGTTACAACCAATGGCAATCCTTCATCA
 GCTGATGAGAAAAGACCGCATGAGGGTGTCCAATGGAGTGATATATTTACATTTACCACT
@@ -431,7 +431,7 @@ for line in seq_handle:
 <div style="border: 1px solid black; padding: 10px; margin: 10px 0;">
    <strong>Task 4: reading in a fasta file and storing sequences in a dictionary object.</strong>
    <ol>
-      <li>Open a new python notebook. Name the notebook and save in your home directory.</li>
+      <li>Create a new python script. Name the script and save in your home directory.</li>
       <li>Create a variable that stores the full path to the fasta file (from the last task) as a string object</li>
       <li>Use the block of python code above to read in fasta file and create a dictionary. </li>
       <li>Print the names of all the sequences in the dictionary (i.e. the 'keys' of the dictionary.</li>
@@ -520,7 +520,7 @@ Conda virtual environments are like "workspaces" you can create to install speci
 
 First, we need to load the conda module:
 ```bash
-module load python/anaconda/3.11
+module load python/anaconda/3.12
 ```
 
 Next, we need to activate the 'base' conda environment
