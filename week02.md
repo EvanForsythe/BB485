@@ -79,7 +79,7 @@ Once you are SSH'd in, any commands you run in your terminal will be executed on
 
 ## Using VPN for access off-campus
 
-[Help page for using VPN to access campus resources (including the HPC) when off campus.](https://oregonstate.teamdynamix.com/TDClient/1935/Portal/KB/?CategoryID=6889)
+[Help page for using VPN to access campus resources (including the HPC) when off campus.](https://technology.oregonstate.edu/services/vpn)
 
 - We won't cover installing the VPN service on your laptop, but I would recommend installing it so that you can work on homework from home.
 
@@ -173,7 +173,7 @@ The permission string for files in the shared directory are: `-rw-r--r--`.
 
 Here's what each character signifies:
 
-1. **File Type Indicator**: The first character indicates the type of file. In this case, since it's a hyphen (`-`), it denotes a regular file. Another possible values= for this position would be `d` for directory.
+1. **File Type Indicator**: The first character indicates the type of file. In this case, since it's a hyphen (`-`), it denotes a regular file. Another possible value for this position would be `d` for directory.
 
 2. **Owner Permissions**: Characters 2-4 (`rw-`) represent permissions for the owner of the file. In this example, the owner has read (`r`) and write (`w`) permissions, but not execute (`x`) permissions.
 
