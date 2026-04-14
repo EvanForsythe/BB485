@@ -324,7 +324,7 @@ Similar to viewing alignments, there are several desktop apps you can install on
 ![rooting](/Images/Week03/root.png)
 
 ### Python-based figure generation
-We can use the Phylo module (part of Biopython) to work with phylogenies in python. This is a good option because there are fewer manual point-and-click steps needed. This allows us to reproduce out analyses easily!
+We can use the Phylo module (part of Biopython) to work with phylogenies in python. This is a good option because there are fewer manual point-and-click steps needed. This allows us to reproduce our analyses easily!
 
 Here is an example of python code that can be used to create a pdf file displaying a tree. There are many options for customizing your figures (see biopython help page for more info). 
 
