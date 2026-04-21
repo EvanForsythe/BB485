@@ -146,6 +146,13 @@ Option 3: I downloaded a version of the spades python script and provide the ful
 
 ### <ins>**Assembly quality statistics**<ins> <a name="stats"></a>
 
+The N50 is the length L such that 50% of the total assembly length is contained in contigs (or scaffolds) of length ≥ L.
+
+Procedue for calculating N50:
+1. Sort all contigs from longest to shortest
+2. Walk down the list, adding up their lengths
+3. The length of the contig where you first reach 50% of the total genome size is the N50
+
 ![quality](/Images/Week04/stats.png)
 
 ### <ins>**fasta format versus fastq format**<ins> <a name="formats"></a>
